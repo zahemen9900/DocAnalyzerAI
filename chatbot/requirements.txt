@@ -1,0 +1,9 @@
+langchain>=0.0.300
+langchain-community>=0.0.10
+huggingface_hub>=0.19.4
+sentence_transformers>=2.2.2
+transformers>=4.35.2
+chromadb>=0.4.14
+torch>=2.1.1
+accelerate>=0.24.1
+bitsandbytes>=0.41.1

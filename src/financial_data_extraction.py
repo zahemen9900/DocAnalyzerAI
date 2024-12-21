@@ -1,12 +1,18 @@
 import pandas as pd
 from pathlib import Path
 import logging
+import sys
+from IPython.display import display
+from typing import Optional, Union, Dict, List
+import warnings
 from edgar import (
     set_identity, Company
 )
+sys.path.append('../src')
+warnings.filterwarnings("ignore", category=FutureWarning)
+
 from fetch_ticker import get_company_ticker
-from IPython.display import display
-from typing import Optional, Union, Dict, List
+
 
 # Configure logging
 logging.basicConfig(
@@ -32,24 +38,18 @@ class ExtractFinancialData:
         PATH (Path): Directory path for saving output files
     """
 
-    # Class-level constants
-    CASHFLOW_COLUMNS_TO_DROP = [
-        'Cash, cash equivalents, and restricted cash and cash equivalents, ending balances',
-        'Share-based compensation expense',
-        'Other',
-        'Vendor non-trade receivables',
-        'Payments for taxes related to net share settlement of equity awards',
-        'Proceeds from/(Repayments of) commercial paper, net',
+    # Class-level constants for columns that should be kept as decimals
+    DECIMAL_COLUMNS = ['Basic (in dollars per share)', 'Diluted (in dollars per share)']
+
+    # Common patterns for columns to drop
+    CASHFLOW_DROP_PATTERNS = [
+        'shares', 'Shares', 'balances', 'Other', 'vendor', 'Vendor',
+        'taxes related to', 'non-trade', 'Non-trade'
     ]
 
-    INCOME_COLUMNS_TO_DROP = [
-        'Products',
-        'Services',
-        'Basic (in shares)',
-        'Diluted (in shares)'
+    INCOME_DROP_PATTERNS = [
+        'shares', 'Shares', 'Products', 'Services', 'Other'
     ]
-
-    FLOAT_COLUMNS = ['Basic (in dollars per share)', 'Diluted (in dollars per share)']
 
     def __init__(self, ticker: str, credentials: str = "David Yeboah davidzahemenyeboah@gmail.com"):
         """Initialize the ExtractFinancialData object.
@@ -69,9 +69,11 @@ class ExtractFinancialData:
         self.income_df = None
         self.company_financial_df = None
         
-        # Initialize data directory
+        # Initialize data directory and company-specific directory
         self.PATH = Path.cwd() / 'data'
         self.PATH.mkdir(exist_ok=True)
+        self.company_dir = self.PATH / self.ticker
+        self.company_dir.mkdir(exist_ok=True)
         logger.info(f"Initialized ExtractFinancialData for {self.ticker}")
 
     def _initialize_edgar_connection(self) -> None:
@@ -101,26 +103,57 @@ class ExtractFinancialData:
             logger.error(f"Failed to initialize company for ticker {self.ticker}: {e}")
             raise
 
-    def _process_dataframe(self, df: pd.DataFrame, float_columns: List[str] = None) -> pd.DataFrame:
+    def _should_drop_column(self, column: str, patterns: List[str]) -> bool:
+        """Determine if a column should be dropped based on patterns.
+        
+        Args:
+            column (str): Column name to check
+            patterns (List[str]): List of patterns to match against
+            
+        Returns:
+            bool: True if column should be dropped, False otherwise
+        """
+        return any(pattern.lower() in column.lower() for pattern in patterns)
+
+    def _convert_to_numeric(self, value: str) -> Union[int, float]:
+        """Convert string value to appropriate numeric type.
+        
+        Args:
+            value (str): String value to convert
+            
+        Returns:
+            Union[int, float]: Converted numeric value
+        """
+        try:
+            # Remove any commas and parentheses
+            cleaned = value.replace(',', '').replace('(', '-').replace(')', '')
+            return int(float(cleaned))
+        except (ValueError, TypeError):
+            return 0
+
+    def _process_dataframe(self, df: pd.DataFrame) -> pd.DataFrame:
         """Process dataframe by converting data types appropriately.
 
         Args:
             df (pd.DataFrame): Input dataframe to process
-            float_columns (List[str], optional): Columns to convert to float. Defaults to None.
 
         Returns:
             pd.DataFrame: Processed dataframe
         """
         try:
-            if float_columns:
-                for col in df.columns:
-                    if col not in float_columns:
-                        df[col] = df[col].astype(int)
-                df[float_columns] = df[float_columns].astype('Float32')
-            else:
-                for col in df.columns:
-                    df[col] = df[col].astype(int)
-            return df
+            # Create a copy to avoid modifying the original
+            processed_df = df.copy()
+            
+            # Convert all numeric columns to appropriate types
+            for col in processed_df.columns:
+                if col in self.DECIMAL_COLUMNS:
+                    # Keep decimal columns as float
+                    processed_df[col] = processed_df[col].astype(float)
+                else:
+                    # Convert other numeric columns to integers
+                    processed_df[col] = processed_df[col].apply(self._convert_to_numeric)
+                    
+            return processed_df
         except Exception as e:
             logger.error(f"Error processing dataframe: {e}")
             raise
@@ -137,8 +170,14 @@ class ExtractFinancialData:
 
             logger.info(f"Retrieving cashflow statements for {self.ticker}")
             df = self.company.financials.cashflow.to_dataframe().T
+            
+            # Drop columns based on patterns
+            columns_to_drop = [col for col in df.columns 
+                             if self._should_drop_column(col, self.CASHFLOW_DROP_PATTERNS)]
+            df = df.drop(columns_to_drop, axis=1)
+            
+            # Process numeric values
             df = self._process_dataframe(df)
-            df = df.drop(self.CASHFLOW_COLUMNS_TO_DROP, axis=1)    
 
             self.cashflow_df = df
             logger.info(f"Successfully processed cashflow statements for {self.ticker}")
@@ -160,14 +199,25 @@ class ExtractFinancialData:
 
             logger.info(f"Retrieving income statements for {self.ticker}")
             df = self.company.financials.income.to_dataframe().T
-            df = self._process_dataframe(df, self.FLOAT_COLUMNS)
+            
+            # Drop columns based on patterns
+            columns_to_drop = [col for col in df.columns 
+                             if self._should_drop_column(col, self.INCOME_DROP_PATTERNS)]
+            df = df.drop(columns_to_drop, axis=1)
+            
+            # Process numeric values
+            df = self._process_dataframe(df)
 
             # Calculate growth rates
-            df['Net_Sale_Growth_rate'] = (df['Net sales'] / df['Net sales'].shift(1) - 1) * 100
-            df['Net_Income_Growth_rate'] = (df['Net income'] / df['Net income'].shift(1) - 1) * 100
+            if 'Net sales' in df.columns:
+                df['Net_Sale_Growth_rate'] = (df['Net sales'].astype(float) / 
+                                            df['Net sales'].astype(float).shift(1) - 1) * 100 if 'Net sales' in df.columns else None
+            if 'Net income' in df.columns:
+                df['Net_Income_Growth_rate'] = (df['Net income'].astype(float) / 
+                                              df['Net income'].astype(float).shift(1) - 1) * 100 if 'Net income' in df.columns else None
+            
             df.fillna(0, inplace=True)
 
-            df = df.drop(self.INCOME_COLUMNS_TO_DROP, axis=1)
             self.income_df = df
             logger.info(f"Successfully processed income statements for {self.ticker}")
             return df
@@ -198,10 +248,46 @@ class ExtractFinancialData:
                 
         except Exception as e:
             logger.error(f"Failed to concatenate financial statements: {e}")
+            if self.company.get_filings(form='10-K').latest().xbrl() is not None:
+                logger.info(f"Financial structure of company's 10-K: \n{self.company.get_filings(form='10-K').latest().xbrl()}")
+                
+            return None
+
+    def extract_10k_items(self) -> Optional[Dict[str, str]]:
+        """Extract Items 2 and 7 from the latest 10-K filing.
+
+        Returns:
+            Optional[Dict[str, str]]: Dictionary containing Items 2 and 7 text or None if extraction fails
+        """
+        try:
+            if self.company is None:
+                self.company = self.retrieve_company_info()
+
+            logger.info(f"Retrieving 10-K items for {self.ticker}")
+            latest_10k = self.company.get_filings(form="10-K").latest().obj()
+            
+            items = {
+                'Item 2': latest_10k['Item 2'],
+                'Item 7': latest_10k['Item 7']
+            }
+
+            # Save items to company directory
+            for item_name, content in items.items():
+                if content:  # Only save if content exists
+                    filename = f"{self.ticker}_{item_name.replace(' ', '_')}.txt"
+                    filepath = self.company_dir / filename
+                    with open(filepath, 'w', encoding='utf-8') as f:
+                        f.write(content)
+                    logger.info(f"Saved {item_name} to {filepath}")
+
+            return items
+
+        except Exception as e:
+            logger.error(f"Failed to extract 10-K items: {e}")
             return None
 
     def save_all_to_csv(self) -> bool:
-        """Save all dataframes to CSV files in the data directory.
+        """Save all dataframes to CSV files in the company-specific directory.
 
         Returns:
             bool: True if all saves successful, False otherwise
@@ -219,11 +305,11 @@ class ExtractFinancialData:
             }
 
             for filename, df in dfs.items():
-                filepath = self.PATH / filename
+                filepath = self.company_dir / filename
                 df.to_csv(filepath)
                 logger.info(f'Saved {filename}')
 
-            logger.info(f'Successfully saved all CSV files to {self.PATH}')
+            logger.info(f'Successfully saved all CSV files to {self.company_dir}')
             return True
             
         except Exception as e:
@@ -238,6 +324,12 @@ def main():
             pipeline = ExtractFinancialData(ticker)
             display(pipeline.retrieve_company_info())
             
+            # Extract and save 10-K items
+            items = pipeline.extract_10k_items()
+            if items:
+                logger.info("Successfully extracted 10-K items")
+            
+            # Process and save financial statements
             final_financial_df = pipeline.concat_statements()
             if final_financial_df is not None:
                 pipeline.save_all_to_csv()

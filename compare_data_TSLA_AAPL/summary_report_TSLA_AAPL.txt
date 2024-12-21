@@ -1,0 +1,80 @@
+Financial Comparison Summary Report
+TSLA vs AAPL
+==================================================
+
+
+Income Statement Analysis:
+--------------------------------------------------
+
+Research and development:
+  TSLA: 3,212,333,333.33
+  AAPL: 29,178,666,666.67
+  Difference: -25,966,333,333.33
+  Ratio: 0.11x
+
+
+Selling, general and administrative:
+  TSLA: 4,421,000,000.00
+  AAPL: 25,374,333,333.33
+  Difference: -20,953,333,333.33
+  Ratio: 0.17x
+
+
+Total operating expenses:
+  TSLA: -7,683,000,000.00
+  AAPL: -54,553,000,000.00
+  Difference: 46,870,000,000.00
+  Ratio: 0.14x
+
+
+Net income:
+  TSLA: 11,068,333,333.33
+  AAPL: 96,844,666,666.67
+  Difference: -85,776,333,333.33
+  Ratio: 0.11x
+
+
+Basic (in dollars per share):
+  TSLA: 3.54
+  AAPL: 6.14
+  Difference: -2.60
+  Ratio: 0.58x
+
+
+Diluted (in dollars per share):
+  TSLA: 3.18
+  AAPL: 6.11
+  Difference: -2.92
+  Ratio: 0.52x
+
+
+Net_Income_Growth_rate:
+  TSLA: -23.70
+  AAPL: 2.12
+  Difference: -25.82
+  Ratio: -11.16x
+
+
+Net income_Growth:
+  TSLA: -23.70
+  AAPL: -1.06
+  Difference: -22.64
+  Ratio: 22.33x
+
+
+Cash Flow Analysis:
+--------------------------------------------------
+
+Net income:
+  TSLA: 11,068,333,333.33
+  AAPL: 96,844,666,666.67
+  Difference: -85,776,333,333.33
+  Ratio: 0.11x
+
+
+Net income_Growth:
+  TSLA: -23.70
+  AAPL: -1.06
+  Difference: -22.64
+  Ratio: 22.33x
+
