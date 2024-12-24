@@ -185,7 +185,7 @@ def main():
     """Example usage of FinancialChatbot"""
     try:
         # Initialize chatbot with your Hugging Face API key
-        chatbot = FinancialChatbot("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")
+        chatbot = FinancialChatbot("my_api_key")
         
         # Load financial data for a company
         company_dir = Path.cwd() / "data" / "TSLA"

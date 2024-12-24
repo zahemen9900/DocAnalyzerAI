@@ -1,5 +1,5 @@
 import gradio as gr
-from chatbot_2 import Chatbot
+from chatbot_2 import FinancialChatbot
 import logging
 
 logging.basicConfig(level=logging.INFO)
@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 class ChatbotUI:
     def __init__(self):
         logger.info("Initializing chatbot...")
-        self.chatbot = Chatbot()
+        self.chatbot = FinancialChatbot()
         logger.info("Chatbot ready!")
 
     def respond(self, message: str) -> str:
@@ -20,7 +20,7 @@ class ChatbotUI:
             return response
         except Exception as e:
             logger.error(f"Error in chat response: {e}")
-            return "I apologize, but I encountered an error processing your request."
+            return "I apologize, but I encountered ansrc error processing your request."
 
     def create_demo(self) -> gr.Blocks:
         with gr.Blocks(theme=gr.themes.Soft()) as demo:
@@ -57,9 +57,9 @@ class ChatbotUI:
 
                 gr.Examples(
                     examples=[
-                        "What is the capital of France?",
+                        "What are the key revenue trends?",
                         "Can you analyze this document for me?",
-                        "Tell me about machine learning.",
+                        "Can you help me answer financial questions?",
                     ],
                     inputs=msg,
                 )
