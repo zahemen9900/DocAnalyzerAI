@@ -2,6 +2,8 @@ import pandas as pd
 from transformers import TapasTokenizer, TapasForQuestionAnswering
 import torch
 import logging
+import sys
+sys.path.append('../src')
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -17,12 +19,15 @@ class TableAnalyzer:
     def load_csv(self, filepath: str) -> pd.DataFrame:
         """Load CSV file and return as pandas DataFrame"""
         try:
-            df = pd.read_csv(filepath)
-            # Remove any unnamed columns
-            df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
+            # Load CSV with index column and reset index to make year a regular column
+            df = pd.read_csv(filepath, index_col='Unnamed: 0').reset_index()
+            df = df.rename(columns={'index': 'Year'})  # Rename index column to Year
+            
             # Convert all numeric values to formatted strings
             for col in df.select_dtypes(include=['float64', 'int64']).columns:
                 df[col] = df[col].apply(lambda x: f"{x:,}")
+            
+            print(df.head())
             return df
         except Exception as e:
             logger.error(f"Error loading CSV file: {e}")
@@ -31,30 +36,31 @@ class TableAnalyzer:
     def query_table(self, table: pd.DataFrame, query: str) -> str:
         """Query the table using TAPAS model"""
         try:
+            # Reset index if it exists to ensure proper coordinate handling
+            if isinstance(table.index, pd.RangeIndex):
+                table_for_query = table.copy()
+            else:
+                table_for_query = table.reset_index()
+            
             # Convert DataFrame to string types
-            table = table.astype(str)
+            table_for_query = table_for_query.astype(str)
             
             # Clean up the table for better querying
-            table = table.replace('nan', '')
+            table_for_query = table_for_query.replace('nan', '')
             
             # Encode the question and table
             inputs = self.tokenizer(
-                table=table,
+                table=table_for_query,
                 queries=[query],
                 padding='max_length',
                 truncation=True,
                 return_tensors="pt"
             )
             
-            # Set model to evaluation mode
-            self.model.eval()
-            
-            # Disable gradient computation
+            # Set model to evaluation mode and process
             with torch.no_grad():
-                # Get model outputs
+                self.model.eval()
                 outputs = self.model(**inputs)
-                
-                # Detach tensors before prediction
                 logits = outputs.logits.detach()
                 logits_agg = outputs.logits_aggregation.detach()
                 
@@ -64,12 +70,10 @@ class TableAnalyzer:
                     logits_agg
                 )
             
-            # Extract coordinates and aggregation indices
             coords, agg = predicted_answer_coords
             
-            # Get answer from table
             if coords and coords[0]:
-                answer = self._get_answer_from_coords(table, coords[0], agg[0])
+                answer = self._get_answer_from_coords(table_for_query, coords[0], agg[0])
                 return f"{str(answer).strip()}"
             else:
                 return "Could not find an answer in the table"
@@ -115,3 +119,38 @@ class TableAnalyzer:
         except Exception as e:
             logger.error(f"Error processing coordinates: {e}")
             return "Error processing answer"
+
+    def preprocess_query(self, query: str) -> str:
+        """Clean and standardize queries"""
+        # Handle common financial terms/aliases
+        query = query.lower()
+        replacements = {
+            "revenue": "net sales",
+            "profit": "net income",
+            "earnings": "net income",
+            "r&d": "research and development",
+            "capex": "payments for acquisition of property, plant and equipment"
+        }
+        for old, new in replacements.items():
+            query = query.replace(old, new)
+        return query
+
+    def calculate_growth_rate(self, table: pd.DataFrame, metric: str) -> dict:
+        """Calculate year-over-year growth rates"""
+        try:
+            # Ensure we're working with the year column
+            if 'Year' not in table.columns:
+                table = table.reset_index()
+                table = table.rename(columns={'index': 'Year'})
+            
+            # Convert string values back to numeric for calculation
+            values = pd.to_numeric(table[metric].str.replace(',', ''))
+            growth_rates = values.pct_change() * 100
+            
+            return {
+                str(year): f"{rate:.2f}%" 
+                for year, rate in zip(table['Year'], growth_rates)
+            }
+        except Exception as e:
+            logger.error(f"Error calculating growth rate: {e}")
+            return {}
