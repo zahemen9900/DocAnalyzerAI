@@ -1,0 +1,17 @@
+{"time":"2024-12-27T14:35:58.634678064Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-27T14:35:58.634692001Z","level":"INFO","msg":"created symlink","path":"/home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/run-20241227_143558-gckab94l/logs/debug-core.log"}
+{"time":"2024-12-27T14:35:59.432259774Z","level":"INFO","msg":"created new stream","id":"gckab94l"}
+{"time":"2024-12-27T14:35:59.432308517Z","level":"INFO","msg":"stream: started","id":"gckab94l"}
+{"time":"2024-12-27T14:35:59.432361437Z","level":"INFO","msg":"handler: started","stream_id":"gckab94l"}
+{"time":"2024-12-27T14:35:59.432951092Z","level":"INFO","msg":"writer: Do: started","stream_id":"gckab94l"}
+{"time":"2024-12-27T14:35:59.432964806Z","level":"INFO","msg":"sender: started","stream_id":"gckab94l"}
+{"time":"2024-12-27T14:36:00.000984718Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-27T14:36:08.826990695Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-27T14:36:08.827575727Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-27T14:36:09.784242179Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.314400897,"progress":"10.5KB/10.5KB"},{"desc":"uploading output.log","runtime_seconds":0.314391536,"progress":"2.0KB/2.0KB"}],"total_operations":2}}
+{"time":"2024-12-27T14:36:09.929915195Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-27T14:36:11.427707091Z","level":"INFO","msg":"stream: closing","id":"gckab94l"}
+{"time":"2024-12-27T14:36:11.427767552Z","level":"INFO","msg":"handler: closed","stream_id":"gckab94l"}
+{"time":"2024-12-27T14:36:11.427776889Z","level":"INFO","msg":"writer: Close: closed","stream_id":"gckab94l"}
+{"time":"2024-12-27T14:36:11.427817942Z","level":"INFO","msg":"sender: closed","stream_id":"gckab94l"}
+{"time":"2024-12-27T14:36:11.42783669Z","level":"INFO","msg":"stream: closed","id":"gckab94l"}
