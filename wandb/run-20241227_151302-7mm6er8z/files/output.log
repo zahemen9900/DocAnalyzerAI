@@ -1,0 +1,14 @@
+2024-12-27 15:13:04,437 - __main__ - INFO - Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-27 15:13:06,448 - __main__ - INFO - Model device: cuda:0
+2024-12-27 15:13:06,518 - __main__ - INFO - Model parameters device after LoRA: cuda:0
+/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/training_args.py:1575: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+Map (num_proc=4): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 8420/8420 [00:03<00:00, 2463.91 examples/s]
+Map (num_proc=4): 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 2106/2106 [00:00<00:00, -6936.31 examples/s]
+/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot.py:239: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Seq2SeqTrainer.__init__`. Use `processing_class` instead.
+  trainer = Seq2SeqTrainer(
+[34m[1mwandb[0m: [33mWARNING[0m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|                                                                                                                                              | 0/1578 [00:00<?, ?it/s]2024-12-27 15:13:10,322 - __main__ - ERROR - Training error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
