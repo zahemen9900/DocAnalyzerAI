@@ -1,0 +1,11 @@
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [02:54<00:00,  3.50s/it]
+{'loss': 3.2809, 'grad_norm': 8.71430492401123, 'learning_rate': 4e-05, 'epoch': 0.2}
+{'loss': 3.2763, 'grad_norm': 9.241239547729492, 'learning_rate': 3e-05, 'epoch': 0.4}
+{'loss': 2.2368, 'grad_norm': 9.401970863342285, 'learning_rate': 2e-05, 'epoch': 0.6}
+{'loss': 2.9329, 'grad_norm': 5.783080101013184, 'learning_rate': 1e-05, 'epoch': 0.8}
+{'loss': 2.4417, 'grad_norm': 8.232041358947754, 'learning_rate': 0.0, 'epoch': 1.0}
+{'train_runtime': 180.7286, 'train_samples_per_second': 0.553, 'train_steps_per_second': 0.277, 'train_loss': 2.8337521362304687, 'epoch': 1.0}
+INFO:__main__:Training completed successfully
+/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/modeling_utils.py:2817: UserWarning: Moving the following attributes in the config to the generation config: {'max_length': 60, 'min_length': 20, 'num_beams': 10, 'length_penalty': 0.65, 'no_repeat_ngram_size': 3}. You are seeing this warning because you've set generation parameters in the model config, as opposed to in the generation config.
+  warnings.warn(
+INFO:__main__:Model saved to results/financial-bot/final

@@ -1,0 +1,17 @@
+{"time":"2024-12-28T12:27:46.017705638Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-28T12:27:46.017715697Z","level":"INFO","msg":"created symlink","path":"/home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/run-20241228_122746-vjybrg7h/logs/debug-core.log"}
+{"time":"2024-12-28T12:27:46.788110736Z","level":"INFO","msg":"created new stream","id":"vjybrg7h"}
+{"time":"2024-12-28T12:27:46.788177128Z","level":"INFO","msg":"stream: started","id":"vjybrg7h"}
+{"time":"2024-12-28T12:27:46.788232327Z","level":"INFO","msg":"handler: started","stream_id":"vjybrg7h"}
+{"time":"2024-12-28T12:27:46.78872412Z","level":"INFO","msg":"sender: started","stream_id":"vjybrg7h"}
+{"time":"2024-12-28T12:27:46.788728785Z","level":"INFO","msg":"writer: Do: started","stream_id":"vjybrg7h"}
+{"time":"2024-12-28T12:27:47.341044531Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-28T12:28:00.504556984Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-28T12:28:00.50503551Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-28T12:28:01.505255037Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.312182069,"progress":"10.5KB/10.5KB"},{"desc":"uploading output.log","runtime_seconds":0.312169145,"progress":"1.9KB/1.9KB"}],"total_operations":2}}
+{"time":"2024-12-28T12:28:01.769558576Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-28T12:28:03.237885593Z","level":"INFO","msg":"stream: closing","id":"vjybrg7h"}
+{"time":"2024-12-28T12:28:03.237916958Z","level":"INFO","msg":"handler: closed","stream_id":"vjybrg7h"}
+{"time":"2024-12-28T12:28:03.237925722Z","level":"INFO","msg":"writer: Close: closed","stream_id":"vjybrg7h"}
+{"time":"2024-12-28T12:28:03.237961538Z","level":"INFO","msg":"sender: closed","stream_id":"vjybrg7h"}
+{"time":"2024-12-28T12:28:03.238010613Z","level":"INFO","msg":"stream: closed","id":"vjybrg7h"}

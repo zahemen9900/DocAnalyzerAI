@@ -241,7 +241,7 @@ class FinancialDataPreprocessor:
                                   year: str, 
                                   section_type: str, 
                                   content: str) -> List[Dict]:
-        """Generate conversation pairs from section content"""
+        """Generate conversation pairs matching BlenderBot format"""
         clean_content = self._clean_text(content)
         if not clean_content:
             return []
@@ -250,52 +250,57 @@ class FinancialDataPreprocessor:
         template = random.choice(self.query_templates[section_type])
         query = template.format(company=company, year=year)
 
-        # Create conversation data point
+        # Create conversation data point with full BlenderBot format
         return [{
             'personas': [
                 "I am a financial analyst specializing in corporate analysis.",
                 "I help people understand company financial information and operations."
             ],
             'context': 'financial_analysis',
-            'previous_utterance': [],
+            'previous_utterance': [],  # Empty list as we're starting fresh conversations
             'free_messages': [query],
             'guided_messages': [clean_content],
+            'suggestions': {  # Add empty suggestions structure
+                'convai2': [],
+                'empathetic_dialogues': [],
+                'wizard_of_wikipedia': []
+            },
+            'guided_chosen_suggestions': [],  # Empty list as we're not using suggestions
+            'label_candidates': [],  # Empty list as we're not using candidates
             'additional_context': f"{company} {year} {section_type}"
         }]
 
     def _generate_conversation_starters(self, num_samples: int) -> List[Dict]:
-        """Generate conversation starters using iterator"""
+        """Generate conversation starters with full BlenderBot format"""
         conversation_pairs = []
-        samples_iter = iter(range(num_samples))
-        
-        # Categories to iterate through
         categories = ['greetings', 'transitions', 'financial_inquiry']
         
-        while True:
-            try:
-                next(samples_iter)
-                # Rotate through categories
-                category = random.choice(categories)
-                templates = self.conversation_starters[category]
-                
-                # Get random input and response
-                query = random.choice(templates['inputs'])
-                response = random.choice(templates['responses'])
-                
-                conversation_pairs.append({
-                    'personas': [
-                        "I am a financial analyst specializing in corporate analysis.",
-                        "I help people understand company financial information and operations."
-                    ],
-                    'context': 'conversation_starter',
-                    'previous_utterance': [],
-                    'free_messages': [query],
-                    'guided_messages': [response],
-                    'additional_context': 'general_conversation'
-                })
-            except StopIteration:
-                break
-                
+        for _ in range(num_samples):
+            category = random.choice(categories)
+            templates = self.conversation_starters[category]
+            
+            query = random.choice(templates['inputs'])
+            response = random.choice(templates['responses'])
+            
+            conversation_pairs.append({
+                'personas': [
+                    "I am a financial analyst specializing in corporate analysis.",
+                    "I help people understand company financial information and operations."
+                ],
+                'context': 'conversation_starter',
+                'previous_utterance': [],
+                'free_messages': [query],
+                'guided_messages': [response],
+                'suggestions': {
+                    'convai2': [],
+                    'empathetic_dialogues': [],
+                    'wizard_of_wikipedia': []
+                },
+                'guided_chosen_suggestions': [],
+                'label_candidates': [],
+                'additional_context': 'general_conversation'
+            })
+        
         return conversation_pairs
 
     def process_edgar_data(self, sections: List[str] = ['section_2', 'section_7']) -> List[Dict]:

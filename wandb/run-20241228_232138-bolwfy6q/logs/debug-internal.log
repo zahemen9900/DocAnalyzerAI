@@ -1,0 +1,17 @@
+{"time":"2024-12-28T23:21:38.825000873Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-28T23:21:38.825015308Z","level":"INFO","msg":"created symlink","path":"/home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/run-20241228_232138-bolwfy6q/logs/debug-core.log"}
+{"time":"2024-12-28T23:21:40.284292989Z","level":"INFO","msg":"created new stream","id":"bolwfy6q"}
+{"time":"2024-12-28T23:21:40.28437308Z","level":"INFO","msg":"stream: started","id":"bolwfy6q"}
+{"time":"2024-12-28T23:21:40.284502653Z","level":"INFO","msg":"handler: started","stream_id":"bolwfy6q"}
+{"time":"2024-12-28T23:21:40.284919349Z","level":"INFO","msg":"writer: Do: started","stream_id":"bolwfy6q"}
+{"time":"2024-12-28T23:21:40.284926245Z","level":"INFO","msg":"sender: started","stream_id":"bolwfy6q"}
+{"time":"2024-12-28T23:21:40.880808397Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-28T23:21:55.745557557Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-28T23:21:55.746162165Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-28T23:21:56.74648238Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.38285601,"progress":"9.1KB/9.1KB"},{"desc":"uploading output.log","runtime_seconds":0.382827197,"progress":"2.4KB/2.4KB"},{"desc":"uploading summary, console lines 1-12","runtime_seconds":0.066813887}],"total_operations":3}}
+{"time":"2024-12-28T23:21:57.073692972Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-28T23:21:58.562614257Z","level":"INFO","msg":"stream: closing","id":"bolwfy6q"}
+{"time":"2024-12-28T23:21:58.562653213Z","level":"INFO","msg":"handler: closed","stream_id":"bolwfy6q"}
+{"time":"2024-12-28T23:21:58.56266189Z","level":"INFO","msg":"writer: Close: closed","stream_id":"bolwfy6q"}
+{"time":"2024-12-28T23:21:58.562681594Z","level":"INFO","msg":"sender: closed","stream_id":"bolwfy6q"}
+{"time":"2024-12-28T23:21:58.562703989Z","level":"INFO","msg":"stream: closed","id":"bolwfy6q"}
