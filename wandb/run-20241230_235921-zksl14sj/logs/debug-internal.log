@@ -1,0 +1,8 @@
+{"time":"2024-12-30T23:59:21.197082928Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-30T23:59:21.197102138Z","level":"INFO","msg":"created symlink","path":"/home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/run-20241230_235921-zksl14sj/logs/debug-core.log"}
+{"time":"2024-12-30T23:59:21.402997366Z","level":"INFO","msg":"created new stream","id":"zksl14sj"}
+{"time":"2024-12-30T23:59:21.403061465Z","level":"INFO","msg":"stream: started","id":"zksl14sj"}
+{"time":"2024-12-30T23:59:21.403160055Z","level":"INFO","msg":"writer: Do: started","stream_id":"zksl14sj"}
+{"time":"2024-12-30T23:59:21.403215577Z","level":"INFO","msg":"handler: started","stream_id":"zksl14sj"}
+{"time":"2024-12-30T23:59:21.403299451Z","level":"INFO","msg":"sender: started","stream_id":"zksl14sj"}
+{"time":"2024-12-30T23:59:21.940696491Z","level":"INFO","msg":"Starting system monitor"}

@@ -1,0 +1,1236 @@
+2024-12-30 21:18:04,019 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 21:18:04,019 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 21:18:04,019 [INFO] Loading dataset...
+2024-12-30 21:18:04,034 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 21:18:05,264 [ERROR] Failed to load model or tokenizer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 132, in train
+    model = AutoModelForSeq2SeqLM.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1225, in from_pretrained
+    return super(BlenderbotForConditionalGeneration, cls).from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4173, in from_pretrained
+    no_split_modules = model._get_no_split_modules(device_map)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/modeling_utils.py", line 2072, in _get_no_split_modules
+    raise ValueError(
+ValueError: BlenderbotForConditionalGeneration does not support `device_map='auto'`. To implement support, the model class needs to implement the `_no_split_modules` attribute.
+2024-12-30 21:18:05,266 [ERROR] Training failed: BlenderbotForConditionalGeneration does not support `device_map='auto'`. To implement support, the model class needs to implement the `_no_split_modules` attribute.
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 132, in train
+    model = AutoModelForSeq2SeqLM.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1225, in from_pretrained
+    return super(BlenderbotForConditionalGeneration, cls).from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4173, in from_pretrained
+    no_split_modules = model._get_no_split_modules(device_map)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/modeling_utils.py", line 2072, in _get_no_split_modules
+    raise ValueError(
+ValueError: BlenderbotForConditionalGeneration does not support `device_map='auto'`. To implement support, the model class needs to implement the `_no_split_modules` attribute.
+2024-12-30 21:18:05,418 [ERROR] Script failed: BlenderbotForConditionalGeneration does not support `device_map='auto'`. To implement support, the model class needs to implement the `_no_split_modules` attribute.
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 284, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 132, in train
+    model = AutoModelForSeq2SeqLM.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1225, in from_pretrained
+    return super(BlenderbotForConditionalGeneration, cls).from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4173, in from_pretrained
+    no_split_modules = model._get_no_split_modules(device_map)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/modeling_utils.py", line 2072, in _get_no_split_modules
+    raise ValueError(
+ValueError: BlenderbotForConditionalGeneration does not support `device_map='auto'`. To implement support, the model class needs to implement the `_no_split_modules` attribute.
+2024-12-30 21:20:04,721 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 21:20:04,721 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 21:20:04,722 [INFO] Loading dataset...
+2024-12-30 21:20:04,733 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 21:20:07,433 [INFO] Model device: cuda:0
+2024-12-30 21:20:07,513 [INFO] Processing datasets...
+2024-12-30 21:20:09,035 [INFO] Starting QLoRA training...
+2024-12-30 21:22:48,597 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 21:22:48,598 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 21:22:48,598 [INFO] Loading dataset...
+2024-12-30 21:22:48,609 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 21:22:51,088 [INFO] Model device: cuda:0
+2024-12-30 21:22:51,180 [INFO] Processing datasets...
+2024-12-30 21:22:52,896 [INFO] Starting QLoRA training...
+2024-12-30 21:29:18,014 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 21:29:18,015 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 21:29:18,015 [INFO] Loading dataset...
+2024-12-30 21:29:18,027 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 21:29:20,481 [INFO] Model device: cuda:0
+2024-12-30 21:29:20,580 [INFO] Processing datasets...
+2024-12-30 21:29:33,102 [ERROR] Training failed: TrainingArguments.__init__() got an unexpected keyword argument 'predict_with_generate'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 304, in train
+    training_args = TrainingArguments(
+                    ^^^^^^^^^^^^^^^^^^
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'predict_with_generate'
+2024-12-30 21:29:33,223 [ERROR] Script failed: TrainingArguments.__init__() got an unexpected keyword argument 'predict_with_generate'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 398, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 304, in train
+    training_args = TrainingArguments(
+                    ^^^^^^^^^^^^^^^^^^
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'predict_with_generate'
+2024-12-30 21:29:49,697 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 21:29:49,697 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 21:29:49,697 [INFO] Loading dataset...
+2024-12-30 21:29:49,709 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 21:29:51,781 [INFO] Model device: cuda:0
+2024-12-30 21:29:51,860 [INFO] Processing datasets...
+2024-12-30 21:29:53,367 [INFO] Starting QLoRA training...
+2024-12-30 21:37:36,356 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 21:37:36,356 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 21:37:36,356 [INFO] Loading dataset...
+2024-12-30 21:37:36,368 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 21:37:38,508 [INFO] Model device: cuda:0
+2024-12-30 21:37:38,585 [INFO] Processing datasets...
+2024-12-30 21:37:49,831 [ERROR] Training failed: TrainingArguments.__init__() got an unexpected keyword argument 'predict_with_generate'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 306, in train
+    training_args = TrainingArguments(
+                    ^^^^^^^^^^^^^^^^^^
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'predict_with_generate'
+2024-12-30 21:37:49,978 [ERROR] Script failed: TrainingArguments.__init__() got an unexpected keyword argument 'predict_with_generate'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 403, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 306, in train
+    training_args = TrainingArguments(
+                    ^^^^^^^^^^^^^^^^^^
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'predict_with_generate'
+2024-12-30 21:38:26,276 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 21:38:26,277 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 21:38:26,277 [INFO] Loading dataset...
+2024-12-30 21:38:26,289 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 21:38:31,012 [INFO] Model device: cuda:0
+2024-12-30 21:38:31,098 [INFO] Processing datasets...
+2024-12-30 21:38:42,579 [INFO] Starting QLoRA training...
+2024-12-30 21:41:59,074 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 21:41:59,074 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 21:41:59,074 [INFO] Loading dataset...
+2024-12-30 21:41:59,086 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 21:42:01,894 [INFO] Model device: cuda:0
+2024-12-30 21:42:01,971 [INFO] Processing datasets...
+2024-12-30 21:42:12,928 [INFO] Starting QLoRA training...
+2024-12-30 21:42:49,765 [ERROR] Training failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 356, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2524, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3654, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3708, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 823, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 811, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/peft/peft_model.py", line 1994, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/peft/tuners/tuners_utils.py", line 197, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1149, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 736, in forward
+    hidden_states = nn.functional.dropout(hidden_states, p=self.dropout, training=self.training)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/functional.py", line 1425, in dropout
+    _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-12-30 21:42:49,768 [ERROR] Training failed: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 356, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2524, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3654, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3708, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 823, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 811, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/peft/peft_model.py", line 1994, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/peft/tuners/tuners_utils.py", line 197, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1149, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 736, in forward
+    hidden_states = nn.functional.dropout(hidden_states, p=self.dropout, training=self.training)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/functional.py", line 1425, in dropout
+    _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-12-30 21:42:49,771 [ERROR] Script failed: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 356, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2524, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3654, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3708, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 823, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 811, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/peft/peft_model.py", line 1994, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/peft/tuners/tuners_utils.py", line 197, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1149, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 736, in forward
+    hidden_states = nn.functional.dropout(hidden_states, p=self.dropout, training=self.training)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/functional.py", line 1425, in dropout
+    _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 403, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 396, in train
+    torch.cuda.empty_cache()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/cuda/memory.py", line 192, in empty_cache
+    torch._C._cuda_emptyCache()
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-12-30 21:45:26,811 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 21:45:26,811 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 21:45:26,811 [INFO] Loading dataset...
+2024-12-30 21:45:26,824 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 21:45:29,096 [INFO] Model device: cuda:0
+2024-12-30 21:45:29,185 [INFO] Processing datasets...
+2024-12-30 21:45:40,439 [INFO] Starting QLoRA training...
+2024-12-30 21:45:43,371 [ERROR] Training failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 356, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2524, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3654, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3708, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 823, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 811, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/peft/peft_model.py", line 1994, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/peft/tuners/tuners_utils.py", line 197, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1149, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 736, in forward
+    hidden_states = nn.functional.dropout(hidden_states, p=self.dropout, training=self.training)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/functional.py", line 1425, in dropout
+    _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-12-30 21:45:43,374 [ERROR] Training failed: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 356, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2524, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3654, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3708, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 823, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 811, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/peft/peft_model.py", line 1994, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/peft/tuners/tuners_utils.py", line 197, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1149, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 736, in forward
+    hidden_states = nn.functional.dropout(hidden_states, p=self.dropout, training=self.training)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/functional.py", line 1425, in dropout
+    _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-12-30 21:45:43,516 [ERROR] Script failed: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 403, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 356, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2524, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3654, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3708, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 823, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 811, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/peft/peft_model.py", line 1994, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/peft/tuners/tuners_utils.py", line 197, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1149, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 736, in forward
+    hidden_states = nn.functional.dropout(hidden_states, p=self.dropout, training=self.training)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/functional.py", line 1425, in dropout
+    _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-12-30 21:50:06,792 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 21:50:06,792 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 21:50:06,792 [INFO] Loading dataset...
+2024-12-30 21:50:06,811 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 21:50:11,043 [INFO] Model device: cuda:0
+2024-12-30 21:50:11,128 [INFO] Processing datasets...
+2024-12-30 21:50:23,251 [INFO] Starting QLoRA training...
+2024-12-30 21:56:56,292 [ERROR] Training failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 356, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3049, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3003, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4050, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4339, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 63, in compute_metrics
+    preds, labels = eval_preds
+    ^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+2024-12-30 21:56:56,294 [ERROR] Training failed: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 356, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3049, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3003, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4050, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4339, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 63, in compute_metrics
+    preds, labels = eval_preds
+    ^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+2024-12-30 21:56:57,468 [ERROR] Script failed: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 403, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 356, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3049, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3003, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4050, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4339, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 63, in compute_metrics
+    preds, labels = eval_preds
+    ^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+2024-12-30 22:00:34,392 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 22:00:34,392 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 22:00:34,392 [INFO] Loading dataset...
+2024-12-30 22:00:34,407 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 22:00:37,084 [INFO] Model device: cuda:0
+2024-12-30 22:00:37,175 [INFO] Processing datasets...
+2024-12-30 22:00:50,442 [ERROR] Training failed: TrainingArguments.__init__() got an unexpected keyword argument 'predict_with_generate'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 310, in train
+    training_args = TrainingArguments(
+                    ^^^^^^^^^^^^^^^^^^
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'predict_with_generate'
+2024-12-30 22:00:50,593 [ERROR] Script failed: TrainingArguments.__init__() got an unexpected keyword argument 'predict_with_generate'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 407, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 310, in train
+    training_args = TrainingArguments(
+                    ^^^^^^^^^^^^^^^^^^
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'predict_with_generate'
+2024-12-30 22:02:56,141 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 22:02:56,141 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 22:02:56,141 [INFO] Loading dataset...
+2024-12-30 22:02:56,152 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 22:02:58,469 [INFO] Model device: cuda:0
+2024-12-30 22:02:58,560 [INFO] Processing datasets...
+2024-12-30 22:03:11,005 [ERROR] Training failed: --load_best_model_at_end requires the saving steps to be a round multiple of the evaluation steps, but found 50, which is not a round multiple of 20.
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 310, in train
+    training_args = TrainingArguments(
+                    ^^^^^^^^^^^^^^^^^^
+  File "<string>", line 134, in __init__
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/training_args.py", line 1662, in __post_init__
+    raise ValueError(
+ValueError: --load_best_model_at_end requires the saving steps to be a round multiple of the evaluation steps, but found 50, which is not a round multiple of 20.
+2024-12-30 22:03:11,158 [ERROR] Script failed: --load_best_model_at_end requires the saving steps to be a round multiple of the evaluation steps, but found 50, which is not a round multiple of 20.
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 407, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 310, in train
+    training_args = TrainingArguments(
+                    ^^^^^^^^^^^^^^^^^^
+  File "<string>", line 134, in __init__
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/training_args.py", line 1662, in __post_init__
+    raise ValueError(
+ValueError: --load_best_model_at_end requires the saving steps to be a round multiple of the evaluation steps, but found 50, which is not a round multiple of 20.
+2024-12-30 22:03:33,544 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 22:03:33,544 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 22:03:33,544 [INFO] Loading dataset...
+2024-12-30 22:03:33,559 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 22:03:38,126 [INFO] Model device: cuda:0
+2024-12-30 22:03:38,219 [INFO] Processing datasets...
+2024-12-30 22:03:50,497 [INFO] Starting QLoRA training...
+2024-12-30 22:06:23,778 [ERROR] Training failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 360, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3049, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3003, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4050, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4339, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 70, in compute_metrics
+    decoded_preds = self.tokenizer.batch_decode(predictions, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3803, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3804, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3843, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 655, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 22:06:23,780 [ERROR] Training failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 360, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3049, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3003, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4050, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4339, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 70, in compute_metrics
+    decoded_preds = self.tokenizer.batch_decode(predictions, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3803, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3804, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3843, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 655, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 22:06:24,902 [ERROR] Script failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 407, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 360, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3049, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3003, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4050, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4339, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 70, in compute_metrics
+    decoded_preds = self.tokenizer.batch_decode(predictions, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3803, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3804, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3843, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 655, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 22:09:05,889 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 22:09:05,889 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 22:09:05,889 [INFO] Loading dataset...
+2024-12-30 22:09:05,902 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 22:09:08,168 [INFO] Model device: cuda:0
+2024-12-30 22:09:08,260 [INFO] Processing datasets...
+2024-12-30 22:09:17,456 [INFO] Starting QLoRA training...
+2024-12-30 22:13:12,500 [ERROR] Decoding error: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 22:13:12,513 [ERROR] Training failed
+Traceback (most recent call last):
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3151, in _determine_best_metric
+    metric_value = metrics[metric_to_check]
+                   ~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'eval_rouge1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 353, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3050, in _maybe_log_save_evaluate
+    is_new_best_metric = self._determine_best_metric(metrics=metrics, trial=trial)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3153, in _determine_best_metric
+    raise KeyError(
+KeyError: "The `metric_for_best_model` training argument is set to 'eval_rouge1', which is not found in the evaluation metrics. The available evaluation metrics are: ['eval_loss', 'eval_error', 'eval_runtime', 'eval_samples_per_second', 'eval_steps_per_second', 'epoch']. Consider changing the `metric_for_best_model` via the TrainingArguments."
+2024-12-30 22:13:12,515 [ERROR] Training failed: "The `metric_for_best_model` training argument is set to 'eval_rouge1', which is not found in the evaluation metrics. The available evaluation metrics are: ['eval_loss', 'eval_error', 'eval_runtime', 'eval_samples_per_second', 'eval_steps_per_second', 'epoch']. Consider changing the `metric_for_best_model` via the TrainingArguments."
+Traceback (most recent call last):
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3151, in _determine_best_metric
+    metric_value = metrics[metric_to_check]
+                   ~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'eval_rouge1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 353, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3050, in _maybe_log_save_evaluate
+    is_new_best_metric = self._determine_best_metric(metrics=metrics, trial=trial)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3153, in _determine_best_metric
+    raise KeyError(
+KeyError: "The `metric_for_best_model` training argument is set to 'eval_rouge1', which is not found in the evaluation metrics. The available evaluation metrics are: ['eval_loss', 'eval_error', 'eval_runtime', 'eval_samples_per_second', 'eval_steps_per_second', 'epoch']. Consider changing the `metric_for_best_model` via the TrainingArguments."
+2024-12-30 22:13:13,759 [ERROR] Script failed: "The `metric_for_best_model` training argument is set to 'eval_rouge1', which is not found in the evaluation metrics. The available evaluation metrics are: ['eval_loss', 'eval_error', 'eval_runtime', 'eval_samples_per_second', 'eval_steps_per_second', 'epoch']. Consider changing the `metric_for_best_model` via the TrainingArguments."
+Traceback (most recent call last):
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3151, in _determine_best_metric
+    metric_value = metrics[metric_to_check]
+                   ~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'eval_rouge1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 400, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 353, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3050, in _maybe_log_save_evaluate
+    is_new_best_metric = self._determine_best_metric(metrics=metrics, trial=trial)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3153, in _determine_best_metric
+    raise KeyError(
+KeyError: "The `metric_for_best_model` training argument is set to 'eval_rouge1', which is not found in the evaluation metrics. The available evaluation metrics are: ['eval_loss', 'eval_error', 'eval_runtime', 'eval_samples_per_second', 'eval_steps_per_second', 'epoch']. Consider changing the `metric_for_best_model` via the TrainingArguments."
+2024-12-30 22:14:20,848 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 22:14:20,848 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 22:14:20,848 [INFO] Loading dataset...
+2024-12-30 22:14:20,860 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 22:14:23,249 [INFO] Model device: cuda:0
+2024-12-30 22:14:23,335 [INFO] Processing datasets...
+2024-12-30 22:14:35,013 [INFO] Starting QLoRA training...
+2024-12-30 22:17:03,779 [ERROR] Decoding error: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 22:19:31,826 [ERROR] Decoding error: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 22:22:08,583 [ERROR] Decoding error: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 22:24:37,442 [ERROR] Decoding error: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 22:25:55,145 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 22:25:55,145 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 22:25:55,145 [INFO] Loading dataset...
+2024-12-30 22:25:55,158 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 22:25:57,687 [INFO] Model device: cuda:0
+2024-12-30 22:25:57,766 [INFO] Processing datasets...
+2024-12-30 22:26:06,710 [INFO] Starting QLoRA training...
+2024-12-30 22:26:52,432 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 22:26:52,432 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 22:26:52,432 [INFO] Loading dataset...
+2024-12-30 22:26:52,444 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 22:26:54,802 [INFO] Model device: cuda:0
+2024-12-30 22:26:54,881 [INFO] Processing datasets...
+2024-12-30 22:27:03,365 [INFO] Starting QLoRA training...
+2024-12-30 22:30:05,620 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 22:30:05,620 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 22:30:05,620 [INFO] Loading dataset...
+2024-12-30 22:30:05,631 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 22:30:07,596 [INFO] Model device: cuda:0
+2024-12-30 22:30:07,672 [INFO] Processing datasets...
+2024-12-30 22:30:15,812 [INFO] Starting QLoRA training...
+2024-12-30 22:32:20,913 [ERROR] Training failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 356, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3049, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3003, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4050, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4339, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 69, in compute_metrics
+    decoded_preds = self.tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3803, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3804, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3843, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 655, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 22:32:20,916 [ERROR] Training failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 356, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3049, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3003, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4050, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4339, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 69, in compute_metrics
+    decoded_preds = self.tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3803, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3804, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3843, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 655, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 22:32:22,070 [ERROR] Script failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 403, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 356, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3049, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3003, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4050, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4339, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 69, in compute_metrics
+    decoded_preds = self.tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3803, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3804, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3843, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 655, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 22:33:42,665 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 22:33:42,666 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 22:33:42,666 [INFO] Loading dataset...
+2024-12-30 22:33:42,677 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 22:33:45,350 [INFO] Model device: cuda:0
+2024-12-30 22:33:45,440 [INFO] Processing datasets...
+2024-12-30 22:33:57,479 [INFO] Starting QLoRA training...
+2024-12-30 22:36:37,395 [ERROR] Decoding error: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 22:39:23,582 [ERROR] Decoding error: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 22:42:22,922 [ERROR] Decoding error: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 22:45:44,501 [ERROR] Decoding error: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 22:46:19,094 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 22:46:19,095 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 22:46:19,095 [INFO] Loading dataset...
+2024-12-30 22:46:19,114 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 22:46:22,082 [INFO] Model device: cuda:0
+2024-12-30 22:46:22,200 [INFO] Processing datasets...
+2024-12-30 22:46:32,535 [INFO] Starting QLoRA training...
+2024-12-30 22:49:00,918 [ERROR] Metrics computation failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 57, in __call__
+    predictions = self.tokenizer.batch_decode(predictions, skip_special_tokens=True)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3803, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3804, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3843, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 655, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 23:37:35,781 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 23:37:35,781 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 23:37:35,782 [INFO] Loading dataset...
+2024-12-30 23:37:35,806 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 23:37:40,148 [INFO] Model device: cuda:0
+2024-12-30 23:37:40,311 [INFO] Processing datasets...
+2024-12-30 23:38:02,748 [INFO] Starting QLoRA training...
+2024-12-30 23:40:37,336 [ERROR] Metrics computation failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 57, in __call__
+    predictions = self.tokenizer.batch_decode(predictions, skip_special_tokens=True)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3803, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3804, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3843, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 655, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 23:43:00,998 [ERROR] Metrics computation failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 57, in __call__
+    predictions = self.tokenizer.batch_decode(predictions, skip_special_tokens=True)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3803, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3804, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3843, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 655, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 23:45:24,366 [ERROR] Metrics computation failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 57, in __call__
+    predictions = self.tokenizer.batch_decode(predictions, skip_special_tokens=True)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3803, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3804, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3843, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 655, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 23:47:54,247 [ERROR] Metrics computation failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 57, in __call__
+    predictions = self.tokenizer.batch_decode(predictions, skip_special_tokens=True)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3803, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3804, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3843, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 655, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 23:50:26,341 [ERROR] Metrics computation failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 57, in __call__
+    predictions = self.tokenizer.batch_decode(predictions, skip_special_tokens=True)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3803, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3804, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3843, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 655, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 23:52:59,103 [ERROR] Metrics computation failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 57, in __call__
+    predictions = self.tokenizer.batch_decode(predictions, skip_special_tokens=True)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3803, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3804, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3843, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 655, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 23:55:01,983 [ERROR] Metrics computation failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 57, in __call__
+    predictions = self.tokenizer.batch_decode(predictions, skip_special_tokens=True)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3803, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3804, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3843, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 655, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2024-12-30 23:59:01,661 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 23:59:01,661 [INFO] Available GPU memory: 4.29 GB
+2024-12-30 23:59:01,661 [INFO] Loading dataset...
+2024-12-30 23:59:01,692 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2024-12-30 23:59:06,542 [INFO] Model device: cuda:0
+2024-12-30 23:59:06,658 [INFO] Processing datasets...
+2024-12-30 23:59:19,877 [INFO] Starting QLoRA training...
