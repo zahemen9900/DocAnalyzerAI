@@ -1,0 +1,5 @@
+  1%|██                                                                                                                                          | 10/675 [00:29<31:04,  2.80s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+{'loss': 92.2323, 'grad_norm': 25.42936897277832, 'learning_rate': 1.4705882352941177e-05, 'epoch': 0.22}
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+
+ 82%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                        | 33/40 [02:19<01:17, 11.01s/it]

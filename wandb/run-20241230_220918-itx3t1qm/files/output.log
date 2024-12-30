@@ -1,0 +1,100 @@
+  3%|████▏                                                                                                                                       | 20/675 [01:02<28:50,  2.64s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+{'loss': 91.4113, 'grad_norm': 26.8712215423584, 'learning_rate': 2.9411764705882354e-05, 'epoch': 0.44}
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+                                                                                                                                                                                  2024-12-30 22:13:12,500 [ERROR] Decoding error: argument 'ids': 'list' object cannot be interpreted as an integer
+  3%|████▏                                                                                                                                       | 20/675 [03:53<28:50,  2.64s/it]2024-12-30 22:13:12,513 [ERROR] Training failed
+Traceback (most recent call last):                                                                                                                                                
+{'eval_loss': 11.015966415405273, 'eval_error': 1.0, 'eval_runtime': 170.8159, 'eval_samples_per_second': 0.937, 'eval_steps_per_second': 0.234, 'epoch': 0.44}
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3151, in _determine_best_metric
+    metric_value = metrics[metric_to_check]
+                   ~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'eval_rouge1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 353, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3050, in _maybe_log_save_evaluate
+    is_new_best_metric = self._determine_best_metric(metrics=metrics, trial=trial)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3153, in _determine_best_metric
+    raise KeyError(
+KeyError: "The `metric_for_best_model` training argument is set to 'eval_rouge1', which is not found in the evaluation metrics. The available evaluation metrics are: ['eval_loss', 'eval_error', 'eval_runtime', 'eval_samples_per_second', 'eval_steps_per_second', 'epoch']. Consider changing the `metric_for_best_model` via the TrainingArguments."
+2024-12-30 22:13:12,515 [ERROR] Training failed: "The `metric_for_best_model` training argument is set to 'eval_rouge1', which is not found in the evaluation metrics. The available evaluation metrics are: ['eval_loss', 'eval_error', 'eval_runtime', 'eval_samples_per_second', 'eval_steps_per_second', 'epoch']. Consider changing the `metric_for_best_model` via the TrainingArguments."
+Traceback (most recent call last):
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3151, in _determine_best_metric
+    metric_value = metrics[metric_to_check]
+                   ~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'eval_rouge1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 353, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3050, in _maybe_log_save_evaluate
+    is_new_best_metric = self._determine_best_metric(metrics=metrics, trial=trial)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3153, in _determine_best_metric
+    raise KeyError(
+KeyError: "The `metric_for_best_model` training argument is set to 'eval_rouge1', which is not found in the evaluation metrics. The available evaluation metrics are: ['eval_loss', 'eval_error', 'eval_runtime', 'eval_samples_per_second', 'eval_steps_per_second', 'epoch']. Consider changing the `metric_for_best_model` via the TrainingArguments."
+2024-12-30 22:13:13,759 [ERROR] Script failed: "The `metric_for_best_model` training argument is set to 'eval_rouge1', which is not found in the evaluation metrics. The available evaluation metrics are: ['eval_loss', 'eval_error', 'eval_runtime', 'eval_samples_per_second', 'eval_steps_per_second', 'epoch']. Consider changing the `metric_for_best_model` via the TrainingArguments."
+Traceback (most recent call last):
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3151, in _determine_best_metric
+    metric_value = metrics[metric_to_check]
+                   ~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'eval_rouge1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 400, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 353, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3050, in _maybe_log_save_evaluate
+    is_new_best_metric = self._determine_best_metric(metrics=metrics, trial=trial)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3153, in _determine_best_metric
+    raise KeyError(
+KeyError: "The `metric_for_best_model` training argument is set to 'eval_rouge1', which is not found in the evaluation metrics. The available evaluation metrics are: ['eval_loss', 'eval_error', 'eval_runtime', 'eval_samples_per_second', 'eval_steps_per_second', 'epoch']. Consider changing the `metric_for_best_model` via the TrainingArguments."
+Traceback (most recent call last):
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3151, in _determine_best_metric
+    metric_value = metrics[metric_to_check]
+                   ~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'eval_rouge1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 400, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 353, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3050, in _maybe_log_save_evaluate
+    is_new_best_metric = self._determine_best_metric(metrics=metrics, trial=trial)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3153, in _determine_best_metric
+    raise KeyError(
+KeyError: "The `metric_for_best_model` training argument is set to 'eval_rouge1', which is not found in the evaluation metrics. The available evaluation metrics are: ['eval_loss', 'eval_error', 'eval_runtime', 'eval_samples_per_second', 'eval_steps_per_second', 'epoch']. Consider changing the `metric_for_best_model` via the TrainingArguments."

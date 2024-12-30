@@ -1,0 +1,126 @@
+  1%|██                                                                                                                                          | 10/675 [00:45<58:26,  5.27s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+                                                                                                                                                                                  2024-12-30 22:36:37,395 [ERROR] Decoding error: argument 'ids': 'list' object cannot be interpreted as an integer
+  3%|████▏                                                                                                                                       | 20/675 [03:16<54:28,  4.99s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.                                                                                             
+{'eval_loss': 11.423521041870117, 'eval_error': 1.0, 'eval_runtime': 112.8225, 'eval_samples_per_second': 1.418, 'eval_steps_per_second': 0.355, 'epoch': 0.22}
+{'loss': 91.4286, 'grad_norm': 25.917922973632812, 'learning_rate': 2.9411764705882354e-05, 'epoch': 0.44}
+                                                                                                                                                                                  2024-12-30 22:39:23,582 [ERROR] Decoding error: argument 'ids': 'list' object cannot be interpreted as an integer
+  4%|██████▏                                                                                                                                   | 30/675 [06:19<1:12:38,  6.76s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.                                                                                             
+{'eval_loss': 11.022290229797363, 'eval_error': 1.0, 'eval_runtime': 127.9873, 'eval_samples_per_second': 1.25, 'eval_steps_per_second': 0.313, 'epoch': 0.44}
+                                                                                                                                                                                  2024-12-30 22:42:22,922 [ERROR] Decoding error: argument 'ids': 'list' object cannot be interpreted as an integer
+  6%|████████▏                                                                                                                                 | 40/675 [09:22<1:28:01,  8.32s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.                                                                                             
+{'eval_loss': 10.241606712341309, 'eval_error': 1.0, 'eval_runtime': 124.2305, 'eval_samples_per_second': 1.288, 'eval_steps_per_second': 0.322, 'epoch': 0.67}
+{'loss': 84.3621, 'grad_norm': 36.17105484008789, 'learning_rate': 5.882352941176471e-05, 'epoch': 0.89}
+                                                                                                                                                                                  2024-12-30 22:45:44,501 [ERROR] Decoding error: argument 'ids': 'list' object cannot be interpreted as an integer
+  6%|████████▊                                                                                                                                 | 43/675 [12:01<4:49:03, 27.44s/it]Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 353, in train                                                                                
+{'eval_loss': 9.07192325592041, 'eval_error': 1.0, 'eval_runtime': 142.7229, 'eval_samples_per_second': 1.121, 'eval_steps_per_second': 0.28, 'epoch': 0.89}
+    json.dump(final_metrics, f, indent=2)
+    ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2524, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3654, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3708, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 823, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 811, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/peft/peft_model.py", line 1994, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/peft/tuners/tuners_utils.py", line 197, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1167, in forward
+    decoder_outputs = self.decoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 996, in forward
+    layer_outputs = self._gradient_checkpointing_func(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/_compile.py", line 32, in inner
+    return disable_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 632, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 489, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/autograd/function.py", line 575, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 264, in forward
+    outputs = run_function(*args)
+              ^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 424, in forward
+    hidden_states, cross_attn_weights, cross_attn_present_key_value = self.encoder_attn(
+                                                                      ^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 176, in forward
+    value_states = self._shape(self.v_proj(key_value_states), -1, bsz)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 140, in _shape
+    return tensor.view(bsz, seq_len, self.num_heads, self.head_dim).transpose(1, 2).contiguous()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 400, in <module>
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 394, in train
+KeyboardInterrupt

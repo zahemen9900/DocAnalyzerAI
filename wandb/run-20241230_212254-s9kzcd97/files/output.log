@@ -1,0 +1,33 @@
+  3%|████▏                                                                                                                                       | 20/675 [00:52<30:54,  2.83s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+{'loss': 92.227, 'grad_norm': 27.052473068237305, 'learning_rate': 1.4705882352941177e-05, 'epoch': 0.22}
+{'loss': 90.6272, 'grad_norm': 27.085147857666016, 'learning_rate': 2.9411764705882354e-05, 'epoch': 0.44}
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+  6%|████████▎                                                                                                                                   | 40/675 [01:48<26:30,  2.50s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.                                                                                             
+{'eval_loss': 11.023139953613281, 'eval_runtime': 4.175, 'eval_samples_per_second': 38.324, 'eval_steps_per_second': 9.581, 'epoch': 0.44}
+{'loss': 87.1115, 'grad_norm': 30.870107650756836, 'learning_rate': 4.411764705882353e-05, 'epoch': 0.67}
+{'loss': 81.5594, 'grad_norm': 36.29768753051758, 'learning_rate': 5.882352941176471e-05, 'epoch': 0.89}
+  7%|██████████▏                                                                                                                                 | 49/675 [02:17<27:17,  2.62s/it]Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 292, in <module>                                                                             
+{'eval_loss': 9.06323528289795, 'eval_runtime': 4.1875, 'eval_samples_per_second': 38.209, 'eval_steps_per_second': 9.552, 'epoch': 0.89}
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_qlora.py", line 260, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2524, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3687, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/accelerator.py", line 2244, in backward
+    self.scaler.scale(loss).backward(**kwargs)
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

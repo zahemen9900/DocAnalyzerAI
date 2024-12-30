@@ -1,0 +1,17 @@
+{"time":"2024-12-30T22:03:51.823709275Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-30T22:03:51.823741484Z","level":"INFO","msg":"created symlink","path":"/home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/run-20241230_220351-wzk6m2kc/logs/debug-core.log"}
+{"time":"2024-12-30T22:03:52.006306065Z","level":"INFO","msg":"created new stream","id":"wzk6m2kc"}
+{"time":"2024-12-30T22:03:52.006350241Z","level":"INFO","msg":"stream: started","id":"wzk6m2kc"}
+{"time":"2024-12-30T22:03:52.006385741Z","level":"INFO","msg":"writer: Do: started","stream_id":"wzk6m2kc"}
+{"time":"2024-12-30T22:03:52.006482511Z","level":"INFO","msg":"sender: started","stream_id":"wzk6m2kc"}
+{"time":"2024-12-30T22:03:52.006756504Z","level":"INFO","msg":"handler: started","stream_id":"wzk6m2kc"}
+{"time":"2024-12-30T22:03:52.72698145Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-30T22:06:24.906355774Z","level":"INFO","msg":"stream: closing","id":"wzk6m2kc"}
+{"time":"2024-12-30T22:06:24.906406158Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-30T22:06:24.907038471Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-30T22:06:26.100103536Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-30T22:08:22.883519513Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/wzk6m2kc/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2024-12-30T22:08:26.604155455Z","level":"INFO","msg":"handler: closed","stream_id":"wzk6m2kc"}
+{"time":"2024-12-30T22:08:26.604185946Z","level":"INFO","msg":"writer: Close: closed","stream_id":"wzk6m2kc"}
+{"time":"2024-12-30T22:08:26.604276553Z","level":"INFO","msg":"sender: closed","stream_id":"wzk6m2kc"}
+{"time":"2024-12-30T22:08:26.60429986Z","level":"INFO","msg":"stream: closed","id":"wzk6m2kc"}
