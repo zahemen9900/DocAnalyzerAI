@@ -1,0 +1,10 @@
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [17:58<00:00, 22.33s/it]/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/modeling_utils.py:2817: UserWarning: Moving the following attributes in the config to the generation config: {'max_length': 60, 'min_length': 20, 'num_beams': 10, 'length_penalty': 0.65, 'no_repeat_ngram_size': 3}. You are seeing this warning because you've set generation parameters in the model config, as opposed to in the generation config.
+{'loss': 48.8477, 'grad_norm': 168.53231811523438, 'learning_rate': 7.916666666666667e-06, 'epoch': 0.6}
+{'loss': 52.1107, 'grad_norm': 173.5767059326172, 'learning_rate': 5.833333333333334e-06, 'epoch': 1.24}
+{'loss': 48.9081, 'grad_norm': 163.82005310058594, 'learning_rate': 3.7500000000000005e-06, 'epoch': 1.84}
+{'loss': 50.894, 'grad_norm': 166.8438720703125, 'learning_rate': 1.6666666666666667e-06, 'epoch': 2.48}
+  warnings.warn(
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [17:59<00:00, 22.50s/it]
+{'train_runtime': 1081.9751, 'train_samples_per_second': 1.481, 'train_steps_per_second': 0.044, 'train_loss': 50.045522689819336, 'epoch': 2.96}
+2024-12-30 19:14:57,668 [INFO] Saving quantized model...
+2024-12-30 19:14:59,624 [INFO] Training completed and quantized model saved!

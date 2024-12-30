@@ -1,0 +1,239 @@
+2024-12-30 15:10:10,205 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2024-12-30 15:10:10,205 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 15:10:10,206 - __main__ - INFO - Starting dataset creation...
+2024-12-30 15:10:10,206 - __main__ - INFO - Adding conversation starters...
+2024-12-30 15:10:10,206 - __main__ - INFO - Adding financial QA samples...
+2024-12-30 15:10:10,206 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 15:10:10,206 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2024-12-30 15:10:10,208 - __main__ - INFO - Successfully created dataset with 152 examples
+2024-12-30 15:10:10,210 - __main__ - INFO - Saved 136 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2024-12-30 15:10:10,210 - __main__ - INFO - Saved 16 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2024-12-30 15:10:10,210 - __main__ - INFO - Dataset preparation completed successfully!
+2024-12-30 15:30:51,344 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2024-12-30 15:30:51,345 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 15:30:51,345 - __main__ - INFO - Starting dataset creation...
+2024-12-30 15:30:51,346 - __main__ - ERROR - Error creating dataset: slice step cannot be zero
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/prepare_training_data.py", line 256, in create_enhanced_dataset
+    enhanced_data.extend(qa_samples[::step][:qa_count])
+                         ~~~~~~~~~~^^^^^^^^
+ValueError: slice step cannot be zero
+2024-12-30 15:30:51,349 - __main__ - ERROR - Failed to prepare dataset: slice step cannot be zero
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/prepare_training_data.py", line 298, in main
+    enhanced_data = create_enhanced_dataset(str(train_file))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/prepare_training_data.py", line 256, in create_enhanced_dataset
+    enhanced_data.extend(qa_samples[::step][:qa_count])
+                         ~~~~~~~~~~^^^^^^^^
+ValueError: slice step cannot be zero
+2024-12-30 15:33:52,725 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2024-12-30 15:33:52,725 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 15:33:52,726 - __main__ - INFO - Starting dataset creation...
+2024-12-30 15:33:52,726 - __main__ - ERROR - Error creating dataset: slice step cannot be zero
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/prepare_training_data.py", line 256, in create_enhanced_dataset
+    enhanced_data.extend(qa_samples[::step][:qa_count])
+                         ~~~~~~~~~~^^^^^^^^
+ValueError: slice step cannot be zero
+2024-12-30 15:33:52,729 - __main__ - ERROR - Failed to prepare dataset: slice step cannot be zero
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/prepare_training_data.py", line 298, in main
+    enhanced_data = create_enhanced_dataset(str(train_file))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/prepare_training_data.py", line 256, in create_enhanced_dataset
+    enhanced_data.extend(qa_samples[::step][:qa_count])
+                         ~~~~~~~~~~^^^^^^^^
+ValueError: slice step cannot be zero
+2024-12-30 15:33:59,121 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2024-12-30 15:33:59,121 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 15:33:59,121 - __main__ - INFO - Starting dataset creation...
+2024-12-30 15:33:59,121 - __main__ - INFO - Added 34 samples from category
+2024-12-30 15:33:59,121 - __main__ - INFO - Added 5 samples from category
+2024-12-30 15:33:59,121 - __main__ - INFO - Added 4 samples from category
+2024-12-30 15:33:59,121 - __main__ - INFO - Added 2 samples from category
+2024-12-30 15:33:59,122 - __main__ - ERROR - Error creating dataset: name 'numpy' is not defined
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/prepare_training_data.py", line 262, in create_enhanced_dataset
+    indices = numpy.linspace(0, len(qa_samples)-1, desired_qa_count, dtype=int)
+              ^^^^^
+NameError: name 'numpy' is not defined
+2024-12-30 15:33:59,124 - __main__ - ERROR - Failed to prepare dataset: name 'numpy' is not defined
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/prepare_training_data.py", line 308, in main
+    enhanced_data = create_enhanced_dataset(str(train_file))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/prepare_training_data.py", line 262, in create_enhanced_dataset
+    indices = numpy.linspace(0, len(qa_samples)-1, desired_qa_count, dtype=int)
+              ^^^^^
+NameError: name 'numpy' is not defined
+2024-12-30 15:36:48,285 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2024-12-30 15:36:48,285 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 15:36:48,286 - __main__ - INFO - Starting dataset creation...
+2024-12-30 15:36:48,286 - __main__ - INFO - Added 34 samples from category
+2024-12-30 15:36:48,286 - __main__ - INFO - Added 5 samples from category
+2024-12-30 15:36:48,286 - __main__ - INFO - Added 4 samples from category
+2024-12-30 15:36:48,286 - __main__ - INFO - Added 2 samples from category
+2024-12-30 15:36:48,286 - __main__ - ERROR - Error creating dataset: name 'np' is not defined
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/prepare_training_data.py", line 263, in create_enhanced_dataset
+    indices = np.linspace(0, len(qa_samples)-1, desired_qa_count, dtype=int)
+              ^^
+NameError: name 'np' is not defined
+2024-12-30 15:36:48,287 - __main__ - ERROR - Failed to prepare dataset: name 'np' is not defined
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/prepare_training_data.py", line 309, in main
+    enhanced_data = create_enhanced_dataset(str(train_file))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/prepare_training_data.py", line 263, in create_enhanced_dataset
+    indices = np.linspace(0, len(qa_samples)-1, desired_qa_count, dtype=int)
+              ^^
+NameError: name 'np' is not defined
+2024-12-30 15:36:58,499 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2024-12-30 15:36:58,499 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 15:36:58,499 - __main__ - INFO - Starting dataset creation...
+2024-12-30 15:36:58,499 - __main__ - INFO - Added 34 samples from category
+2024-12-30 15:36:58,499 - __main__ - INFO - Added 5 samples from category
+2024-12-30 15:36:58,500 - __main__ - INFO - Added 4 samples from category
+2024-12-30 15:36:58,500 - __main__ - INFO - Added 2 samples from category
+2024-12-30 15:36:58,501 - __main__ - INFO - Added 117 QA samples
+2024-12-30 15:36:58,502 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 15:36:58,502 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2024-12-30 15:36:58,504 - __main__ - INFO - Dataset composition:
+2024-12-30 15:36:58,504 - __main__ - INFO - Financial Planning: 34 samples
+2024-12-30 15:36:58,504 - __main__ - INFO - Market Analysis: 5 samples
+2024-12-30 15:36:58,504 - __main__ - INFO - Investment Advice: 4 samples
+2024-12-30 15:36:58,504 - __main__ - INFO - Risk Management: 2 samples
+2024-12-30 15:36:58,504 - __main__ - INFO - QA Samples: 117 samples
+2024-12-30 15:36:58,505 - __main__ - INFO - Total Samples: 162 samples
+2024-12-30 15:36:58,507 - __main__ - INFO - Saved 145 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2024-12-30 15:36:58,507 - __main__ - INFO - Saved 17 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2024-12-30 15:36:58,507 - __main__ - INFO - Dataset preparation completed successfully!
+2024-12-30 15:41:26,091 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2024-12-30 15:41:26,091 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 15:41:26,091 - __main__ - INFO - Starting dataset creation...
+2024-12-30 15:41:26,091 - __main__ - INFO - Added 75 samples from conversation category
+2024-12-30 15:41:26,091 - __main__ - INFO - Added 75 samples from conversation category
+2024-12-30 15:41:26,091 - __main__ - INFO - Added 75 samples from conversation category
+2024-12-30 15:41:26,091 - __main__ - INFO - Added 75 samples from conversation category
+2024-12-30 15:41:26,092 - __main__ - INFO - Added 143 QA samples
+2024-12-30 15:41:26,093 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 15:41:26,093 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2024-12-30 15:41:26,097 - __main__ - INFO - Dataset composition:
+2024-12-30 15:41:26,097 - __main__ - INFO - Financial Planning: 34 samples
+2024-12-30 15:41:26,097 - __main__ - INFO - Market Analysis: 5 samples
+2024-12-30 15:41:26,097 - __main__ - INFO - Investment Advice: 4 samples
+2024-12-30 15:41:26,097 - __main__ - INFO - Risk Management: 2 samples
+2024-12-30 15:41:26,097 - __main__ - INFO - QA Samples: 143 samples
+2024-12-30 15:41:26,098 - __main__ - INFO - Total Samples: 443 samples
+2024-12-30 15:41:26,102 - __main__ - INFO - Saved 398 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2024-12-30 15:41:26,102 - __main__ - INFO - Saved 45 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2024-12-30 15:41:26,102 - __main__ - INFO - Dataset preparation completed successfully!
+2024-12-30 15:43:13,941 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2024-12-30 15:43:13,942 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 15:43:13,942 - __main__ - INFO - Starting dataset creation...
+2024-12-30 15:43:13,942 - __main__ - INFO - Added 150 samples from conversation category
+2024-12-30 15:43:13,942 - __main__ - INFO - Added 150 samples from conversation category
+2024-12-30 15:43:13,942 - __main__ - INFO - Added 150 samples from conversation category
+2024-12-30 15:43:13,942 - __main__ - INFO - Added 150 samples from conversation category
+2024-12-30 15:43:13,943 - __main__ - INFO - Added 143 QA samples
+2024-12-30 15:43:13,943 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 15:43:13,944 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2024-12-30 15:43:13,953 - __main__ - INFO - Dataset composition:
+2024-12-30 15:43:13,953 - __main__ - INFO - Financial Planning: 34 samples
+2024-12-30 15:43:13,953 - __main__ - INFO - Market Analysis: 5 samples
+2024-12-30 15:43:13,953 - __main__ - INFO - Investment Advice: 4 samples
+2024-12-30 15:43:13,954 - __main__ - INFO - Risk Management: 2 samples
+2024-12-30 15:43:13,954 - __main__ - INFO - QA Samples: 143 samples
+2024-12-30 15:43:13,954 - __main__ - INFO - Total Samples: 743 samples
+2024-12-30 15:43:13,961 - __main__ - INFO - Saved 668 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2024-12-30 15:43:13,963 - __main__ - INFO - Saved 75 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2024-12-30 15:43:13,963 - __main__ - INFO - Dataset preparation completed successfully!
+2024-12-30 15:45:35,635 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2024-12-30 15:45:35,636 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 15:45:35,636 - __main__ - INFO - Starting dataset creation...
+2024-12-30 15:45:35,636 - __main__ - INFO - Added 150 samples from conversation category
+2024-12-30 15:45:35,636 - __main__ - INFO - Added 150 samples from conversation category
+2024-12-30 15:45:35,636 - __main__ - INFO - Added 150 samples from conversation category
+2024-12-30 15:45:35,636 - __main__ - INFO - Added 150 samples from conversation category
+2024-12-30 15:45:35,637 - __main__ - INFO - Added 143 QA samples
+2024-12-30 15:45:35,637 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 15:45:35,637 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2024-12-30 15:45:35,644 - __main__ - INFO - Dataset composition:
+2024-12-30 15:45:35,645 - __main__ - INFO - Financial Planning: 34 samples
+2024-12-30 15:45:35,645 - __main__ - INFO - Market Analysis: 5 samples
+2024-12-30 15:45:35,645 - __main__ - INFO - Investment Advice: 4 samples
+2024-12-30 15:45:35,645 - __main__ - INFO - Risk Management: 2 samples
+2024-12-30 15:45:35,645 - __main__ - INFO - QA Samples: 143 samples
+2024-12-30 15:45:35,645 - __main__ - INFO - Total Samples: 743 samples
+2024-12-30 15:45:35,651 - __main__ - INFO - Saved 594 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2024-12-30 15:45:35,654 - __main__ - INFO - Saved 149 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2024-12-30 15:45:35,654 - __main__ - INFO - Dataset preparation completed successfully!
+2024-12-30 19:24:09,434 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2024-12-30 19:24:09,435 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 19:24:09,435 - __main__ - INFO - Starting enhanced dataset creation...
+2024-12-30 19:24:09,435 - __main__ - INFO - Added 225 samples from conversation category
+2024-12-30 19:24:09,435 - __main__ - INFO - Added 225 samples from conversation category
+2024-12-30 19:24:09,435 - __main__ - INFO - Added 225 samples from conversation category
+2024-12-30 19:24:09,435 - __main__ - INFO - Added 225 samples from conversation category
+2024-12-30 19:24:09,435 - __main__ - ERROR - Error creating dataset: name 're' is not defined
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/prepare_training_data.py", line 673, in create_enhanced_dataset
+    clean_answer = clean_text(answer)
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/prepare_training_data.py", line 198, in clean_text
+    text = re.sub(r'^Assistant:\s*', '', text)
+           ^^
+NameError: name 're' is not defined
+2024-12-30 19:24:09,436 - __main__ - ERROR - Failed to prepare dataset: name 're' is not defined
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/prepare_training_data.py", line 756, in main
+    enhanced_data = create_enhanced_dataset(str(train_file))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/prepare_training_data.py", line 673, in create_enhanced_dataset
+    clean_answer = clean_text(answer)
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/prepare_training_data.py", line 198, in clean_text
+    text = re.sub(r'^Assistant:\s*', '', text)
+           ^^
+NameError: name 're' is not defined
+2024-12-30 19:24:35,786 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2024-12-30 19:24:35,786 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 19:24:35,786 - __main__ - INFO - Starting enhanced dataset creation...
+2024-12-30 19:24:35,786 - __main__ - INFO - Added 225 samples from conversation category
+2024-12-30 19:24:35,786 - __main__ - INFO - Added 225 samples from conversation category
+2024-12-30 19:24:35,786 - __main__ - INFO - Added 225 samples from conversation category
+2024-12-30 19:24:35,786 - __main__ - INFO - Added 225 samples from conversation category
+2024-12-30 19:24:35,797 - __main__ - INFO - Added 2100 QA samples
+2024-12-30 19:24:35,798 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 19:24:35,798 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2024-12-30 19:24:35,825 - __main__ - INFO - Dataset composition:
+2024-12-30 19:24:35,825 - __main__ - INFO - Financial Planning: 34 samples
+2024-12-30 19:24:35,825 - __main__ - INFO - Market Analysis: 5 samples
+2024-12-30 19:24:35,825 - __main__ - INFO - Investment Advice: 4 samples
+2024-12-30 19:24:35,825 - __main__ - INFO - Risk Management: 2 samples
+2024-12-30 19:24:35,825 - __main__ - INFO - QA Samples: 3717 samples
+2024-12-30 19:24:35,825 - __main__ - INFO - Total Samples: 3000 samples
+2024-12-30 19:24:35,846 - __main__ - INFO - Saved 2400 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2024-12-30 19:24:35,851 - __main__ - INFO - Saved 600 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2024-12-30 19:24:35,851 - __main__ - INFO - Dataset preparation completed successfully!
+2024-12-30 19:26:26,572 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2024-12-30 19:26:26,572 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 19:26:26,572 - __main__ - INFO - Starting enhanced dataset creation...
+2024-12-30 19:26:26,572 - __main__ - INFO - Added 150 samples from conversation category
+2024-12-30 19:26:26,572 - __main__ - INFO - Added 150 samples from conversation category
+2024-12-30 19:26:26,572 - __main__ - INFO - Added 150 samples from conversation category
+2024-12-30 19:26:26,573 - __main__ - INFO - Added 150 samples from conversation category
+2024-12-30 19:26:26,584 - __main__ - INFO - Added 1400 QA samples
+2024-12-30 19:26:26,585 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2024-12-30 19:26:26,585 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2024-12-30 19:26:26,602 - __main__ - INFO - Dataset composition:
+2024-12-30 19:26:26,602 - __main__ - INFO - Financial Planning: 34 samples
+2024-12-30 19:26:26,602 - __main__ - INFO - Market Analysis: 5 samples
+2024-12-30 19:26:26,602 - __main__ - INFO - Investment Advice: 4 samples
+2024-12-30 19:26:26,602 - __main__ - INFO - Risk Management: 2 samples
+2024-12-30 19:26:26,602 - __main__ - INFO - QA Samples: 3717 samples
+2024-12-30 19:26:26,602 - __main__ - INFO - Total Samples: 2000 samples
+2024-12-30 19:26:26,617 - __main__ - INFO - Saved 1600 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2024-12-30 19:26:26,621 - __main__ - INFO - Saved 400 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2024-12-30 19:26:26,621 - __main__ - INFO - Dataset preparation completed successfully!

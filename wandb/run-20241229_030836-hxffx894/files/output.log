@@ -1,0 +1,107 @@
+ 50%|███████████████████████████████████████████████████████████████████                                                                   | 10/20 [05:14<07:53, 47.33s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+{'loss': 145.1552, 'grad_norm': 360.1984558105469, 'learning_rate': 3.3333333333333335e-05, 'epoch': 2.36}
+{'loss': 121.3353, 'grad_norm': 110.23027038574219, 'learning_rate': 9.251085678648072e-05, 'epoch': 4.71}
+/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/generation/utils.py:1527: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed in v5. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+                                                                                                                                                                           Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+  0%|                                                                                                                                                | 0/5 [00:00<?, ?it/s]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 40%|██████████████████████████████████████████████████████▍                                                                                 | 2/5 [00:17<00:26,  8.78s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 60%|█████████████████████████████████████████████████████████████████████████████████▌                                                      | 3/5 [00:34<00:23, 11.99s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Downloading builder script: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 5.94k/5.94k [00:00<00:00, 22.2MB/s]
+Downloading extra modules: 4.07kB [00:00, 11.2MB/s]                                                                                                                        
+Downloading extra modules: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 3.34k/3.34k [00:00<00:00, 19.3MB/s]
+Downloading builder script: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 7.02k/7.02k [00:00<00:00, 35.0MB/s]
+[nltk_data] Downloading package wordnet to /home/zahemen/nltk_data...                                                                          | 0.00/3.34k [00:00<?, ?B/s]
+[nltk_data] Downloading package punkt_tab to                                                                                                   | 0.00/7.02k [00:00<?, ?B/s]
+[nltk_data]     /home/zahemen/nltk_data...
+[nltk_data]   Unzipping tokenizers/punkt_tab.zip.
+[nltk_data] Downloading package omw-1.4 to /home/zahemen/nltk_data...
+2024-12-29 03:15:55,285 [ERROR] Training failed: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 327, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3049, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3003, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer_seq2seq.py", line 195, in evaluate
+    return super().evaluate(eval_dataset, ignore_keys=ignore_keys, metric_key_prefix=metric_key_prefix)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4050, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4339, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 68, in compute_metrics
+    predictions, labels = eval_preds
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+2024-12-29 03:15:55,286 [ERROR] GPU Memory: 4.48GB
+2024-12-29 03:15:55,619 [ERROR] Script failed: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 345, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 327, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3049, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3003, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer_seq2seq.py", line 195, in evaluate
+    return super().evaluate(eval_dataset, ignore_keys=ignore_keys, metric_key_prefix=metric_key_prefix)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4050, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4339, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 68, in compute_metrics
+    predictions, labels = eval_preds
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 345, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 327, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3049, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3003, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer_seq2seq.py", line 195, in evaluate
+    return super().evaluate(eval_dataset, ignore_keys=ignore_keys, metric_key_prefix=metric_key_prefix)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4050, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4339, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 68, in compute_metrics
+    predictions, labels = eval_preds
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)

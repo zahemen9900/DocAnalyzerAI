@@ -1,0 +1,8 @@
+{"time":"2024-12-30T19:32:59.659202029Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-30T19:32:59.659214636Z","level":"INFO","msg":"created symlink","path":"/home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/run-20241230_193259-djvvvejr/logs/debug-core.log"}
+{"time":"2024-12-30T19:32:59.807886518Z","level":"INFO","msg":"created new stream","id":"djvvvejr"}
+{"time":"2024-12-30T19:32:59.80793155Z","level":"INFO","msg":"stream: started","id":"djvvvejr"}
+{"time":"2024-12-30T19:32:59.807959744Z","level":"INFO","msg":"writer: Do: started","stream_id":"djvvvejr"}
+{"time":"2024-12-30T19:32:59.807972236Z","level":"INFO","msg":"sender: started","stream_id":"djvvvejr"}
+{"time":"2024-12-30T19:32:59.808003486Z","level":"INFO","msg":"handler: started","stream_id":"djvvvejr"}
+{"time":"2024-12-30T19:33:00.499036863Z","level":"INFO","msg":"Starting system monitor"}

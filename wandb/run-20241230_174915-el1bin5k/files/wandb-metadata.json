@@ -1,0 +1,41 @@
+{
+  "os":  "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python":  "CPython 3.11.11",
+  "startedAt":  "2024-12-30T17:49:15.704026Z",
+  "program":  "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py",
+  "codePath":  "src/train_finbot_gpu.py",
+  "git":  {
+    "remote":  "https://github.com/zahemen9900/DocAnalyzerAI.git",
+    "commit":  "5d98c8952a4d57044c0c6de621cfa70cc367ec0e"
+  },
+  "email":  "zahemen9900@gmail.com",
+  "root":  "/home/zahemen/projects/dl-lib/DocAnalyzerAI",
+  "host":  "zahemen",
+  "executable":  "/home/zahemen/miniconda3/envs/transformer_env/bin/python",
+  "codePathLocal":  "src/train_finbot_gpu.py",
+  "cpu_count":  6,
+  "cpu_count_logical":  12,
+  "gpu":  "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "1081101176832",
+      "used":  "36421214208"
+    }
+  },
+  "memory":  {
+    "total":  "16656809984"
+  },
+  "cpu":  {
+    "count":  6,
+    "countLogical":  12
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 3050 Laptop GPU",
+      "memoryTotal":  "4294967296",
+      "architecture":  "Ampere"
+    }
+  ],
+  "cudaVersion":  "12.7"
+}

@@ -1623,3 +1623,895 @@ Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
 2024-12-29 00:03:31,780 [INFO] GPU Memory Usage: 4277.86MB
 2024-12-29 00:03:41,721 [INFO] GPU Memory Usage: 4277.86MB
 2024-12-29 00:03:41,722 [INFO] GPU Memory Usage: 4277.86MB
+2024-12-29 01:45:55,598 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 01:45:55,598 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 01:45:55,599 [INFO] Loading dataset...
+2024-12-29 01:45:55,754 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 01:45:58,166 [INFO] Model loaded on: cuda:0
+2024-12-29 01:45:58,166 [INFO] Processing datasets...
+2024-12-29 01:45:58,296 [INFO] Model device: cuda:0
+2024-12-29 01:45:58,296 [INFO] CUDA active: True
+2024-12-29 01:45:58,296 [INFO] Current device: 0
+2024-12-29 01:45:58,452 [INFO] Starting training...
+2024-12-29 01:46:02,353 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 01:46:02,354 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 01:46:06,451 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 01:46:06,451 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 01:46:09,952 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 01:46:09,952 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 01:53:32,000 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 01:53:32,000 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 01:53:32,000 [INFO] Loading dataset...
+2024-12-29 01:53:32,165 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 01:53:34,419 [INFO] Model loaded on: cuda:0
+2024-12-29 01:53:34,420 [INFO] Processing datasets...
+2024-12-29 01:53:35,081 [INFO] Model device: cuda:0
+2024-12-29 01:53:35,081 [INFO] CUDA active: True
+2024-12-29 01:53:35,081 [INFO] Current device: 0
+2024-12-29 01:53:35,195 [INFO] Starting training...
+2024-12-29 01:56:02,248 [INFO] Training completed and model saved!
+2024-12-29 02:01:33,147 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 02:01:33,147 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 02:01:33,147 [INFO] Loading dataset...
+2024-12-29 02:01:33,308 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 02:01:35,213 [INFO] Model loaded on: cuda:0
+2024-12-29 02:01:35,214 [INFO] Processing datasets...
+2024-12-29 02:01:35,346 [INFO] Model device: cuda:0
+2024-12-29 02:01:35,346 [INFO] CUDA active: True
+2024-12-29 02:01:35,346 [INFO] Current device: 0
+2024-12-29 02:01:35,509 [INFO] Starting training...
+2024-12-29 02:01:40,757 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:01:40,757 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:01:44,876 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:01:44,877 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:01:49,175 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:01:49,175 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:01:53,341 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:01:53,341 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:01:57,639 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:01:57,640 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:02:01,923 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:02:01,924 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:03:16,527 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 02:03:16,527 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 02:03:16,527 [INFO] Loading dataset...
+2024-12-29 02:03:16,697 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 02:03:19,520 [INFO] Model loaded on: cuda:0
+2024-12-29 02:03:19,520 [INFO] Processing datasets...
+2024-12-29 02:03:19,675 [ERROR] Training failed: name 'GPUMemoryCallback' is not defined
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 219, in train
+    callbacks=[GPUMemoryCallback(), GradientHandlingCallback()]
+               ^^^^^^^^^^^^^^^^^
+NameError: name 'GPUMemoryCallback' is not defined
+2024-12-29 02:03:19,677 [ERROR] GPU Memory: 1.49GB
+2024-12-29 02:03:19,846 [ERROR] Script failed: name 'GPUMemoryCallback' is not defined
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 254, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 219, in train
+    callbacks=[GPUMemoryCallback(), GradientHandlingCallback()]
+               ^^^^^^^^^^^^^^^^^
+NameError: name 'GPUMemoryCallback' is not defined
+2024-12-29 02:03:37,397 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 02:03:37,397 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 02:03:37,397 [INFO] Loading dataset...
+2024-12-29 02:03:37,563 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 02:03:39,628 [INFO] Model loaded on: cuda:0
+2024-12-29 02:03:39,628 [INFO] Processing datasets...
+2024-12-29 02:03:39,778 [INFO] Model device: cuda:0
+2024-12-29 02:03:39,778 [INFO] CUDA active: True
+2024-12-29 02:03:39,778 [INFO] Current device: 0
+2024-12-29 02:03:39,947 [INFO] Starting training...
+2024-12-29 02:05:42,599 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 02:05:42,599 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 02:05:42,599 [INFO] Loading dataset...
+2024-12-29 02:05:42,778 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 02:05:44,489 [INFO] Model loaded on: cuda:0
+2024-12-29 02:05:44,489 [INFO] Processing datasets...
+2024-12-29 02:05:44,619 [INFO] Model device: cuda:0
+2024-12-29 02:05:44,620 [INFO] CUDA active: True
+2024-12-29 02:05:44,620 [INFO] Current device: 0
+2024-12-29 02:05:44,778 [INFO] Starting training...
+2024-12-29 02:06:34,206 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 02:06:34,207 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 02:06:34,207 [INFO] Loading dataset...
+2024-12-29 02:06:34,378 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 02:06:36,217 [INFO] Model loaded on: cuda:0
+2024-12-29 02:06:36,217 [INFO] Processing datasets...
+2024-12-29 02:06:36,366 [INFO] Model device: cuda:0
+2024-12-29 02:06:36,367 [INFO] CUDA active: True
+2024-12-29 02:06:36,367 [INFO] Current device: 0
+2024-12-29 02:06:36,534 [INFO] Starting training...
+2024-12-29 02:08:31,237 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 02:08:31,237 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 02:08:31,237 [INFO] Loading dataset...
+2024-12-29 02:08:31,396 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 02:08:33,441 [INFO] Model loaded on: cuda:0
+2024-12-29 02:08:33,441 [INFO] Processing datasets...
+2024-12-29 02:08:33,579 [INFO] Model device: cuda:0
+2024-12-29 02:08:33,579 [INFO] CUDA active: True
+2024-12-29 02:08:33,579 [INFO] Current device: 0
+2024-12-29 02:08:33,730 [INFO] Starting training...
+2024-12-29 02:08:37,764 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:08:37,765 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:08:42,059 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:08:42,060 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:08:45,944 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:08:45,945 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:08:49,871 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:08:49,871 [INFO] GPU Memory Usage: 4277.82MB
+2024-12-29 02:09:37,163 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 02:09:37,163 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 02:09:37,163 [INFO] Loading dataset...
+2024-12-29 02:09:37,321 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 02:09:39,471 [INFO] Model loaded on: cuda:0
+2024-12-29 02:09:39,471 [INFO] Processing datasets...
+2024-12-29 02:09:39,622 [INFO] Model device: cuda:0
+2024-12-29 02:09:39,622 [INFO] CUDA active: True
+2024-12-29 02:09:39,623 [INFO] Current device: 0
+2024-12-29 02:09:39,775 [INFO] Starting training...
+2024-12-29 02:10:46,217 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 02:10:46,217 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 02:10:46,218 [INFO] Loading dataset...
+2024-12-29 02:10:46,380 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 02:10:48,247 [INFO] Model loaded on: cuda:0
+2024-12-29 02:10:48,247 [INFO] Processing datasets...
+2024-12-29 02:10:48,390 [ERROR] Training failed: name 'GPUMemoryCallback' is not defined
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 218, in train
+    callbacks=[GPUMemoryCallback(), GradientHandlingCallback()]
+               ^^^^^^^^^^^^^^^^^
+NameError: name 'GPUMemoryCallback' is not defined
+2024-12-29 02:10:48,391 [ERROR] GPU Memory: 1.49GB
+2024-12-29 02:10:48,537 [ERROR] Script failed: name 'GPUMemoryCallback' is not defined
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 253, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 218, in train
+    callbacks=[GPUMemoryCallback(), GradientHandlingCallback()]
+               ^^^^^^^^^^^^^^^^^
+NameError: name 'GPUMemoryCallback' is not defined
+2024-12-29 02:11:37,795 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 02:11:37,795 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 02:11:37,795 [INFO] Loading dataset...
+2024-12-29 02:11:37,969 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 02:11:41,009 [INFO] Model loaded on: cuda:0
+2024-12-29 02:11:41,009 [INFO] Processing datasets...
+2024-12-29 02:11:41,147 [INFO] Model device: cuda:0
+2024-12-29 02:11:41,147 [INFO] CUDA active: True
+2024-12-29 02:11:41,147 [INFO] Current device: 0
+2024-12-29 02:11:41,300 [INFO] Starting training...
+2024-12-29 02:13:05,479 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 02:13:05,480 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 02:13:05,480 [INFO] Loading dataset...
+2024-12-29 02:13:05,644 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 02:13:07,635 [INFO] Model loaded on: cuda:0
+2024-12-29 02:13:07,635 [INFO] Processing datasets...
+2024-12-29 02:13:07,777 [INFO] Model device: cuda:0
+2024-12-29 02:13:07,778 [INFO] CUDA active: True
+2024-12-29 02:13:07,778 [INFO] Current device: 0
+2024-12-29 02:13:07,916 [INFO] Starting training...
+2024-12-29 02:19:17,836 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 02:19:17,836 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 02:19:17,836 [INFO] Loading dataset...
+2024-12-29 02:19:18,009 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 02:19:20,236 [INFO] Model loaded on: cuda:0
+2024-12-29 02:19:20,237 [INFO] Processing datasets...
+2024-12-29 02:19:20,351 [ERROR] Training failed: Seq2SeqTrainingArguments.__init__() got an unexpected keyword argument 'learning_rate_schedule'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 161, in train
+    training_args = Seq2SeqTrainingArguments(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Seq2SeqTrainingArguments.__init__() got an unexpected keyword argument 'learning_rate_schedule'
+2024-12-29 02:19:20,353 [ERROR] GPU Memory: 1.49GB
+2024-12-29 02:19:20,530 [ERROR] Script failed: Seq2SeqTrainingArguments.__init__() got an unexpected keyword argument 'learning_rate_schedule'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 282, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 161, in train
+    training_args = Seq2SeqTrainingArguments(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Seq2SeqTrainingArguments.__init__() got an unexpected keyword argument 'learning_rate_schedule'
+2024-12-29 02:20:06,437 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 02:20:06,438 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 02:20:06,438 [INFO] Loading dataset...
+2024-12-29 02:20:06,589 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 02:20:08,397 [INFO] Model loaded on: cuda:0
+2024-12-29 02:20:08,398 [INFO] Processing datasets...
+2024-12-29 02:20:12,746 [INFO] Model device: cuda:0
+2024-12-29 02:20:12,746 [INFO] CUDA active: True
+2024-12-29 02:20:12,746 [INFO] Current device: 0
+2024-12-29 02:20:12,903 [INFO] Starting training...
+2024-12-29 02:23:57,385 [INFO] Training completed and model saved!
+2024-12-29 02:30:07,450 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 02:30:07,451 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 02:30:07,451 [INFO] Loading dataset...
+2024-12-29 02:30:07,719 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 02:30:10,462 [INFO] Model loaded on: cuda:0
+2024-12-29 02:30:10,463 [INFO] Processing datasets...
+2024-12-29 02:30:30,924 [INFO] Model device: cuda:0
+2024-12-29 02:30:30,925 [INFO] CUDA active: True
+2024-12-29 02:30:30,925 [INFO] Current device: 0
+2024-12-29 02:30:31,072 [INFO] Starting training...
+2024-12-29 02:30:35,027 [ERROR] Training failed: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 264, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2524, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3654, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3708, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 823, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 811, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1149, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 733, in forward
+    embed_pos = self.embed_positions(input_shape)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 87, in forward
+    return super().forward(positions)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/sparse.py", line 190, in forward
+    return F.embedding(
+           ^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/functional.py", line 2551, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-12-29 02:30:35,034 [ERROR] GPU Memory: 1.49GB
+2024-12-29 02:30:35,285 [ERROR] Script failed: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 282, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 264, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2524, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3654, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3708, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 823, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 811, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1149, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 733, in forward
+    embed_pos = self.embed_positions(input_shape)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 87, in forward
+    return super().forward(positions)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/sparse.py", line 190, in forward
+    return F.embedding(
+           ^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/functional.py", line 2551, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-12-29 02:30:57,121 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 02:30:57,121 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 02:30:57,121 [INFO] Loading dataset...
+2024-12-29 02:30:57,413 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 02:31:00,366 [INFO] Model loaded on: cuda:0
+2024-12-29 02:31:00,367 [INFO] Processing datasets...
+2024-12-29 02:31:23,196 [INFO] Model device: cuda:0
+2024-12-29 02:31:23,196 [INFO] CUDA active: True
+2024-12-29 02:31:23,196 [INFO] Current device: 0
+2024-12-29 02:31:23,337 [INFO] Starting training...
+2024-12-29 03:05:13,022 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 03:05:13,022 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 03:05:13,022 [INFO] Loading dataset...
+2024-12-29 03:05:13,194 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 03:05:15,257 [INFO] Model loaded on: cuda:0
+2024-12-29 03:05:15,258 [INFO] Processing datasets...
+2024-12-29 03:05:15,654 [ERROR] Training failed: --load_best_model_at_end requires the saving steps to be a round multiple of the evaluation steps, but found 25, which is not a round multiple of 10.
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 190, in train
+    training_args = Seq2SeqTrainingArguments(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 139, in __init__
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/training_args.py", line 1662, in __post_init__
+    raise ValueError(
+ValueError: --load_best_model_at_end requires the saving steps to be a round multiple of the evaluation steps, but found 25, which is not a round multiple of 10.
+2024-12-29 03:05:15,656 [ERROR] GPU Memory: 1.49GB
+2024-12-29 03:05:15,810 [ERROR] Script failed: --load_best_model_at_end requires the saving steps to be a round multiple of the evaluation steps, but found 25, which is not a round multiple of 10.
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 334, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 190, in train
+    training_args = Seq2SeqTrainingArguments(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 139, in __init__
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/training_args.py", line 1662, in __post_init__
+    raise ValueError(
+ValueError: --load_best_model_at_end requires the saving steps to be a round multiple of the evaluation steps, but found 25, which is not a round multiple of 10.
+2024-12-29 03:06:05,301 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 03:06:05,301 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 03:06:05,301 [INFO] Loading dataset...
+2024-12-29 03:06:05,456 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 03:06:07,537 [INFO] Model loaded on: cuda:0
+2024-12-29 03:06:07,538 [INFO] Processing datasets...
+2024-12-29 03:06:08,561 [INFO] Model device: cuda:0
+2024-12-29 03:06:08,561 [INFO] CUDA active: True
+2024-12-29 03:06:08,561 [INFO] Current device: 0
+2024-12-29 03:06:08,687 [INFO] Starting training...
+2024-12-29 03:06:10,839 [ERROR] Training failed: You have to specify either decoder_input_ids or decoder_inputs_embeds
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 316, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2524, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3654, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3708, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 823, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 811, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1167, in forward
+    decoder_outputs = self.decoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 938, in forward
+    raise ValueError("You have to specify either decoder_input_ids or decoder_inputs_embeds")
+ValueError: You have to specify either decoder_input_ids or decoder_inputs_embeds
+2024-12-29 03:06:10,844 [ERROR] GPU Memory: 1.51GB
+2024-12-29 03:06:10,977 [ERROR] Script failed: You have to specify either decoder_input_ids or decoder_inputs_embeds
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 334, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 316, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2524, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3654, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3708, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 823, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 811, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1167, in forward
+    decoder_outputs = self.decoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 938, in forward
+    raise ValueError("You have to specify either decoder_input_ids or decoder_inputs_embeds")
+ValueError: You have to specify either decoder_input_ids or decoder_inputs_embeds
+2024-12-29 03:08:15,290 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 03:08:15,290 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 03:08:15,290 [INFO] Loading dataset...
+2024-12-29 03:08:15,449 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 03:08:17,307 [INFO] Model loaded on: cuda:0
+2024-12-29 03:08:17,307 [INFO] Processing datasets...
+2024-12-29 03:08:18,299 [INFO] Model device: cuda:0
+2024-12-29 03:08:18,299 [INFO] CUDA active: True
+2024-12-29 03:08:18,299 [INFO] Current device: 0
+2024-12-29 03:08:18,423 [INFO] Starting training...
+2024-12-29 03:08:20,414 [ERROR] Training failed: You have to specify either decoder_input_ids or decoder_inputs_embeds
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 316, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2524, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3654, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3708, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 823, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 811, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1167, in forward
+    decoder_outputs = self.decoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 938, in forward
+    raise ValueError("You have to specify either decoder_input_ids or decoder_inputs_embeds")
+ValueError: You have to specify either decoder_input_ids or decoder_inputs_embeds
+2024-12-29 03:08:20,416 [ERROR] GPU Memory: 1.51GB
+2024-12-29 03:08:20,551 [ERROR] Script failed: You have to specify either decoder_input_ids or decoder_inputs_embeds
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 334, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 316, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2524, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3654, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3708, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 823, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/accelerate/utils/operations.py", line 811, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1167, in forward
+    decoder_outputs = self.decoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 938, in forward
+    raise ValueError("You have to specify either decoder_input_ids or decoder_inputs_embeds")
+ValueError: You have to specify either decoder_input_ids or decoder_inputs_embeds
+2024-12-29 03:08:30,584 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 03:08:30,584 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 03:08:30,584 [INFO] Loading dataset...
+2024-12-29 03:08:30,756 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 03:08:34,552 [INFO] Model loaded on: cuda:0
+2024-12-29 03:08:34,553 [INFO] Processing datasets...
+2024-12-29 03:08:35,594 [INFO] Model device: cuda:0
+2024-12-29 03:08:35,594 [INFO] CUDA active: True
+2024-12-29 03:08:35,594 [INFO] Current device: 0
+2024-12-29 03:08:35,729 [INFO] Starting training...
+2024-12-29 03:15:55,285 [ERROR] Training failed: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 327, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3049, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3003, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer_seq2seq.py", line 195, in evaluate
+    return super().evaluate(eval_dataset, ignore_keys=ignore_keys, metric_key_prefix=metric_key_prefix)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4050, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4339, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 68, in compute_metrics
+    predictions, labels = eval_preds
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+2024-12-29 03:15:55,286 [ERROR] GPU Memory: 4.48GB
+2024-12-29 03:15:55,619 [ERROR] Script failed: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 345, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 327, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3049, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3003, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer_seq2seq.py", line 195, in evaluate
+    return super().evaluate(eval_dataset, ignore_keys=ignore_keys, metric_key_prefix=metric_key_prefix)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4050, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4339, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 68, in compute_metrics
+    predictions, labels = eval_preds
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+2024-12-29 06:31:20,822 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 06:31:20,823 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 06:31:20,823 [INFO] Loading dataset...
+2024-12-29 06:31:21,027 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 06:31:23,638 [INFO] Model loaded on: cuda:0
+2024-12-29 06:31:23,639 [INFO] Processing datasets...
+2024-12-29 06:31:25,169 [INFO] Model device: cuda:0
+2024-12-29 06:31:25,169 [INFO] CUDA active: True
+2024-12-29 06:31:25,169 [INFO] Current device: 0
+2024-12-29 06:31:25,324 [INFO] Starting training...
+2024-12-29 06:32:50,061 [ERROR] Training failed: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 327, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3049, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3003, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer_seq2seq.py", line 195, in evaluate
+    return super().evaluate(eval_dataset, ignore_keys=ignore_keys, metric_key_prefix=metric_key_prefix)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4050, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4339, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 68, in compute_metrics
+    predictions, labels = eval_preds
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+2024-12-29 06:32:50,063 [ERROR] GPU Memory: 4.48GB
+2024-12-29 06:32:50,370 [ERROR] Script failed: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 345, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 327, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3049, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3003, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer_seq2seq.py", line 195, in evaluate
+    return super().evaluate(eval_dataset, ignore_keys=ignore_keys, metric_key_prefix=metric_key_prefix)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4050, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4339, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 68, in compute_metrics
+    predictions, labels = eval_preds
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+2024-12-29 08:11:34,556 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 08:11:34,556 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 08:11:34,556 [INFO] Loading dataset...
+2024-12-29 08:11:34,736 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 08:11:37,373 [INFO] Model loaded on: cuda:0
+2024-12-29 08:11:37,374 [INFO] Processing datasets...
+2024-12-29 08:11:38,595 [INFO] Model device: cuda:0
+2024-12-29 08:11:38,595 [INFO] CUDA active: True
+2024-12-29 08:11:38,595 [INFO] Current device: 0
+2024-12-29 08:11:38,724 [INFO] Starting training...
+2024-12-29 08:13:13,760 [ERROR] Training failed: name 'tokenizer' is not defined
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 343, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3049, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3003, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer_seq2seq.py", line 195, in evaluate
+    return super().evaluate(eval_dataset, ignore_keys=ignore_keys, metric_key_prefix=metric_key_prefix)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4050, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4339, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 72, in compute_metrics
+    predictions = tokenizer.batch_decode(predictions, skip_special_tokens=True)
+                  ^^^^^^^^^
+NameError: name 'tokenizer' is not defined
+2024-12-29 08:13:13,762 [ERROR] GPU Memory: 4.48GB
+2024-12-29 08:13:14,045 [ERROR] Script failed: name 'tokenizer' is not defined
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 361, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 343, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 2591, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3049, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 3003, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer_seq2seq.py", line 195, in evaluate
+    return super().evaluate(eval_dataset, ignore_keys=ignore_keys, metric_key_prefix=metric_key_prefix)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4050, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_env/lib/python3.11/site-packages/transformers/trainer.py", line 4339, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/train_finbot_gpu.py", line 72, in compute_metrics
+    predictions = tokenizer.batch_decode(predictions, skip_special_tokens=True)
+                  ^^^^^^^^^
+NameError: name 'tokenizer' is not defined
+2024-12-29 08:16:35,164 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-29 08:16:35,164 [INFO] Total GPU Memory: 4.00 GB
+2024-12-29 08:16:35,164 [INFO] Loading dataset...
+2024-12-29 08:16:35,334 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-29 08:16:37,248 [INFO] Model loaded on: cuda:0
+2024-12-29 08:16:37,248 [INFO] Processing datasets...
+2024-12-29 08:16:45,607 [INFO] Model device: cuda:0
+2024-12-29 08:16:45,607 [INFO] CUDA active: True
+2024-12-29 08:16:45,607 [INFO] Current device: 0
+2024-12-29 08:16:45,741 [INFO] Starting training...
+2024-12-29 08:18:01,423 [INFO] Using default tokenizer.
+2024-12-29 08:24:00,671 [INFO] Using default tokenizer.
+2024-12-29 08:30:36,361 [INFO] Using default tokenizer.
+2024-12-29 08:37:06,165 [INFO] Using default tokenizer.
+2024-12-29 08:37:17,336 [INFO] Training completed and model saved!
+2024-12-30 15:46:06,719 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 15:46:06,720 [INFO] Total GPU Memory: 4.00 GB
+2024-12-30 15:46:06,720 [INFO] Loading dataset...
+2024-12-30 15:46:06,733 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-30 17:40:50,239 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 17:40:50,240 [INFO] Total GPU Memory: 4.00 GB
+2024-12-30 17:40:50,241 [INFO] Loading dataset...
+2024-12-30 17:40:50,264 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-30 17:41:46,839 [WARNING] Error while downloading from https://cdn-lfs.hf.co/facebook/blenderbot-400M-distill/075e032320c5f6c96b55c04b252c0a47ca5e8bbd86ef209cd1470fdd750449c5?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27pytorch_model.bin%3B+filename%3D%22pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1735839485&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTczNTgzOTQ4NX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9mYWNlYm9vay9ibGVuZGVyYm90LTQwME0tZGlzdGlsbC8wNzVlMDMyMzIwYzVmNmM5NmI1NWMwNGIyNTJjMGE0N2NhNWU4YmJkODZlZjIwOWNkMTQ3MGZkZDc1MDQ0OWM1P3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249KiZyZXNwb25zZS1jb250ZW50LXR5cGU9KiJ9XX0_&Signature=dOaaV3rdm9-jlMY6iqoU5Iu%7EnXKF2%7ElR0NXAxOhzDlIARtp%7ExjfmmSB8D9QhBBNiSD8VUyUAWO%7EzNtU33OAeWSg0wYBjutvRZBI4AKJ5we-IYr8fnDcc0voylNafui2k8zfMiElME447RL5sIoBgX-0yaQ9jNNV1M5E%7E2UfGJkniDaC8t7i%7EezWHpN2bcqxwUnoe3OrSAp1uk9UnQKbnrzucowGNn2IFFfuXlQ90usXDSpdg6wpCFJyLKsGwkQ5b8SowU751%7EDD79V8S4zZdg7p0J-srWS2DPri6Ko-hBrZ2Jk3egZFjIZJsGtuDHl002jXEdepBMOT7kQMgIoxtkw__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2024-12-30 17:44:36,552 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 17:44:36,552 [INFO] Total GPU Memory: 4.00 GB
+2024-12-30 17:44:36,552 [INFO] Loading dataset...
+2024-12-30 17:44:36,559 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-30 17:45:37,743 [WARNING] Error while downloading from https://cdn-lfs.hf.co/facebook/blenderbot-400M-distill/075e032320c5f6c96b55c04b252c0a47ca5e8bbd86ef209cd1470fdd750449c5?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27pytorch_model.bin%3B+filename%3D%22pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1735839878&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTczNTgzOTg3OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9mYWNlYm9vay9ibGVuZGVyYm90LTQwME0tZGlzdGlsbC8wNzVlMDMyMzIwYzVmNmM5NmI1NWMwNGIyNTJjMGE0N2NhNWU4YmJkODZlZjIwOWNkMTQ3MGZkZDc1MDQ0OWM1P3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249KiZyZXNwb25zZS1jb250ZW50LXR5cGU9KiJ9XX0_&Signature=jSvGAy8RKn90jtN%7EEBuh8aUFt3YfCH%7EKhZOS6pcjsTn4TPxs9uFPMsm2ynILLkY7mTZKsrc-Ua5UJQTIPQ0mSQpDLg9u0cKNN8IuWDWjHqRWF9cWT6fSc0CNKHphY830SmieWpCw1YhEhBfjaYZvWR4vrSgzp2Hi%7Ehu%7EDK6Zij%7ErGNWuAnY5S7I1xDu7AJOz2-roVLgpR%7EeoFIStwccF1CiApt2JMq1RKTCd3AJkb%7EDUU-i7-EcqbQX8q%7EbguoNZ7OWU88pEH%7E5wbMaLt6Z-nXRuZfLrtaMhEk1lWNOrjbH0uYm-MftmDa%7EWbUEfyKtW13dXfO5HnFaIGyhTTHwcUQ__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2024-12-30 17:48:27,391 [WARNING] Error while downloading from https://cdn-lfs.hf.co/facebook/blenderbot-400M-distill/075e032320c5f6c96b55c04b252c0a47ca5e8bbd86ef209cd1470fdd750449c5?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27pytorch_model.bin%3B+filename%3D%22pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1735839878&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTczNTgzOTg3OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9mYWNlYm9vay9ibGVuZGVyYm90LTQwME0tZGlzdGlsbC8wNzVlMDMyMzIwYzVmNmM5NmI1NWMwNGIyNTJjMGE0N2NhNWU4YmJkODZlZjIwOWNkMTQ3MGZkZDc1MDQ0OWM1P3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249KiZyZXNwb25zZS1jb250ZW50LXR5cGU9KiJ9XX0_&Signature=jSvGAy8RKn90jtN%7EEBuh8aUFt3YfCH%7EKhZOS6pcjsTn4TPxs9uFPMsm2ynILLkY7mTZKsrc-Ua5UJQTIPQ0mSQpDLg9u0cKNN8IuWDWjHqRWF9cWT6fSc0CNKHphY830SmieWpCw1YhEhBfjaYZvWR4vrSgzp2Hi%7Ehu%7EDK6Zij%7ErGNWuAnY5S7I1xDu7AJOz2-roVLgpR%7EeoFIStwccF1CiApt2JMq1RKTCd3AJkb%7EDUU-i7-EcqbQX8q%7EbguoNZ7OWU88pEH%7E5wbMaLt6Z-nXRuZfLrtaMhEk1lWNOrjbH0uYm-MftmDa%7EWbUEfyKtW13dXfO5HnFaIGyhTTHwcUQ__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2024-12-30 17:48:48,462 [INFO] Model loaded on: cuda:0
+2024-12-30 17:48:48,463 [INFO] Processing datasets...
+2024-12-30 17:49:12,584 [INFO] Model device: cuda:0
+2024-12-30 17:49:12,584 [INFO] CUDA active: True
+2024-12-30 17:49:12,585 [INFO] Current device: 0
+2024-12-30 17:49:12,727 [INFO] Starting training...
+2024-12-30 17:50:39,843 [INFO] Using default tokenizer.
+2024-12-30 17:59:58,118 [INFO] Using default tokenizer.
+2024-12-30 18:06:49,807 [INFO] Using default tokenizer.
+2024-12-30 18:13:27,162 [INFO] Using default tokenizer.
+2024-12-30 18:32:39,630 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2024-12-30 18:32:39,631 [INFO] Total GPU Memory: 4.00 GB
+2024-12-30 18:32:39,631 [INFO] Loading dataset...
+2024-12-30 18:32:39,641 [INFO] Loading facebook/blenderbot-400M-distill...
+2024-12-30 18:32:41,982 [INFO] Model loaded on: cuda:0
+2024-12-30 18:32:41,982 [INFO] Processing datasets...
+2024-12-30 18:32:51,232 [INFO] Model device: cuda:0
+2024-12-30 18:32:51,232 [INFO] CUDA active: True
+2024-12-30 18:32:51,232 [INFO] Current device: 0
+2024-12-30 18:32:51,348 [INFO] Starting training...
+2024-12-30 18:33:55,916 [INFO] Using default tokenizer.
+2024-12-30 18:39:14,530 [INFO] Using default tokenizer.
+2024-12-30 18:42:44,609 [INFO] Using default tokenizer.
+2024-12-30 18:46:16,073 [INFO] Using default tokenizer.
+2024-12-30 18:46:21,711 [INFO] Training completed and model saved!
