@@ -357,8 +357,8 @@ class FinancialDataPreprocessor:
                 except StopIteration:
                     break  # End of dataset
             
-            # Calculate number of starters (4% of dataset)
-            num_starters = max(int(len(conversation_pairs) * 0.04), 20)
+            # Calculate number of starters (30% of dataset)
+            num_starters = max(int(len(conversation_pairs) * 0.3), 20)
             
             # Generate conversation starters
             starter_pairs = []
@@ -414,7 +414,7 @@ class FinancialDataPreprocessor:
             raise
 
 def main():
-    preprocessor = FinancialDataPreprocessor()
+    preprocessor = FinancialDataPreprocessor(year = '2017')
     conversation_pairs = preprocessor.process_edgar_data()
     preprocessor.save_dataset(conversation_pairs)
 

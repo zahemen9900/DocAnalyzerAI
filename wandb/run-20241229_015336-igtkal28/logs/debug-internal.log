@@ -1,0 +1,16 @@
+{"time":"2024-12-29T01:53:36.205512524Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-29T01:53:36.205520414Z","level":"INFO","msg":"created symlink","path":"/home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/run-20241229_015336-igtkal28/logs/debug-core.log"}
+{"time":"2024-12-29T01:53:36.349234051Z","level":"INFO","msg":"created new stream","id":"igtkal28"}
+{"time":"2024-12-29T01:53:36.349270048Z","level":"INFO","msg":"stream: started","id":"igtkal28"}
+{"time":"2024-12-29T01:53:36.349293537Z","level":"INFO","msg":"writer: Do: started","stream_id":"igtkal28"}
+{"time":"2024-12-29T01:53:36.349320354Z","level":"INFO","msg":"handler: started","stream_id":"igtkal28"}
+{"time":"2024-12-29T01:53:36.349398037Z","level":"INFO","msg":"sender: started","stream_id":"igtkal28"}
+{"time":"2024-12-29T01:53:36.776443087Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-29T01:56:02.640559815Z","level":"INFO","msg":"stream: closing","id":"igtkal28"}
+{"time":"2024-12-29T01:56:02.640645567Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-29T01:56:02.641483843Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-29T01:56:05.701593938Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-29T01:56:08.50227492Z","level":"INFO","msg":"handler: closed","stream_id":"igtkal28"}
+{"time":"2024-12-29T01:56:08.502318303Z","level":"INFO","msg":"writer: Close: closed","stream_id":"igtkal28"}
+{"time":"2024-12-29T01:56:08.502352844Z","level":"INFO","msg":"sender: closed","stream_id":"igtkal28"}
+{"time":"2024-12-29T01:56:08.502419038Z","level":"INFO","msg":"stream: closed","id":"igtkal28"}
