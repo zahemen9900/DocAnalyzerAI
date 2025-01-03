@@ -132,12 +132,19 @@ class ChatbotUI:
 def main():
     ui = ChatbotUI()
     demo = ui.create_demo()
-    demo.launch(
-        server_name="0.0.0.0",
-        server_port=7861,
-        share=False,
-        debug=True
-    )
-
+    try:
+        demo.launch(
+            server_name="0.0.0.0",
+            server_port=7861,
+            share=True,
+            debug=True
+        )
+    except Exception as e:
+        demo.launch(
+            server_name="0.0.0.0",
+            server_port=7865, #try another port if the current port isn't available
+            share=True,
+            debug=True
+        )
 if __name__ == "__main__":
     main()
