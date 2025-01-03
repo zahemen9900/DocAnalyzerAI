@@ -1,0 +1,18 @@
+{"time":"2025-01-03T01:43:56.2451272Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-03T01:43:56.245135791Z","level":"INFO","msg":"created symlink","path":"/home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/run-20250103_014356-933tyqab/logs/debug-core.log"}
+{"time":"2025-01-03T01:43:56.416384843Z","level":"INFO","msg":"created new stream","id":"933tyqab"}
+{"time":"2025-01-03T01:43:56.416426506Z","level":"INFO","msg":"stream: started","id":"933tyqab"}
+{"time":"2025-01-03T01:43:56.416459733Z","level":"INFO","msg":"writer: Do: started","stream_id":"933tyqab"}
+{"time":"2025-01-03T01:43:56.416501583Z","level":"INFO","msg":"sender: started","stream_id":"933tyqab"}
+{"time":"2025-01-03T01:43:56.41653158Z","level":"INFO","msg":"handler: started","stream_id":"933tyqab"}
+{"time":"2025-01-03T01:43:57.262649238Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-03T01:48:48.4589296Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/933tyqab/file_stream\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-01-03T02:01:36.229255074Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/933tyqab/file_stream\": context deadline exceeded"}
+{"time":"2025-01-03T02:08:08.496145232Z","level":"INFO","msg":"stream: closing","id":"933tyqab"}
+{"time":"2025-01-03T02:08:08.496181804Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-03T02:08:08.496940955Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-03T02:08:10.197604206Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-03T02:08:12.409442548Z","level":"INFO","msg":"handler: closed","stream_id":"933tyqab"}
+{"time":"2025-01-03T02:08:12.409473258Z","level":"INFO","msg":"writer: Close: closed","stream_id":"933tyqab"}
+{"time":"2025-01-03T02:08:12.409485528Z","level":"INFO","msg":"sender: closed","stream_id":"933tyqab"}
+{"time":"2025-01-03T02:08:12.409528877Z","level":"INFO","msg":"stream: closed","id":"933tyqab"}

@@ -1,5 +1,6 @@
 import torch
 import os
+import re
 # Set debugging flags
 os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 os.environ['TOKENIZERS_PARALLELISM'] = 'false'
@@ -244,8 +245,6 @@ def train(
             # Added settings
             label_smoothing_factor=0.1,
             generation_config=None,  # Disable generation config warnings
-            no_repeat_ngram_size=3,
-            repetition_penalty=1.2,
         )
         
         # Update model configuration

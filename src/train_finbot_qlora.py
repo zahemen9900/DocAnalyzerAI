@@ -11,7 +11,8 @@ from transformers import (
     BitsAndBytesConfig,
     TrainingArguments,
     Trainer,
-    DataCollatorForSeq2Seq
+    DataCollatorForSeq2Seq,
+    GenerationConfig
 )
 from peft import (
     prepare_model_for_kbit_training,
@@ -22,8 +23,6 @@ from peft import (
 import bitsandbytes as bnb
 from accelerate import Accelerator
 import evaluate
-from typing import Dict, List, Union
-import numpy as np
 
 # Configure logging
 logging.basicConfig(
@@ -35,103 +34,6 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger(__name__)
-
-class MetricsComputer:
-    """Class to handle metrics computation with access to tokenizer"""
-    def __init__(self, tokenizer):
-        self.tokenizer = tokenizer
-        self.rouge_score = evaluate.load("rouge")
-        self.bleu_score = evaluate.load("bleu")
-        self.meteor = evaluate.load("meteor")
-        
-    def __call__(self, eval_preds):
-        """Compute metrics using __call__ for direct use with trainer"""
-        try:
-            predictions, labels = eval_preds
-            
-            # Handle prediction tuple from generation
-            if isinstance(predictions, tuple):
-                predictions = predictions[0]
-                
-            # Convert tensors to lists
-            if isinstance(predictions, torch.Tensor):
-                predictions = predictions.cpu().numpy()
-            if isinstance(labels, torch.Tensor):
-                labels = labels.cpu().numpy()
-                
-            # Remove padding and decode
-            decoded_preds = []
-            decoded_labels = []
-            
-            for pred, label in zip(predictions, labels):
-                # Remove padding
-                pred = pred[pred != self.tokenizer.pad_token_id]
-                label = label[label != -100]  # -100 is default padding label
-                
-                # Decode individual sequences
-                try:
-                    decoded_pred = self.tokenizer.decode(pred, skip_special_tokens=True)
-                    decoded_label = self.tokenizer.decode(label, skip_special_tokens=True)
-                    
-                    decoded_preds.append(decoded_pred)
-                    decoded_labels.append(decoded_label)
-                except Exception as e:
-                    logger.warning(f"Failed to decode sequence: {e}")
-                    continue
-            
-            # Clean up predictions and labels
-            decoded_preds = [pred.strip() for pred in decoded_preds]
-            decoded_labels = [label.strip() for label in decoded_labels]
-            
-            # Log samples for debugging
-            logger.info("\nSample predictions:")
-            for pred, label in zip(decoded_preds[:2], decoded_labels[:2]):
-                logger.info(f"\nPrediction: {pred}\nReference: {label}")
-            
-            # Format references for BLEU
-            references = [[label] for label in decoded_labels]
-            
-            try:
-                # Calculate metrics
-                metrics = {}
-                
-                # ROUGE scores
-                rouge_output = self.rouge_score.compute(
-                    predictions=decoded_preds, 
-                    references=decoded_labels,
-                    use_aggregator=True
-                )
-                metrics.update(rouge_output)
-                
-                # BLEU score
-                bleu_output = self.bleu_score.compute(
-                    predictions=decoded_preds,
-                    references=references
-                )
-                metrics['bleu'] = bleu_output['bleu']
-                
-                # METEOR score
-                meteor_output = self.meteor.compute(
-                    predictions=decoded_preds,
-                    references=decoded_labels
-                )
-                metrics['meteor'] = meteor_output['meteor']
-                
-                return metrics
-                
-            except Exception as e:
-                logger.error(f"Failed to compute metrics: {e}")
-                return {
-                    'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0,
-                    'bleu': 0.0, 'meteor': 0.0
-                }
-                
-        except Exception as e:
-            logger.error(f"Metrics computation failed: {str(e)}", exc_info=True)
-            return {
-                'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0,
-                'bleu': 0.0, 'meteor': 0.0
-            }
 
 def setup_quantization_config():
     """Setup 4-bit quantization configuration"""
@@ -181,7 +83,7 @@ def train(
     dataset_path: str = "finetune_data/train.json",
     output_dir: str = "results/financial-bot-qlora",
     max_length: int = 128,
-    batch_size: int = 4,  # Reduced batch size
+    batch_size: int = 8, 
 ):
     try:
         # Check GPU and clear memory
@@ -215,7 +117,7 @@ def train(
             raise ValueError("No valid data processed from the dataset")
 
         dataset = Dataset.from_list(processed_data)
-        dataset = dataset.train_test_split(test_size=0.1, seed=42)
+        dataset = dataset.train_test_split(test_size=0.3, seed=42)
 
         # Initialize quantization config with error handling
         try:
@@ -231,7 +133,6 @@ def train(
             model = AutoModelForSeq2SeqLM.from_pretrained(
                 model_name,
                 quantization_config=quant_config,
-                # Remove device_map="auto" and use .to(device) instead
                 torch_dtype=torch.float16,
             )
             # Explicitly move model to GPU
@@ -273,7 +174,7 @@ def train(
                 max_length=max_length,
                 padding='max_length',
                 truncation=True,
-                return_tensors=None
+                return_tensors='pt'
             )
             
             with tokenizer.as_target_tokenizer():
@@ -282,7 +183,7 @@ def train(
                     max_length=max_length,
                     padding='max_length',
                     truncation=True,
-                    return_tensors=None
+                    return_tensors='pt'
                 )
             
             model_inputs["labels"] = labels["input_ids"]
@@ -310,28 +211,25 @@ def train(
             logger.error("Failed to process datasets", exc_info=True)
             raise
 
-        # Initialize metrics computer
-        metrics_computer = MetricsComputer(tokenizer)
-        
         # Updated training arguments for better stability
         training_args = TrainingArguments(
             output_dir=output_dir,
-            num_train_epochs=15,
+            num_train_epochs=1,
             per_device_train_batch_size=batch_size,
             per_device_eval_batch_size=batch_size,
-            gradient_accumulation_steps=8,  # Increased for stability
-            learning_rate=1e-4,  # Reduced learning rate
+            gradient_accumulation_steps=8,  
+            learning_rate=5e-6,  # Reduced learning rate
             weight_decay=0.01,
             warmup_ratio=0.1,
             logging_steps=20,
-            evaluation_strategy="steps",
+            eval_strategy="steps",
             save_strategy="steps",
-            eval_steps=10,
-            save_steps=40,
+            eval_steps=70,
+            save_steps=70,
             save_total_limit=3,
             load_best_model_at_end=True,
-            metric_for_best_model="rouge1",
-            greater_is_better=True,  # Higher ROUGE is better
+            metric_for_best_model="eval_loss",
+            greater_is_better=False,
             fp16=True,
             gradient_checkpointing=True,
             optim="paged_adamw_32bit",
@@ -339,9 +237,6 @@ def train(
             group_by_length=True,
             remove_unused_columns=False,  # Added to prevent column removal errors
             ddp_find_unused_parameters=False,  # Added for distributed training
-            # predict_with_generate=True,  # Enable generation
-            # generation_max_length=max_length,
-            # generation_num_beams=4,
         )
 
         # Initialize trainer with data collator
@@ -357,7 +252,6 @@ def train(
                 padding=True,
                 label_pad_token_id=tokenizer.pad_token_id
             ),
-            compute_metrics=metrics_computer,  # Use the instance directly
         )
 
         # Train with error handling
@@ -367,21 +261,6 @@ def train(
         except Exception as e:
             logger.error("Training failed", exc_info=True)
             raise
-
-        # Perform final evaluation
-        logger.info("Performing final evaluation...")
-        final_metrics = trainer.evaluate()
-        
-        # Log final metrics
-        logger.info("Final evaluation metrics:")
-        for metric, value in final_metrics.items():
-            logger.info(f"{metric}: {value:.4f}")
-            
-        # Save metrics to file
-        metrics_file = os.path.join(output_dir, "final_metrics.json")
-        with open(metrics_file, 'w') as f:
-            json.dump(final_metrics, f, indent=2)
-        logger.info(f"Saved final metrics to {metrics_file}")
 
         # Save with error handling
         try:

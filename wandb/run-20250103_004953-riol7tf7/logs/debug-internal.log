@@ -1,0 +1,17 @@
+{"time":"2025-01-03T00:49:53.233407951Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-03T00:49:53.233424443Z","level":"INFO","msg":"created symlink","path":"/home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/run-20250103_004953-riol7tf7/logs/debug-core.log"}
+{"time":"2025-01-03T00:49:53.405544683Z","level":"INFO","msg":"created new stream","id":"riol7tf7"}
+{"time":"2025-01-03T00:49:53.405591881Z","level":"INFO","msg":"stream: started","id":"riol7tf7"}
+{"time":"2025-01-03T00:49:53.405623319Z","level":"INFO","msg":"writer: Do: started","stream_id":"riol7tf7"}
+{"time":"2025-01-03T00:49:53.405648312Z","level":"INFO","msg":"handler: started","stream_id":"riol7tf7"}
+{"time":"2025-01-03T00:49:53.405679126Z","level":"INFO","msg":"sender: started","stream_id":"riol7tf7"}
+{"time":"2025-01-03T00:49:54.077313203Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-03T00:59:00.584373677Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/riol7tf7/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-01-03T01:13:34.312304601Z","level":"INFO","msg":"stream: closing","id":"riol7tf7"}
+{"time":"2025-01-03T01:13:34.312347243Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-03T01:13:34.313328484Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-03T01:13:34.348394724Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-03T01:13:35.784963412Z","level":"INFO","msg":"handler: closed","stream_id":"riol7tf7"}
+{"time":"2025-01-03T01:13:35.785001205Z","level":"INFO","msg":"writer: Close: closed","stream_id":"riol7tf7"}
+{"time":"2025-01-03T01:13:35.785039336Z","level":"INFO","msg":"sender: closed","stream_id":"riol7tf7"}
+{"time":"2025-01-03T01:13:35.785045101Z","level":"INFO","msg":"stream: closed","id":"riol7tf7"}

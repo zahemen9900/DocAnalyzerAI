@@ -15,7 +15,7 @@ class FinancialChatbot:
         self._init_model(model_name)
         
         # Initialize table analyzer
-        self.analyzer = TableAnalyzer()
+        # self.analyzer = TableAnalyzer()
         
         # State management
         self.conversation_history = []

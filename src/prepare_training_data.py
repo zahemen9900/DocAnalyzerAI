@@ -6,6 +6,8 @@ import logging
 from pathlib import Path
 import os
 import re
+from dataclasses import dataclass
+from datetime import datetime
 
 # Configure logging with more detailed format
 logging.basicConfig(
@@ -67,6 +69,55 @@ CONVERSATION_STARTERS = [
     ("Need advice on my startup's financials.", "I'd be happy to help with your startup's financial planning. Let's start by reviewing your current financial structure, cash flow projections, and funding needs. What's your most pressing concern?")
 ]
 
+QUESTION_STARTERS = [
+    "Could you explain", 
+    "I'd like to understand", 
+    "Help me understand", 
+    "What do you know about",
+    "Tell me more about", 
+    "I'm curious about",
+    "What exactly is", 
+    "How would you define",
+    "Can you elaborate on", 
+    "Could you clarify",
+    "What insights can you provide about", 
+    "How does one approach",
+    "Could you shed light on", 
+    "What can you tell me regarding",
+    "How would you describe", 
+    "Can you provide an overview of",
+    "What is your perspective on", 
+    "Could you detail",
+    "What factors influence", 
+    "How does one interpret",
+    "What significance does", 
+    "Can you walk me through",
+    "What implications does", 
+    "How does one assess",
+    "What are the key aspects of"
+]
+
+def generate_variations(question: str, answer: str, max_variations: int = 3) -> List[Tuple[str, str]]:
+    """Generate limited variations of Q&A pairs"""
+    variations = [(question, answer)]
+    
+    # Extract core topic and clean it
+    core_topic = re.sub(r'^(What is|Define|Explain|How does|Tell me about)\s+', '', question).strip('?. ')
+    
+    # Select a random subset of starters
+    selected_starters = random.sample(QUESTION_STARTERS, min(max_variations, len(QUESTION_STARTERS)))
+    
+    # Generate variations with deduplication
+    seen = {question.lower()}
+    for starter in selected_starters:
+        var_question = f"{starter} {core_topic}?"
+        if var_question.lower() not in seen:
+            seen.add(var_question.lower())
+            variations.append((var_question, answer))
+            
+    return variations
+
+
 FINANCIAL_QA_SAMPLES = [
     ("What is ROI?", "ROI (Return on Investment) is a performance metric used to evaluate the efficiency of an investment. It's calculated by dividing the net profit by the cost of investment and expressing it as a percentage. For example, if you invest $1000 and earn $1200, your ROI is 20%."),
     ("Explain market capitalization.", "Market capitalization, or market cap, represents the total value of a company's shares in the market. It's calculated by multiplying the current share price by the total number of outstanding shares. Companies are often classified as large-cap (>$10B), mid-cap ($2-10B), or small-cap (<$2B)."),
@@ -102,6 +153,9 @@ FINANCIAL_QA_SAMPLES = [
     ("Define a capital structure.", "A capital structure is the mix of debt and equity financing used by a company to fund its operations and investments. It represents the proportion of debt, equity, and other securities in a company's capital stack. The capital structure affects a company's cost of capital, financial risk, and ability to raise funds. Companies aim to achieve an optimal capital structure that balances risk and return."),
     ("What is a corporate bond?", "A corporate bond is a debt security issued by a corporation to raise capital. It represents a loan from investors to the issuing company in exchange for periodic interest payments and the return of the principal at maturity. Corporate bonds are rated by credit agencies based on the issuer's creditworthiness and are traded in the bond market."),
     ("Explain the concept of working capital.", "Working capital is the difference between a company's current assets and current liabilities. It represents the funds available for day-to-day operations and is used to manage short-term financial obligations. Working capital is essential for maintaining liquidity, funding growth, and supporting business activities. It can be calculated as current assets minus current liabilities."),
+    ("What is capital gains tax?", "Capital gains tax is a tax on the profit made from selling a capital asset, such as stocks, bonds, or real estate. It's calculated as the difference between the asset's sale price and purchase price and can be categorized as short-term or long-term based on the holding period."),
+    ("What is ROI?", "Return on Investment (ROI) is a metric used to measure the profitability of an investment. It's calculated by dividing net profit by the cost of the investment and expressing the result as a percentage."),
+    ("Explain market capitalization.", "Market capitalization (market cap) refers to the total value of a company's outstanding shares. It's calculated by multiplying the current stock price by the total number of outstanding shares."),
     ("What is a capital gain tax?", "A capital gains tax is a tax levied on the profit realized from the sale of a capital asset, such as stocks, bonds, or real estate. It's calculated based on the capital gain, which is the difference between the sale price and the purchase price of the asset. Capital gains can be subject to short-term or long-term tax rates, depending on the holding period of the asset."),
     ("What is ROI?", "ROI (Return on Investment) is a performance metric used to evaluate the efficiency of an investment. It's calculated by dividing the net profit by the cost of investment and expressing it as a percentage. For example, if you invest $1000 and earn $1200, your ROI is 20%."),
     ("Explain market capitalization.", "Market capitalization, or market cap, represents the total value of a company's shares in the market. It's calculated by multiplying the current share price by the total number of outstanding shares. Companies are often classified as large-cap (>$10B), mid-cap ($2-10B), or small-cap (<$2B)."),
@@ -163,6 +217,16 @@ FINANCIAL_QA_SAMPLES = [
     ("What is an initial public offering (IPO)?", "An IPO is the process through which a private company offers shares to the public for the first time, transitioning to a publicly traded entity."),
     ("Explain the concept of dollar-cost averaging.", "Dollar-cost averaging is an investment strategy where an investor divides the total amount to be invested across periodic purchases of a target asset, aiming to reduce the impact of volatility."),
     ("What is a fiduciary?", "A fiduciary is an individual or organization legally obligated to act in the best interest of another party, such as a financial advisor managing a client's assets."),
+    ("Explain the concept of market liquidity.", "Market liquidity refers to the extent to which a market allows assets to be bought and sold at stable prices. High liquidity indicates assets can be quickly sold without affecting their price."),
+    ("What is a bond?", "A bond is a fixed-income instrument representing a loan made by an investor to a borrower, typically corporate or governmental, with periodic interest payments and return of principal at maturity."),
+    ("Define yield to maturity (YTM).", "YTM is the total return anticipated on a bond if held until it matures, considering all interest payments and the difference between its current price and par value."),
+    ("What is a junk bond?", "A junk bond is a high-yield, high-risk security issued by companies with lower credit ratings, offering higher interest rates to attract investors."),
+    ("Explain the concept of securitization.", "Securitization involves pooling various types of debt and selling them as consolidated financial instruments to investors, allowing for risk distribution."),
+    ("What is a credit default swap (CDS)?", "A CDS is a financial derivative allowing an investor to 'swap' or offset their credit risk with that of another investor, functioning like insurance against default."),
+    ("Define the term 'underwriting'.", "Underwriting is the process by which an individual or institution takes on financial risk for a fee, often in the context of loans, insurance, or investments."),
+    ("What is an initial public offering (IPO)?", "An IPO is the process through which a private company offers shares to the public for the first time, transitioning to a publicly traded entity."),
+    ("Explain the concept of dollar-cost averaging.", "Dollar-cost averaging is an investment strategy where an investor divides the total amount to be invested across periodic purchases of a target asset, aiming to reduce the impact of volatility."),
+    ("What is a fiduciary?", "A fiduciary is an individual or organization legally obligated to act in the best interest of another party, such as a financial advisor managing a client's assets."),
     ("Define the term 'escrow'.", "Escrow is a financial arrangement where a third party holds and regulates payment of funds required for two parties involved in a transaction, ensuring security until all conditions are met."),
     ("What is a leveraged buyout (LBO)?", "An LBO is the acquisition of a company using a significant amount of borrowed money to meet the cost of acquisition, with the assets of the company often used as collateral."),
     ("Explain the concept of quantitative easing (QE).", "QE is a monetary policy where a central bank purchases government securities or other securities to increase the money supply and encourage lending and investment."),
@@ -185,56 +249,160 @@ FINANCIAL_QA_SAMPLES = [
     ("Explain DeFi lending.", "Decentralized Finance (DeFi) lending allows users to lend and borrow cryptocurrencies directly through smart contracts, eliminating traditional intermediaries. Users can earn interest by providing liquidity to lending pools or borrow assets by providing collateral."),
     ("What is a SPAC?", "A Special Purpose Acquisition Company (SPAC) is a shell corporation listed on a stock exchange with the purpose of acquiring an existing private company, thereby making it public without going through the traditional IPO process."),
     ("How do circuit breakers work?", "Circuit breakers are automatic trading halts triggered when market indices drop by certain percentages. For example, the S&P 500 has three circuit breaker thresholds: 7% (Level 1), 13% (Level 2), and 20% (Level 3), designed to prevent panic selling."),
-    ("What is tax-loss harvesting?", "Tax-loss harvesting is an investment strategy where you sell securities at a loss to offset capital gains tax liability. This involves carefully timing the sale of investments while adhering to wash-sale rules and other tax regulations.")
+    ("What is tax-loss harvesting?", "Tax-loss harvesting is an investment strategy where you sell securities at a loss to offset capital gains tax liability. This involves carefully timing the sale of investments while adhering to wash-sale rules and other tax regulations."),
+    ("Define the term 'escrow'.", "Escrow is a financial arrangement where a third party holds and regulates payment of funds required for two parties involved in a transaction, ensuring security until all conditions are met."),
+    ("What is a leveraged buyout (LBO)?", "An LBO is the acquisition of a company using a significant amount of borrowed money to meet the cost of acquisition, with the assets of the company often used as collateral."),
+    ("Explain the concept of quantitative easing (QE).", "QE is a monetary policy where a central bank purchases government securities or other securities to increase the money supply and encourage lending and investment."),
+    ("What is a special purpose vehicle (SPV)?", "An SPV is a subsidiary created by a parent company to isolate financial risk, having its own legal status and assets/liabilities."),
+    ("Define the term 'arbitrage'.", "Arbitrage involves the simultaneous purchase and sale of an asset in different markets to profit from price discrepancies."),
+    ("What is a Ponzi scheme?", "A Ponzi scheme is a fraudulent investing scam promising high returns with little risk, generating returns for earlier investors through revenue paid by new investors."),
+    ("Explain the concept of the time value of money.", "The time value of money is the idea that a sum of money has greater value now than the same sum in the future due to its potential earning capacity."),
+    ("What is a zero-coupon bond?", "A zero-coupon bond is a debt security that doesn't pay interest but is traded at a deep discount, rendering profit at maturity when redeemed for its full face value."),
+    ("Define the term 'liquidity ratio'.", "A liquidity ratio measures a company's ability to pay off short-term obligations with its liquid assets, indicating financial health and stability."),
+    ("What is a credit rating?", "A credit rating is an evaluation of the creditworthiness of an individual or entity, assessing the likelihood of default on financial obligations."),
+    ("Explain the concept of a stock option.", "A stock option is a contract giving the holder the right to buy or sell a specific number of shares at a predetermined price within a set time frame."),
+    ("What is a dividend reinvestment plan (DRIP)?", "A DRIP is an investment strategy allowing shareholders to reinvest their dividends into additional shares of the company's stock."),
+    ("Define the term 'capital gains tax'.", "Capital gains tax is a levy on the profit realized from the sale of an asset, such as stocks or real estate, calculated based on the capital gain."),
+    ("What is a stock exchange?", "A stock exchange is a marketplace where securities, such as stocks and bonds, are bought and sold, providing liquidity and transparency to the financial markets."),
+    ("Explain the concept of a bear market.", "A bear market is a period of declining stock prices, typically by 20% or more, often accompanied by widespread pessimism and negative investor sentiment."),
+    ("What is a bull market?", "A bull market is a period of rising stock prices, typically by 20% or more, signaling investor confidence and expectations of strong future financial performance."),
+    ("Define asset allocation.", "Asset allocation is an investment strategy balancing risk and reward by distributing a portfolio's assets according to an individual's goals, risk tolerance, and investment horizon."),
+    ("What are ESG investments?", "ESG (Environmental, Social, and Governance) investments focus on companies meeting specific sustainability and ethical standards. These investments consider factors like carbon footprint, workplace diversity, and corporate transparency alongside financial returns."),
+    ("Explain DeFi lending.", "Decentralized Finance (DeFi) lending allows users to lend and borrow cryptocurrencies directly through smart contracts, eliminating traditional intermediaries. Users can earn interest by providing liquidity to lending pools or borrow assets by providing collateral."),
+    ("What is a SPAC?", "A Special Purpose Acquisition Company (SPAC) is a shell corporation listed on a stock exchange with the purpose of acquiring an existing private company, thereby making it public without going through the traditional IPO process."),
+    ("How do circuit breakers work?", "Circuit breakers are automatic trading halts triggered when market indices drop by certain percentages. For example, the S&P 500 has three circuit breaker thresholds: 7% (Level 1), 13% (Level 2), and 20% (Level 3), designed to prevent panic selling."),
+    ("What is tax-loss harvesting?", "Tax-loss harvesting is an investment strategy where you sell securities at a loss to offset capital gains tax liability. This involves carefully timing the sale of investments while adhering to wash-sale rules and other tax regulations."),
+    ("Explain the concept of a reverse mortgage.", "A reverse mortgage is a loan available to homeowners aged 62 or older that allows them to convert part of their home equity into cash. The loan is repaid when the borrower moves out, sells the home, or passes away."),
+    ("What is a 529 plan?", "A 529 plan is a tax-advantaged savings plan designed to encourage saving for future education expenses. These plans offer various investment options and tax benefits, such as tax-free growth and withdrawals for qualified education expenses."),
+    ("What is market liquidity?", "Market liquidity measures how easily an asset can be bought or sold without causing significant price changes."),
+    ("Define a bond.", "A bond is a debt security where the issuer owes the holder a debt and pays periodic interest along with the principal at maturity."),
+    ("What does yield to maturity (YTM) mean?", "YTM represents the total expected return on a bond if held until its maturity date, including interest and price difference."),
+    ("What are junk bonds?", "Junk bonds are high-risk, high-yield securities issued by companies with low credit ratings, offering higher returns."),
+    ("Explain securitization.", "Securitization is the process of pooling financial assets, such as loans, and selling them as tradable securities."),
+    ("What is a credit default swap?", "A credit default swap is a derivative contract allowing risk transfer of credit default between two parties."),
+    ("What is underwriting in finance?", "Underwriting involves assessing financial risk and guaranteeing the sale of securities or insurance for a fee."),
+    ("What happens during an IPO?", "An IPO is when a private company sells shares to the public for the first time to raise capital."),
+    ("How does dollar-cost averaging work?", "Dollar-cost averaging involves investing a fixed amount regularly, regardless of market conditions, to reduce risk."),
+    ("What is a fiduciary duty?", "Fiduciary duty is the legal obligation to act in the best interest of another party, especially in financial matters."),
+    ("What is escrow?", "Escrow is a financial arrangement where a neutral third party holds funds until contract conditions are met."),
+    ("Define leveraged buyout (LBO).", "An LBO is when a company is acquired using borrowed funds, with the target's assets often serving as collateral."),
+    ("What is quantitative easing (QE)?", "QE is when a central bank buys financial assets to inject money into the economy and stimulate growth."),
+    ("What does SPV stand for?", "A Special Purpose Vehicle (SPV) is a separate entity created to isolate financial risk."),
+    ("What is arbitrage?", "Arbitrage is exploiting price differences of an asset across markets to make a profit."),
+    ("How does a Ponzi scheme work?", "A Ponzi scheme uses money from new investors to pay returns to earlier investors, creating an illusion of profit."),
+    ("What is the time value of money?", "The time value of money states that money available today is worth more than the same sum in the future."),
+    ("What are zero-coupon bonds?", "Zero-coupon bonds are sold at a discount and pay no interest but return face value at maturity."),
+    ("What is a liquidity ratio?", "A liquidity ratio measures a company's ability to meet short-term financial obligations."),
+    ("What are credit ratings?", "Credit ratings evaluate the likelihood of a borrower defaulting on debt obligations."),
+    ("How do stock options work?", "Stock options give the right to buy or sell shares at a set price before an expiration date."),
+    ("What is a DRIP?", "A Dividend Reinvestment Plan (DRIP) allows investors to reinvest their dividends into additional shares."),
+    ("What is capital gains tax?", "Capital gains tax is levied on the profit from selling assets like stocks or property."),
+    ("What happens on a stock exchange?", "A stock exchange facilitates buying and selling of securities, ensuring liquidity and transparency."),
+    ("What defines a bear market?", "A bear market is characterized by a prolonged decline in stock prices, typically over 20%."),
+    ("What defines a bull market?", "A bull market is marked by rising stock prices and positive investor sentiment."),
+    ("Explain asset allocation.", "Asset allocation distributes investments across asset classes to balance risk and reward."),
+    ("What are ESG criteria?", "ESG (Environmental, Social, Governance) criteria evaluate a company's ethical and sustainability practices."),
+    ("What is DeFi lending?", "DeFi lending uses smart contracts to enable direct lending and borrowing of cryptocurrencies."),
+    ("How do SPACs work?", "A SPAC is a shell company created to acquire a private company and take it public."),
+    ("What triggers circuit breakers in trading?", "Circuit breakers halt trading temporarily when stock indices fall by predefined percentages."),
+    ("How does tax-loss harvesting work?", "Tax-loss harvesting involves selling assets at a loss to offset taxable capital gains."),
+    ("What is compounding interest?", "Compounding interest earns interest on both the initial principal and previously earned interest."),
+    ("Define a mutual fund.", "A mutual fund pools money from multiple investors to purchase a diversified portfolio of assets."),
+    ("What is inflation?", "Inflation is the rate at which the general price level of goods and services rises."),
+    ("What is deflation?", "Deflation refers to a decrease in the general price level of goods and services."),
+    ("What is a credit score?", "A credit score indicates an individual's creditworthiness based on past financial behavior."),
+    ("Explain diversification.", "Diversification spreads investments across different assets to reduce risk."),
+    ("What is an ETF?", "An Exchange-Traded Fund (ETF) is a fund traded on stock exchanges, holding a portfolio of assets."),
+    ("What are derivatives?", "Derivatives are financial contracts whose value depends on underlying assets like stocks or commodities."),
+    ("What is short selling?", "Short selling is borrowing and selling assets with the intention of repurchasing them at a lower price."),
+    ("What are blue-chip stocks?", "Blue-chip stocks belong to well-established, financially sound companies with a history of reliable performance."),
+    ("Explain financial leverage.", "Financial leverage involves using borrowed money to increase potential returns on investments."),
+    ("What is the purpose of a central bank?", "Central banks regulate monetary policy, control inflation, and ensure financial stability."),
+    ("What are savings bonds?", "Savings bonds are low-risk, government-issued bonds designed for long-term savings."),
+    ("What is cash flow?", "Cash flow represents the net amount of cash moving in and out of a business."),
+    ("What is a balance sheet?", "A balance sheet shows a company's assets, liabilities, and equity at a specific point in time."),
+    ("What is ROI?", "Return on Investment (ROI) measures the profitability of an investment relative to its cost."),
+    ("Explain opportunity cost.", "Opportunity cost is the potential gain lost when choosing one option over another."),
+    ("What is an emergency fund?", "An emergency fund is a savings buffer for unexpected expenses or financial hardships."),
+    ("What is a budget?", "A budget is a financial plan outlining expected income and expenses over a period."),
+    ("What is a mortgage?", "A mortgage is a loan used to purchase real estate, typically repaid in installments."),
+    ("What are index funds?", "Index funds are mutual funds or ETFs designed to track a specific market index."),
+    ("Define risk tolerance.", "Risk tolerance is an investor's ability to endure losses in their investment portfolio."),
+    ("What is debt-to-equity ratio?", "Debt-to-equity ratio measures a company's financial leverage by comparing total debt to shareholders' equity."),
+    ("What is equity?", "Equity represents ownership value in an asset after deducting liabilities.")
+
+
 ]
+
 
 def ensure_directory_exists(filepath: str):
     """Create directory if it doesn't exist"""
     Path(filepath).parent.mkdir(parents=True, exist_ok=True)
     logger.info(f"Ensured directory exists: {Path(filepath).parent}")
 
+def truncate_text(text: str, max_words: int = 40) -> str:
+    """Truncate text to a maximum number of words while maintaining coherence"""
+    words = text.split()
+    if len(words) <= max_words:
+        return text
+        
+    # Try to find a good breakpoint (period or semicolon)
+    truncated = ' '.join(words[:max_words])
+    last_period = truncated.rfind('.')
+    last_semicolon = truncated.rfind(';')
+    
+    break_point = max(last_period, last_semicolon)
+    if break_point > len(truncated) // 2:  # Only use if break point is in latter half
+        return truncated[:break_point + 1]
+    
+    return truncated + '.'
+
 def clean_text(text: str) -> str:
-    """Clean and format text responses"""
-    # Remove "Assistant:" prefix
+    """Enhanced text cleaning with pattern removal"""
+    # Remove problematic patterns
+    patterns_to_remove = [
+        r"Financial Experience is.*?[.]",
+        r"Personal finance is.*?[.]",
+        # r"I am a financial advisor.*?[.]",
+        # r"Do you know anyone.*?[?]",
+        r"I have .* saved.*?[.]",
+        r"My (?:husband|wife|ex-wife).*?[.]"
+    ]
+    
+    for pattern in patterns_to_remove:
+        text = re.sub(pattern, "", text)
+    
+    # Existing cleaning
     text = re.sub(r'^Assistant:\s*', '', text)
-    # Remove multiple spaces
     text = re.sub(r'\s+', ' ', text)
+    text = re.sub(r'\s*\.\s*', '. ', text)
+    text = re.sub(r'\s*,\s*', ', ', text)
+    text = re.sub(r'\s*;\s*', '; ', text)
+    text = re.sub(r'\s+', ' ', text)
+    
     return text.strip()
 
-def generate_variations(question: str, answer: str) -> List[Tuple[str, str]]:
-    """Generate variations of Q&A pairs"""
-    variations = []
-    base = (question, answer)
-    variations.append(base)
+def generate_variations(question: str, answer: str, max_variations: int = 3) -> List[Tuple[str, str]]:
+    """Generate limited variations of Q&A pairs"""
+    variations = [(question, answer)]
     
-    # Create question variations
-    question_starters = [
-        "Could you explain", "I'd like to understand", 
-        "Help me understand", "What do you know about",
-        "Tell me more about", "I'm curious about",
-        "What exactly is", "How would you define",
-        "Can you elaborate on", "What are your thoughts on",
-        "Could you clarify", "I'd appreciate more information on",
-        "What insights can you provide about", "How does one approach",
-        "Could you shed light on", "What can you tell me regarding",
-        "How would you describe", "Can you provide an overview of",
-        "What is your perspective on", "Could you detail",
-        "What factors influence", "How does one interpret",
-        "What significance does", "Can you walk me through",
-        "What implications does", "How does one assess",
-        "What are the key aspects of", "Could you break down",
-        "What considerations are there for", "How does one evaluate"
-    ]
-
+    # Extract core topic and clean it
+    core_topic = re.sub(
+        r'^(What is|Define|Explain|How does|Tell me about|Can you explain to me|Explain to me|Describe|Give me an overview of|Provide an explanation of|Could you explain|Help me understand|I want to know about|What are)\s+',
+        '',
+        question
+    ).strip('?. ')    
+    # Select a random subset of starters
+    selected_starters = random.sample(QUESTION_STARTERS, min(max_variations, len(QUESTION_STARTERS)))
     
-    # Extract core topic from question
-    core_topic = re.sub(r'^(What is|Define|Explain|How does|Tell me about)\s+', '', question).strip('?. ')
-    
-    # Generate variations
-    for starter in question_starters:
+    # Generate variations with deduplication
+    seen = {question.lower()}
+    for starter in selected_starters:
         var_question = f"{starter} {core_topic}?"
-        variations.append((var_question, answer))
-        
+        if var_question.lower() not in seen:
+            seen.add(var_question.lower())
+            variations.append((var_question, answer))
+            
     return variations
 
 def create_domain_specific_samples() -> List[Dict]:
@@ -606,11 +774,10 @@ def create_domain_specific_samples() -> List[Dict]:
         {
             "question": "What is GDPR in finance?",
             "answer": "The General Data Protection Regulation (GDPR) sets guidelines for data privacy and protection for financial institutions operating in the EU."
-        }
+        },
 
     ]
-
-    
+   
     return [
         {
             "personas": ["Financial Expert"],
@@ -620,13 +787,267 @@ def create_domain_specific_samples() -> List[Dict]:
         for sample in samples
     ]
 
+def create_multi_turn_conversations(base_qa_pairs: List[Tuple[str, str]], max_turns: int = 3) -> List[Dict]:
+    """Create multi-turn conversations with limited samples"""
+    conversations = []
+    
+    # Limit the number of conversation chains
+    max_chains = 50
+    base_qa_pairs = base_qa_pairs[:max_chains * max_turns]
+    
+    for i in range(0, len(base_qa_pairs), max_turns):
+        turns = base_qa_pairs[i:i + max_turns]
+        context = []
+        
+        for j, (q, a) in enumerate(turns):
+            # Format previous context as a clean string
+            if context:
+                previous_context = "\n".join([
+                    f"Previous Q: {prev_q}\nPrevious A: {prev_a}"
+                    for prev_q, prev_a in zip(context[::2], context[1::2])
+                ])
+                
+                entry = {
+                    "personas": ["Financial Expert"],
+                    "previous_utterance": previous_context,
+                    "free_messages": [q],
+                    "guided_messages": [a]
+                }
+            else:
+                entry = {
+                    "personas": ["Financial Expert"],
+                    "previous_utterance": [],
+                    "free_messages": [q],
+                    "guided_messages": [a]
+                }
+            
+            conversations.append(entry)
+            context.extend([q, a])
+    
+    return conversations
+
+def generate_followup_questions(qa_pair: Tuple[str, str]) -> List[Tuple[str, str]]:
+    """Generate natural followup questions based on the initial QA pair"""
+    question, answer = qa_pair
+    followups = []
+    
+    # Extract key terms for followups
+    key_terms = extract_financial_terms(answer)
+    
+    # Generate followup patterns
+    followup_templates = [
+        "Can you elaborate on {term}?",
+        "How does {term} relate to market performance?",
+        "What are the risks associated with {term}?",
+        "Could you provide an example of {term} in action?",
+        "What are the best practices for managing {term}?"
+    ]
+    
+    for term in key_terms[:2]:  # Limit to 2 followups per term
+        for template in followup_templates[:2]:  # Limit templates
+            followup_q = template.format(term=term)
+            # Use OpenAI API or similar to generate contextual answers
+            followup_a = generate_contextual_answer(followup_q, context=answer)
+            followups.append((followup_q, followup_a))
+    
+    return followups
+
+def extract_financial_terms(text: str) -> List[str]:
+    """Extract key financial terms from text using regex and financial lexicon"""
+    # Financial term patterns
+    patterns = [
+        r'\b(?:stock|bond|market|investment|portfolio|dividend|equity|asset|liability)\w*\b',
+        r'\b(?:ROI|P/E|EPS|EBITDA|GDP|IPO)\b',
+        r'\b(?:bull|bear|volatile|leverage|hedge|risk|return)\w*\b'
+    ]
+    
+    terms = set()
+    for pattern in patterns:
+        matches = re.finditer(pattern, text, re.IGNORECASE)
+        terms.update(match.group() for match in matches)
+    
+    return list(terms)
+
+def generate_contextual_answer(question: str, context: str) -> str:
+    """Generate more focused and professional responses"""
+    key_terms = extract_financial_terms(context)
+    
+    # Create more professional response templates
+    templates = {
+        "definition": "In financial terms, {term} refers to {context}.",
+        "explanation": "{term} is a fundamental concept in finance that {context}.",
+        "analysis": "When analyzing {term}, it's important to consider that {context}.",
+    }
+    
+    # Choose appropriate template based on question type
+    if "what is" in question.lower() or "define" in question.lower():
+        template = templates["definition"]
+    elif "explain" in question.lower() or "how" in question.lower():
+        template = templates["explanation"]
+    else:
+        template = templates["analysis"]
+    
+    term = re.sub(r'^(?:what|how|why|could you|can you|explain|define)\s+(?:is|are|does|do|the|a|an)\s+', '', 
+                  question.lower().replace('?', ''))
+    
+    return template.format(term=term, context=context)
+
+def augment_dataset_with_variations(data: List[Dict]) -> List[Dict]:
+    """Improved dataset augmentation with better formatting"""
+    augmented_data = []
+    
+    for item in data:
+        # Original item
+        augmented_data.append(item)
+        
+        # Add clarification requests with better formatting
+        if len(item['free_messages'][0]) > 20:
+            terms = extract_financial_terms(item['free_messages'][0])
+            if terms:
+                question = f"Could you explain {terms[0]} in more detail?"
+                answer = f"Let me break down {terms[0]} more clearly. {item['guided_messages'][0]} This concept is fundamental to understanding financial markets and making informed investment decisions."
+                
+                clarification = {
+                    "personas": item["personas"],
+                    "previous_utterance": item['free_messages'],
+                    "free_messages": [question],
+                    "guided_messages": [answer]
+                }
+                augmented_data.append(clarification)
+        
+        # Add market context variations with improved responses
+        if any(term in item['guided_messages'][0].lower() for term in ['market', 'investment', 'stock', 'bond']):
+            context_question = "How does this concept apply in current market conditions?"
+            starter = random.choice(["In today's market", "Given the current economic landscape", "Considering recent market trends", "Given the current market volatility"])
+            context_answer = (
+                f"{starter}, {item['guided_messages'][0].lower()} "
+                f"This is particularly relevant given current economic conditions, where factors like "
+                f"interest rates, market volatility, and global economic trends play crucial roles."
+            )
+            
+            context_variation = {
+                "personas": item["personas"],
+                "previous_utterance": [item['free_messages'][0]],
+                "free_messages": [context_question],
+                "guided_messages": [context_answer]
+            }
+            augmented_data.append(context_variation)
+    
+    return augmented_data
+
+@dataclass
+class ConversationTemplate:
+    context: str
+    possible_responses: List[str]
+    followup_questions: List[str]
+
+# Add more natural conversation flows
+CONVERSATION_FLOWS = {
+    "risk_assessment": ConversationTemplate(
+        context="Discussion about investment risk tolerance and portfolio management",
+        possible_responses=[
+            "Based on what you've described, your risk tolerance appears to be {risk_level}. This suggests a portfolio with {allocation} might be suitable.",
+            "Let's analyze your comfort level with market fluctuations. {explanation}",
+            "Understanding your risk tolerance is crucial for building the right portfolio. {details}"
+        ],
+        followup_questions=[
+            "What's your investment timeline?",
+            "How would you react to a 20% market drop?",
+            "What's your primary investment goal?"
+        ]
+    ),
+    "market_volatility": ConversationTemplate(
+        context="Addressing concerns about market conditions and volatility",
+        possible_responses=[
+            "Market volatility is normal and can actually present opportunities. Here's why: {explanation}",
+            "Let's look at historical patterns to put current market conditions in perspective. {analysis}",
+            "While volatility can be concerning, maintaining a long-term perspective is key because {reason}"
+        ],
+        followup_questions=[
+            "What specific market sectors are you most concerned about?",
+            "Have you considered diversifying into {alternative}?",
+            "How has your portfolio performed during previous market corrections?"
+        ]
+    )
+}
+
+def generate_dynamic_response(template: str, context: Dict[str, str]) -> str:
+    """Generate more natural responses using templates and context"""
+    replacements = {
+        "risk_level": random.choice(["conservative", "moderate", "aggressive"]),
+        "allocation": random.choice([
+            "60% bonds and 40% stocks",
+            "70% stocks and 30% bonds",
+            "a balanced mix of growth and value stocks"
+        ]),
+        "explanation": random.choice([
+            "Historical data shows that markets tend to recover over time.",
+            "Diversification can help manage risk while maintaining growth potential.",
+            "A well-balanced portfolio can help weather market volatility."
+        ]),
+        "analysis": random.choice([
+            "Looking at previous market cycles...",
+            "When we examine similar situations in the past...",
+            "Market data indicates that..."
+        ]),
+        "alternative": random.choice([
+            "defensive sectors",
+            "dividend-paying stocks",
+            "fixed-income securities"
+        ]),
+        "details": context.get("additional_info", ""),
+        "reason": context.get("market_context", "")
+    }
+    
+    return template.format(**replacements)
+
+def create_natural_conversation(flow_type: str, context: Dict[str, str]) -> List[Dict]:
+    """Create more natural conversation flows"""
+    template = CONVERSATION_FLOWS[flow_type]
+    conversation = []
+    
+    # Initial response
+    initial_response = generate_dynamic_response(
+        random.choice(template.possible_responses),
+        context
+    )
+    
+    conversation.append({
+        "personas": ["Financial Expert"],
+        "previous_utterance": [],
+        "free_messages": [template.context],
+        "guided_messages": [initial_response]
+    })
+    
+    # Add natural followups
+    for question in random.sample(template.followup_questions, 2):
+        followup_response = generate_dynamic_response(
+            random.choice(template.possible_responses),
+            context
+        )
+        
+        conversation.append({
+            "personas": ["Financial Expert"],
+            "previous_utterance": [conversation[-1]["free_messages"][0]],
+            "free_messages": [question],
+            "guided_messages": [followup_response]
+        })
+    
+    return conversation
+
+# Update create_enhanced_dataset function
 def create_enhanced_dataset(
     output_file: str,
-    conversation_ratio: float = 0.3,
-    qa_ratio: float = 0.7,
-    max_samples: int = 2000  # Increased sample size
+    include_market_context=True,
+    max_conversation_turns=3,
+    conversation_ratio: float = 0.6,
+    qa_ratio: float = 0.4,
+    max_samples: int = 30_000, 
+    max_variations: int = 5,   # Limit variations per QA pair
+    max_followups: int = 3,    # Limit followup questions
+    max_words_per_response: int = 40
 ):
-    """Create an enhanced dataset with better balance and structure"""
+    """Enhanced dataset creation with size controls"""
     try:
         logger.info("Starting enhanced dataset creation...")
         enhanced_data = []
@@ -669,23 +1090,32 @@ def create_enhanced_dataset(
         
         # Process QA samples with variations
         qa_samples = []
-        for question, answer in FINANCIAL_QA_SAMPLES:
-            # Clean the answer format
-            clean_answer = clean_text(answer)
-            
-            # Generate variations
-            variations = generate_variations(question, clean_answer)
-            
-            for var_q, var_a in variations:
-                qa_samples.append({
-                    "personas": ["Financial Expert"],
-                    "previous_utterance": [],
-                    "free_messages": [var_q],
-                    "guided_messages": [var_a]
-                })
+        seen_questions = set()
         
-        # Add domain-specific samples
-        additional_samples = create_domain_specific_samples()
+        for question, answer in FINANCIAL_QA_SAMPLES:
+            # Skip if we've reached the desired QA count
+            if len(qa_samples) >= max_samples * qa_ratio:
+                break
+                
+            clean_answer = clean_text(answer)
+            truncated_answer = truncate_text(clean_answer, max_words_per_response)
+            
+            # Generate limited variations
+            variations = generate_variations(question, truncated_answer, max_variations)
+            
+            # Add variations with deduplication
+            for var_q, var_a in variations:
+                if var_q.lower() not in seen_questions:
+                    seen_questions.add(var_q.lower())
+                    qa_samples.append({
+                        "personas": ["Financial Expert"],
+                        "previous_utterance": [],
+                        "free_messages": [var_q],
+                        "guided_messages": [var_a]
+                    })
+        
+        # Limit domain-specific samples
+        additional_samples = create_domain_specific_samples()[:max_samples//10]
         qa_samples.extend(additional_samples)
         
         # Calculate complexity scores for sorting
@@ -709,6 +1139,32 @@ def create_enhanced_dataset(
             selected_qa_samples = [qa_samples[i] for i in indices]
             enhanced_data.extend(selected_qa_samples)
             logger.info(f"Added {len(selected_qa_samples)} QA samples")
+        
+        # Add limited multi-turn conversations
+        qa_pairs = [(item["free_messages"][0], item["guided_messages"][0]) 
+                   for item in qa_samples[:max_samples//5]]
+        multi_turn_samples = create_multi_turn_conversations(qa_pairs, max_turns=2)
+        enhanced_data.extend(multi_turn_samples[:max_samples//4])
+        
+        # Add limited followup questions
+        for qa_pair in zip(qa_samples[:max_samples//10], 
+                         [sample["guided_messages"][0] for sample in qa_samples[:max_samples//10]]):
+            followups = generate_followup_questions(qa_pair)[:max_followups]
+            for q, a in followups:
+                if len(enhanced_data) < max_samples:
+                    enhanced_data.append({
+                        "personas": ["Financial Expert"],
+                        "previous_utterance": [qa_pair[0]],
+                        "free_messages": [q],
+                        "guided_messages": [a]
+                    })
+        
+        # Augment with variations
+        enhanced_data = augment_dataset_with_variations(enhanced_data)
+        
+        # Limit final dataset size
+        if len(enhanced_data) > max_samples:
+            enhanced_data = random.sample(enhanced_data, max_samples)
         
         # Shuffle the final dataset
         random.shuffle(enhanced_data)
@@ -758,7 +1214,7 @@ def main():
         
         # Split into train/val sets
         random.shuffle(enhanced_data)
-        split_idx = int(len(enhanced_data) * 0.8)  # 90/10 split
+        split_idx = int(len(enhanced_data) * 0.7)  # 70/30 split
         
         train_data = enhanced_data[:split_idx]
         val_data = enhanced_data[split_idx:]
