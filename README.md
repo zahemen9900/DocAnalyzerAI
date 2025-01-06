@@ -1,233 +1,114 @@
-# 📚 **FinAnalyzerAI: Advanced Financial Analysis System**
+# DocAnalyzerAI Financial Assistant
 
-<p align="center">
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/LICENSE-MIT-blue.svg" alt="LICENSE" height="25">
-  </a>
-  <a href="https://www.python.org/">
-    <img src="https://img.shields.io/badge/PYTHON-3.8%2B-blue" alt="PYTHON" height="25">
-  </a>
-  <a href="https://pytorch.org/">
-    <img src="https://img.shields.io/badge/PYTORCH-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white" alt="PYTORCH" height="25">
-  </a>
-  <a href="https://huggingface.co/">
-    <img src="https://img.shields.io/badge/%F0%9F%A4%97HUGGINGFACE-MODELS-orange" alt="HUGGINGFACE" height="25">
-  </a>
-</p>
+An AI-powered financial assistant trained on comprehensive financial domain knowledge using QLoRA fine-tuning. The model provides expert guidance on investments, market analysis, and financial planning.
 
-##  **Overview**
-DocAnalyzerAI is an advanced financial document analysis system designed to process, analyze, and extract insights from complex financial texts. Leveraging cutting-edge NLP techniques and custom-trained transformer architectures, the system is optimized for high accuracy, scalability, and efficiency.
+## Features
 
-Key capabilities include:
-- Multi-stage fine-tuning using **QLoRA**.
-- Optimized GPU training pipelines.
-- Real-time interactive interfaces with **Gradio**.
-- Robust data preprocessing and augmentation techniques.
+- 🤖 **Advanced Language Model**: Fine-tuned on the BlenderBot base model using QLoRA for efficient adaptation
+- 💼 **Financial Expertise**: Trained on diverse financial topics including:
+  - Investment strategies and portfolio management
+  - Market analysis and trading concepts
+  - Personal finance and retirement planning
+  - Risk management and diversification
+  - Contemporary topics (DeFi, crypto, ESG investing)
+- 🗣️ **Natural Conversations**: 
+  - Dynamic multi-turn dialogues
+  - Contextual followup questions
+  - Professional yet accessible responses
+- 📊 **Comprehensive Training Data**:
+  - +30,000 curated financial Q&A pairs
+  - Real-world market scenarios
+  - Technical and fundamental concepts
+- 🎯 **Optimized Performance**:
+  - 4-bit quantization for efficient inference
+  - LoRA adaptation for parameter-efficient fine-tuning
+  - Enhanced token handling and response generation
 
----
+## Installation
 
-## **Key Features**
-### **Model Architecture**
-- **Base Model:** BlenderBot (400M parameters)
-- **Fine-tuning:** QLoRA for efficient adaptation
-- **Quantization:** 4-bit memory-efficient quantization
-- **Optimization:** Gradient checkpointing and mixed-precision training
-
-### **Data Processing**
-- Advanced text preprocessing and tokenization
-- Domain-specific financial QA pairs
-- Automated data augmentation pipelines
-- Support for large datasets (>7,00 samples)
-
-### 🌐 **Production Ready**
-- Real-time inference with minimal latency
-- Interactive Gradio web interface
-- Comprehensive logging and monitoring systems
-- Error handling and graceful recovery mechanisms
-
----
-
-## ⚙️ **Technical Architecture**
-### **Model Configuration**
-```python
-{
-    "model_name": "facebook/blenderbot-400M-distill",
-    "training_type": "QLoRA",
-    "quantization": "4-bit",
-    "learning_rate": 2e-5,
-    "batch_size": 4,
-    "gradient_accumulation": 16,
-    "weight_decay": 0.05,
-    "max_length": 128,
-    "training_epochs": 15
-}
-```
-
-### **Training Pipeline**
-```mermaid
-graph LR
-    A[Data Preparation] --> B[QLoRA Fine-tuning]
-    B --> C[GPU Training]
-    C --> D[Model Evaluation]
-    D --> E[Production Deployment]
-```
-
-### **Dataset Statistics**
-- **Training Samples:** 7,000+
-- **Validation Split:** 30%
-- **Categories:**
-   - Financial Planning
-   - Market Analysis
-   - Investment Advice
-   - Risk Management
-
----
-
-## **Installation**
-### **Prerequisites**
-- Python 3.8+
-- CUDA-capable GPU (16GB+ VRAM recommended)
-- 32GB+ RAM
-
-### **Setup Instructions**
 ```bash
-# Clone repository
-git clone https://github.com/zahemen9900/DocAnalyzerAI.git
+git clone https://github.com/yourusername/DocAnalyzerAI.git
 cd DocAnalyzerAI
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-# Install dependencies
 pip install -r requirements.txt
-
-# Verify GPU setup
-python -c "import torch; print(torch.cuda.is_available())"
 ```
 
----
+## Usage
 
-## **Usage**
-### **Data Preparation**
+### Training the Model
+
+1. Prepare training data:
 ```bash
-python src/prepare_training_data.py \
-    --input_dir data/raw \
-    --output_dir finetune_data \
-    --max_samples 7000
+python src/main/prepare_training_data.py
 ```
 
-### **Model Training**
+2. Fine-tune using QLoRA:
 ```bash
-# QLoRA training
-python src/train_finbot_qlora.py \
-    --model_name facebook/blenderbot-400M-distill \
-    --output_dir results/financial-bot-qlora \
-    --batch_size 4
+python src/main/train_finbot_qlora.py
 ```
 
-### 🌐 **Launch Interface**
+### Running the Chatbot Interface
+
+Launch the Gradio web interface:
 ```bash
-python src/chatbot_ui.py \
-    --host 0.0.0.0 \
-    --port 7860
+python src/main/gradio_finance_app.py
 ```
 
----
+Access the chatbot at `http://localhost:7867`
 
-## **Performance Metrics**
-### **Training Metrics**
-- **Loss Convergence:** ~0.15
-- **Validation Accuracy:** 92%
-- **ROUGE-L Score:** 0.85
-- **BLEU Score:** 0.76
+## Project Structure
 
-### **Production Metrics**
-- **Inference Time:** ~150ms
-- **Memory Usage:** ~4GB
-- **Throughput:** 100 requests/second
-- **Model Size:** 2GB (4-bit Quantized)
-
----
-
-## **Security Considerations**
-- Input validation and sanitization
-- API authentication and rate limiting
-- Encryption for sensitive data
-- GDPR compliance
-
----
-
-## **Deployment Infrastructure**
-- **Container Orchestration:** Kubernetes
-- **Load Balancing:** NGINX
-- **Monitoring:** Prometheus + Grafana
-- **Logging:** ELK Stack
-
-### **Scalability Example**
-```yaml
-resources:
-  requests:
-    cpu: 4
-    memory: 16Gi
-  limits:
-    cpu: 8
-    memory: 32Gi
+```
+DocAnalyzerAI/
+├── src/
+│   ├── main/
+│   │   ├── prepare_training_data.py   # Training data generation
+│   │   ├── train_finbot_qlora.py      # QLoRA fine-tuning
+│   │   └── gradio_finance_app.py      # Web interface
+│   └── other_trains/                   # Additional training scripts
+├── finetune_data/                      # Generated training datasets
+├── results/                            # Model checkpoints and outputs
+└── requirements.txt                    # Dependencies
 ```
 
----
+## Technical Details
 
-## 📖 **Documentation**
-- [API Reference](docs/api.md)
-- [Model Architecture](docs/model.md)
-- [Deployment Guide](docs/deployment.md)
-- [Security Guidelines](docs/security.md)
+### Model Architecture
+- Base model: facebook/blenderbot-400M-distill
+- Quantization: 4-bit precision using bitsandbytes
+- Adaptation: LoRA with rank=16, alpha=32
+- Training: QLoRA fine-tuning with cosine learning rate scheduling
 
----
+### Training Data
+- Structured Q&A pairs with variations
+- Multi-turn conversations
+- Dynamic response generation
+- Professional financial context
 
-## **Contributing**
+### Performance Optimizations
+- Gradient checkpointing
+- Mixed precision training
+- Efficient parameter updates
+- Memory optimization
+
+## Contributing
+
 1. Fork the repository
-2. Create a feature branch:
-```bash
-git checkout -b feature/YourFeature
-```
-3. Commit your changes
-4. Open a pull request
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### 📏 **Contribution Guidelines**
-- Follow **PEP 8** style guide
-- Write unit tests for new features
-- Update documentation
-- Maintain code coverage >80%
+## License
 
----
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## **License**
-This project is licensed under the **MIT License** - see [LICENSE](LICENSE) for details.
+## Acknowledgments
 
----
+- HuggingFace Transformers library
+- QLoRA paper and implementation
+- Financial domain experts and resources
 
-## 🙏 **Acknowledgments**
-- **Boston Consulting Group (BCG)** for project support
-- **Meta (Facebook)** and **Hugging Face** for transformer architectures
-- Financial domain experts for dataset validation
+## Disclaimer
 
----
-
-## 📞 **Contact**
-- **Project Lead:** Your Name
-- **Email:** your.email@example.com
-- **LinkedIn:** [Your LinkedIn](#)
-
----
-
-##  **Future Development**
-- Multilingual support
-- Integration with real-time market data APIs
-- Advanced financial data visualization
-- Enhanced domain-specific training pipelines
-
----
-
-**Built with ❤️ by DocAnalyzerAI Team**
+This AI assistant is for educational and informational purposes only. Always consult qualified financial professionals for actual financial advice.
 

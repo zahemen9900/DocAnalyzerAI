@@ -1,0 +1,18 @@
+{"time":"2025-01-06T13:09:34.332343227Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-06T13:09:34.332351943Z","level":"INFO","msg":"created symlink","path":"/home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/run-20250106_130934-3q6flyrq/logs/debug-core.log"}
+{"time":"2025-01-06T13:09:34.471565674Z","level":"INFO","msg":"created new stream","id":"3q6flyrq"}
+{"time":"2025-01-06T13:09:34.471601299Z","level":"INFO","msg":"stream: started","id":"3q6flyrq"}
+{"time":"2025-01-06T13:09:34.471705312Z","level":"INFO","msg":"handler: started","stream_id":"3q6flyrq"}
+{"time":"2025-01-06T13:09:34.472051974Z","level":"INFO","msg":"writer: Do: started","stream_id":"3q6flyrq"}
+{"time":"2025-01-06T13:09:34.472052037Z","level":"INFO","msg":"sender: started","stream_id":"3q6flyrq"}
+{"time":"2025-01-06T13:09:34.956072016Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-06T13:39:38.270825672Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/3q6flyrq/file_stream\": context deadline exceeded"}
+{"time":"2025-01-06T13:46:22.162569871Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/3q6flyrq/file_stream\": context deadline exceeded"}
+{"time":"2025-01-06T14:22:39.736420429Z","level":"INFO","msg":"stream: closing","id":"3q6flyrq"}
+{"time":"2025-01-06T14:22:39.736461254Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-06T14:22:39.737099906Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-06T14:22:48.833725888Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-06T14:22:44.379213729Z","level":"INFO","msg":"handler: closed","stream_id":"3q6flyrq"}
+{"time":"2025-01-06T14:22:44.379242867Z","level":"INFO","msg":"writer: Close: closed","stream_id":"3q6flyrq"}
+{"time":"2025-01-06T14:22:44.379277364Z","level":"INFO","msg":"sender: closed","stream_id":"3q6flyrq"}
+{"time":"2025-01-06T14:22:44.379296593Z","level":"INFO","msg":"stream: closed","id":"3q6flyrq"}

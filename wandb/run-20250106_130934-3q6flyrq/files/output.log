@@ -1,0 +1,27 @@
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 687/687 [1:13:02<00:00,  6.38s/it]
+{'loss': 10.5175, 'grad_norm': 3.009563684463501, 'learning_rate': 3.9855072463768115e-06, 'epoch': 0.24}
+{'loss': 10.2228, 'grad_norm': 3.700294256210327, 'learning_rate': 4.94589619568848e-06, 'epoch': 0.48}
+2025-01-06 14:22:37,829 [INFO] Saving LoRA adapter...                                                                                                                   
+{'eval_loss': 9.78877067565918, 'eval_runtime': 163.9717, 'eval_samples_per_second': 38.421, 'eval_steps_per_second': 4.806, 'epoch': 0.48}
+{'loss': 9.5282, 'grad_norm': 4.776278495788574, 'learning_rate': 4.708163991986152e-06, 'epoch': 0.72}
+{'loss': 8.7536, 'grad_norm': 6.598440170288086, 'learning_rate': 4.298937944929007e-06, 'epoch': 0.96}
+{'eval_loss': 7.897136211395264, 'eval_runtime': 165.6922, 'eval_samples_per_second': 38.022, 'eval_steps_per_second': 4.756, 'epoch': 0.96}
+{'loss': 7.8149, 'grad_norm': 10.049956321716309, 'learning_rate': 3.7500000000000005e-06, 'epoch': 1.2}
+{'loss': 6.7301, 'grad_norm': 8.027215003967285, 'learning_rate': 3.1039826239365754e-06, 'epoch': 1.44}
+{'eval_loss': 5.492626667022705, 'eval_runtime': 156.9727, 'eval_samples_per_second': 40.134, 'eval_steps_per_second': 5.02, 'epoch': 1.44}
+{'loss': 5.9535, 'grad_norm': 5.464418888092041, 'learning_rate': 2.4110578162356814e-06, 'epoch': 1.68}
+{'loss': 5.4915, 'grad_norm': 4.512894630432129, 'learning_rate': 1.725040573817742e-06, 'epoch': 1.92}
+{'eval_loss': 4.768610000610352, 'eval_runtime': 150.3963, 'eval_samples_per_second': 41.889, 'eval_steps_per_second': 5.239, 'epoch': 1.92}
+{'loss': 5.2523, 'grad_norm': 3.7400546073913574, 'learning_rate': 1.0992094275966256e-06, 'epoch': 2.15}
+{'loss': 5.1109, 'grad_norm': 3.73319673538208, 'learning_rate': 5.821686429014093e-07, 'epoch': 2.39}
+{'eval_loss': 4.5884833335876465, 'eval_runtime': 158.5557, 'eval_samples_per_second': 39.734, 'eval_steps_per_second': 4.97, 'epoch': 2.39}
+{'loss': 5.0684, 'grad_norm': 3.26697039604187, 'learning_rate': 2.140734399332975e-07, 'epoch': 2.63}
+{'loss': 5.055, 'grad_norm': 3.52530837059021, 'learning_rate': 2.351139701825267e-08, 'epoch': 2.87}
+{'eval_loss': 4.5569539070129395, 'eval_runtime': 158.4466, 'eval_samples_per_second': 39.761, 'eval_steps_per_second': 4.973, 'epoch': 2.87}
+{'train_runtime': 4385.2897, 'train_samples_per_second': 10.056, 'train_steps_per_second': 0.157, 'train_loss': 7.0432387439444595, 'epoch': 2.99}
+2025-01-06 14:22:39,005 [INFO] Merging LoRA weights...
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/tuners/lora/bnb.py:355: UserWarning: Merge lora module to 4-bit linear may get different generations due to rounding errors.
+  warnings.warn(
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/modeling_utils.py:2618: UserWarning: Moving the following attributes in the config to the generation config: {'max_length': 60, 'min_length': 20, 'num_beams': 10, 'length_penalty': 0.65, 'no_repeat_ngram_size': 3}. You are seeing this warning because you've set generation parameters in the model config, as opposed to in the generation config.
+  warnings.warn(
+2025-01-06 14:22:39,559 [INFO] Training completed successfully!

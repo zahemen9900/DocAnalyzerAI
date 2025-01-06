@@ -97,43 +97,6 @@ QUESTION_STARTERS = [
     "What are the key aspects of"
 ]
 
-FOLLOWUP_PROMPTS = [
-    "Would you like me to elaborate further?",
-    "Does this help clarify things for you?",
-    "Would you like to know more about any specific aspect?",
-    "Is there anything specific you'd like me to explain in more detail?",
-    "Do you have any other questions about this?",
-    "Should we explore this topic further?",
-    "Would a different example help illustrate this better?",
-    "Is there another angle you'd like me to approach this from?",
-    "Can I assist you with anything else related to this?",
-    "Does this address your concerns?",
-    "Would additional details be helpful here?",
-    "Is there any part you’d like me to expand on?",
-    "Do you feel this answers your query fully?",
-    "Should we dive deeper into a particular area?",
-    "Would more examples or analogies be useful?"
-]
-
-
-DYNAMIC_TRANSITIONS = [
-    "Building on what we discussed,",
-    "To add to that,",
-    "Let me break this down further.",
-    "Here's another important point:",
-    "This relates closely to",
-    "For better context,",
-    "Expanding on this idea,",
-    "In addition to that,",
-    "Let’s connect this to a broader perspective.",
-    "Another perspective to consider is,",
-    "This also ties into",
-    "Taking this a step further,",
-    "Let me provide some additional context.",
-    "Here’s an extension of that thought:",
-    "This leads us to consider,"
-]
-
 def generate_variations(question: str, answer: str, max_variations: int = 3) -> List[Tuple[str, str]]:
     """Generate limited variations of Q&A pairs"""
     variations = [(question, answer)]
@@ -179,14 +142,11 @@ FINANCIAL_QA_SAMPLES = [
     ("What is a hedge fund?", "A hedge fund is an investment fund that pools capital from accredited investors and institutional investors to invest in a variety of assets and strategies. Hedge funds are managed by professional fund managers and aim to generate high returns while managing risk. They often use leverage, derivatives, and alternative investments to achieve their investment objectives."),
     ("Explain the concept of liquidity.", "Liquidity refers to the ease with which an asset can be bought or sold in the market without affecting its price. Liquid assets can be quickly converted into cash without significant price changes, while illiquid assets may take longer to sell and may incur a price discount. Liquidity is an important consideration for investors and financial institutions."),
     ("What is a capital gain?", "A capital gain is the profit realized from the sale of a capital asset, such as stocks, bonds, or real estate. It's calculated by subtracting the purchase price (cost basis) from the selling price. Capital gains can be short-term (held for one year or less) or long-term (held for more than one year) and are subject to capital gains tax."),
-    ("Define a derivative.", "A derivative is a financial contract that derives its value from an underlying asset, index, or reference rate. Derivatives can be used for hedging, speculation, or arbitrage and include options, futures, forwards, and swaps. They allow investors to gain exposure to assets without owning them outright and can be highly leveraged."),
-    ("What is a recession-proof industry?", "A recession-proof industry is a sector of the economy that remains stable or experiences growth during economic downturns. These industries provide essential goods or services that are in demand regardless of economic conditions. Examples of recession-proof industries include healthcare, utilities, consumer staples, and government services."),
-    ("Explain the concept of time value of money.", "The time value of money is the principle that a dollar received today is worth more than a dollar received in the future due to its potential earning capacity. It's based on the premise that money can earn interest or be invested to generate returns over time. The time value of money is a fundamental concept in finance and investment analysis."),
-    ("What is a credit default swap?", "A credit default swap (CDS) is a financial derivative that allows investors to hedge against the risk of default on a debt obligation, such as a bond or loan. The buyer of a CDS pays a premium to the seller in exchange for protection against credit events, such as bankruptcy or default. CDSs are used to manage credit risk and speculate on credit quality."),
-    ("Define a commodity.", "A commodity is a raw material or primary agricultural product that can be bought and sold, such as gold, oil, wheat, or coffee. Commodities are standardized and interchangeable with other goods of the same type, allowing them to be traded on commodity exchanges. They are essential inputs in the production of goods and services and are subject to supply and demand dynamics."),
-    ("What is a yield curve?", "A yield curve is a graphical representation of interest rates on bonds of different maturities. It shows the relationship between bond yields and time to maturity and is used to analyze economic conditions, inflation expectations, and monetary policy. The yield curve can be flat, upward-sloping (normal), or downward-sloping (inverted), each indicating different market expectations."),
-    ("Explain the concept of cost of capital.", "The cost of capital is the rate of return required by investors to provide capital to a company. It represents the cost of financing a company's operations and investments and is used to evaluate the feasibility of projects and investments. The cost of capital is influenced by factors such as interest rates, risk, inflation, and market conditions."),
-    ("What is a leveraged buyout?", "A leveraged buyout (LBO) is a financial transaction in which a company is acquired using a significant amount of borrowed funds or leverage. The acquiring company uses the target company's assets as collateral for the loan and aims to repay the debt with the target company's cash flow or by selling its assets. LBOs are often used to take public companies private."),
+    ("What is ROI?", "ROI (Return on Investment) is a performance metric used to evaluate the efficiency of an investment. It's calculated by dividing the net profit by the cost of investment and expressing it as a percentage. For example, if you invest $1000 and earn $1200, your ROI is 20%."),
+    ("Explain market capitalization.", "Market capitalization, or market cap, represents the total value of a company's shares in the market. It's calculated by multiplying the current share price by the total number of outstanding shares. Companies are often classified as large-cap (>$10B), mid-cap ($2-10B), or small-cap (<$2B)."),
+    ("What is a balance sheet?", "A balance sheet is a financial statement that provides a snapshot of a company's financial position at a specific point in time. It shows the company's assets, liabilities, and shareholders' equity. Assets are what the company owns, liabilities are what it owes, and equity represents the shareholders' ownership."),
+    ("How do you calculate EBITDA?", "EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) is calculated by adding back interest, taxes, depreciation, and amortization to net income. It's used to assess a company's operating performance without the impact of financing decisions, accounting practices, or tax environments."),
+    ("What is a P/E ratio?", "The P/E (Price-to-Earnings) ratio is a valuation metric that compares a company's current share price to its earnings per share (EPS). It indicates how much investors are willing to pay for each dollar of earnings. A high P/E ratio may suggest overvaluation, while a low P/E ratio may indicate undervaluation."),
     ("Define GDP.", "GDP (Gross Domestic Product) is the total monetary value of all goods and services produced within a country's borders in a specific period. It's used to measure the economic performance and size of an economy. GDP can be calculated using three approaches: production, income, and expenditure."),
     ("What is a bull market?", "A bull market is a financial market characterized by rising asset prices and investor optimism. It's typically associated with strong economic performance, high employment, and increasing corporate profits. Bull markets are marked by sustained periods of upward price trends."),
     ("Explain the concept of diversification.", "Diversification is an investment strategy that involves spreading your investments across different assets to reduce risk. By investing in a variety of assets, sectors, or geographic regions, you can minimize the impact of a single investment's performance on your overall portfolio."),
@@ -392,7 +352,34 @@ FINANCIAL_QA_SAMPLES = [
     ("What are index funds?", "Index funds are mutual funds or ETFs designed to track a specific market index."),
     ("Define risk tolerance.", "Risk tolerance is an investor's ability to endure losses in their investment portfolio."),
     ("What is debt-to-equity ratio?", "Debt-to-equity ratio measures a company's financial leverage by comparing total debt to shareholders' equity."),
-    ("What is equity?", "Equity represents ownership value in an asset after deducting liabilities.")
+    ("What is equity?", "Equity represents ownership value in an asset after deducting liabilities."),
+    ("What is a stock split?", "A stock split increases the number of shares outstanding while reducing the price per share."),
+    ("What is a dividend yield?", "Dividend yield is the annual dividend income per share divided by the stock price."),
+    ("What is a capital gain?", "A capital gain is the profit from selling an asset for more than its purchase price."),
+    ("What is a capital loss?", "A capital loss occurs when an asset is sold for less than its purchase price."),
+    ("What is a 401(k) plan?", "A 401(k) is an employer-sponsored retirement savings plan allowing employees to contribute a portion of their salary."),
+    ("What is a Roth IRA?", "A Roth IRA is an individual retirement account where contributions are made after tax, and qualified withdrawals are tax-free."),
+    ("What is a traditional IRA?", "A traditional IRA is a retirement account where contributions may be tax-deductible, and investments grow tax-deferred."),
+    ("What is a credit score?", "A credit score is a numerical representation of an individual's creditworthiness."),
+    ("What is a credit report?", "A credit report is a detailed record of an individual's credit history."),
+    ("What is a credit freeze?", "A credit freeze restricts access to an individual's credit report, preventing new accounts from being opened."),
+    ("What is a credit utilization ratio?", "Credit utilization ratio is the percentage of available credit being used."),
+    ("What is a credit inquiry?", "A credit inquiry is a request to view an individual's credit report."),
+    ("What is a credit limit?", "A credit limit is the maximum amount of credit extended to an individual."),
+    ("What is a credit card?", "A credit card is a payment card issued to users to enable purchases on credit."),
+    ("What is a debit card?", "A debit card is a payment card linked to a checking account, deducting funds directly from the account."),
+    ("What is a credit union?", "A credit union is a member-owned financial cooperative offering banking services."),
+    ("What is a bank?", "A bank is a financial institution that accepts deposits and provides loans."),
+    ("What is a savings account?", "A savings account is a deposit account held at a financial institution, earning interest."),
+    ("What is a checking account?", "A checking account is a deposit account allowing withdrawals and deposits."),
+    ("What is a money market account?", "A money market account is a type of savings account offering higher interest rates."),
+    ("What is a certificate of deposit (CD)?", "A CD is a time deposit with a fixed term and interest rate, typically higher than regular savings accounts."),
+    ("What is compound interest?", "Compound interest is interest calculated on the initial principal and accumulated interest."),
+    ("What is simple interest?", "Simple interest is interest calculated only on the principal amount."),
+    ("What is a mortgage?", "A mortgage is a loan used to purchase real estate, with the property serving as collateral."),
+    ("What is a down payment?", "A down payment is an initial payment made when purchasing an expensive item, often a percentage of the total cost."),
+    ("What is a credit score?", "A credit score is a numerical representation of an individual's creditworthiness."),   
+
 
 ]
 
@@ -470,6 +457,74 @@ def generate_variations(question: str, answer: str, max_variations: int = 3) -> 
 def create_domain_specific_samples() -> List[Dict]:
     """Create additional domain-specific samples"""
     samples = [
+        {
+            "question": "What is cryptocurrency mining?",
+            "answer": "Cryptocurrency mining is the process of validating and adding new transactions to a blockchain using powerful computers to solve complex mathematical problems. Miners are rewarded with new coins for their work, which helps secure the network and process transactions."
+        },
+        {
+            "question": "How does market sentiment affect stock prices?",
+            "answer": "Market sentiment refers to the overall attitude or feeling that investors have toward a particular security, sector, or market. It can significantly impact stock prices through trading behavior, with positive sentiment driving prices up and negative sentiment pushing them down."
+        },
+        {
+            "question": "What is dollar-cost averaging?",
+            "answer": "Dollar-cost averaging is an investment strategy where an investor consistently buys a fixed dollar amount of a particular asset at regular intervals, regardless of its price. This approach reduces the impact of market volatility and lowers the average cost per share over time."
+        },
+        {
+            "question": "What is an ETF (Exchange-Traded Fund)?",
+            "answer": "An ETF is an investment fund traded on stock exchanges, similar to stocks. It holds assets like stocks, bonds, or commodities and offers investors diversification, liquidity, and cost efficiency."
+        },
+        {
+            "question": "What is the difference between growth stocks and value stocks?",
+            "answer": "Growth stocks are shares of companies expected to grow at a rate faster than the market average, often reinvesting profits. Value stocks are undervalued by the market and typically pay dividends, offering potential returns through stock price appreciation."
+        },
+        {
+            "question": "What are blue-chip stocks?",
+            "answer": "Blue-chip stocks are shares of large, well-established, and financially sound companies with a history of reliable performance, often paying consistent dividends."
+        },
+        {
+            "question": "What is liquidity in finance?",
+            "answer": "Liquidity refers to how quickly and easily an asset can be converted into cash without significantly affecting its price. Cash is the most liquid asset, while real estate is considered less liquid."
+        },
+        {
+            "question": "How do interest rates affect bond prices?",
+            "answer": "Interest rates and bond prices have an inverse relationship. When interest rates rise, existing bond prices fall because new bonds offer higher yields. Conversely, when rates drop, bond prices increase."
+        },
+        {
+            "question": "What is the difference between a bull market and a bear market?",
+            "answer": "A bull market refers to a period of rising stock prices and positive investor sentiment, while a bear market indicates falling stock prices and widespread pessimism among investors."
+        },
+        {
+            "question": "What is compound interest?",
+            "answer": "Compound interest is the interest calculated on both the initial principal and the accumulated interest from previous periods. It allows investments to grow exponentially over time."
+        },
+        {
+            "question": "What is diversification in investing?",
+            "answer": "Diversification is an investment strategy where an investor spreads investments across various assets to reduce risk. It ensures that poor performance in one asset doesn’t drastically impact the overall portfolio."
+        },
+        {
+            "question": "What are financial derivatives?",
+            "answer": "Financial derivatives are contracts whose value is derived from an underlying asset, index, or rate. Examples include options, futures, and swaps, used for hedging risk or speculation."
+        },
+        {
+            "question": "What is the time value of money?",
+            "answer": "The time value of money is the concept that a specific amount of money is worth more today than the same amount in the future, due to its earning potential."
+        },
+        {
+            "question": "What is a financial bubble?",
+            "answer": "A financial bubble occurs when the price of an asset significantly exceeds its intrinsic value, driven by excessive speculation and investor enthusiasm, often followed by a sharp market correction."
+        },
+        {
+            "question": "What is portfolio rebalancing?",
+            "answer": "Portfolio rebalancing involves adjusting the proportions of assets in an investment portfolio to maintain the desired level of risk and return, typically after market fluctuations."
+        },
+        {
+            "question": "What is a stop-loss order?",
+            "answer": "A stop-loss order is an order placed with a broker to sell a security when it reaches a specific price, protecting investors from significant losses."
+        },
+        {
+            "question": "What is the role of the Federal Reserve in the U.S. economy?",
+            "answer": "The Federal Reserve regulates monetary policy, controls interest rates, and ensures financial system stability to promote maximum employment and stable prices."
+        },
         {
             "question": "What is cryptocurrency mining?",
             "answer": "Cryptocurrency mining is the process of validating and adding new transactions to a blockchain using powerful computers to solve complex mathematical problems. Miners are rewarded with new coins for their work, which helps secure the network and process transactions."
@@ -837,8 +892,10 @@ def create_domain_specific_samples() -> List[Dict]:
             "question": "What is GDPR in finance?",
             "answer": "The General Data Protection Regulation (GDPR) sets guidelines for data privacy and protection for financial institutions operating in the EU."
         },
+
     ]
-   
+
+
     return [
         {
             "personas": ["Financial Expert"],
@@ -937,7 +994,7 @@ def generate_contextual_answer(question: str, context: str) -> str:
     templates = {
         "definition": "In financial terms, {term} refers to {context}.",
         "explanation": "{term} is a fundamental concept in finance that {context}.",
-        "analysis": "When analyzing {term}, it's important to consider that {context}.",
+        "analysis": "When analyzing {term}, it's important to consider that {context}."
     }
     
     # Choose appropriate template based on question type
@@ -958,8 +1015,11 @@ def augment_dataset_with_variations(data: List[Dict]) -> List[Dict]:
     augmented_data = []
     
     for item in data:
-        # Original item
-        item['guided_messages'][0] = add_followup_prompt(item['guided_messages'][0])
+        # Clean any existing responses first
+        item['guided_messages'] = [
+            re.sub(r'(As a financial expert[^.]*\.)\s*\1+', r'\1', msg)
+            for msg in item['guided_messages']
+        ]
         augmented_data.append(item)
         
         # Add clarification requests with better formatting
@@ -967,7 +1027,11 @@ def augment_dataset_with_variations(data: List[Dict]) -> List[Dict]:
             terms = extract_financial_terms(item['free_messages'][0])
             if terms:
                 question = f"Could you explain {terms[0]} in more detail?"
-                answer = f"Let me break down {terms[0]} more clearly. {item['guided_messages'][0]} This concept is fundamental to understanding financial markets and making informed investment decisions."
+                answer = clean_text(
+                    f"Let me break down {terms[0]} more clearly. "
+                    f"{item['guided_messages'][0]} "
+                    "This concept is fundamental to understanding financial markets."
+                )
                 
                 clarification = {
                     "personas": item["personas"],
@@ -977,14 +1041,19 @@ def augment_dataset_with_variations(data: List[Dict]) -> List[Dict]:
                 }
                 augmented_data.append(clarification)
         
-        # Add market context variations with improved responses
-        if any(term in item['guided_messages'][0].lower() for term in ['market', 'investment', 'stock', 'bond']):
+        # Add market context variations
+        if any(term in item['guided_messages'][0].lower() 
+               for term in ['market', 'investment', 'stock', 'bond']):
             context_question = "How does this concept apply in current market conditions?"
-            starter = random.choice(["In today's market", "Given the current economic landscape", "Considering recent market trends", "Given the current market volatility"])
-            context_answer = (
+            starter = random.choice([
+                "In today's market",
+                "Given the current economic landscape",
+                "Considering recent market trends",
+                "Given the current market volatility"
+            ])
+            context_answer = clean_text(
                 f"{starter}, {item['guided_messages'][0].lower()} "
-                f"This is particularly relevant given current economic conditions, where factors like "
-                f"interest rates, market volatility, and global economic trends play crucial roles."
+                "This is particularly relevant given current economic conditions."
             )
             
             context_variation = {
@@ -1035,56 +1104,56 @@ CONVERSATION_FLOWS = {
 
 def generate_dynamic_response(template: str, context: Dict[str, str]) -> str:
     """Generate more natural responses using templates and context"""
-    replacements = {
-        "risk_level": random.choice(["conservative", "moderate", "aggressive"]),
-        "allocation": random.choice([
-            "60% bonds and 40% stocks",
-            "70% stocks and 30% bonds",
-            "a balanced mix of growth and value stocks"
-        ]),
-        "explanation": random.choice([
-            "Historical data shows that markets tend to recover over time.",
-            "Diversification can help manage risk while maintaining growth potential.",
-            "A well-balanced portfolio can help weather market volatility."
-        ]),
-        "analysis": random.choice([
-            "Looking at previous market cycles...",
-            "When we examine similar situations in the past...",
-            "Market data indicates that..."
-        ]),
-        "alternative": random.choice([
-            "defensive sectors",
-            "dividend-paying stocks",
-            "fixed-income securities"
-        ]),
-        "details": context.get("additional_info", ""),
-        "reason": context.get("market_context", "")
-    }
-    
-    return template.format(**replacements)
-
-def add_followup_prompt(guided_message: str) -> str:
-    """Add a natural followup prompt to responses occasionally"""
-    if len(guided_message) > 80 or random.random() > 0.3:  # Only 30% chance for shorter messages
-        return guided_message
+    try:
+        replacements = {
+            "risk_level": random.choice(["conservative", "moderate", "aggressive"]),
+            "allocation": random.choice([
+                "60% bonds and 40% stocks",
+                "70% stocks and 30% bonds",
+                "a balanced mix of growth and value stocks"
+            ]),
+            "explanation": random.choice([
+                "Historical data shows that markets tend to recover over time.",
+                "Diversification can help manage risk while maintaining growth potential.",
+                "A well-balanced portfolio can help weather market volatility."
+            ]),
+            "analysis": random.choice([
+                "Looking at previous market cycles...",
+                "When we examine similar situations in the past...",
+                "Market data indicates that..."
+            ]),
+            "alternative": random.choice([
+                "defensive sectors",
+                "dividend-paying stocks",
+                "fixed-income securities"
+            ]),
+            "details": context.get("additional_info", ""),
+            "reason": context.get("market_context", "")
+        }
         
-    followup = random.choice(FOLLOWUP_PROMPTS)
-    # Ensure we don't exceed token limit
-    if len(guided_message) + len(followup) + 1 <= 120:
-        return f"{guided_message} {followup}"
-    return guided_message
+        # Format template once and clean result
+        response = template.format(**replacements).strip()
+        # Remove any duplicate "As a financial expert" phrases
+        response = re.sub(r'(As a financial expert[^.]*\.)\s*\1+', r'\1', response)
+        return response
+        
+    except KeyError as e:
+        logger.warning(f"Missing replacement key: {e}")
+        return template
+    except Exception as e:
+        logger.error(f"Error in response generation: {e}")
+        return template
 
 def create_natural_conversation(flow_type: str, context: Dict[str, str]) -> List[Dict]:
-    """Create more dynamic conversation flows"""
+    """Create more natural conversation flows"""
     template = CONVERSATION_FLOWS[flow_type]
     conversation = []
     
-    # Initial response with possible followup
+    # Initial response
     initial_response = generate_dynamic_response(
         random.choice(template.possible_responses),
         context
     )
-    initial_response = add_followup_prompt(initial_response)
     
     conversation.append({
         "personas": ["Financial Expert"],
@@ -1093,29 +1162,19 @@ def create_natural_conversation(flow_type: str, context: Dict[str, str]) -> List
         "guided_messages": [initial_response]
     })
     
-    # Add natural followups with transitions
-    prev_msg = template.context
+    # Add natural followups
     for question in random.sample(template.followup_questions, 2):
-        transition = random.choice(DYNAMIC_TRANSITIONS)
         followup_response = generate_dynamic_response(
             random.choice(template.possible_responses),
             context
         )
         
-        # Occasionally add followup prompt
-        if random.random() < 0.3:
-            followup_response = add_followup_prompt(followup_response)
-        else:
-            # Add transition if no followup prompt
-            followup_response = f"{transition} {followup_response}"
-        
         conversation.append({
             "personas": ["Financial Expert"],
-            "previous_utterance": [prev_msg],
+            "previous_utterance": [conversation[-1]["free_messages"][0]],
             "free_messages": [question],
             "guided_messages": [followup_response]
         })
-        prev_msg = question
     
     return conversation
 
@@ -1126,7 +1185,7 @@ def create_enhanced_dataset(
     # max_conversation_turns=3,
     conversation_ratio: float = 0.6,
     qa_ratio: float = 0.4,
-    max_samples: int = 30_000, 
+    max_samples: int = 35_000, 
     max_variations: int = 5,   # Limit variations per QA pair
     max_followups: int = 3,    # Limit followup questions
     max_words_per_response: int = 40
@@ -1284,7 +1343,7 @@ def main():
     try:
         # Get the absolute path to the project root
         # project_root = Path(__file__).parent.parent
-        project_root = Path('/home/zahemen/projects/dl-lib/DocAnalyzerAI')
+        project_root = Path('/home/zahemen/projects/dl-lib/DocAnalyzerAI/')
         
         # Define output paths
         output_dir = project_root / "finetune_data"

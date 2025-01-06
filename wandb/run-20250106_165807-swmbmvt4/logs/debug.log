@@ -1,0 +1,102 @@
+2025-01-06 16:58:07,550 INFO    MainThread:100502 [wandb_setup.py:_flush():68] Current SDK version is 0.19.1
+2025-01-06 16:58:07,550 INFO    MainThread:100502 [wandb_setup.py:_flush():68] Configure stats pid to 100502
+2025-01-06 16:58:07,550 INFO    MainThread:100502 [wandb_setup.py:_flush():68] Loading settings from /home/zahemen/.config/wandb/settings
+2025-01-06 16:58:07,550 INFO    MainThread:100502 [wandb_setup.py:_flush():68] Loading settings from /home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/settings
+2025-01-06 16:58:07,550 INFO    MainThread:100502 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-06 16:58:07,550 INFO    MainThread:100502 [wandb_init.py:_log_setup():528] Logging user logs to /home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/run-20250106_165807-swmbmvt4/logs/debug.log
+2025-01-06 16:58:07,550 INFO    MainThread:100502 [wandb_init.py:_log_setup():529] Logging internal logs to /home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/run-20250106_165807-swmbmvt4/logs/debug-internal.log
+2025-01-06 16:58:07,550 INFO    MainThread:100502 [wandb_init.py:init():644] calling init triggers
+2025-01-06 16:58:07,550 INFO    MainThread:100502 [wandb_init.py:init():650] wandb.init called with sweep_config: {}
+config: {}
+2025-01-06 16:58:07,550 INFO    MainThread:100502 [wandb_init.py:init():680] starting backend
+2025-01-06 16:58:07,550 INFO    MainThread:100502 [wandb_init.py:init():684] sending inform_init request
+2025-01-06 16:58:07,553 INFO    MainThread:100502 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-06 16:58:07,553 INFO    MainThread:100502 [wandb_init.py:init():697] backend started and connected
+2025-01-06 16:58:07,555 INFO    MainThread:100502 [wandb_init.py:init():790] updated telemetry
+2025-01-06 16:58:07,558 INFO    MainThread:100502 [wandb_init.py:init():822] communicating run to backend with 90.0 second timeout
+2025-01-06 16:58:35,741 INFO    Thread-2 (wrapped_target):100502 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/socket.py", line 974, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/urllib3/connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/urllib3/connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f751ca48650>: Failed to resolve 'api.wandb.ai' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f751ca48650>: Failed to resolve 'api.wandb.ai' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 393, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f751ca48650>: Failed to resolve 'api.wandb.ai' ([Errno -3] Temporary failure in name resolution)"))
+2025-01-06 16:59:21,961 INFO    MainThread:100502 [wandb_init.py:init():874] starting run threads in backend
+2025-01-06 16:59:22,098 INFO    MainThread:100502 [wandb_run.py:_console_start():2374] atexit reg
+2025-01-06 16:59:22,098 INFO    MainThread:100502 [wandb_run.py:_redirect():2224] redirect: wrap_raw
+2025-01-06 16:59:22,099 INFO    MainThread:100502 [wandb_run.py:_redirect():2289] Wrapping output streams.
+2025-01-06 16:59:22,099 INFO    MainThread:100502 [wandb_run.py:_redirect():2314] Redirects installed.
+2025-01-06 16:59:22,100 INFO    MainThread:100502 [wandb_init.py:init():916] run started, returning control to user process
+2025-01-06 16:59:22,101 INFO    MainThread:100502 [wandb_run.py:_config_callback():1279] config_cb None None {'peft_config': {'default': {'task_type': <TaskType.SEQ_2_SEQ_LM: 'SEQ_2_SEQ_LM'>, 'peft_type': <PeftType.LORA: 'LORA'>, 'auto_mapping': None, 'base_model_name_or_path': 'facebook/blenderbot-400M-distill', 'revision': None, 'inference_mode': False, 'r': 16, 'target_modules': {'k_proj', 'q_proj', 'o_proj', 'v_proj'}, 'exclude_modules': None, 'lora_alpha': 32, 'lora_dropout': 0.05, 'fan_in_fan_out': False, 'bias': 'none', 'use_rslora': False, 'modules_to_save': None, 'init_lora_weights': True, 'layers_to_transform': None, 'layers_pattern': None, 'rank_pattern': {}, 'alpha_pattern': {}, 'megatron_config': None, 'megatron_core': 'megatron.core', 'loftq_config': {}, 'eva_config': None, 'use_dora': False, 'layer_replication': None, 'runtime_config': {'ephemeral_gpu_offload': False}, 'lora_bias': False}}, 'vocab_size': 8008, 'max_position_embeddings': 128, 'd_model': 1280, 'encoder_ffn_dim': 5120, 'encoder_layers': 2, 'encoder_attention_heads': 32, 'decoder_ffn_dim': 5120, 'decoder_layers': 12, 'decoder_attention_heads': 32, 'dropout': 0.1, 'attention_dropout': 0.0, 'activation_dropout': 0.0, 'activation_function': 'gelu', 'init_std': 0.02, 'encoder_layerdrop': 0.0, 'decoder_layerdrop': 0.0, 'use_cache': True, 'num_hidden_layers': 2, 'scale_embedding': True, 'return_dict': True, 'output_hidden_states': False, 'output_attentions': False, 'torchscript': False, 'torch_dtype': 'float16', 'use_bfloat16': False, 'tf_legacy_loss': False, 'pruned_heads': {}, 'tie_word_embeddings': True, 'chunk_size_feed_forward': 0, 'is_encoder_decoder': True, 'is_decoder': False, 'cross_attention_hidden_size': None, 'add_cross_attention': False, 'tie_encoder_decoder': False, 'max_length': 60, 'min_length': 20, 'do_sample': False, 'early_stopping': False, 'num_beams': 10, 'num_beam_groups': 1, 'diversity_penalty': 0.0, 'temperature': 1.0, 'top_k': 50, 'top_p': 1.0, 'typical_p': 1.0, 'repetition_penalty': 1.0, 'length_penalty': 0.65, 'no_repeat_ngram_size': 3, 'encoder_no_repeat_ngram_size': 3, 'bad_words_ids': None, 'num_return_sequences': 1, 'output_scores': False, 'return_dict_in_generate': False, 'forced_bos_token_id': None, 'forced_eos_token_id': 2, 'remove_invalid_values': False, 'exponential_decay_length_penalty': None, 'suppress_tokens': None, 'begin_suppress_tokens': None, 'architectures': ['BlenderbotForConditionalGeneration'], 'finetuning_task': None, 'id2label': {0: 'LABEL_0', 1: 'LABEL_1', 2: 'LABEL_2'}, 'label2id': {'LABEL_0': 0, 'LABEL_1': 1, 'LABEL_2': 2}, 'tokenizer_class': None, 'prefix': None, 'bos_token_id': 1, 'pad_token_id': 0, 'eos_token_id': 2, 'sep_token_id': None, 'decoder_start_token_id': 1, 'task_specific_params': None, 'problem_type': None, '_name_or_path': 'facebook/blenderbot-400M-distill', 'transformers_version': '4.45.2', 'add_bias_logits': False, 'add_final_layer_norm': True, 'classif_dropout': 0.0, 'classifier_dropout': 0.0, 'do_blenderbot_90_layernorm': True, 'extra_layer_norm': False, 'extra_pos_embeddings': 0, 'force_bos_token_to_be_generated': False, 'gradient_checkpointing': True, 'layernorm_variant': 'prelayernorm', 'model_type': 'blenderbot', 'normalize_before': True, 'normalize_embedding': False, 'static_position_embeddings': False, 'unk_token_id': 3, 'quantization_config': {'quant_method': 'BITS_AND_BYTES', '_load_in_8bit': False, '_load_in_4bit': True, 'llm_int8_threshold': 6.0, 'llm_int8_skip_modules': None, 'llm_int8_enable_fp32_cpu_offload': False, 'llm_int8_has_fp16_weight': False, 'bnb_4bit_quant_type': 'nf4', 'bnb_4bit_use_double_quant': True, 'bnb_4bit_compute_dtype': 'float16', 'bnb_4bit_quant_storage': 'uint8', 'load_in_4bit': True, 'load_in_8bit': False}, 'output_dir': 'results/financial-bot-qlora', 'overwrite_output_dir': False, 'do_train': False, 'do_eval': True, 'do_predict': False, 'eval_strategy': 'steps', 'prediction_loss_only': False, 'per_device_train_batch_size': 8, 'per_device_eval_batch_size': 8, 'per_gpu_train_batch_size': None, 'per_gpu_eval_batch_size': None, 'gradient_accumulation_steps': 8, 'eval_accumulation_steps': None, 'eval_delay': 0, 'torch_empty_cache_steps': None, 'learning_rate': 5e-06, 'weight_decay': 0.01, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'num_train_epochs': 3, 'max_steps': -1, 'lr_scheduler_type': 'cosine_with_restarts', 'lr_scheduler_kwargs': {}, 'warmup_ratio': 0.1, 'warmup_steps': 0, 'log_level': 'passive', 'log_level_replica': 'warning', 'log_on_each_node': True, 'logging_dir': 'results/financial-bot-qlora/runs/Jan06_16-57-59_zahemen', 'logging_strategy': 'steps', 'logging_first_step': False, 'logging_steps': 50, 'logging_nan_inf_filter': True, 'save_strategy': 'steps', 'save_steps': 100, 'save_total_limit': 3, 'save_safetensors': True, 'save_on_each_node': False, 'save_only_model': False, 'restore_callback_states_from_checkpoint': False, 'no_cuda': False, 'use_cpu': False, 'use_mps_device': False, 'seed': 42, 'data_seed': None, 'jit_mode_eval': False, 'use_ipex': False, 'bf16': False, 'fp16': True, 'fp16_opt_level': 'O1', 'half_precision_backend': 'auto', 'bf16_full_eval': False, 'fp16_full_eval': False, 'tf32': None, 'local_rank': 0, 'ddp_backend': None, 'tpu_num_cores': None, 'tpu_metrics_debug': False, 'debug': [], 'dataloader_drop_last': False, 'eval_steps': 100, 'dataloader_num_workers': 0, 'dataloader_prefetch_factor': None, 'past_index': -1, 'run_name': 'results/financial-bot-qlora', 'disable_tqdm': False, 'remove_unused_columns': False, 'label_names': None, 'load_best_model_at_end': True, 'metric_for_best_model': 'eval_loss', 'greater_is_better': False, 'ignore_data_skip': False, 'fsdp': [], 'fsdp_min_num_params': 0, 'fsdp_config': {'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False}, 'fsdp_transformer_layer_cls_to_wrap': None, 'accelerator_config': {'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None}, 'deepspeed': None, 'label_smoothing_factor': 0.0, 'optim': 'paged_adamw_32bit', 'optim_args': None, 'adafactor': False, 'group_by_length': True, 'length_column_name': 'length', 'report_to': ['wandb'], 'ddp_find_unused_parameters': False, 'ddp_bucket_cap_mb': None, 'ddp_broadcast_buffers': None, 'dataloader_pin_memory': True, 'dataloader_persistent_workers': False, 'skip_memory_metrics': True, 'use_legacy_prediction_loop': False, 'push_to_hub': False, 'resume_from_checkpoint': None, 'hub_model_id': None, 'hub_strategy': 'every_save', 'hub_token': '<HUB_TOKEN>', 'hub_private_repo': False, 'hub_always_push': False, 'gradient_checkpointing_kwargs': None, 'include_inputs_for_metrics': False, 'eval_do_concat_batches': True, 'fp16_backend': 'auto', 'evaluation_strategy': None, 'push_to_hub_model_id': None, 'push_to_hub_organization': None, 'push_to_hub_token': '<PUSH_TO_HUB_TOKEN>', 'mp_parameters': '', 'auto_find_batch_size': False, 'full_determinism': False, 'torchdynamo': None, 'ray_scope': 'last', 'ddp_timeout': 1800, 'torch_compile': False, 'torch_compile_backend': None, 'torch_compile_mode': None, 'dispatch_batches': None, 'split_batches': None, 'include_tokens_per_second': False, 'include_num_input_tokens_seen': False, 'neftune_noise_alpha': None, 'optim_target_modules': None, 'batch_eval_metrics': False, 'eval_on_start': False, 'use_liger_kernel': False, 'eval_use_gather_object': False}
+2025-01-06 16:59:22,105 INFO    MainThread:100502 [wandb_config.py:__setitem__():154] config set model/num_parameters = 367997440 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f751c9b7f50>>
+2025-01-06 16:59:22,105 INFO    MainThread:100502 [wandb_run.py:_config_callback():1279] config_cb model/num_parameters 367997440 None
+2025-01-06 17:00:08,747 WARNING MsgRouterThr:100502 [router.py:message_loop():75] message_loop has been closed

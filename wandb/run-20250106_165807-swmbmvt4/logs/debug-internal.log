@@ -1,0 +1,20 @@
+{"time":"2025-01-06T16:58:07.556495865Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-06T16:58:07.556512604Z","level":"INFO","msg":"created symlink","path":"/home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/run-20250106_165807-swmbmvt4/logs/debug-core.log"}
+{"time":"2025-01-06T16:58:07.708334665Z","level":"INFO","msg":"created new stream","id":"swmbmvt4"}
+{"time":"2025-01-06T16:58:07.708420561Z","level":"INFO","msg":"stream: started","id":"swmbmvt4"}
+{"time":"2025-01-06T16:58:07.70846215Z","level":"INFO","msg":"writer: Do: started","stream_id":"swmbmvt4"}
+{"time":"2025-01-06T16:58:07.70849741Z","level":"INFO","msg":"sender: started","stream_id":"swmbmvt4"}
+{"time":"2025-01-06T16:58:07.708527717Z","level":"INFO","msg":"handler: started","stream_id":"swmbmvt4"}
+{"time":"2025-01-06T16:58:17.713859536Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai on 10.255.255.254:53: read udp 10.255.255.254:59239->10.255.255.254:53: i/o timeout"}
+{"time":"2025-01-06T16:58:30.148842728Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai on 10.255.255.254:53: read udp 10.255.255.254:54611->10.255.255.254:53: i/o timeout"}
+{"time":"2025-01-06T16:58:44.689055765Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai on 10.255.255.254:53: read udp 10.255.255.254:54176->10.255.255.254:53: i/o timeout"}
+{"time":"2025-01-06T16:59:04.369058088Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai on 10.255.255.254:53: read udp 10.255.255.254:47503->10.255.255.254:53: i/o timeout"}
+{"time":"2025-01-06T16:59:21.964957725Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-06T17:00:08.746917884Z","level":"INFO","msg":"stream: closing","id":"swmbmvt4"}
+{"time":"2025-01-06T17:00:08.746966372Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-06T17:00:08.74745468Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-06T17:00:10.035397254Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-06T17:00:10.486673145Z","level":"INFO","msg":"handler: closed","stream_id":"swmbmvt4"}
+{"time":"2025-01-06T17:00:10.486730845Z","level":"INFO","msg":"sender: closed","stream_id":"swmbmvt4"}
+{"time":"2025-01-06T17:00:10.486718356Z","level":"INFO","msg":"writer: Close: closed","stream_id":"swmbmvt4"}
+{"time":"2025-01-06T17:00:10.486827337Z","level":"INFO","msg":"stream: closed","id":"swmbmvt4"}

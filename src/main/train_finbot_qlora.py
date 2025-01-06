@@ -97,19 +97,50 @@ def train(
         with open(dataset_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         
-        # Process data with validation
+        # Modified data processing section
         processed_data = []
-        for item in data:  # Remove limit to process full dataset
+        for item in data:
             if not all(key in item for key in ['personas', 'free_messages', 'guided_messages']):
                 continue
                 
-            context = f"Personas: {' | '.join(item['personas'])}\n"
+            # Initialize context with system prompt
+            system_prompt = (
+                "You are an expert financial advisor. "
+                "Provide clear, accurate, and professional responses about finance and investments. "
+                "Always maintain a professional tone and back answers with financial expertise."
+            )
+            
+            context = [f"System: {system_prompt}"]
+            
+            # Add roles/personas
+            if item['personas']:
+                context.append(f"Roles: {' | '.join(item['personas'])}")
+            
+            # Handle previous utterances properly
+            if item.get('previous_utterance'):
+                if isinstance(item['previous_utterance'], list) and len(item['previous_utterance']) < 1:
+                    continue # Skip empty list
+                
+                    # context.append("Previous conversation:")
+                    # for utterance in item['previous_utterance']:
+                    #     if isinstance(utterance, str):
+                    #         context.append(utterance)
+                    #     else:
+                    #         logger.warning("Skipping non-string previous_utterance item")
+                elif isinstance(item['previous_utterance'], str) and item['previous_utterance'].strip():
+                    context.append("Previous conversation:")
+                    context.append(item['previous_utterance'])
+            
+            # Join context with newlines
+            context = "\n".join(context)
+            
+            # Process messages
             for user_msg, bot_msg in zip(item['free_messages'], item['guided_messages']):
                 if not user_msg.strip() or not bot_msg.strip():
                     continue
                     
                 processed_data.append({
-                    "input_text": f"{context}User: {user_msg.strip()}",
+                    "input_text": f"{context}\nUser: {user_msg.strip()}",
                     "target_text": f"Assistant: {bot_msg.strip()}"
                 })
 
@@ -221,11 +252,11 @@ def train(
             learning_rate=5e-6,  # Reduced learning rate
             weight_decay=0.01,
             warmup_ratio=0.1,
-            logging_steps=55,
+            logging_steps=50,
             eval_strategy="steps",
             save_strategy="steps",
-            eval_steps=110,
-            save_steps=110,
+            eval_steps=100,
+            save_steps=100,
             save_total_limit=3,
             load_best_model_at_end=True,
             metric_for_best_model="eval_loss",
