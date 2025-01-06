@@ -1,52 +1,103 @@
-# _**DocAnalyzerAI**_ - AI-Powered Financial Document Chatbot
+# 📚 **FinAnalyzerAI: Advanced Financial Analysis System**
+
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/LICENSE-MIT-blue.svg" alt="LICENSE" height="25">
+  </a>
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/PYTHON-3.8%2B-blue" alt="PYTHON" height="25">
+  </a>
+  <a href="https://pytorch.org/">
+    <img src="https://img.shields.io/badge/PYTORCH-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white" alt="PYTORCH" height="25">
+  </a>
+  <a href="https://huggingface.co/">
+    <img src="https://img.shields.io/badge/%F0%9F%A4%97HUGGINGFACE-MODELS-orange" alt="HUGGINGFACE" height="25">
+  </a>
+</p>
+
+##  **Overview**
+DocAnalyzerAI is an advanced financial document analysis system designed to process, analyze, and extract insights from complex financial texts. Leveraging cutting-edge NLP techniques and custom-trained transformer architectures, the system is optimized for high accuracy, scalability, and efficiency.
+
+Key capabilities include:
+- Multi-stage fine-tuning using **QLoRA**.
+- Optimized GPU training pipelines.
+- Real-time interactive interfaces with **Gradio**.
+- Robust data preprocessing and augmentation techniques.
+
 ---
 
-## Project Overview
+## **Key Features**
+### **Model Architecture**
+- **Base Model:** BlenderBot (400M parameters)
+- **Fine-tuning:** QLoRA for efficient adaptation
+- **Quantization:** 4-bit memory-efficient quantization
+- **Optimization:** Gradient checkpointing and mixed-precision training
 
-### Context
-This project, developed as part of the GenAI consulting team at Boston Consulting Group (BCG), focuses on creating an AI-powered chatbot that analyzes financial documents. The initiative is at the intersection of finance and generative AI (GenAI), showcasing innovative applications of AI in the financial domain.
+### **Data Processing**
+- Advanced text preprocessing and tokenization
+- Domain-specific financial QA pairs
+- Automated data augmentation pipelines
+- Support for large datasets (>7,00 samples)
 
-### Goals
-1. **Data Extraction and Analysis**: Extract and analyze key financial data from 10-K and 10-Q documents.
-2. **Chatbot Development**: Develop an interactive chatbot capable of:
-   - Understanding and interpreting financial data.
-   - Providing insights into financial trends.
-   - Communicating complex financial information effectively.
-3. **Strategic Consulting**: Leverage AI-driven insights to deliver strategic recommendations to clients.
+### 🌐 **Production Ready**
+- Real-time inference with minimal latency
+- Interactive Gradio web interface
+- Comprehensive logging and monitoring systems
+- Error handling and graceful recovery mechanisms
 
-### Deliverables
-- **Processed Financial Data**: Key financial trends and insights extracted from client documents.
-- **AI Chatbot**: A generative AI-powered chatbot designed for financial analysis and user interaction.
-- **Strategic Recommendations**: Use insights to provide value-driven consulting solutions.
+---
 
-## Repository Structure
+## ⚙️ **Technical Architecture**
+### **Model Configuration**
+```python
+{
+    "model_name": "facebook/blenderbot-400M-distill",
+    "training_type": "QLoRA",
+    "quantization": "4-bit",
+    "learning_rate": 2e-5,
+    "batch_size": 4,
+    "gradient_accumulation": 16,
+    "weight_decay": 0.05,
+    "max_length": 128,
+    "training_epochs": 15
+}
 ```
-├── data/             # Financial documents and preprocessed datasets
-├── models/           # Trained LLMs and model weights
-├── notebooks/        # Jupyter notebooks for EDA and prototyping
-├── src/              # Core source code for the chatbot and data processing
-│   ├── data_prep/    # Data extraction and cleaning scripts
-│   ├── chatbot/      # Chatbot architecture and logic
-│   └── utils/        # Utility functions
-├── tests/            # Unit tests and integration tests
-├── docs/             # Documentation and project reports
-├── .gitignore        # Files to be ignored by Git
-├── requirements.txt  # Python dependencies
-└── README.md         # Project description and usage
+
+### **Training Pipeline**
+```mermaid
+graph LR
+    A[Data Preparation] --> B[QLoRA Fine-tuning]
+    B --> C[GPU Training]
+    C --> D[Model Evaluation]
+    D --> E[Production Deployment]
 ```
 
-## Installation
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/username/ai-financial-chatbot.git
-   cd ai-financial-chatbot
-   ```
+### **Dataset Statistics**
+- **Training Samples:** 7,000+
+- **Validation Split:** 30%
+- **Categories:**
+   - Financial Planning
+   - Market Analysis
+   - Investment Advice
+   - Risk Management
 
-2. **Set Up Virtual Environment**:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+---
+
+## **Installation**
+### **Prerequisites**
+- Python 3.8+
+- CUDA-capable GPU (16GB+ VRAM recommended)
+- 32GB+ RAM
+
+### **Setup Instructions**
+```bash
+# Clone repository
+git clone https://github.com/zahemen9900/DocAnalyzerAI.git
+cd DocAnalyzerAI
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -77,7 +128,7 @@ python src/train_finbot_qlora.py \
 
 ### 🌐 **Launch Interface**
 ```bash
-python src/finbot_chat_ui.py \
+python src/chatbot_ui.py \
     --host 0.0.0.0 \
     --port 7860
 ```
@@ -156,7 +207,7 @@ This project is licensed under the **MIT License** - see [LICENSE](LICENSE) for 
 
 ---
 
-## **Acknowledgments**
+## 🙏 **Acknowledgments**
 - **Boston Consulting Group (BCG)** for project support
 - **Meta (Facebook)** and **Hugging Face** for transformer architectures
 - Financial domain experts for dataset validation
