@@ -1,5 +1,5 @@
-# Scaled down version
 import gradio as gr
+from matplotlib.font_manager import font_scalings
 import torch
 import logging
 from pathlib import Path
@@ -39,7 +39,7 @@ TOPICS = {
     ]
 }
 
-
+# Enhanced CSS styling
 CUSTOM_CSS = """
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap');
 
@@ -54,12 +54,6 @@ CUSTOM_CSS = """
     color-scheme: dark !important;
 }
 
-body {
-    background-color: #1a1b1e !important;
-    color: #e0e0e0 !important;
-    font-size: 0.8em !important; /* Scaled down */
-}
-
 .gradio-container {
     background-color: #1a1b1e !important;
     color: #e0e0e0 !important;
@@ -69,155 +63,116 @@ body {
     background-color: #1a1b1e !important;
 }
 
-/* Header styles */
+.container {
+    max-width: 800px !important;
+    margin-top: 1rem !important;
+    margin: auto !important;
+    padding: 0 1rem !important;
+    background-color: #1a1b1e !important;
+    color: #171717 !important;
+    font-family: 'Inter', sans-serif !important;
+    border-radius: 10px !important;
+}
+
+.container-questions {
+    max-width: 900px !important;
+    margin: auto !important;
+    padding: 0 1rem;
+    background-color: #1a1b1e !important;
+    color: #e0e0e0 !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
 .header {
     text-align: center;
-    margin-bottom: 1.6rem; /* Scaled down */
-    padding: 1.2rem; /* Scaled down */
+    margin-bottom: 2rem;
+    padding: 1.5rem;
     background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
     color: white;
-    border-radius: 8px; /* Scaled down */
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3); /* Scaled down */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     font-family: 'Space Mono', monospace !important;
 }
 
 .header h1 {
     font-weight: 700 !important;
-    letter-spacing: 0.8px !important; /* Scaled down */
-    font-size: 1.8em !important; /* Scaled down */
+    letter-spacing: 1px !important;
+    font-size: 5em !important;
 }
 
 .header p {
     font-weight: 400 !important;
     opacity: 0.9;
-    font-size: 0.9em !important; /* Scaled down */
 }
 
-/* SVG icon styles */
-.bot-icon {
-    width: 36px;  /* Scaled down */
-    height: 36px; /* Scaled down */
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 6px; /* Scaled down */
-    fill: white;
-    transform: scale(1);  /* Adjusted scaling */
-    transform-origin: center;
-}
-
-/* Disclaimer styles */
 .disclaimer {
-    padding: 0.8rem; /* Scaled down */
+    padding: 1rem;
     background-color: #2d2d2d;
-    border-left: 3px solid #6B73FF; /* Scaled down */
-    border-radius: 4px; /* Scaled down */
+    border-left: 4px solid #6B73FF;
+    border-radius: 5px;
     margin: 1rem 0;
-    font-size: 0.8em !important; /* Scaled down */
+    margin-bottom: 1rem;
+    font-size: 0.8em;
     color: #e0e0e0;
 }
 
-/* Feature card styles */
 .feature-card {
     background: var(--background-fill-primary);
-    padding: 16px !important;  /* Scaled down */
-    margin: 8px !important;   /* Scaled down */
-    border-radius: 10px !important;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2) !important; /* Scaled down */
+    padding: 20px !important;  /* Adjusted padding */
+    margin: 10px !important;   /* Added margin */
+    border-radius: 12px !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
     transition: transform 0.2s;
     border: 1px solid var(--border-color-primary);
-    min-height: 100px !important;  /* Scaled down */
+    min-height: 120px !important;  /* Set minimum height */
     display: flex !important;
     align-items: center !important;
-    font-size: 0.9em !important;   /* Scaled down */
+    font-size: 1.1em !important;   /* Increased font size */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease !important;
 }
 
 .feature-card:hover {
-    transform: translateY(-4px); /* Scaled down */
+    transform: translateY(-5px);
     background: var(--background-fill-secondary);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.3) !important; /* Scaled down */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3) !important;
 }
 
-/* Chatbot styles */
 .chatbot {
     font-family: 'Inter', sans-serif !important;
-    height: 360px !important; /* Scaled down */
-    border-radius: 8px !important; /* Scaled down */
+    height: 450px !important;
+    border-radius: 10px !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
-    background-color: #2d2d2d !important;
+    background-color: #0f0f11 !important;
     border: 1px solid #404040 !important;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
-/* Input container styles */
 .input-container {
-    margin-top: 0.8rem !important; /* Scaled down */
+    margin: 0.5px !important;
     background-color: #2d2d2d !important;
-    padding: 0.4rem !important;  /* Scaled down */
-    border-radius: 8px; /* Scaled down */
+    padding: 0.1rem !important;  /* Reduced padding */
+    border-radius: 10px;
 }
 
-/* Input row styles */
 .input-row {
     display: flex !important;
-    gap: 0.4rem !important; /* Scaled down */
+    gap: 0.5rem !important;
     align-items: flex-start !important;
-    margin-top: 0.2rem !important;  /* Scaled down */
+    margin-top: 0.2rem !important;  /* Reduced margin */
 }
 
-/* Character counter styles */
-.char-counter {
-    text-align: right;
-    color: #888;
-    font-size: 0.7em !important; /* Scaled down */
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* Example header styles */
-.examples-header {
-    color: #6B73FF;
-    font-size: 1em !important; /* Scaled down */
-    font-weight: 600 !important;
-    margin: 1.2rem 0 0.8rem 0 !important; /* Scaled down */
-    text-align: center !important;
-    font-family: 'Space Mono', monospace !important;
-}
-
-/* Example category styles */
-.example-category {
-    color: #6B73FF;
-    font-weight: 600 !important;
-    margin: 0.8rem 0 0.4rem 0 !important; /* Scaled down */
-    font-family: 'Inter', sans-serif !important;
-    font-size: 0.9em !important; /* Scaled down */
-}
-
-/* Example bubble styles */
-.example-bubble {
-    background: #2d2d2d;
-    border: 1px solid #404040;
-    border-radius: 12px !important; /* Scaled down */
-    padding: 0.6rem 1rem !important; /* Scaled down */
-    margin: 0.3rem 0 !important; /* Scaled down */
-    cursor: pointer;
-    transition: all 0.2s ease;
-    font-size: 0.8em !important; /* Scaled down */
-}
-
-.example-bubble:hover {
-    transform: translateX(4px) !important; /* Scaled down */
-    background: #363636;
-    border-color: #6B73FF;
-}
-
-/* Action button styles */
 .action-button {
     background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%) !important;
     color: white !important;
-    border-radius: 4px !important; /* Scaled down */
-    padding: 0.6rem 1.2rem !important;  /* Scaled down */
+    height: 68px !important;
+    border-radius: 5px !important;
+    padding: 0.8rem 1rem !important;  /* Increased padding for bigger buttons */
     transition: all 0.3s ease !important;
     border: none !important;
-    font-size: 0.9em !important;  /* Scaled down */
+    font-family: 'Space Mono', monospace !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px !important;
+    font-size: 1.1em !important;  /* Increased font size */
     position: relative;
     overflow: hidden;
 }
@@ -234,11 +189,94 @@ body {
     transition: transform 0.3s ease;
 }
 
-.action-button:hover::after {
-    transform: translateY(0);
+.action-button:hover {
+    opacity: 0.9 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
 }
 
-/* Processing text color */
+.clear-button {
+    background: linear-gradient(135deg, #9c9ec7 0%, #212122 100%) !important;
+    color: white !important;
+    border-radius: 5px !important;
+    padding: 0.8rem 1rem !important;  /* Increased padding for bigger buttons */
+    transition: all 0.3s ease !important;
+    border: none !important;
+    font-size: 0.8em !important;  /* Increased font size */
+}
+
+.clear-button:hover {
+    opacity: 0.9 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.char-counter {
+    text-align: center;
+    color: #888;
+    font-size: 0.8em;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.examples-header {
+    color: #6B73FF;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem 0;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+}
+
+.example-category {
+    color: #6B73FF;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.example-bubble {
+    background: #2d2d2d;
+    border: 1px solid #404040;
+    border-radius: 15px;
+    padding: 0.8rem 1.2rem;
+    margin: 0.4rem 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.95em;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.example-bubble:hover {
+    transform: translateX(5px);
+    background: #363636;
+    border-color: #6B73FF;
+    box-shadow: 0 2px 8px rgba(107, 115, 255, 0.2) !important;
+}
+
+.accordion-container {
+    max-width: 770px !important;
+    margin: auto !important;
+    padding: 1rem !important;
+    background-color: #2d2d2d !important;
+    border-radius: 10px !important;
+    border: 1px solid #404040 !important;
+    margin-top: 1.5rem !important;
+}
+
+.accordion-header {
+    color: #6B73FF !important;
+    font-size: 1.1em !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    font-family: 'Space Mono', monospace !important;
+    padding: 1rem !important;  /* Added padding for better height */
+    white-space: nowrap !important;  /* Prevent text from wrapping */
+    overflow: hidden !important;  /* Prevent scroll */
+    text-overflow: ellipsis !important;  /* Add ellipsis for overflow */
+}
+
+/* Fix processing text color */
 .processing-text {
     color: #e0e0e0 !important;
 }
@@ -247,10 +285,6 @@ body {
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
-}
-
-.chatbot {
-    animation: fadeIn 0.5s ease-in-out;
 }
 
 /* Smoother transitions */
@@ -293,19 +327,6 @@ EXAMPLES = {
     ]
 }
 
-dark_theme_js = """
-    /*Force dark theme*/
-
-function refresh() {
-    const url = new URL(window.location);
-
-    if (url.searchParams.get('__theme') !== 'dark') {
-        url.searchParams.set('__theme', 'dark');
-        window.location.href = url.href;
-    }
-}
-"""
-
 def load_financial_model():
     """Load the financial model and tokenizer"""
     try:
@@ -331,13 +352,13 @@ def create_demo():
     try:
         model, tokenizer = load_financial_model()
         
-        with gr.Blocks(css=CUSTOM_CSS, theme=gr.themes.Monochrome(), js = dark_theme_js) as demo:
+        with gr.Blocks(css=CUSTOM_CSS, theme=gr.themes.Monochrome) as demo:
             with gr.Column(elem_classes="container"):
-                # Header with adjusted SVG viewBox
+                # Enhanced header
                 gr.Markdown(
                     """
                     <div class="header">
-                        <h1>🤖 FinBot: Financial AI Assistant</h1>
+                        <h1>🤖 FinBot AI</h1>
                         <p>Your AI companion for financial guidance and market insights</p>
                     </div>
                     
@@ -347,11 +368,11 @@ def create_demo():
                 # Feature cards
                 with gr.Row(elem_id="features-grid"):
                     with gr.Column(elem_classes=["feature-card"]):
-                        gr.Markdown("### 💼 **Investment Advice**\n#### Get expert advice on how to invest your money wisely.")
+                        gr.Markdown("##### 💼 **Investment Advice** \n##### Get expert advice on how to invest your money wisely.")
                     with gr.Column(elem_classes=["feature-card"]):
-                        gr.Markdown("### 📊 **Market Analysis**\n#### Understand market trends and make informed decisions.")
+                        gr.Markdown("##### 📊 **Market Analysis** \n##### Understand market trends and make informed decisions.")
                     with gr.Column(elem_classes=["feature-card"]):
-                        gr.Markdown("### 💵 **Personal Finance, and More!**\n#### Manage your personal finances effectively, and get answers to general queries")
+                        gr.Markdown("##### 💵 **Personal Finance, and More!** \n##### Manage your personal finances effectively, and get answers to general queries")
                 gr.Markdown(
                     """
                     <div class="disclaimer">
@@ -372,21 +393,24 @@ def create_demo():
                 )
                 
                 # Simplified input area without container
-                msg = gr.Textbox(
-                    label=None,
-                    container = False,
-                    placeholder="Ask me anything about finance, or anything else...",
-                    lines=2
-                )
-                
                 with gr.Row():
-                    submit = gr.Button("Send 📤", elem_classes="action-button", scale = 6)
-                    clear = gr.Button("Clear 🗑️", elem_classes="clear-button", scale = 2)
-
-                    char_counter = gr.HTML(
-                        value='<p class="char-counter">0/512 characters</p>',
-                        elem_classes="char-counter"
+                    msg = gr.Textbox(
+                        label=None,
+                        container = False,
+                        placeholder="Chat with me about finance, or anything else...",
+                        lines=2,
+                        elem_classes="input-container",
+                        scale = 11
                     )
+                    submit = gr.Button("Send 📤", elem_classes="action-button", scale = 1)
+
+                
+                # with gr.Row():
+                #     clear = gr.Button("Clear 🗑️", elem_classes="clear-button", scale = 2)
+                #     char_counter = gr.HTML(
+                #         value='<p class="char-counter">0/512 characters</p>',
+                #         elem_classes="char-counter"
+                #     )
 
                     
             # Collapsible example questions section
@@ -417,11 +441,11 @@ def create_demo():
                 )
                 
             # # Character counter update function
-            def count_chars(text):
-                return f'<p class="char-counter">{len(text)}/512 characters</p>'
+            # def count_chars(text):
+            #     return f'<p class="char-counter">{len(text)}/512 characters</p>'
 
-            # Update character counter on input
-            msg.change(count_chars, msg, char_counter)
+            # # Update character counter on input
+            # msg.change(count_chars, msg, char_counter)
             
             # Enhanced response handler with loading state
             def respond(message, chat_history):
@@ -441,7 +465,7 @@ def create_demo():
             # Connect components
             submit.click(respond, [msg, chatbot], [msg, chatbot])
             msg.submit(respond, [msg, chatbot], [msg, chatbot])
-            clear.click(lambda: None, None, chatbot, queue=False)
+            # clear.click(lambda: None, None, chatbot, queue=False)
         
         return demo
         
@@ -459,11 +483,5 @@ if __name__ == "__main__":
             share=True
         )
     except Exception as e:
-        # logger.error(f"Failed to launch demo: {e}")
-        # raise
-        demo = create_demo()
-        demo.launch(
-            server_name="0.0.0.0",
-            server_port=7865,
-            share=True
-        )
+        logger.error(f"Failed to launch demo: {e}")
+        raise

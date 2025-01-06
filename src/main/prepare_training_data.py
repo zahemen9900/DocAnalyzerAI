@@ -97,6 +97,43 @@ QUESTION_STARTERS = [
     "What are the key aspects of"
 ]
 
+FOLLOWUP_PROMPTS = [
+    "Would you like me to elaborate further?",
+    "Does this help clarify things for you?",
+    "Would you like to know more about any specific aspect?",
+    "Is there anything specific you'd like me to explain in more detail?",
+    "Do you have any other questions about this?",
+    "Should we explore this topic further?",
+    "Would a different example help illustrate this better?",
+    "Is there another angle you'd like me to approach this from?",
+    "Can I assist you with anything else related to this?",
+    "Does this address your concerns?",
+    "Would additional details be helpful here?",
+    "Is there any part you’d like me to expand on?",
+    "Do you feel this answers your query fully?",
+    "Should we dive deeper into a particular area?",
+    "Would more examples or analogies be useful?"
+]
+
+
+DYNAMIC_TRANSITIONS = [
+    "Building on what we discussed,",
+    "To add to that,",
+    "Let me break this down further.",
+    "Here's another important point:",
+    "This relates closely to",
+    "For better context,",
+    "Expanding on this idea,",
+    "In addition to that,",
+    "Let’s connect this to a broader perspective.",
+    "Another perspective to consider is,",
+    "This also ties into",
+    "Taking this a step further,",
+    "Let me provide some additional context.",
+    "Here’s an extension of that thought:",
+    "This leads us to consider,"
+]
+
 def generate_variations(question: str, answer: str, max_variations: int = 3) -> List[Tuple[str, str]]:
     """Generate limited variations of Q&A pairs"""
     variations = [(question, answer)]
@@ -124,6 +161,32 @@ FINANCIAL_QA_SAMPLES = [
     ("What is a balance sheet?", "A balance sheet is a financial statement that provides a snapshot of a company's financial position at a specific point in time. It shows the company's assets, liabilities, and shareholders' equity. Assets are what the company owns, liabilities are what it owes, and equity represents the shareholders' ownership."),
     ("How do you calculate EBITDA?", "EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) is calculated by adding back interest, taxes, depreciation, and amortization to net income. It's used to assess a company's operating performance without the impact of financing decisions, accounting practices, or tax environments."),
     ("What is a P/E ratio?", "The P/E (Price-to-Earnings) ratio is a valuation metric that compares a company's current share price to its earnings per share (EPS). It indicates how much investors are willing to pay for each dollar of earnings. A high P/E ratio may suggest overvaluation, while a low P/E ratio may indicate undervaluation."),
+    ("Define GDP.", "GDP (Gross Domestic Product) is the total monetary value of all goods and services produced within a country's borders in a specific period. It's used to measure the economic performance and size of an economy. GDP can be calculated using three approaches: production, income, and expenditure."),
+    ("What is a bull market?", "A bull market is a financial market characterized by rising asset prices and investor optimism. It's typically associated with strong economic performance, high employment, and increasing corporate profits. Bull markets are marked by sustained periods of upward price trends."),
+    ("Explain the concept of diversification.", "Diversification is an investment strategy that involves spreading your investments across different assets to reduce risk. By investing in a variety of assets, sectors, or geographic regions, you can minimize the impact of a single investment's performance on your overall portfolio."),
+    ("What is inflation?", "Inflation is the rate at which the general level of prices for goods and services rises, leading to a decrease in purchasing power. It's measured by the Consumer Price Index (CPI) and can erode the value of money over time. Central banks aim to maintain low and stable inflation rates."),
+    ("How do you calculate compound interest?", "Compound interest is calculated by applying the interest rate to the initial principal amount and any accumulated interest. The formula for compound interest is A = P(1 + r/n)^(nt), where A is the future value of the investment, P is the principal amount, r is the annual interest rate, n is the number of times interest is compounded per year, and t is the number of years."),
+    ("What is a stock market index?", "A stock market index is a benchmark that measures the performance of a group of stocks in a particular market. It's used to track the overall performance of the market, compare investment returns, and analyze economic trends. Examples of stock market indices include the S&P 500, Dow Jones Industrial Average, and Nasdaq Composite."),
+    ("Define a recession.", "A recession is a significant decline in economic activity that lasts for an extended period. It's characterized by falling GDP, rising unemployment, reduced consumer spending, and declining business investment. Recessions are typically caused by factors such as reduced consumer confidence, financial crises, or external shocks."),
+    ("What is a dividend?", "A dividend is a distribution of a portion of a company's earnings to its shareholders. It's usually paid in cash or additional shares and is based on the company's profitability and dividend policy. Dividends provide investors with a source of income and can be an indicator of a company's financial health."),
+    ("Explain the concept of supply and demand.", "Supply and demand is an economic model that describes the relationship between the availability of a product or service and the desire for it. When supply exceeds demand, prices tend to fall, and when demand exceeds supply, prices tend to rise. The interaction of supply and demand determines the equilibrium price and quantity in a market."),
+    ("What is a 401(k) retirement plan?", "A 401(k) retirement plan is a tax-advantaged investment account offered by employers to help employees save for retirement. Employees can contribute a portion of their pre-tax income to the account, and employers may match a percentage of the contributions. 401(k) plans offer investment options such as stocks, bonds, and mutual funds."),
+    ("Define a mutual fund.", "A mutual fund is an investment vehicle that pools money from multiple investors to invest in a diversified portfolio of stocks, bonds, or other securities. Mutual funds are managed by professional fund managers and offer investors access to a diversified investment portfolio without the need to select individual securities."),
+    ("What is a credit score?", "A credit score is a numerical representation of an individual's creditworthiness based on their credit history. It's used by lenders to assess the risk of lending money to a borrower and determine the terms of the loan. Credit scores are calculated using factors such as payment history, credit utilization, length of credit history, new credit accounts, and credit mix."),
+    ("Explain the concept of risk management.", "Risk management is the process of identifying, assessing, and prioritizing risks to minimize their impact on an organization's objectives. It involves analyzing potential risks, developing strategies to mitigate or avoid them, and monitoring the effectiveness of risk controls. Effective risk management helps organizations anticipate and respond to threats, opportunities, and uncertainties."),
+    ("What is a budget?", "A budget is a financial plan that outlines an individual's or organization's income and expenses over a specific period. It helps track spending, allocate resources, and achieve financial goals. Budgets can be used for personal finance, business planning, project management, and government operations."),
+    ("Define a stock option.", "A stock option is a contract that gives the holder the right, but not the obligation, to buy or sell a specific number of shares of a stock at a predetermined price within a specified time frame. Stock options are used for investment, speculation, and employee compensation. There are two types of stock options: call options (buy) and put options (sell)."),
+    ("What is a hedge fund?", "A hedge fund is an investment fund that pools capital from accredited investors and institutional investors to invest in a variety of assets and strategies. Hedge funds are managed by professional fund managers and aim to generate high returns while managing risk. They often use leverage, derivatives, and alternative investments to achieve their investment objectives."),
+    ("Explain the concept of liquidity.", "Liquidity refers to the ease with which an asset can be bought or sold in the market without affecting its price. Liquid assets can be quickly converted into cash without significant price changes, while illiquid assets may take longer to sell and may incur a price discount. Liquidity is an important consideration for investors and financial institutions."),
+    ("What is a capital gain?", "A capital gain is the profit realized from the sale of a capital asset, such as stocks, bonds, or real estate. It's calculated by subtracting the purchase price (cost basis) from the selling price. Capital gains can be short-term (held for one year or less) or long-term (held for more than one year) and are subject to capital gains tax."),
+    ("Define a derivative.", "A derivative is a financial contract that derives its value from an underlying asset, index, or reference rate. Derivatives can be used for hedging, speculation, or arbitrage and include options, futures, forwards, and swaps. They allow investors to gain exposure to assets without owning them outright and can be highly leveraged."),
+    ("What is a recession-proof industry?", "A recession-proof industry is a sector of the economy that remains stable or experiences growth during economic downturns. These industries provide essential goods or services that are in demand regardless of economic conditions. Examples of recession-proof industries include healthcare, utilities, consumer staples, and government services."),
+    ("Explain the concept of time value of money.", "The time value of money is the principle that a dollar received today is worth more than a dollar received in the future due to its potential earning capacity. It's based on the premise that money can earn interest or be invested to generate returns over time. The time value of money is a fundamental concept in finance and investment analysis."),
+    ("What is a credit default swap?", "A credit default swap (CDS) is a financial derivative that allows investors to hedge against the risk of default on a debt obligation, such as a bond or loan. The buyer of a CDS pays a premium to the seller in exchange for protection against credit events, such as bankruptcy or default. CDSs are used to manage credit risk and speculate on credit quality."),
+    ("Define a commodity.", "A commodity is a raw material or primary agricultural product that can be bought and sold, such as gold, oil, wheat, or coffee. Commodities are standardized and interchangeable with other goods of the same type, allowing them to be traded on commodity exchanges. They are essential inputs in the production of goods and services and are subject to supply and demand dynamics."),
+    ("What is a yield curve?", "A yield curve is a graphical representation of interest rates on bonds of different maturities. It shows the relationship between bond yields and time to maturity and is used to analyze economic conditions, inflation expectations, and monetary policy. The yield curve can be flat, upward-sloping (normal), or downward-sloping (inverted), each indicating different market expectations."),
+    ("Explain the concept of cost of capital.", "The cost of capital is the rate of return required by investors to provide capital to a company. It represents the cost of financing a company's operations and investments and is used to evaluate the feasibility of projects and investments. The cost of capital is influenced by factors such as interest rates, risk, inflation, and market conditions."),
+    ("What is a leveraged buyout?", "A leveraged buyout (LBO) is a financial transaction in which a company is acquired using a significant amount of borrowed funds or leverage. The acquiring company uses the target company's assets as collateral for the loan and aims to repay the debt with the target company's cash flow or by selling its assets. LBOs are often used to take public companies private."),
     ("Define GDP.", "GDP (Gross Domestic Product) is the total monetary value of all goods and services produced within a country's borders in a specific period. It's used to measure the economic performance and size of an economy. GDP can be calculated using three approaches: production, income, and expenditure."),
     ("What is a bull market?", "A bull market is a financial market characterized by rising asset prices and investor optimism. It's typically associated with strong economic performance, high employment, and increasing corporate profits. Bull markets are marked by sustained periods of upward price trends."),
     ("Explain the concept of diversification.", "Diversification is an investment strategy that involves spreading your investments across different assets to reduce risk. By investing in a variety of assets, sectors, or geographic regions, you can minimize the impact of a single investment's performance on your overall portfolio."),
@@ -330,7 +393,6 @@ FINANCIAL_QA_SAMPLES = [
     ("Define risk tolerance.", "Risk tolerance is an investor's ability to endure losses in their investment portfolio."),
     ("What is debt-to-equity ratio?", "Debt-to-equity ratio measures a company's financial leverage by comparing total debt to shareholders' equity."),
     ("What is equity?", "Equity represents ownership value in an asset after deducting liabilities.")
-
 
 ]
 
@@ -775,7 +837,6 @@ def create_domain_specific_samples() -> List[Dict]:
             "question": "What is GDPR in finance?",
             "answer": "The General Data Protection Regulation (GDPR) sets guidelines for data privacy and protection for financial institutions operating in the EU."
         },
-
     ]
    
     return [
@@ -898,6 +959,7 @@ def augment_dataset_with_variations(data: List[Dict]) -> List[Dict]:
     
     for item in data:
         # Original item
+        item['guided_messages'][0] = add_followup_prompt(item['guided_messages'][0])
         augmented_data.append(item)
         
         # Add clarification requests with better formatting
@@ -1001,16 +1063,28 @@ def generate_dynamic_response(template: str, context: Dict[str, str]) -> str:
     
     return template.format(**replacements)
 
+def add_followup_prompt(guided_message: str) -> str:
+    """Add a natural followup prompt to responses occasionally"""
+    if len(guided_message) > 80 or random.random() > 0.3:  # Only 30% chance for shorter messages
+        return guided_message
+        
+    followup = random.choice(FOLLOWUP_PROMPTS)
+    # Ensure we don't exceed token limit
+    if len(guided_message) + len(followup) + 1 <= 120:
+        return f"{guided_message} {followup}"
+    return guided_message
+
 def create_natural_conversation(flow_type: str, context: Dict[str, str]) -> List[Dict]:
-    """Create more natural conversation flows"""
+    """Create more dynamic conversation flows"""
     template = CONVERSATION_FLOWS[flow_type]
     conversation = []
     
-    # Initial response
+    # Initial response with possible followup
     initial_response = generate_dynamic_response(
         random.choice(template.possible_responses),
         context
     )
+    initial_response = add_followup_prompt(initial_response)
     
     conversation.append({
         "personas": ["Financial Expert"],
@@ -1019,27 +1093,37 @@ def create_natural_conversation(flow_type: str, context: Dict[str, str]) -> List
         "guided_messages": [initial_response]
     })
     
-    # Add natural followups
+    # Add natural followups with transitions
+    prev_msg = template.context
     for question in random.sample(template.followup_questions, 2):
+        transition = random.choice(DYNAMIC_TRANSITIONS)
         followup_response = generate_dynamic_response(
             random.choice(template.possible_responses),
             context
         )
         
+        # Occasionally add followup prompt
+        if random.random() < 0.3:
+            followup_response = add_followup_prompt(followup_response)
+        else:
+            # Add transition if no followup prompt
+            followup_response = f"{transition} {followup_response}"
+        
         conversation.append({
             "personas": ["Financial Expert"],
-            "previous_utterance": [conversation[-1]["free_messages"][0]],
+            "previous_utterance": [prev_msg],
             "free_messages": [question],
             "guided_messages": [followup_response]
         })
+        prev_msg = question
     
     return conversation
 
 # Update create_enhanced_dataset function
 def create_enhanced_dataset(
     output_file: str,
-    include_market_context=True,
-    max_conversation_turns=3,
+    # include_market_context=True,
+    # max_conversation_turns=3,
     conversation_ratio: float = 0.6,
     qa_ratio: float = 0.4,
     max_samples: int = 30_000, 
@@ -1199,7 +1283,8 @@ def create_enhanced_dataset(
 def main():
     try:
         # Get the absolute path to the project root
-        project_root = Path(__file__).parent.parent
+        # project_root = Path(__file__).parent.parent
+        project_root = Path('/home/zahemen/projects/dl-lib/DocAnalyzerAI')
         
         # Define output paths
         output_dir = project_root / "finetune_data"

@@ -1031,3 +1031,444 @@ Trying to resume download...
 2025-01-03 23:12:31,628 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
 2025-01-03 23:12:31,643 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
 2025-01-03 23:12:33,158 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 11:13:59,145 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 11:14:02,085 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 11:14:02,208 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 11:14:02,209 [INFO] Chatbot initialized successfully!
+2025-01-04 11:17:19,645 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 11:17:22,550 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 11:17:22,657 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 11:17:22,657 [INFO] Model loaded successfully!
+2025-01-04 11:17:22,908 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 11:17:22,928 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 11:17:24,317 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 11:17:24,318 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 11:18:11,698 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 11:18:14,774 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 11:18:14,930 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 11:18:14,930 [INFO] Model loaded successfully!
+2025-01-04 11:18:15,240 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 11:18:15,256 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 11:18:16,601 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 11:18:16,946 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 11:19:10,411 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 11:19:14,436 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 11:19:14,558 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 11:19:14,558 [INFO] Model loaded successfully!
+2025-01-04 11:19:14,803 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 11:19:14,818 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 11:19:15,850 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 11:19:16,261 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 11:31:53,976 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 11:31:58,569 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 11:31:58,739 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 11:31:58,739 [INFO] Model loaded successfully!
+2025-01-04 11:31:59,157 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 11:31:59,183 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 11:31:59,956 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 11:32:00,428 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 11:32:37,039 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 11:32:40,185 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 11:32:40,345 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 11:32:40,345 [INFO] Model loaded successfully!
+2025-01-04 11:32:40,698 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 11:32:40,721 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 11:32:41,590 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 11:32:41,866 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 11:36:52,898 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 11:36:56,098 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 11:36:56,265 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 11:36:56,265 [INFO] Model loaded successfully!
+2025-01-04 11:36:56,639 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 11:36:56,660 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 11:36:57,530 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 11:36:57,943 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 11:39:12,178 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 11:39:15,532 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 11:39:15,702 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 11:39:15,702 [INFO] Model loaded successfully!
+2025-01-04 11:39:16,054 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 11:39:16,076 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 11:39:17,003 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 11:39:17,458 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 11:39:44,585 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 11:39:48,518 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 11:39:48,669 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 11:39:48,670 [INFO] Model loaded successfully!
+2025-01-04 11:39:49,041 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 11:39:49,066 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 11:39:49,964 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 11:39:50,264 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 11:41:41,749 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 11:41:45,795 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 11:41:45,974 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 11:41:45,975 [INFO] Model loaded successfully!
+2025-01-04 11:41:46,319 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 11:41:46,343 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 11:41:47,261 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 11:41:47,551 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 11:42:16,820 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 11:42:20,037 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 11:42:20,199 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 11:42:20,199 [INFO] Model loaded successfully!
+2025-01-04 11:42:20,525 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 11:42:20,546 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 11:42:21,715 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 11:42:21,807 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 11:46:24,511 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 11:46:27,896 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 11:46:28,074 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 11:46:28,074 [INFO] Model loaded successfully!
+2025-01-04 11:46:28,468 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 11:46:28,492 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 11:46:29,305 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 11:46:29,689 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 11:52:31,464 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 11:52:34,714 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 11:52:34,891 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 11:52:34,892 [INFO] Model loaded successfully!
+2025-01-04 11:52:35,230 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 11:52:35,249 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 11:52:36,811 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 11:52:37,213 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:01:00,310 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:01:03,969 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:01:04,137 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:01:04,137 [INFO] Model loaded successfully!
+2025-01-04 12:01:04,498 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:01:04,519 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:01:05,332 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:01:05,738 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:04:35,734 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:04:39,168 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:04:39,355 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:04:39,355 [INFO] Model loaded successfully!
+2025-01-04 12:04:39,730 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:04:39,752 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:04:40,751 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:04:41,046 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:07:37,163 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:07:40,546 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:07:40,716 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:07:40,716 [INFO] Model loaded successfully!
+2025-01-04 12:07:41,119 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:07:41,142 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:07:42,054 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:07:42,362 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:08:37,933 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:08:41,540 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:08:41,725 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:08:41,725 [INFO] Model loaded successfully!
+2025-01-04 12:08:42,099 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:08:42,123 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:08:42,983 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:08:43,336 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:09:19,835 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:09:23,092 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:09:23,261 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:09:23,261 [INFO] Model loaded successfully!
+2025-01-04 12:09:23,616 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:09:23,638 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:09:24,525 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:09:24,853 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:10:06,761 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:10:10,278 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:10:10,453 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:10:10,453 [INFO] Model loaded successfully!
+2025-01-04 12:10:10,861 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:10:10,884 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:10:11,723 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:10:12,179 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:12:45,335 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:12:48,653 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:12:48,836 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:12:48,836 [INFO] Model loaded successfully!
+2025-01-04 12:12:49,211 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:12:49,235 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:12:50,099 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:12:50,400 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:13:40,054 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:13:43,312 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:13:43,488 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:13:43,488 [INFO] Model loaded successfully!
+2025-01-04 12:13:43,880 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:13:43,904 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:13:44,963 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:13:45,314 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:19:06,907 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:19:17,510 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:19:17,687 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:19:17,687 [INFO] Model loaded successfully!
+2025-01-04 12:19:17,761 [ERROR] Error creating demo: Textbox.__init__() got an unexpected keyword argument 'font_scalings'
+2025-01-04 12:19:17,761 [ERROR] Failed to launch demo: Textbox.__init__() got an unexpected keyword argument 'font_scalings'
+2025-01-04 12:19:18,885 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:19:44,963 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:19:50,193 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:19:50,377 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:19:50,377 [INFO] Model loaded successfully!
+2025-01-04 12:19:50,819 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:19:50,840 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:19:51,814 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:19:52,187 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:21:58,422 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:22:01,903 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:22:02,103 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:22:02,103 [INFO] Model loaded successfully!
+2025-01-04 12:22:02,523 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:22:02,547 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:22:03,347 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:22:03,820 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:22:45,671 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:22:49,141 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:22:49,314 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:22:49,314 [INFO] Model loaded successfully!
+2025-01-04 12:22:49,693 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:22:49,716 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:22:50,629 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:22:50,933 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:25:16,281 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:25:19,095 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:25:19,233 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:25:19,233 [INFO] Model loaded successfully!
+2025-01-04 12:25:19,503 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:25:19,520 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:25:20,456 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:25:20,756 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:26:17,042 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:26:20,685 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:26:20,842 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:26:20,842 [INFO] Model loaded successfully!
+2025-01-04 12:26:21,149 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:26:21,169 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:26:22,122 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:26:22,452 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:27:19,712 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:27:22,539 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:27:22,673 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:27:22,673 [INFO] Model loaded successfully!
+2025-01-04 12:27:22,956 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:27:22,972 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:27:23,889 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:27:24,185 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:28:15,499 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:28:18,375 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:28:18,491 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:28:18,492 [INFO] Model loaded successfully!
+2025-01-04 12:28:18,765 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:28:18,782 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:28:19,707 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:28:20,010 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:29:57,920 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:30:00,924 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:30:01,055 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:30:01,055 [INFO] Model loaded successfully!
+2025-01-04 12:30:01,325 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:30:01,342 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:30:02,245 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:30:02,579 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:36:36,193 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:36:38,921 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:36:39,034 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:36:39,034 [INFO] Model loaded successfully!
+2025-01-04 12:36:39,304 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:36:39,320 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:36:40,245 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:36:40,507 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:37:42,856 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:37:45,996 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:37:46,108 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:37:46,109 [INFO] Model loaded successfully!
+2025-01-04 12:37:46,374 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:37:46,391 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:37:47,303 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:37:47,604 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:38:52,359 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:38:55,024 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:38:55,145 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:38:55,145 [INFO] Model loaded successfully!
+2025-01-04 12:38:55,481 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:38:55,500 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:38:56,308 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:38:56,668 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:39:54,249 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:39:57,035 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:39:57,164 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:39:57,164 [INFO] Model loaded successfully!
+2025-01-04 12:39:57,435 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:39:57,452 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:39:58,389 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:39:58,619 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:40:53,068 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:40:56,331 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:40:56,458 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:40:56,458 [INFO] Model loaded successfully!
+2025-01-04 12:40:56,739 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:40:56,756 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:40:57,693 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:40:57,935 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:52:07,811 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:52:10,880 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:52:10,997 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:52:10,998 [INFO] Model loaded successfully!
+2025-01-04 12:52:11,270 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:52:11,288 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:52:12,418 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:52:12,738 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:52:44,683 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:52:47,927 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:52:48,047 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:52:48,047 [INFO] Model loaded successfully!
+2025-01-04 12:52:48,310 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:52:48,327 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:52:49,404 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:52:49,578 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:53:14,657 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:53:17,664 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:53:17,792 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:53:17,792 [INFO] Model loaded successfully!
+2025-01-04 12:53:18,141 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:53:18,161 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:53:19,095 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:53:19,390 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 12:54:11,989 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:54:15,346 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:54:15,474 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:54:15,474 [INFO] Model loaded successfully!
+2025-01-04 12:54:15,539 [ERROR] Error creating demo: name 'char_counter' is not defined
+2025-01-04 12:54:15,539 [ERROR] Failed to launch demo: name 'char_counter' is not defined
+2025-01-04 12:54:16,750 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:54:48,187 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:54:51,049 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:54:51,202 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:54:51,202 [INFO] Model loaded successfully!
+2025-01-04 12:54:51,277 [ERROR] Error creating demo: name 'clear' is not defined
+2025-01-04 12:54:51,277 [ERROR] Failed to launch demo: name 'clear' is not defined
+2025-01-04 12:54:52,495 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:55:07,164 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 12:55:09,928 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 12:55:10,054 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 12:55:10,054 [INFO] Model loaded successfully!
+2025-01-04 12:55:10,329 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 12:55:10,345 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 12:55:11,291 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 12:55:11,577 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 13:06:30,324 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 13:06:33,948 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 13:06:34,058 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 13:06:34,058 [INFO] Model loaded successfully!
+2025-01-04 13:06:34,316 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 13:06:34,332 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 13:06:35,633 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 13:08:07,970 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 13:08:12,134 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 13:08:12,262 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 13:08:12,262 [INFO] Model loaded successfully!
+2025-01-04 13:08:12,581 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 13:08:12,600 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 13:08:13,779 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 13:08:14,129 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 13:08:56,738 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 13:09:05,512 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 13:09:05,619 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 13:09:05,619 [INFO] Model loaded successfully!
+2025-01-04 13:09:05,869 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 13:09:05,883 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 13:09:06,948 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 13:09:07,303 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 13:11:05,066 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 13:11:08,138 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 13:11:08,244 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 13:11:08,244 [INFO] Model loaded successfully!
+2025-01-04 13:11:08,483 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 13:11:08,497 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 13:11:09,676 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 13:11:10,052 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 13:12:54,386 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 13:12:57,366 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 13:12:57,470 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 13:12:57,470 [INFO] Model loaded successfully!
+2025-01-04 13:12:57,710 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 13:12:57,724 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 13:12:59,136 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 13:12:59,141 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 13:14:09,746 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 13:14:13,604 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 13:14:13,708 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 13:14:13,708 [INFO] Model loaded successfully!
+2025-01-04 13:14:13,955 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 13:14:13,970 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 13:14:15,359 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 13:14:15,998 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 13:16:14,134 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 13:16:18,009 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 13:16:18,122 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 13:16:18,122 [INFO] Model loaded successfully!
+2025-01-04 13:16:18,371 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 13:16:18,384 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 13:16:19,342 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 13:16:19,633 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 13:17:13,633 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 13:17:18,678 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 13:17:18,823 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 13:17:18,823 [INFO] Model loaded successfully!
+2025-01-04 13:17:19,093 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 13:17:19,106 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 13:17:20,350 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-04 13:17:20,701 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 14:49:20,197 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 14:50:03,610 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 14:50:03,860 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 14:50:03,860 [INFO] Model loaded successfully!
+2025-01-04 14:50:04,260 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 14:50:04,284 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 14:50:11,348 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-04 14:50:20,030 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-04 14:50:23,665 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-04 14:50:23,807 [INFO] Model loaded successfully on: cuda:0
+2025-01-04 14:50:23,807 [INFO] Model loaded successfully!
+2025-01-04 14:50:24,220 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-04 14:50:24,245 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-04 14:50:27,024 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-05 09:36:28,871 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-05 09:36:32,930 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-05 09:36:33,046 [INFO] Model loaded successfully on: cuda:0
+2025-01-05 09:36:33,046 [INFO] Chatbot initialized successfully!
+2025-01-05 09:47:11,898 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-05 09:47:16,969 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-05 09:47:17,084 [INFO] Model loaded successfully on: cuda:0
+2025-01-05 09:47:17,084 [INFO] Model loaded successfully!
+2025-01-05 09:47:10,459 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-05 09:47:10,478 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-05 09:47:17,009 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-05 09:47:11,783 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-06 01:10:10,104 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-06 01:10:40,472 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-06 01:10:40,648 [INFO] Model loaded successfully on: cuda:0
+2025-01-06 01:10:40,649 [INFO] Model loaded successfully!
+2025-01-06 01:10:41,006 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-06 01:10:41,034 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-06 01:10:42,777 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-06 01:10:42,777 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-06 01:13:23,308 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-06 01:13:32,644 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-06 01:13:32,762 [INFO] Model loaded successfully on: cuda:0
+2025-01-06 01:13:32,763 [INFO] Model loaded successfully!
+2025-01-06 01:13:33,037 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-06 01:13:33,055 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-06 01:13:34,177 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-06 01:14:33,422 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-06 01:14:55,743 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-06 01:14:55,861 [INFO] Model loaded successfully on: cuda:0
+2025-01-06 01:14:55,861 [INFO] Model loaded successfully!
+2025-01-06 01:14:56,123 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-06 01:14:56,138 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-06 01:14:57,111 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-06 01:14:57,409 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-06 01:25:01,270 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-06 01:25:05,847 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-06 01:25:05,972 [INFO] Model loaded successfully on: cuda:0
+2025-01-06 01:25:05,973 [INFO] Model loaded successfully!
+2025-01-06 01:25:06,271 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-06 01:25:06,289 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-06 01:25:07,397 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-06 01:25:07,624 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"

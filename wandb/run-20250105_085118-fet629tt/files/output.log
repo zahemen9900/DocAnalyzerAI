@@ -1,0 +1,33 @@
+ 59%|████████████████████████████████████████████████████████████████████████████                                                     | 270/458 [26:19<13:24,  4.28s/it]/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/utils/other.py:716: UserWarning: Unable to fetch remote file due to the following error (MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /facebook/blenderbot-400M-distill/resolve/main/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f4ae48cea50>: Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 8b684d50-b432-4316-b51f-2e9123b9553c)') - silently ignoring the lookup for the file config.json in facebook/blenderbot-400M-distill.
+{'loss': 10.5247, 'grad_norm': 3.159600019454956, 'learning_rate': 3.2608695652173914e-06, 'epoch': 0.13}
+{'loss': 10.4648, 'grad_norm': 3.335541009902954, 'learning_rate': 4.985768230048011e-06, 'epoch': 0.26}
+{'loss': 10.1587, 'grad_norm': 3.592203378677368, 'learning_rate': 4.860606372749247e-06, 'epoch': 0.39}
+  warnings.warn(                                                                                                                                                        
+{'eval_loss': 9.90743350982666, 'eval_runtime': 134.8373, 'eval_samples_per_second': 46.723, 'eval_steps_per_second': 5.844, 'epoch': 0.39}
+{'loss': 9.8507, 'grad_norm': 4.008143424987793, 'learning_rate': 4.612452562309975e-06, 'epoch': 0.52}
+{'loss': 9.4435, 'grad_norm': 4.41264533996582, 'learning_rate': 4.254236070707734e-06, 'epoch': 0.65}
+{'loss': 9.1592, 'grad_norm': 5.292957305908203, 'learning_rate': 3.8046206389447916e-06, 'epoch': 0.78}
+{'eval_loss': 8.637616157531738, 'eval_runtime': 135.0815, 'eval_samples_per_second': 46.638, 'eval_steps_per_second': 5.834, 'epoch': 0.78}
+{'loss': 8.7519, 'grad_norm': 6.2241997718811035, 'learning_rate': 3.2870320616614626e-06, 'epoch': 0.91}
+{'loss': 8.3962, 'grad_norm': 7.239530563354492, 'learning_rate': 2.7284376599571776e-06, 'epoch': 1.04}
+{'loss': 8.0643, 'grad_norm': 8.168660163879395, 'learning_rate': 2.157941234140225e-06, 'epoch': 1.18}
+{'eval_loss': 7.374960422515869, 'eval_runtime': 135.0787, 'eval_samples_per_second': 46.639, 'eval_steps_per_second': 5.834, 'epoch': 1.18}
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/utils/save_and_load.py:246: UserWarning: Could not find a config file in facebook/blenderbot-400M-distill - will assume that the vocabulary was not modified.
+  warnings.warn(
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 458/458 [44:27<00:00,  5.82s/it]
+{'loss': 7.7648, 'grad_norm': 8.492719650268555, 'learning_rate': 1.6052667019636462e-06, 'epoch': 1.31}
+{'loss': 7.5559, 'grad_norm': 8.778633117675781, 'learning_rate': 1.0992094275966256e-06, 'epoch': 1.44}
+{'loss': 7.3728, 'grad_norm': 8.892878532409668, 'learning_rate': 6.661359299530626e-07, 'epoch': 1.57}
+2025-01-05 09:35:47,059 [INFO] Saving LoRA adapter...                                                                                                                   
+{'eval_loss': 6.619108200073242, 'eval_runtime': 134.8215, 'eval_samples_per_second': 46.728, 'eval_steps_per_second': 5.845, 'epoch': 1.57}
+{'loss': 7.2658, 'grad_norm': 9.456567764282227, 'learning_rate': 3.2861013834512844e-07, 'epoch': 1.7}
+{'loss': 7.202, 'grad_norm': 8.893120765686035, 'learning_rate': 1.0421777008019663e-07, 'epoch': 1.83}
+{'loss': 7.1324, 'grad_norm': 8.633930206298828, 'learning_rate': 4.6500821002654075e-09, 'epoch': 1.96}
+{'eval_loss': 6.484797954559326, 'eval_runtime': 134.6115, 'eval_samples_per_second': 46.801, 'eval_steps_per_second': 5.854, 'epoch': 1.96}
+{'train_runtime': 2669.8899, 'train_samples_per_second': 11.012, 'train_steps_per_second': 0.172, 'train_loss': 8.58241929133386, 'epoch': 1.99}
+2025-01-05 09:35:47,679 [INFO] Merging LoRA weights...
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/tuners/lora/bnb.py:355: UserWarning: Merge lora module to 4-bit linear may get different generations due to rounding errors.
+  warnings.warn(
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/modeling_utils.py:2618: UserWarning: Moving the following attributes in the config to the generation config: {'max_length': 60, 'min_length': 20, 'num_beams': 10, 'length_penalty': 0.65, 'no_repeat_ngram_size': 3}. You are seeing this warning because you've set generation parameters in the model config, as opposed to in the generation config.
+  warnings.warn(
+2025-01-05 09:35:48,222 [INFO] Training completed successfully!

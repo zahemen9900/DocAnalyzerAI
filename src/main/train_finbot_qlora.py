@@ -214,18 +214,18 @@ def train(
         # Updated training arguments for better stability
         training_args = TrainingArguments(
             output_dir=output_dir,
-            num_train_epochs=1,
+            num_train_epochs=3,
             per_device_train_batch_size=batch_size,
             per_device_eval_batch_size=batch_size,
             gradient_accumulation_steps=8,  
             learning_rate=5e-6,  # Reduced learning rate
             weight_decay=0.01,
             warmup_ratio=0.1,
-            logging_steps=20,
+            logging_steps=55,
             eval_strategy="steps",
             save_strategy="steps",
-            eval_steps=70,
-            save_steps=70,
+            eval_steps=110,
+            save_steps=110,
             save_total_limit=3,
             load_best_model_at_end=True,
             metric_for_best_model="eval_loss",
