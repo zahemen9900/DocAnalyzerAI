@@ -4,6 +4,9 @@ from peft import PeftModel, PeftConfig
 import logging
 import gc
 import re
+import sys
+import time
+from typing import Iterator, List
 
 # Configure logging
 logging.basicConfig(
@@ -18,8 +21,8 @@ logger = logging.getLogger(__name__)
 
 # Add response filtering patterns
 DISCOURAGED_PATTERNS = [
-    r"Financial Experience is",
-    r"Personal finance is",
+    # r"Financial Experience is",
+    # r"Personal finance is",
     # r"I am a financial advisor",
     # r"Do you know anyone",
     r"I have .* saved",
@@ -44,6 +47,13 @@ def filter_response(response: str) -> str:
     response = re.sub(r"I think |I believe |In my experience |I would say ", "", response)
     
     return response
+
+def stream_text(text: str, delay: float = 0.07) -> Iterator[str]:
+    """Stream text word by word with a delay"""
+    words = text.split()
+    for i, word in enumerate(words):
+        yield word + (" " if i < len(words) - 1 else "")
+        time.sleep(delay)
 
 def setup_quantization_config():
     """Setup 4-bit quantization configuration"""
@@ -102,7 +112,15 @@ def load_model_and_tokenizer(adapter_dir, base_model="facebook/blenderbot-400M-d
         logger.error(f"Error loading model: {str(e)}")
         raise
 
-def generate_response(model, tokenizer, input_text, max_length=128, min_length=48):
+def generate_response(
+    model, 
+    tokenizer, 
+    input_text, 
+    max_length=128, 
+    min_length=48,
+    temperature=0.25,
+    num_beams=4
+):
     """Generate a response with better controls"""
     try:
         # Prepare input with explicit persona
@@ -122,18 +140,18 @@ def generate_response(model, tokenizer, input_text, max_length=128, min_length=4
         # Enhanced generation configuration
         generation_config = GenerationConfig(
             max_length=max_length,
-            min_length=min_length,
-            num_beams=8,          # Increased for better search
-            temperature=0.3,      # Reduced for more focused responses
-            top_k=30,            # Reduced for more precise selection
+            min_length=min_length,  # Now controlled by parameter
+            num_beams=num_beams,    # Now controlled by parameter
+            temperature=temperature,  # Now controlled by parameter
+            top_k=30,
             top_p=0.85,
             do_sample=True,
             no_repeat_ngram_size=4,
             early_stopping=True,
             pad_token_id=tokenizer.pad_token_id,
             eos_token_id=tokenizer.eos_token_id,
-            length_penalty=2.0,   # Increased for longer responses
-            repetition_penalty=2.0 # Increased to reduce repetition
+            length_penalty=2.0,
+            repetition_penalty=2.0
         )
         
         # Generate with stricter settings
@@ -178,9 +196,12 @@ def main():
             user_input = input("\nYou: ").strip()
             if user_input.lower() == 'exit':
                 break
-                
+
             response = generate_response(model, tokenizer, user_input)
-            print(f"Assistant: {response}")
+            print("Assistant: ", end="", flush=True)
+            for word in stream_text(response):
+                print(word, end="", flush=True)
+            print()  # New line after response
             
     except Exception as e:
         logger.error(f"Application error: {str(e)}")

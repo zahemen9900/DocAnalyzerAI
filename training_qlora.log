@@ -4815,3 +4815,2371 @@ TypeError: sequence item 3: expected str instance, dict found
 2025-01-06 17:04:11,519 [INFO] Model device: cuda:0
 2025-01-06 17:04:11,607 [INFO] Processing datasets...
 2025-01-06 17:04:33,742 [INFO] Starting QLoRA training...
+2025-01-06 17:08:11,506 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-06 17:08:11,507 [INFO] Available GPU memory: 4.29 GB
+2025-01-06 17:08:11,507 [INFO] Loading dataset...
+2025-01-06 17:08:11,766 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-06 17:08:20,979 [INFO] Model device: cuda:0
+2025-01-06 17:08:21,065 [INFO] Processing datasets...
+2025-01-06 17:08:35,022 [INFO] Starting QLoRA training...
+2025-01-06 18:40:00,014 [INFO] Saving LoRA adapter...
+2025-01-06 18:40:00,467 [INFO] Merging LoRA weights...
+2025-01-06 18:40:01,923 [INFO] Training completed successfully!
+2025-01-07 06:54:20,828 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 06:54:20,830 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 06:54:20,830 [INFO] Loading dataset...
+2025-01-07 06:54:21,087 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 06:54:25,162 [INFO] Model device: cuda:0
+2025-01-07 06:54:25,249 [INFO] Processing datasets...
+2025-01-07 06:54:46,088 [INFO] Starting QLoRA training...
+2025-01-07 07:21:45,676 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 07:21:45,677 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 07:21:45,677 [INFO] Loading dataset...
+2025-01-07 07:21:45,931 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 07:21:48,847 [INFO] Model device: cuda:0
+2025-01-07 07:21:48,937 [INFO] Processing datasets...
+2025-01-07 07:22:45,194 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 07:22:45,194 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 07:22:45,194 [INFO] Loading dataset...
+2025-01-07 07:22:45,435 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 07:22:47,877 [INFO] Model device: cuda:0
+2025-01-07 07:22:47,966 [INFO] Processing datasets...
+2025-01-07 07:23:09,808 [INFO] Starting QLoRA training...
+2025-01-07 07:32:47,522 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 07:32:47,523 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 07:32:47,523 [INFO] Loading dataset...
+2025-01-07 07:32:47,821 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 07:32:52,443 [INFO] Model device: cuda:0
+2025-01-07 07:32:52,543 [INFO] Processing datasets...
+2025-01-07 07:33:16,664 [INFO] Starting QLoRA training...
+2025-01-07 07:43:23,019 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 07:43:23,020 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 07:43:23,020 [INFO] Loading dataset...
+2025-01-07 07:43:23,270 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 07:43:26,974 [INFO] Model device: cuda:0
+2025-01-07 07:43:27,066 [INFO] Processing datasets...
+2025-01-07 07:43:43,385 [INFO] Starting QLoRA training...
+2025-01-07 07:44:40,354 [ERROR] Training failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 335, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 101, in compute_metrics
+    metric_rouge = evaluate.load("rouge")
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/evaluate/loading.py", line 731, in load
+    evaluation_module = evaluation_module_factory(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/evaluate/loading.py", line 680, in evaluation_module_factory
+    raise e1 from None
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/evaluate/loading.py", line 639, in evaluation_module_factory
+    ).get_module()
+      ^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/evaluate/loading.py", line 489, in get_module
+    local_imports = _download_additional_modules(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/evaluate/loading.py", line 265, in _download_additional_modules
+    raise ImportError(
+ImportError: To be able to use evaluate-metric/rouge, you need to install the following dependencies['absl', 'rouge_score'] using 'pip install # Here to have a nice missing dependency error message early on rouge_score' for instance'
+2025-01-07 07:44:40,355 [ERROR] Training failed: To be able to use evaluate-metric/rouge, you need to install the following dependencies['absl', 'rouge_score'] using 'pip install # Here to have a nice missing dependency error message early on rouge_score' for instance'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 335, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 101, in compute_metrics
+    metric_rouge = evaluate.load("rouge")
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/evaluate/loading.py", line 731, in load
+    evaluation_module = evaluation_module_factory(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/evaluate/loading.py", line 680, in evaluation_module_factory
+    raise e1 from None
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/evaluate/loading.py", line 639, in evaluation_module_factory
+    ).get_module()
+      ^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/evaluate/loading.py", line 489, in get_module
+    local_imports = _download_additional_modules(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/evaluate/loading.py", line 265, in _download_additional_modules
+    raise ImportError(
+ImportError: To be able to use evaluate-metric/rouge, you need to install the following dependencies['absl', 'rouge_score'] using 'pip install # Here to have a nice missing dependency error message early on rouge_score' for instance'
+2025-01-07 07:44:40,540 [ERROR] Script failed: To be able to use evaluate-metric/rouge, you need to install the following dependencies['absl', 'rouge_score'] using 'pip install # Here to have a nice missing dependency error message early on rouge_score' for instance'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 367, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 335, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 101, in compute_metrics
+    metric_rouge = evaluate.load("rouge")
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/evaluate/loading.py", line 731, in load
+    evaluation_module = evaluation_module_factory(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/evaluate/loading.py", line 680, in evaluation_module_factory
+    raise e1 from None
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/evaluate/loading.py", line 639, in evaluation_module_factory
+    ).get_module()
+      ^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/evaluate/loading.py", line 489, in get_module
+    local_imports = _download_additional_modules(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/evaluate/loading.py", line 265, in _download_additional_modules
+    raise ImportError(
+ImportError: To be able to use evaluate-metric/rouge, you need to install the following dependencies['absl', 'rouge_score'] using 'pip install # Here to have a nice missing dependency error message early on rouge_score' for instance'
+2025-01-07 07:48:12,383 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 07:48:12,383 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 07:48:12,383 [INFO] Loading dataset...
+2025-01-07 07:48:12,659 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 07:48:14,919 [INFO] Model device: cuda:0
+2025-01-07 07:48:15,013 [INFO] Processing datasets...
+2025-01-07 07:48:40,022 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 07:48:40,022 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 07:48:40,022 [INFO] Loading dataset...
+2025-01-07 07:48:40,275 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 07:48:42,516 [INFO] Model device: cuda:0
+2025-01-07 07:48:42,605 [INFO] Processing datasets...
+2025-01-07 07:48:59,461 [INFO] Starting QLoRA training...
+2025-01-07 07:50:37,270 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 07:50:37,270 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 07:50:37,271 [INFO] Loading dataset...
+2025-01-07 07:50:37,619 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 07:50:40,435 [INFO] Model device: cuda:0
+2025-01-07 07:50:40,525 [INFO] Processing datasets...
+2025-01-07 07:50:57,064 [INFO] Starting QLoRA training...
+2025-01-07 07:51:56,052 [ERROR] Training failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 335, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 105, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^
+NameError: name 'tokenizer' is not defined
+2025-01-07 07:51:56,054 [ERROR] Training failed: name 'tokenizer' is not defined
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 335, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 105, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^
+NameError: name 'tokenizer' is not defined
+2025-01-07 07:51:56,254 [ERROR] Script failed: name 'tokenizer' is not defined
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 367, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 335, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 105, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^
+NameError: name 'tokenizer' is not defined
+2025-01-07 08:18:32,606 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 08:18:32,607 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 08:18:32,607 [INFO] Loading dataset...
+2025-01-07 08:18:32,881 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 08:18:35,953 [INFO] Model device: cuda:0
+2025-01-07 08:18:36,045 [INFO] Processing datasets...
+2025-01-07 08:18:52,020 [ERROR] Training failed: compute_metrics() missing 1 required positional argument: 'eval_preds'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 328, in train
+    compute_metrics=compute_metrics(tokenizer=tokenizer),
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: compute_metrics() missing 1 required positional argument: 'eval_preds'
+2025-01-07 08:18:52,150 [ERROR] Script failed: compute_metrics() missing 1 required positional argument: 'eval_preds'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 367, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 328, in train
+    compute_metrics=compute_metrics(tokenizer=tokenizer),
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: compute_metrics() missing 1 required positional argument: 'eval_preds'
+2025-01-07 08:28:51,317 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 08:28:51,317 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 08:28:51,317 [INFO] Loading dataset...
+2025-01-07 08:28:51,498 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,498 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,498 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,498 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,498 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,498 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,499 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,499 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,499 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,499 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,499 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,499 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,499 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,499 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,499 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,499 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,500 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,500 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,500 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,500 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,500 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,500 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,500 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,500 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,500 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,501 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,501 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,501 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,501 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,501 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,501 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,502 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,502 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,502 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,502 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,502 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,502 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,502 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,502 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,502 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,503 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,503 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,503 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,503 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,503 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,503 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,503 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,503 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,503 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,504 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,504 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,504 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,504 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,504 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,504 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,504 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,504 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,505 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,505 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,505 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,505 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,505 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,505 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,505 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,505 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,506 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,506 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,506 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,506 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,506 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,506 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,506 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,506 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,506 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,507 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,507 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,507 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,507 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,507 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,507 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,507 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,508 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,508 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,508 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,508 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,509 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,509 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,509 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,509 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,509 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,509 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,510 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,510 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,510 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,510 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,510 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,511 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,511 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,511 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,511 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,511 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,511 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,511 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,511 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,512 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,512 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,512 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,512 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,512 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,512 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,512 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,513 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,513 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,513 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,513 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,513 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,513 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,513 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,513 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,513 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,514 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,514 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,514 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,514 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,514 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,515 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,515 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,515 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,515 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,515 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,516 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,516 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,516 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,516 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,516 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,516 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,516 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,517 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,517 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,517 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,517 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,517 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,517 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,517 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,517 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,518 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,518 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,518 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,518 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,518 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,518 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,518 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,518 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,518 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,519 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,519 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,519 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,519 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,519 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,519 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,519 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,519 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,520 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,520 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,520 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,520 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,520 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,520 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,520 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,520 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,520 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,520 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,521 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,521 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,521 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,521 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,521 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,521 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,521 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,521 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,522 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,522 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,522 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,522 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,522 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,522 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,522 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,523 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,523 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,523 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,523 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,523 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,523 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,523 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,523 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,524 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,524 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,524 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,524 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,524 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,524 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,524 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,524 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,524 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,524 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,524 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,525 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,525 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,525 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,525 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,525 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,525 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,525 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,525 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,525 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,525 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,525 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,525 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,526 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,526 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,526 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,526 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,526 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,526 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,526 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,526 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,526 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,526 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,526 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,526 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,526 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,526 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,527 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,527 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,527 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,527 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,527 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,527 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,527 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,527 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,527 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,527 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,527 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,527 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,528 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,528 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,528 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,528 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,528 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,528 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,528 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,528 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,528 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,528 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,528 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,528 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,529 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,529 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,529 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,529 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,529 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,529 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,529 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,529 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,530 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,530 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,530 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,530 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,530 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,530 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,531 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,531 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,531 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,531 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,531 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,531 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,531 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,531 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,532 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,532 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,532 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,532 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,532 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,532 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,532 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,533 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,533 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,533 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,533 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,533 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,533 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,533 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,533 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,533 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,533 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,534 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,534 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,534 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,534 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,534 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,534 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,534 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,534 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,535 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,535 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,535 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,535 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,535 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,536 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,536 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,536 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,536 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,536 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,537 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,537 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,537 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,537 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,537 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,537 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,537 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,537 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,537 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,538 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,538 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,538 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,538 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,538 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,538 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,538 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,538 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,538 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,539 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,539 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,539 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,539 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,539 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,539 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,539 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,539 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,539 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,539 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,540 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,540 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,540 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,540 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,540 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,540 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,540 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,540 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,541 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,541 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,541 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,541 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,541 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,541 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,541 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,541 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,541 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,541 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,542 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,542 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,542 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,542 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,542 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,542 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,542 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,543 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,543 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,543 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,543 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,543 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,543 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,543 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,543 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,544 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,544 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,544 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,544 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,544 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,544 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,544 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,545 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,545 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,545 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,545 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,545 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,545 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,546 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,546 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,546 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,546 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,546 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,546 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,546 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,546 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,547 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,547 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,547 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,547 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,547 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,547 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,547 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,548 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,548 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,548 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,548 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,548 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,548 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,548 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,548 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,548 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,549 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,549 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,549 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,549 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,549 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,549 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,549 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,550 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,550 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,550 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,550 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,550 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,551 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,551 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,551 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,551 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,551 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,551 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,552 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,552 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,552 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,552 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,552 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,553 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,553 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,553 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,553 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,553 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,553 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,553 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,553 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,553 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,554 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,554 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,554 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,554 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,554 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,554 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,554 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,554 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,554 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,554 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,555 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,555 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,555 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,555 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,555 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,555 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,555 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,555 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,555 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,555 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,556 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,556 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,556 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,556 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,556 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,556 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,556 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,556 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,557 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,557 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,557 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,557 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,558 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,558 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,558 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,558 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,558 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,559 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,559 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,559 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,559 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,559 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,560 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,560 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,560 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,560 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,560 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,560 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,560 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,560 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,560 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,560 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,561 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,561 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,561 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,561 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,562 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,562 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,562 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,562 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,562 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,562 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,562 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,563 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,563 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,563 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,564 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,564 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,564 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,564 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,564 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,565 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,565 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,565 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,565 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,565 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,565 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,565 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,566 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,566 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,566 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,566 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,566 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,566 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,566 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,566 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,567 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,567 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,567 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,567 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,567 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,567 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,567 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,567 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,568 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,568 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,568 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,568 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,568 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,568 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,568 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,568 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,569 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,569 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,569 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,569 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,569 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,569 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,569 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,570 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,570 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,570 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,570 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,571 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,571 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,571 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,571 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,571 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,571 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,571 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,571 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,572 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,572 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,572 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,572 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,572 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,572 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,572 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,572 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,572 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,573 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,573 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,573 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,573 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,573 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,573 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,573 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,573 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,574 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,574 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,574 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,574 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,574 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,574 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,574 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,574 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,574 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,574 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,574 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,574 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,575 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,575 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,575 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,575 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,575 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,575 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,575 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,575 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,576 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,576 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,576 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,576 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,576 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,576 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,576 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,577 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,577 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,577 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,577 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,578 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,578 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,578 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,578 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,578 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,578 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,578 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,579 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,579 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,579 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,579 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,579 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,579 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,579 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,579 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,580 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,580 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,580 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,580 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,580 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,580 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,581 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,581 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,581 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,581 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,581 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,581 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,581 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,582 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,582 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,582 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,582 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,582 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,582 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,582 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,583 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,583 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,583 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,583 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,583 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,583 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,583 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,584 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,584 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,584 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,584 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,584 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,584 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,585 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,585 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,585 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,585 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,585 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,585 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,585 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,585 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,586 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,586 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,586 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,586 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,586 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,586 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,586 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,586 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,587 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,587 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,587 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,587 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,587 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,587 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,587 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,587 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,587 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,588 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,588 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,588 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,588 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,588 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,588 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,588 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,588 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,588 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,589 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,589 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,589 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,589 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,589 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,589 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,589 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,589 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,590 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,590 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,590 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,590 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,590 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,590 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,590 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,591 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,591 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,591 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,591 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,591 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,591 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,591 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,591 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,592 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,592 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,592 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,592 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,592 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,592 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,592 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,593 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,593 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,593 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,593 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,593 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,593 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,593 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,593 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,593 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,593 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,594 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,594 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,594 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,594 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,594 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,594 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,594 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,594 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,595 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,595 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,595 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,595 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,595 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,595 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,595 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,595 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,595 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,595 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,595 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,596 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,596 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,596 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,596 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,596 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,596 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,596 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,596 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,596 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,597 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,597 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,597 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,597 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,597 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,597 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,597 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,597 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,597 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,597 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,598 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,598 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,598 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,598 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,598 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,598 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,598 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,598 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,599 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,599 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,599 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,599 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,599 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,600 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,600 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,600 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,600 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,600 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,600 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,600 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,600 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,600 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,601 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,601 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,601 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,601 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,601 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,601 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,601 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,602 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,602 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,602 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,602 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,602 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,602 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,602 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,603 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,603 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,603 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,603 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,603 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,603 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,603 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,604 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,604 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,604 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,604 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,604 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,604 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,605 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,605 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,605 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,605 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,606 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,606 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,606 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,606 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,607 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,607 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,607 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,607 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,607 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,607 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,607 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,607 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,608 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,608 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,608 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,608 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,608 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,608 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,609 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,609 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,609 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,609 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,609 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,609 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,609 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,609 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,609 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,609 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,610 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,610 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,610 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,610 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,610 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,610 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,610 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,610 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,610 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,611 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,611 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,611 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,611 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,611 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,611 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,611 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,611 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,611 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,611 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,612 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,612 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,612 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,612 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,612 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,612 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,612 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,612 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,612 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,613 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,613 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,613 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,613 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,613 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,614 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,614 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,614 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,614 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,614 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,614 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,614 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,614 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,615 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,615 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,615 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,615 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,615 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,615 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,615 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,615 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,615 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,616 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,616 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,616 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,616 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,616 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,616 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,616 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,616 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,616 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,617 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,617 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,617 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,617 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,617 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,617 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,617 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,617 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,617 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,618 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,618 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,618 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,618 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,618 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,618 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,618 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,618 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,618 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,618 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,618 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,619 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,619 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,619 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,619 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,619 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,619 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,619 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,619 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,620 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,620 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,620 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,621 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,621 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,621 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,621 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,621 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,622 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,622 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,622 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,622 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,622 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,622 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,623 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,623 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,623 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,623 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,623 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,623 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,623 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,623 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,623 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,623 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,623 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,624 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,624 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,624 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,624 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,624 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,624 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,624 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,624 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,624 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,625 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,625 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,625 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,625 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,625 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,625 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,625 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,625 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,625 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,626 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,626 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,626 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,626 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,626 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,627 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,627 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,627 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,628 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,628 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,628 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,628 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,629 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,629 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,629 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,629 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,629 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,629 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,629 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,629 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,629 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,630 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,630 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,630 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,630 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,630 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,630 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,630 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,631 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,631 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,631 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,631 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,631 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,631 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,631 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,631 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,631 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,632 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,632 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,632 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,632 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,632 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,632 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,632 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,632 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,632 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,633 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,633 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,633 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,633 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,633 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,633 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,634 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,634 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,634 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,634 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,634 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,634 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,635 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,635 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,635 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,635 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,635 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,635 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,635 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,635 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,636 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,636 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,636 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,636 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,636 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,636 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,636 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,636 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,637 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,637 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,637 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,637 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,637 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,637 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,637 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,637 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,638 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,638 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,638 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,638 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,638 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,638 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,638 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,638 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,638 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,638 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,638 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,639 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,639 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,639 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,639 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,639 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,639 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,639 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,639 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,639 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,639 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,640 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,640 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,640 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,640 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,641 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,641 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,641 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,641 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,641 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,641 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,641 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,642 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,642 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,642 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,642 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,643 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,643 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,643 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,643 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,644 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,644 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,644 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,644 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,644 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,644 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,645 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,645 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,645 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,645 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,645 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,645 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,645 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,646 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,646 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,646 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,646 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,646 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,646 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,646 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,646 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,646 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,646 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,646 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,647 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,647 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,647 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,647 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,647 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,647 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,648 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,648 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,648 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,649 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,649 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,649 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,649 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,649 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,649 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,649 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,649 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,649 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,650 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,650 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,650 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,650 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,650 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,650 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,650 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,650 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,650 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,651 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,651 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,651 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,651 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,651 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,651 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,651 [WARNING] Skipping non-string previous_utterance item
+2025-01-07 08:28:51,720 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 08:28:54,209 [INFO] Model device: cuda:0
+2025-01-07 08:28:54,287 [INFO] Processing datasets...
+2025-01-07 08:30:04,358 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 08:30:04,358 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 08:30:04,358 [INFO] Loading dataset...
+2025-01-07 08:30:04,617 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 08:30:07,028 [INFO] Model device: cuda:0
+2025-01-07 08:30:07,119 [INFO] Processing datasets...
+2025-01-07 08:30:30,159 [INFO] Starting QLoRA training...
+2025-01-07 08:31:11,089 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 08:31:11,089 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 08:31:11,090 [INFO] Loading dataset...
+2025-01-07 08:31:11,349 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 08:31:14,441 [INFO] Model device: cuda:0
+2025-01-07 08:31:14,529 [INFO] Processing datasets...
+2025-01-07 08:31:30,683 [INFO] Starting QLoRA training...
+2025-01-07 08:32:31,264 [ERROR] Training failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 341, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 270, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3959, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3960, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3999, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 654, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2025-01-07 08:32:31,266 [ERROR] Training failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 341, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 270, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3959, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3960, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3999, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 654, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2025-01-07 08:32:31,961 [ERROR] Script failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 373, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 341, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 270, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3959, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3960, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3999, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 654, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2025-01-07 11:01:32,825 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 11:01:32,826 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 11:01:32,826 [INFO] Loading dataset...
+2025-01-07 11:01:33,163 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 11:02:15,637 [INFO] Model device: cuda:0
+2025-01-07 11:02:15,743 [INFO] Processing datasets...
+2025-01-07 11:02:34,002 [INFO] Starting QLoRA training...
+2025-01-07 11:04:11,358 [ERROR] Training failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 344, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2311, in _inner_training_loop
+    self.control = self.callback_handler.on_train_begin(args, self.state, self.control)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer_callback.py", line 466, in on_train_begin
+    return self.call_event("on_train_begin", args, state, control)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer_callback.py", line 516, in call_event
+    result = getattr(callback, event)(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/integrations/integration_utils.py", line 910, in on_train_begin
+    self.setup(args, state, model, **kwargs)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/integrations/integration_utils.py", line 837, in setup
+    self._wandb.init(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1312, in init
+    wandb._sentry.reraise(e)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/wandb/analytics/sentry.py", line 156, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1298, in init
+    return wi.init()
+           ^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 855, in init
+    raise error
+wandb.errors.errors.CommError: Run initialization has timed out after 90.0 sec. Please try increasing the timeout with the `init_timeout` setting: `wandb.init(settings=wandb.Settings(init_timeout=120))`.
+2025-01-07 11:04:11,362 [ERROR] Training failed: Run initialization has timed out after 90.0 sec. Please try increasing the timeout with the `init_timeout` setting: `wandb.init(settings=wandb.Settings(init_timeout=120))`.
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 344, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2311, in _inner_training_loop
+    self.control = self.callback_handler.on_train_begin(args, self.state, self.control)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer_callback.py", line 466, in on_train_begin
+    return self.call_event("on_train_begin", args, state, control)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer_callback.py", line 516, in call_event
+    result = getattr(callback, event)(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/integrations/integration_utils.py", line 910, in on_train_begin
+    self.setup(args, state, model, **kwargs)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/integrations/integration_utils.py", line 837, in setup
+    self._wandb.init(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1312, in init
+    wandb._sentry.reraise(e)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/wandb/analytics/sentry.py", line 156, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1298, in init
+    return wi.init()
+           ^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 855, in init
+    raise error
+wandb.errors.errors.CommError: Run initialization has timed out after 90.0 sec. Please try increasing the timeout with the `init_timeout` setting: `wandb.init(settings=wandb.Settings(init_timeout=120))`.
+2025-01-07 11:04:11,527 [ERROR] Script failed: Run initialization has timed out after 90.0 sec. Please try increasing the timeout with the `init_timeout` setting: `wandb.init(settings=wandb.Settings(init_timeout=120))`.
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 376, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 344, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2311, in _inner_training_loop
+    self.control = self.callback_handler.on_train_begin(args, self.state, self.control)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer_callback.py", line 466, in on_train_begin
+    return self.call_event("on_train_begin", args, state, control)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer_callback.py", line 516, in call_event
+    result = getattr(callback, event)(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/integrations/integration_utils.py", line 910, in on_train_begin
+    self.setup(args, state, model, **kwargs)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/integrations/integration_utils.py", line 837, in setup
+    self._wandb.init(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1312, in init
+    wandb._sentry.reraise(e)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/wandb/analytics/sentry.py", line 156, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1298, in init
+    return wi.init()
+           ^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 855, in init
+    raise error
+wandb.errors.errors.CommError: Run initialization has timed out after 90.0 sec. Please try increasing the timeout with the `init_timeout` setting: `wandb.init(settings=wandb.Settings(init_timeout=120))`.
+2025-01-07 11:08:31,688 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 11:08:31,689 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 11:08:31,689 [INFO] Loading dataset...
+2025-01-07 11:08:31,942 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 11:08:35,090 [INFO] Model device: cuda:0
+2025-01-07 11:08:35,174 [INFO] Processing datasets...
+2025-01-07 11:08:51,137 [INFO] Starting QLoRA training...
+2025-01-07 11:09:48,129 [ERROR] Training failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 344, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 271, in compute_metrics
+    preds = preds.tolist()
+            ^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'tolist'
+2025-01-07 11:09:48,130 [ERROR] Training failed: 'tuple' object has no attribute 'tolist'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 344, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 271, in compute_metrics
+    preds = preds.tolist()
+            ^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'tolist'
+2025-01-07 11:09:48,327 [ERROR] Script failed: 'tuple' object has no attribute 'tolist'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 376, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 344, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 271, in compute_metrics
+    preds = preds.tolist()
+            ^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'tolist'
+2025-01-07 11:12:43,601 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 11:12:43,601 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 11:12:43,601 [INFO] Loading dataset...
+2025-01-07 11:12:43,866 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 11:12:46,794 [INFO] Model device: cuda:0
+2025-01-07 11:12:46,886 [INFO] Processing datasets...
+2025-01-07 11:13:02,991 [INFO] Starting QLoRA training...
+2025-01-07 11:14:07,107 [ERROR] Training failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 358, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 284, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3959, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3960, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3999, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 654, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2025-01-07 11:14:07,130 [ERROR] Training failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 358, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 284, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3959, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3960, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3999, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 654, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2025-01-07 11:14:07,854 [ERROR] Script failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 390, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 358, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 284, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3959, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3960, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3999, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 654, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2025-01-07 11:15:31,512 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 11:15:31,512 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 11:15:31,512 [INFO] Loading dataset...
+2025-01-07 11:15:31,775 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 11:15:35,613 [INFO] Model device: cuda:0
+2025-01-07 11:15:35,706 [INFO] Processing datasets...
+2025-01-07 11:15:52,065 [INFO] Starting QLoRA training...
+2025-01-07 11:16:56,831 [ERROR] Training failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 358, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 284, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3959, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3960, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3999, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 654, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2025-01-07 11:16:56,833 [ERROR] Training failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 358, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 284, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3959, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3960, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3999, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 654, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2025-01-07 11:16:57,553 [ERROR] Script failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 390, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 358, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 284, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3959, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3960, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3999, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 654, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2025-01-07 11:20:53,837 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 11:20:53,837 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 11:20:53,837 [INFO] Loading dataset...
+2025-01-07 11:20:54,116 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 11:20:56,777 [INFO] Model device: cuda:0
+2025-01-07 11:20:56,867 [INFO] Processing datasets...
+2025-01-07 11:21:12,952 [INFO] Starting QLoRA training...
+2025-01-07 11:22:11,944 [ERROR] Error computing metrics: Predictions and/or references don't match the expected format.
+Expected format:
+Feature option 0: {'predictions': Value(dtype='string', id='sequence'), 'references': Sequence(feature=Value(dtype='string', id='sequence'), length=-1, id='references')}
+Feature option 1: {'predictions': Value(dtype='string', id='sequence'), 'references': Value(dtype='string', id='sequence')},
+Input predictions: ['ocant', 'to', 'OI', ..., 'a', 'means', 'of.........................??????.????????????????????????????????????'],
+Input references: [['Assistant:', 'ROI', '(Return', 'on', 'Investment)', 'is', 'a', 'performance', 'metric', 'used', 'to', 'evaluate', 'the', 'efficiency', 'of', 'an', 'investment.', "It's", 'calculated', 'by', 'dividing', 'the', 'net', 'profit', 'by', 'the', 'cost', 'of', 'investment', 'and', 'expressing', 'it', 'as', 'a', 'percentage.']]
+2025-01-07 11:23:04,945 [ERROR] Error computing metrics: Predictions and/or references don't match the expected format.
+Expected format:
+Feature option 0: {'predictions': Value(dtype='string', id='sequence'), 'references': Sequence(feature=Value(dtype='string', id='sequence'), length=-1, id='references')}
+Feature option 1: {'predictions': Value(dtype='string', id='sequence'), 'references': Value(dtype='string', id='sequence')},
+Input predictions: ['ocant', 'to', 'OI', ..., 'a', 'means', 'of.........................??????.????????????????????????????????????'],
+Input references: [['Assistant:', 'ROI', '(Return', 'on', 'Investment)', 'is', 'a', 'performance', 'metric', 'used', 'to', 'evaluate', 'the', 'efficiency', 'of', 'an', 'investment.', "It's", 'calculated', 'by', 'dividing', 'the', 'net', 'profit', 'by', 'the', 'cost', 'of', 'investment', 'and', 'expressing', 'it', 'as', 'a', 'percentage.']]
+2025-01-07 11:23:57,714 [ERROR] Error computing metrics: Predictions and/or references don't match the expected format.
+Expected format:
+Feature option 0: {'predictions': Value(dtype='string', id='sequence'), 'references': Sequence(feature=Value(dtype='string', id='sequence'), length=-1, id='references')}
+Feature option 1: {'predictions': Value(dtype='string', id='sequence'), 'references': Value(dtype='string', id='sequence')},
+Input predictions: ['ocant', 'to', 'OI', ..., 'a', 'means', 'of......................?..??????.????????????????????????????????????'],
+Input references: [['Assistant:', 'ROI', '(Return', 'on', 'Investment)', 'is', 'a', 'performance', 'metric', 'used', 'to', 'evaluate', 'the', 'efficiency', 'of', 'an', 'investment.', "It's", 'calculated', 'by', 'dividing', 'the', 'net', 'profit', 'by', 'the', 'cost', 'of', 'investment', 'and', 'expressing', 'it', 'as', 'a', 'percentage.']]
+2025-01-07 11:23:57,718 [INFO] Saving LoRA adapter...
+2025-01-07 11:23:58,404 [INFO] Merging LoRA weights...
+2025-01-07 11:23:59,279 [INFO] Training completed successfully!
+2025-01-07 11:24:06,888 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 11:24:06,888 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 11:24:06,888 [INFO] Loading dataset...
+2025-01-07 11:24:07,158 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 11:24:09,746 [INFO] Model device: cuda:0
+2025-01-07 11:24:09,844 [INFO] Processing datasets...
+2025-01-07 11:24:26,538 [INFO] Starting QLoRA training...
+2025-01-07 11:25:25,464 [ERROR] Error computing metrics: Predictions and/or references don't match the expected format.
+Expected format:
+Feature option 0: {'predictions': Value(dtype='string', id='sequence'), 'references': Sequence(feature=Value(dtype='string', id='sequence'), length=-1, id='references')}
+Feature option 1: {'predictions': Value(dtype='string', id='sequence'), 'references': Value(dtype='string', id='sequence')},
+Input predictions: ['ocant', 'to', 'OI', ..., 'a', 'means', 'of.........................??????.????????????????????????????????????'],
+Input references: [['Assistant:', 'ROI', '(Return', 'on', 'Investment)', 'is', 'a', 'performance', 'metric', 'used', 'to', 'evaluate', 'the', 'efficiency', 'of', 'an', 'investment.', "It's", 'calculated', 'by', 'dividing', 'the', 'net', 'profit', 'by', 'the', 'cost', 'of', 'investment', 'and', 'expressing', 'it', 'as', 'a', 'percentage.']]
+2025-01-07 11:26:19,667 [ERROR] Error computing metrics: Predictions and/or references don't match the expected format.
+Expected format:
+Feature option 0: {'predictions': Value(dtype='string', id='sequence'), 'references': Sequence(feature=Value(dtype='string', id='sequence'), length=-1, id='references')}
+Feature option 1: {'predictions': Value(dtype='string', id='sequence'), 'references': Value(dtype='string', id='sequence')},
+Input predictions: ['ocant', 'to', 'OI', ..., 'a', 'means', 'of.........................??????.????????????????????????????????????'],
+Input references: [['Assistant:', 'ROI', '(Return', 'on', 'Investment)', 'is', 'a', 'performance', 'metric', 'used', 'to', 'evaluate', 'the', 'efficiency', 'of', 'an', 'investment.', "It's", 'calculated', 'by', 'dividing', 'the', 'net', 'profit', 'by', 'the', 'cost', 'of', 'investment', 'and', 'expressing', 'it', 'as', 'a', 'percentage.']]
+2025-01-07 11:27:14,368 [ERROR] Error computing metrics: Predictions and/or references don't match the expected format.
+Expected format:
+Feature option 0: {'predictions': Value(dtype='string', id='sequence'), 'references': Sequence(feature=Value(dtype='string', id='sequence'), length=-1, id='references')}
+Feature option 1: {'predictions': Value(dtype='string', id='sequence'), 'references': Value(dtype='string', id='sequence')},
+Input predictions: ['ocant', 'to', 'OI', ..., 'a', 'means', 'of......................?..??????.????????????????????????????????????'],
+Input references: [['Assistant:', 'ROI', '(Return', 'on', 'Investment)', 'is', 'a', 'performance', 'metric', 'used', 'to', 'evaluate', 'the', 'efficiency', 'of', 'an', 'investment.', "It's", 'calculated', 'by', 'dividing', 'the', 'net', 'profit', 'by', 'the', 'cost', 'of', 'investment', 'and', 'expressing', 'it', 'as', 'a', 'percentage.']]
+2025-01-07 11:27:14,373 [INFO] Saving LoRA adapter...
+2025-01-07 11:27:15,293 [INFO] Merging LoRA weights...
+2025-01-07 11:27:16,240 [INFO] Training completed successfully!
+2025-01-07 11:40:47,126 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 11:40:47,126 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 11:40:47,126 [INFO] Loading dataset...
+2025-01-07 11:40:47,377 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 11:40:50,198 [INFO] Model device: cuda:0
+2025-01-07 11:40:50,283 [INFO] Processing datasets...
+2025-01-07 11:41:14,646 [INFO] Starting QLoRA training...
+2025-01-07 11:42:13,942 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 11:42:13,942 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 11:42:13,942 [INFO] Loading dataset...
+2025-01-07 11:42:14,217 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 11:42:17,676 [INFO] Model device: cuda:0
+2025-01-07 11:42:17,764 [INFO] Processing datasets...
+2025-01-07 11:42:41,889 [INFO] Starting QLoRA training...
+2025-01-07 11:44:40,071 [ERROR] Training failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 377, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 77, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(predictions, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3959, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3960, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3999, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 654, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2025-01-07 11:44:40,073 [ERROR] Training failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 377, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 77, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(predictions, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3959, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3960, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3999, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 654, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2025-01-07 11:44:40,981 [ERROR] Script failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 409, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 377, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 77, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(predictions, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3959, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3960, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3999, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 654, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2025-01-07 11:51:09,712 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 11:51:09,712 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 11:51:09,712 [INFO] Loading dataset...
+2025-01-07 11:51:09,970 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 11:51:13,396 [INFO] Model device: cuda:0
+2025-01-07 11:51:13,480 [INFO] Processing datasets...
+2025-01-07 11:51:37,947 [INFO] Starting QLoRA training...
+2025-01-07 11:53:34,338 [ERROR] Training failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 391, in train
+    try:
+        ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 76, in compute_metrics
+    # Convert predictions and labels to lists and handle tensors properly
+                  ^^^^^^^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'cpu'
+2025-01-07 11:53:34,340 [ERROR] Training failed: 'numpy.ndarray' object has no attribute 'cpu'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 391, in train
+    try:
+        ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 76, in compute_metrics
+    # Convert predictions and labels to lists and handle tensors properly
+                  ^^^^^^^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'cpu'
+2025-01-07 11:53:35,355 [ERROR] Script failed: 'numpy.ndarray' object has no attribute 'cpu'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 423, in <module>
+    try:
+        ^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 391, in train
+    try:
+        ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 76, in compute_metrics
+    # Convert predictions and labels to lists and handle tensors properly
+                  ^^^^^^^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'cpu'
+2025-01-07 11:54:19,651 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 11:54:19,651 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 11:54:19,651 [INFO] Loading dataset...
+2025-01-07 11:54:19,922 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 11:54:23,242 [INFO] Model device: cuda:0
+2025-01-07 11:54:23,330 [INFO] Processing datasets...
+2025-01-07 11:54:47,592 [INFO] Starting QLoRA training...
+2025-01-07 11:56:44,513 [ERROR] Training failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 392, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: compute_metrics() got an unexpected keyword argument 'tokenizer'
+2025-01-07 11:56:44,515 [ERROR] Training failed: compute_metrics() got an unexpected keyword argument 'tokenizer'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 392, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: compute_metrics() got an unexpected keyword argument 'tokenizer'
+2025-01-07 11:56:45,378 [ERROR] Script failed: compute_metrics() got an unexpected keyword argument 'tokenizer'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 424, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 392, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: compute_metrics() got an unexpected keyword argument 'tokenizer'
+2025-01-07 12:04:21,196 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 12:04:21,196 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 12:04:21,196 [INFO] Loading dataset...
+2025-01-07 12:04:21,448 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 12:04:24,719 [INFO] Model device: cuda:0
+2025-01-07 12:04:24,808 [INFO] Processing datasets...
+2025-01-07 12:04:47,763 [INFO] Starting QLoRA training...
+2025-01-07 12:09:15,798 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 12:09:15,799 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 12:09:15,799 [INFO] Loading dataset...
+2025-01-07 12:09:16,091 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 12:09:24,708 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-07 12:09:24,708 [INFO] Available GPU memory: 4.29 GB
+2025-01-07 12:09:24,708 [INFO] Loading dataset...
+2025-01-07 12:09:24,965 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-07 12:09:28,294 [INFO] Model device: cuda:0
+2025-01-07 12:09:28,379 [INFO] Processing datasets...
+2025-01-07 12:09:51,311 [INFO] Starting QLoRA training...
+2025-01-07 14:24:19,611 [INFO] Saving LoRA adapter...
+2025-01-07 14:24:20,160 [INFO] Merging LoRA weights...
+2025-01-07 14:24:22,076 [INFO] Training completed successfully!
+2025-01-08 02:01:05,432 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-08 02:01:05,433 [INFO] Available GPU memory: 4.29 GB
+2025-01-08 02:01:05,433 [INFO] Loading dataset...
+2025-01-08 02:01:05,809 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-08 02:01:09,768 [INFO] Model device: cuda:0
+2025-01-08 02:01:09,854 [INFO] Processing datasets...
+2025-01-08 02:01:31,301 [INFO] Starting QLoRA training...
+2025-01-08 02:03:14,225 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-08 02:03:14,225 [INFO] Available GPU memory: 4.29 GB
+2025-01-08 02:03:14,225 [INFO] Loading dataset...
+2025-01-08 02:03:14,462 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-08 02:03:17,829 [INFO] Model device: cuda:0
+2025-01-08 02:03:17,913 [INFO] Processing datasets...
+2025-01-08 02:03:39,115 [INFO] Starting QLoRA training...
+2025-01-08 06:19:29,434 [INFO] Saving LoRA adapter...
+2025-01-08 06:19:29,926 [INFO] Merging LoRA weights...
+2025-01-08 06:19:30,475 [INFO] Training completed successfully!

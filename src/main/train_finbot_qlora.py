@@ -12,7 +12,8 @@ from transformers import (
     TrainingArguments,
     Trainer,
     DataCollatorForSeq2Seq,
-    GenerationConfig
+    GenerationConfig,
+    EarlyStoppingCallback
 )
 from peft import (
     prepare_model_for_kbit_training,
@@ -23,6 +24,7 @@ from peft import (
 import bitsandbytes as bnb
 from accelerate import Accelerator
 import evaluate
+import random
 
 # Configure logging
 logging.basicConfig(
@@ -104,11 +106,22 @@ def train(
                 continue
                 
             # Initialize context with system prompt
-            system_prompt = (
-                "You are an expert financial advisor. "
-                "Provide clear, accurate, and professional responses about finance and investments. "
-                "Always maintain a professional tone and back answers with financial expertise."
-            )
+
+            system_prompt = random.choice([
+                "You are a financial expert. Provide professional advice on finance and investments. \
+                    Always maintain a professional tone and back answers with financial expertise.",
+                "You are a financial advisor. Provide professional advice on finance and investments. \
+                    Always keep a professional tone and back answers with financial expertise.",
+                "You are a finance expert. Provide professional advice on finance and investments. \
+                    Always maintain a professional tone and back answers with financial expertise.",
+                "You are a finance advisor. Provide professional advice on finance and investments. \
+                    Always maintain a professional tone and back answers with financial expertise.",
+                "You are a financial consultant. Provide professional advice on finance and investments. \
+                    Always maintain a professional tone and back answers with financial expertise.",
+                "You are a finance consultant. Provide professional advice on finance and investments. \
+                    Always keep a professional tone and back answers with financial expertise.",
+            ])
+
             
             context = [f"System: {system_prompt}"]
             
@@ -120,13 +133,7 @@ def train(
             if item.get('previous_utterance'):
                 if isinstance(item['previous_utterance'], list) and len(item['previous_utterance']) < 1:
                     continue # Skip empty list
-                
-                    # context.append("Previous conversation:")
-                    # for utterance in item['previous_utterance']:
-                    #     if isinstance(utterance, str):
-                    #         context.append(utterance)
-                    #     else:
-                    #         logger.warning("Skipping non-string previous_utterance item")
+
                 elif isinstance(item['previous_utterance'], str) and item['previous_utterance'].strip():
                     context.append("Previous conversation:")
                     context.append(item['previous_utterance'])
@@ -245,20 +252,20 @@ def train(
         # Updated training arguments for better stability
         training_args = TrainingArguments(
             output_dir=output_dir,
-            num_train_epochs=3,
+            num_train_epochs=10,  # Increased epochs since we have early stopping
             per_device_train_batch_size=batch_size,
             per_device_eval_batch_size=batch_size,
             gradient_accumulation_steps=8,  
-            learning_rate=5e-6,  # Reduced learning rate
+            learning_rate=7e-6,  # Reduced learning rate
             weight_decay=0.01,
             warmup_ratio=0.1,
-            logging_steps=50,
-            eval_strategy="steps",
+            logging_steps=55,
+            eval_strategy="steps",  # Required for early stopping
             save_strategy="steps",
-            eval_steps=100,
-            save_steps=100,
+            eval_steps=110,
+            save_steps=110,
             save_total_limit=3,
-            load_best_model_at_end=True,
+            load_best_model_at_end=True,  # Required for early stopping
             metric_for_best_model="eval_loss",
             greater_is_better=False,
             fp16=True,
@@ -270,7 +277,13 @@ def train(
             ddp_find_unused_parameters=False,  # Added for distributed training
         )
 
-        # Initialize trainer with data collator
+        # Create early stopping callback
+        early_stopping_callback = EarlyStoppingCallback(
+            early_stopping_patience=5,        # Number of evaluations to wait for improvement
+            early_stopping_threshold=0.01,    # Minimum change to qualify as an improvement
+        )
+
+        # Initialize trainer with early stopping
         trainer = Trainer(
             model=model,
             args=training_args,
@@ -283,6 +296,7 @@ def train(
                 padding=True,
                 label_pad_token_id=tokenizer.pad_token_id
             ),
+            callbacks=[early_stopping_callback],  # Add the callback here
         )
 
         # Train with error handling

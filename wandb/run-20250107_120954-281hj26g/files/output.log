@@ -1,0 +1,45 @@
+                                                                                                                                                                        
+{'loss': 11.4114, 'grad_norm': 3.2524094581604004, 'learning_rate': 8.208955223880597e-07, 'epoch': 0.21}
+{'loss': 11.3155, 'grad_norm': 3.264906644821167, 'learning_rate': 1.6417910447761194e-06, 'epoch': 0.41}
+                                                                                                                                                                        
+{'eval_loss': 11.267402648925781, 'eval_runtime': 163.7898, 'eval_samples_per_second': 44.875, 'eval_steps_per_second': 5.611, 'epoch': 0.41}
+{'loss': 11.2192, 'grad_norm': 3.4592342376708984, 'learning_rate': 1.996741164052155e-06, 'epoch': 0.62}
+{'loss': 11.0094, 'grad_norm': 3.7865114212036133, 'learning_rate': 1.9750106532642156e-06, 'epoch': 0.82}
+{'eval_loss': 10.785501480102539, 'eval_runtime': 165.2789, 'eval_samples_per_second': 44.47, 'eval_steps_per_second': 5.56, 'epoch': 0.82}
+{'loss': 10.7287, 'grad_norm': 4.100147724151611, 'learning_rate': 1.933300080220719e-06, 'epoch': 1.03}
+{'loss': 10.4627, 'grad_norm': 4.8010759353637695, 'learning_rate': 1.8724641841425478e-06, 'epoch': 1.23}
+{'eval_loss': 10.120832443237305, 'eval_runtime': 165.1446, 'eval_samples_per_second': 44.506, 'eval_steps_per_second': 5.565, 'epoch': 1.23}
+{'loss': 10.155, 'grad_norm': 5.480895042419434, 'learning_rate': 1.7937496231938418e-06, 'epoch': 1.44}
+{'loss': 9.8541, 'grad_norm': 6.735339164733887, 'learning_rate': 1.6987694277788416e-06, 'epoch': 1.64}
+{'eval_loss': 9.294952392578125, 'eval_runtime': 165.8136, 'eval_samples_per_second': 44.327, 'eval_steps_per_second': 5.542, 'epoch': 1.64}
+{'loss': 9.4323, 'grad_norm': 7.873639106750488, 'learning_rate': 1.5894699460847014e-06, 'epoch': 1.85}
+{'loss': 9.0592, 'grad_norm': 9.758122444152832, 'learning_rate': 1.4680909592270818e-06, 'epoch': 2.05}
+{'eval_loss': 8.28140640258789, 'eval_runtime': 165.8286, 'eval_samples_per_second': 44.323, 'eval_steps_per_second': 5.542, 'epoch': 2.05}
+{'loss': 8.5626, 'grad_norm': 11.475422859191895, 'learning_rate': 1.3371197833248506e-06, 'epoch': 2.26}
+{'loss': 8.1148, 'grad_norm': 11.986584663391113, 'learning_rate': 1.1992402990509514e-06, 'epoch': 2.46}
+{'eval_loss': 7.202008247375488, 'eval_runtime': 165.6739, 'eval_samples_per_second': 44.364, 'eval_steps_per_second': 5.547, 'epoch': 2.46}
+{'loss': 7.6956, 'grad_norm': 12.268810272216797, 'learning_rate': 1.057277953153411e-06, 'epoch': 2.67}
+{'loss': 7.3262, 'grad_norm': 11.276501655578613, 'learning_rate': 9.141418589834339e-07, 'epoch': 2.87}
+{'eval_loss': 6.3824782371521, 'eval_runtime': 165.2162, 'eval_samples_per_second': 44.487, 'eval_steps_per_second': 5.562, 'epoch': 2.87}
+{'loss': 7.0294, 'grad_norm': 11.112007141113281, 'learning_rate': 7.727651825151143e-07, 'epoch': 3.08}
+{'loss': 6.8025, 'grad_norm': 9.849736213684082, 'learning_rate': 6.360450354752458e-07, 'epoch': 3.28}
+{'eval_loss': 5.897476673126221, 'eval_runtime': 165.5259, 'eval_samples_per_second': 44.404, 'eval_steps_per_second': 5.552, 'epoch': 3.28}
+{'loss': 6.6066, 'grad_norm': 9.160365104675293, 'learning_rate': 5.067831073020927e-07, 'epoch': 3.49}
+{'loss': 6.4717, 'grad_norm': 9.367374420166016, 'learning_rate': 3.8762825251178466e-07, 'epoch': 3.69}
+{'eval_loss': 5.644061088562012, 'eval_runtime': 165.8357, 'eval_samples_per_second': 44.321, 'eval_steps_per_second': 5.542, 'epoch': 3.69}
+{'loss': 6.3592, 'grad_norm': 8.298964500427246, 'learning_rate': 2.810222099804984e-07, 'epoch': 3.9}
+{'loss': 6.3049, 'grad_norm': 8.19091796875, 'learning_rate': 1.8914956647091497e-07, 'epoch': 4.1}
+{'eval_loss': 5.523781776428223, 'eval_runtime': 166.1109, 'eval_samples_per_second': 44.248, 'eval_steps_per_second': 5.532, 'epoch': 4.1}
+{'loss': 6.2533, 'grad_norm': 8.464046478271484, 'learning_rate': 1.1389298975774931e-07, 'epoch': 4.31}
+{'loss': 6.2416, 'grad_norm': 8.042956352233887, 'learning_rate': 5.6794648721756656e-08, 'epoch': 4.51}
+{'eval_loss': 5.478894233703613, 'eval_runtime': 166.2812, 'eval_samples_per_second': 44.202, 'eval_steps_per_second': 5.527, 'epoch': 4.51}
+{'loss': 6.2141, 'grad_norm': 7.908593654632568, 'learning_rate': 1.902461099734587e-08, 'epoch': 4.72}
+{'loss': 6.2261, 'grad_norm': 7.946030139923096, 'learning_rate': 1.3568657738678435e-09, 'epoch': 4.93}
+{'eval_loss': 5.470653533935547, 'eval_runtime': 166.2112, 'eval_samples_per_second': 44.221, 'eval_steps_per_second': 5.529, 'epoch': 4.93}
+{'train_runtime': 8066.2596, 'train_samples_per_second': 10.631, 'train_steps_per_second': 0.166, 'train_loss': 8.337034612627171, 'epoch': 5.0}
+2025-01-07 14:24:20,160 [INFO] Merging LoRA weights...
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/tuners/lora/bnb.py:355: UserWarning: Merge lora module to 4-bit linear may get different generations due to rounding errors.
+  warnings.warn(
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/modeling_utils.py:2618: UserWarning: Moving the following attributes in the config to the generation config: {'max_length': 60, 'min_length': 20, 'num_beams': 10, 'length_penalty': 0.65, 'no_repeat_ngram_size': 3}. You are seeing this warning because you've set generation parameters in the model config, as opposed to in the generation config.
+  warnings.warn(
+2025-01-07 14:24:22,076 [INFO] Training completed successfully!

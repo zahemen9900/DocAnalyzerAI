@@ -1,5 +1,5 @@
 import gradio as gr
-from src.experiments.chatbot_2 import FinancialChatbot
+from chatbot_2 import FinancialChatbot
 import logging
 
 logging.basicConfig(level=logging.INFO)

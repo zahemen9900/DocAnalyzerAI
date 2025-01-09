@@ -1,0 +1,33 @@
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 804/804 [1:31:13<00:00,  6.81s/it]
+{'loss': 11.378, 'grad_norm': 3.259262800216675, 'learning_rate': 3.08641975308642e-06, 'epoch': 0.19}
+{'loss': 11.096, 'grad_norm': 3.5809669494628906, 'learning_rate': 4.991484823153352e-06, 'epoch': 0.37}
+2025-01-06 18:40:00,014 [INFO] Saving LoRA adapter...                                                                                                                   
+{'eval_loss': 10.83348274230957, 'eval_runtime': 183.7935, 'eval_samples_per_second': 39.991, 'eval_steps_per_second': 5.0, 'epoch': 0.37}
+{'loss': 10.6415, 'grad_norm': 4.732835292816162, 'learning_rate': 4.888474134413829e-06, 'epoch': 0.56}
+{'loss': 9.9635, 'grad_norm': 6.231484889984131, 'learning_rate': 4.673164747601472e-06, 'epoch': 0.75}
+{'eval_loss': 9.127059936523438, 'eval_runtime': 184.5565, 'eval_samples_per_second': 39.825, 'eval_steps_per_second': 4.98, 'epoch': 0.75}
+{'loss': 8.9413, 'grad_norm': 10.457090377807617, 'learning_rate': 4.355679847000971e-06, 'epoch': 0.93}
+{'loss': 7.6074, 'grad_norm': 10.790728569030762, 'learning_rate': 3.95094659488782e-06, 'epoch': 1.12}
+{'eval_loss': 6.180822372436523, 'eval_runtime': 183.0285, 'eval_samples_per_second': 40.158, 'eval_steps_per_second': 5.021, 'epoch': 1.12}
+{'loss': 6.4374, 'grad_norm': 6.821654319763184, 'learning_rate': 3.477994302328957e-06, 'epoch': 1.31}
+{'loss': 5.7223, 'grad_norm': 4.494330883026123, 'learning_rate': 2.9590597295805103e-06, 'epoch': 1.49}
+{'eval_loss': 4.914350986480713, 'eval_runtime': 190.6371, 'eval_samples_per_second': 38.555, 'eval_steps_per_second': 4.821, 'epoch': 1.49}
+{'loss': 5.3379, 'grad_norm': 3.372647285461426, 'learning_rate': 2.4185415821025796e-06, 'epoch': 1.68}
+{'loss': 5.1032, 'grad_norm': 2.678612470626831, 'learning_rate': 1.8818533585686218e-06, 'epoch': 1.87}
+{'eval_loss': 4.55937385559082, 'eval_runtime': 183.2762, 'eval_samples_per_second': 40.103, 'eval_steps_per_second': 5.014, 'epoch': 1.87}
+{'loss': 4.9649, 'grad_norm': 2.3648531436920166, 'learning_rate': 1.3742284864231765e-06, 'epoch': 2.05}
+{'loss': 4.8672, 'grad_norm': 2.268533945083618, 'learning_rate': 9.195339238342071e-07, 'epoch': 2.24}
+{'eval_loss': 4.416186809539795, 'eval_runtime': 183.4427, 'eval_samples_per_second': 40.067, 'eval_steps_per_second': 5.01, 'epoch': 2.24}
+{'loss': 4.8028, 'grad_norm': 2.1248300075531006, 'learning_rate': 5.391480088225582e-07, 'epoch': 2.43}
+{'loss': 4.7799, 'grad_norm': 2.14060115814209, 'learning_rate': 2.5095531564656996e-07, 'epoch': 2.61}
+{'eval_loss': 4.366746425628662, 'eval_runtime': 183.0215, 'eval_samples_per_second': 40.159, 'eval_steps_per_second': 5.021, 'epoch': 2.61}
+{'loss': 4.7645, 'grad_norm': 2.0997560024261475, 'learning_rate': 6.850577719915624e-08, 'epoch': 2.8}
+{'loss': 4.7459, 'grad_norm': 2.0119476318359375, 'learning_rate': 3.7760889258664503e-10, 'epoch': 2.99}
+{'eval_loss': 4.359317302703857, 'eval_runtime': 184.7623, 'eval_samples_per_second': 39.781, 'eval_steps_per_second': 4.974, 'epoch': 2.99}
+{'train_runtime': 5482.8297, 'train_samples_per_second': 9.384, 'train_steps_per_second': 0.147, 'train_loss': 6.936134888758113, 'epoch': 3.0}
+2025-01-06 18:40:00,467 [INFO] Merging LoRA weights...
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/tuners/lora/bnb.py:355: UserWarning: Merge lora module to 4-bit linear may get different generations due to rounding errors.
+  warnings.warn(
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/modeling_utils.py:2618: UserWarning: Moving the following attributes in the config to the generation config: {'max_length': 60, 'min_length': 20, 'num_beams': 10, 'length_penalty': 0.65, 'no_repeat_ngram_size': 3}. You are seeing this warning because you've set generation parameters in the model config, as opposed to in the generation config.
+  warnings.warn(
+2025-01-06 18:40:01,923 [INFO] Training completed successfully!

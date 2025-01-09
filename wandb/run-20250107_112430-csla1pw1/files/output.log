@@ -1,0 +1,33 @@
+  1%|█▌                                                                                                                                | 10/804 [00:43<57:28,  4.34s/it]2025-01-07 11:25:25,464 [ERROR] Error computing metrics: Predictions and/or references don't match the expected format.
+{'loss': 11.4592, 'grad_norm': 3.1515583992004395, 'learning_rate': 6.17283950617284e-07, 'epoch': 0.04}
+Expected format:████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 13/13 [00:02<00:00,  6.10it/s]
+Feature option 0: {'predictions': Value(dtype='string', id='sequence'), 'references': Sequence(feature=Value(dtype='string', id='sequence'), length=-1, id='references')}
+Feature option 1: {'predictions': Value(dtype='string', id='sequence'), 'references': Value(dtype='string', id='sequence')},
+Input predictions: ['ocant', 'to', 'OI', ..., 'a', 'means', 'of.........................??????.????????????????????????????????????'],
+Input references: [['Assistant:', 'ROI', '(Return', 'on', 'Investment)', 'is', 'a', 'performance', 'metric', 'used', 'to', 'evaluate', 'the', 'efficiency', 'of', 'an', 'investment.', "It's", 'calculated', 'by', 'dividing', 'the', 'net', 'profit', 'by', 'the', 'cost', 'of', 'investment', 'and', 'expressing', 'it', 'as', 'a', 'percentage.']]
+  2%|███▏                                                                                                                              | 20/804 [01:38<58:43,  4.49s/it]2025-01-07 11:26:19,667 [ERROR] Error computing metrics: Predictions and/or references don't match the expected format.
+Expected format:████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 13/13 [00:02<00:00,  6.40it/s]
+{'eval_loss': 11.425392150878906, 'eval_bleu': 0.0, 'eval_rouge1': 0.0, 'eval_rouge2': 0.0, 'eval_rougeL': 0.0, 'eval_bertscore_f1': 0.0, 'eval_runtime': 10.417, 'eval_samples_per_second': 9.6, 'eval_steps_per_second': 1.248, 'epoch': 0.04}
+{'loss': 11.4116, 'grad_norm': 3.0988070964813232, 'learning_rate': 1.234567901234568e-06, 'epoch': 0.07}
+Feature option 0: {'predictions': Value(dtype='string', id='sequence'), 'references': Sequence(feature=Value(dtype='string', id='sequence'), length=-1, id='references')}
+Feature option 1: {'predictions': Value(dtype='string', id='sequence'), 'references': Value(dtype='string', id='sequence')},
+Input predictions: ['ocant', 'to', 'OI', ..., 'a', 'means', 'of.........................??????.????????????????????????????????????'],
+Input references: [['Assistant:', 'ROI', '(Return', 'on', 'Investment)', 'is', 'a', 'performance', 'metric', 'used', 'to', 'evaluate', 'the', 'efficiency', 'of', 'an', 'investment.', "It's", 'calculated', 'by', 'dividing', 'the', 'net', 'profit', 'by', 'the', 'cost', 'of', 'investment', 'and', 'expressing', 'it', 'as', 'a', 'percentage.']]
+  4%|████▊                                                                                                                             | 30/804 [02:32<57:45,  4.48s/it]2025-01-07 11:27:14,368 [ERROR] Error computing metrics: Predictions and/or references don't match the expected format.
+Expected format:████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 13/13 [00:02<00:00,  6.39it/s]
+{'eval_loss': 11.412266731262207, 'eval_bleu': 0.0, 'eval_rouge1': 0.0, 'eval_rouge2': 0.0, 'eval_rougeL': 0.0, 'eval_bertscore_f1': 0.0, 'eval_runtime': 10.2076, 'eval_samples_per_second': 9.797, 'eval_steps_per_second': 1.274, 'epoch': 0.07}
+{'loss': 11.4227, 'grad_norm': 3.076469898223877, 'learning_rate': 1.8518518518518519e-06, 'epoch': 0.11}
+Feature option 0: {'predictions': Value(dtype='string', id='sequence'), 'references': Sequence(feature=Value(dtype='string', id='sequence'), length=-1, id='references')}
+Feature option 1: {'predictions': Value(dtype='string', id='sequence'), 'references': Value(dtype='string', id='sequence')},
+Input predictions: ['ocant', 'to', 'OI', ..., 'a', 'means', 'of......................?..??????.????????????????????????????????????'],
+Input references: [['Assistant:', 'ROI', '(Return', 'on', 'Investment)', 'is', 'a', 'performance', 'metric', 'used', 'to', 'evaluate', 'the', 'efficiency', 'of', 'an', 'investment.', "It's", 'calculated', 'by', 'dividing', 'the', 'net', 'profit', 'by', 'the', 'cost', 'of', 'investment', 'and', 'expressing', 'it', 'as', 'a', 'percentage.']]
+  4%|████▊                                                                                                                           | 30/804 [02:43<1:10:10,  5.44s/it]
+2025-01-07 11:27:14,373 [INFO] Saving LoRA adapter...                                                                                                                   
+{'eval_loss': 11.386809349060059, 'eval_bleu': 0.0, 'eval_rouge1': 0.0, 'eval_rouge2': 0.0, 'eval_rougeL': 0.0, 'eval_bertscore_f1': 0.0, 'eval_runtime': 10.9898, 'eval_samples_per_second': 9.099, 'eval_steps_per_second': 1.183, 'epoch': 0.11}
+{'train_runtime': 165.776, 'train_samples_per_second': 310.358, 'train_steps_per_second': 4.85, 'train_loss': 11.431141408284505, 'epoch': 0.11}
+2025-01-07 11:27:15,293 [INFO] Merging LoRA weights...
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/tuners/lora/bnb.py:355: UserWarning: Merge lora module to 4-bit linear may get different generations due to rounding errors.
+  warnings.warn(
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/modeling_utils.py:2618: UserWarning: Moving the following attributes in the config to the generation config: {'max_length': 60, 'min_length': 20, 'num_beams': 10, 'length_penalty': 0.65, 'no_repeat_ngram_size': 3}. You are seeing this warning because you've set generation parameters in the model config, as opposed to in the generation config.
+  warnings.warn(
+2025-01-07 11:27:16,240 [INFO] Training completed successfully!

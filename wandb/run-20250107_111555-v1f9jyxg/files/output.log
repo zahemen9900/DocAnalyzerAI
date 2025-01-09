@@ -1,0 +1,233 @@
+  1%|█▌                                                                                                                                | 10/804 [00:43<57:03,  4.31s/it]
+{'loss': 11.4592, 'grad_norm': 3.198695421218872, 'learning_rate': 6.17283950617284e-07, 'epoch': 0.04}
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 13/13 [00:02<00:00,  6.16it/s]
+[[[-5.33203125e+00  1.33359375e+01  2.18750000e+00 ...  1.09375000e+00
+    1.46679688e+00  1.01464844e+00]
+  [-5.21875000e+00 -3.68554688e+00  4.84765625e+00 ... -6.71386719e-01
+    2.23632812e-01  5.20019531e-01]
+  [-5.96484375e+00 -2.75585938e+00  5.77343750e+00 ... -5.67382812e-01
+    9.89257812e-01  1.40869141e-01]
+  ...
+  [-5.64062500e+00  7.69653320e-02  9.19531250e+00 ... -8.07128906e-01
+   -4.68505859e-01 -3.01269531e-01]
+  [-5.64062500e+00  6.17065430e-02  9.11718750e+00 ... -8.21289062e-01
+   -4.69238281e-01 -3.05908203e-01]
+  [-5.64062500e+00  6.62841797e-02  9.07031250e+00 ... -8.37890625e-01
+   -4.74853516e-01 -3.14941406e-01]]
+
+ [[-5.43750000e+00  1.28671875e+01  2.74218750e+00 ...  1.10253906e+00
+    1.44628906e+00  1.05371094e+00]
+  [-5.12109375e+00 -3.74218750e+00  4.32031250e+00 ... -6.01074219e-01
+    4.15039062e-01  6.68457031e-01]
+  [-5.98046875e+00 -2.88867188e+00  5.55078125e+00 ... -6.85058594e-01
+    9.31640625e-01  2.03613281e-01]
+  ...
+  [-5.60937500e+00  1.03393555e-01  9.03125000e+00 ... -8.11035156e-01
+   -4.14062500e-01 -2.03491211e-01]
+  [-5.60937500e+00  9.84497070e-02  8.98437500e+00 ... -8.19335938e-01
+   -4.13085938e-01 -2.06787109e-01]
+  [-5.61328125e+00  1.14501953e-01  8.95312500e+00 ... -8.33984375e-01
+   -4.23095703e-01 -2.15942383e-01]]
+
+ [[-5.43750000e+00  1.28671875e+01  2.74218750e+00 ...  1.10253906e+00
+    1.44628906e+00  1.05371094e+00]
+  [-5.12109375e+00 -3.74218750e+00  4.32031250e+00 ... -6.01074219e-01
+    4.15039062e-01  6.68457031e-01]
+  [-5.98046875e+00 -2.88867188e+00  5.55078125e+00 ... -6.85058594e-01
+    9.31640625e-01  2.03613281e-01]
+  ...
+  [-5.63281250e+00  1.47094727e-01  9.04687500e+00 ... -8.24218750e-01
+   -4.61669922e-01 -1.84448242e-01]
+  [-5.62890625e+00  1.31958008e-01  8.97656250e+00 ... -8.37890625e-01
+   -4.65087891e-01 -1.88964844e-01]
+  [-5.63281250e+00  1.41113281e-01  8.92187500e+00 ... -8.55468750e-01
+   -4.70214844e-01 -1.93847656e-01]]
+
+ ...
+
+ [[-5.43359375e+00  1.22968750e+01  2.57617188e+00 ...  9.74121094e-01
+    1.24902344e+00  1.02343750e+00]
+  [-5.21093750e+00 -3.54492188e+00  4.55859375e+00 ... -7.08496094e-01
+    2.80029297e-01  6.22558594e-01]
+  [-5.96484375e+00 -3.00390625e+00  5.38671875e+00 ... -7.18261719e-01
+    9.00390625e-01  2.16186523e-01]
+  ...
+  [-5.61328125e+00  9.97314453e-02  9.03906250e+00 ... -8.13964844e-01
+   -4.77539062e-01 -2.30590820e-01]
+  [-5.61328125e+00  8.90502930e-02  8.96875000e+00 ... -8.32031250e-01
+   -4.80468750e-01 -2.37426758e-01]
+  [-5.61718750e+00  9.82055664e-02  8.91406250e+00 ... -8.48632812e-01
+   -4.83154297e-01 -2.42919922e-01]]
+
+ [[-5.52734375e+00  1.31953125e+01  3.00585938e+00 ...  1.12988281e+00
+    1.23730469e+00  1.06835938e+00]
+  [-5.07421875e+00 -3.52929688e+00  4.60156250e+00 ... -7.92968750e-01
+    3.73535156e-01  3.40820312e-01]
+  [-5.80859375e+00 -2.80664062e+00  5.28515625e+00 ... -6.30371094e-01
+    1.02539062e+00  1.55029297e-01]
+  ...
+  [-5.64062500e+00 -1.20315552e-02  9.21875000e+00 ... -8.13476562e-01
+   -4.88281250e-01 -3.05664062e-01]
+  [-5.64062500e+00 -2.56500244e-02  9.14062500e+00 ... -8.26171875e-01
+   -4.91455078e-01 -3.11767578e-01]
+  [-5.64453125e+00 -1.66778564e-02  9.10156250e+00 ... -8.41308594e-01
+   -4.94873047e-01 -3.23974609e-01]]
+
+ [[-5.51171875e+00  1.24531250e+01  2.40429688e+00 ...  1.03808594e+00
+    1.35546875e+00  1.15234375e+00]
+  [-4.82421875e+00 -3.80859375e+00  4.27734375e+00 ... -7.97851562e-01
+    3.34228516e-01  4.18457031e-01]
+  [-5.83593750e+00 -3.10351562e+00  5.32031250e+00 ... -6.98242188e-01
+    8.39355469e-01  1.10961914e-01]
+  ...
+  [-5.57031250e+00  1.03149414e-02  9.01562500e+00 ... -7.76855469e-01
+   -4.10888672e-01 -2.88574219e-01]
+  [-5.56640625e+00 -2.69412994e-04  8.96093750e+00 ... -7.85644531e-01
+   -4.10400391e-01 -2.94433594e-01]
+  [-5.57031250e+00  1.29547119e-02  8.92968750e+00 ... -7.99316406e-01
+   -4.15771484e-01 -3.02001953e-01]]]
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 358, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 284, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3959, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3960, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3999, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 654, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2025-01-07 11:16:56,833 [ERROR] Training failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 358, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 284, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3959, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3960, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3999, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 654, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+2025-01-07 11:16:57,553 [ERROR] Script failed: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 390, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 358, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 284, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3959, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3960, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3999, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 654, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 390, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 358, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2467, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2915, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2872, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 284, in compute_metrics
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3959, in batch_decode
+    return [
+           ^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3960, in <listcomp>
+    self.decode(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 3999, in decode
+    return self._decode(
+           ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 654, in _decode
+    text = self._tokenizer.decode(token_ids, skip_special_tokens=skip_special_tokens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'ids': 'list' object cannot be interpreted as an integer

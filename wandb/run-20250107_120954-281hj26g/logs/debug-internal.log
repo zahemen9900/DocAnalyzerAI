@@ -1,0 +1,27 @@
+{"time":"2025-01-07T12:09:54.961436162Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-07T12:09:54.961455156Z","level":"INFO","msg":"created symlink","path":"/home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/run-20250107_120954-281hj26g/logs/debug-core.log"}
+{"time":"2025-01-07T12:09:55.108675197Z","level":"INFO","msg":"created new stream","id":"281hj26g"}
+{"time":"2025-01-07T12:09:55.108718543Z","level":"INFO","msg":"stream: started","id":"281hj26g"}
+{"time":"2025-01-07T12:09:55.108758944Z","level":"INFO","msg":"writer: Do: started","stream_id":"281hj26g"}
+{"time":"2025-01-07T12:09:55.108831556Z","level":"INFO","msg":"handler: started","stream_id":"281hj26g"}
+{"time":"2025-01-07T12:09:55.108818575Z","level":"INFO","msg":"sender: started","stream_id":"281hj26g"}
+{"time":"2025-01-07T12:09:55.683696977Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-07T13:10:56.886700209Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/281hj26g/file_stream\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-01-07T13:45:41.937444571Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/281hj26g/file_stream\": unexpected EOF"}
+{"time":"2025-01-07T13:45:53.951795712Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/281hj26g/file_stream\": dial tcp: lookup api.wandb.ai on 10.255.255.254:53: read udp 10.255.255.254:60112->10.255.255.254:53: i/o timeout"}
+{"time":"2025-01-07T13:46:55.871347551Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-01-07T13:47:26.418122522Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/281hj26g/file_stream\": read tcp 172.23.131.84:60442->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-01-07T13:47:28.318171866Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-01-07T13:48:02.5791476Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-01-07T13:48:29.548944156Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/281hj26g/file_stream\": read tcp 172.23.131.84:44264->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-01-07T14:08:48.081248781Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/281hj26g/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-01-07T14:15:53.040706607Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/281hj26g/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-01-07T14:24:19.920717233Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/281hj26g/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-01-07T14:24:23.41902259Z","level":"INFO","msg":"stream: closing","id":"281hj26g"}
+{"time":"2025-01-07T14:24:23.419112933Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-07T14:24:23.420520091Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-07T14:24:24.82666814Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-07T14:24:25.365777097Z","level":"INFO","msg":"handler: closed","stream_id":"281hj26g"}
+{"time":"2025-01-07T14:24:25.365805342Z","level":"INFO","msg":"writer: Close: closed","stream_id":"281hj26g"}
+{"time":"2025-01-07T14:24:25.365852133Z","level":"INFO","msg":"sender: closed","stream_id":"281hj26g"}
+{"time":"2025-01-07T14:24:25.365898577Z","level":"INFO","msg":"stream: closed","id":"281hj26g"}

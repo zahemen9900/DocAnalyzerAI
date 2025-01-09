@@ -7,7 +7,6 @@ from pathlib import Path
 import os
 import re
 from dataclasses import dataclass
-from datetime import datetime
 
 # Configure logging with more detailed format
 logging.basicConfig(
@@ -22,6 +21,11 @@ logger = logging.getLogger(__name__)
 
 CONVERSATION_STARTERS = [
    ("Hi there!", "Hello! I'm your financial AI assistant. I can help you with financial analysis, market insights, and answering questions about business and economics. What would you like to know?"),
+    ("Hello!", "Hello! I'm here to assist you with any financial queries you might have. Whether it's about investments, market trends, or economic concepts, feel free to ask."),
+    ("How can you help me today?", "I can assist you with financial analysis, interpret market trends, analyze company statements, explain financial concepts, and provide insights on economic topics. How may I help you today?"),
+    ("What can you do?", "I can assist you with financial analysis, interpret market trends, analyze company statements, explain financial concepts, and provide insights on economic topics. How may I help you today?"),
+    ("How do you work?", "I'm trained to analyze financial data, answer questions about economics and business, and help with financial decision-making. I can examine financial statements, discuss market trends, and explain complex financial concepts in simple terms."),
+    ("Good day!", "Good day! I'm here to assist you with any financial queries you might have. Whether it's about investments, market trends, or economic concepts, feel free to ask."),
     ("What can you do?", "I can assist you with financial analysis, interpret market trends, analyze company statements, explain financial concepts, and provide insights on economic topics. How may I help you today?"),
     ("How do you work?", "I'm trained to analyze financial data, answer questions about economics and business, and help with financial decision-making. I can examine financial statements, discuss market trends, and explain complex financial concepts in simple terms."),
     ("Good day!", "Good day! I'm here to assist you with any financial queries you might have. Whether it's about investments, market trends, or economic concepts, feel free to ask."),
@@ -66,7 +70,13 @@ CONVERSATION_STARTERS = [
     ("Can you explain technical analysis?", "Technical analysis involves studying price patterns and market trends using charts and indicators. Would you like me to explain some basic concepts like support/resistance levels, moving averages, or trend lines?"),
     ("I lost money in crypto.", "I'm sorry to hear about your cryptocurrency losses. Let's discuss what happened and explore risk management strategies for future investments. Would you like to start by reviewing the basic principles of crypto investing?"),
     ("What's causing the current inflation?", "Inflation is influenced by multiple factors including monetary policy, supply chain issues, and consumer demand. Let's analyze the current economic indicators and discuss how they might affect your financial planning."),
-    ("Need advice on my startup's financials.", "I'd be happy to help with your startup's financial planning. Let's start by reviewing your current financial structure, cash flow projections, and funding needs. What's your most pressing concern?")
+    ("Need advice on my startup's financials.", "I'd be happy to help with your startup's financial planning. Let's start by reviewing your current financial structure, cash flow projections, and funding needs. What's your most pressing concern?"),
+    ("How can I improve my credit score?", "Improving your credit score involves managing debt, making timely payments, and monitoring your credit report. Let's discuss specific strategies to boost your creditworthiness. Are you looking to apply for a loan or mortgage soon?"),
+    ("What's the best investment for retirement?", "Choosing the right retirement investment depends on your risk tolerance, time horizon, and financial goals. Let's explore options like 401(k) plans, IRAs, and diversified portfolios. What's your primary objective for retirement savings?"),
+    ("I'm considering real estate investments.", "Real estate can be a lucrative investment, but it comes with risks and challenges. Let's discuss the key factors to consider, such as location, financing, and market trends. Are you looking to invest in rental properties or commercial real estate?"),
+    ("How do I create a budget for my family?", "Creating a family budget involves tracking expenses, setting financial goals, and prioritizing spending. Let's work together to develop a customized budget plan that aligns with your family's needs and aspirations. What are your main financial priorities?"),
+    ("I'm interested in sustainable investing.", "Sustainable investing focuses on environmental, social, and governance (ESG) factors. Let's explore ESG investment opportunities, impact metrics, and the potential benefits of aligning your investments with your values. What aspects of sustainability are most important to you?"),
+    ("Can you explain the concept of risk management?", "Risk management involves identifying, assessing, and mitigating potential risks to protect your investments. Let's discuss risk management strategies, diversification techniques, and ways to safeguard your portfolio against market fluctuations. What level of risk are you comfortable with?"),
 ]
 
 QUESTION_STARTERS = [
@@ -94,7 +104,46 @@ QUESTION_STARTERS = [
     "Can you walk me through",
     "What implications does", 
     "How does one assess",
-    "What are the key aspects of"
+    "What are the key aspects of",
+    "Can you discuss",
+    "What are the main features of",
+    "How does one analyze",
+]
+
+RESPONSE_STYLES = {
+    "analytical": [
+        "Based on historical data and market analysis, {response}",
+        "From a quantitative perspective, {response}",
+        "Looking at the key metrics and indicators, {response}",
+        "When analyzing this in detail, {response}",
+        "Taking a data-driven approach, {response}",
+        "Considering the financial data available, {response}"
+    ],
+    "educational": [
+        "To understand this concept better, {response}",
+        "Here's a clear explanation: {response}",
+        "Let me break this down step by step: {response}",
+        "The key principle to understand is that {response}",
+        "In simple terms, {response}",
+        "Here's a basic overview: {response}"
+    ],
+    "professional": [
+        "From a professional financial perspective, {response}",
+        "According to established financial principles, {response}",
+        "In the current market environment, {response}",
+        "Taking into account various factors, {response}",
+        "In the context of financial analysis, {response}",
+        "Considering the economic outlook, {response}"
+    ]
+}
+
+FOLLOW_UP_PATTERNS = [
+    "What implications does this have for {topic}?",
+    "How does this relate to {topic} in practice?",
+    "Could you elaborate on how {topic} affects investment decisions?",
+    "What are the key risks associated with {topic}?",
+    "How can investors best navigate {topic}?",
+    "What strategies would you recommend for {topic}?"
 ]
 
 def generate_variations(question: str, answer: str, max_variations: int = 3) -> List[Tuple[str, str]]:
@@ -117,8 +166,58 @@ def generate_variations(question: str, answer: str, max_variations: int = 3) -> 
             
     return variations
 
+def enhance_qa_variation(question: str, answer: str) -> List[Tuple[str, str]]:
+    """Generate enhanced variations of QA pairs with different styles"""
+    variations = []
+    base_answer = answer.strip()
+    
+    # Add style variations
+    for style, templates in RESPONSE_STYLES.items():
+        styled_answer = random.choice(templates).format(response=base_answer.lower())
+        variations.append((question, styled_answer))
+    
+    # Add contextual variations
+    market_conditions = ["in a bull market", "during market volatility", 
+                        "in a bear market", "during economic uncertainty"]
+    context = random.choice(market_conditions)
+    contextual_q = f"How does {question.rstrip('?')} apply {context}?"
+    contextual_a = f"Specifically {context}, {base_answer.lower()}"
+    variations.append((contextual_q, contextual_a))
+    
+    return variations
 
 FINANCIAL_QA_SAMPLES = [
+    ("What is ROI?", "ROI (Return on Investment) is a performance metric used to evaluate the efficiency of an investment. It's calculated by dividing the net profit by the cost of investment and expressing it as a percentage. For example, if you invest $1000 and earn $1200, your ROI is 20%."),
+    ("Explain market capitalization.", "Market capitalization, or market cap, represents the total value of a company's shares in the market. It's calculated by multiplying the current share price by the total number of outstanding shares. Companies are often classified as large-cap (>$10B), mid-cap ($2-10B), or small-cap (<$2B)."),
+    ("What is a balance sheet?", "A balance sheet is a financial statement that provides a snapshot of a company's financial position at a specific point in time. It shows the company's assets, liabilities, and shareholders' equity. Assets are what the company owns, liabilities are what it owes, and equity represents the shareholders' ownership."),
+    ("How do you calculate EBITDA?", "EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) is calculated by adding back interest, taxes, depreciation, and amortization to net income. It's used to assess a company's operating performance without the impact of financing decisions, accounting practices, or tax environments."),
+    ("What is a P/E ratio?", "The P/E (Price-to-Earnings) ratio is a valuation metric that compares a company's current share price to its earnings per share (EPS). It indicates how much investors are willing to pay for each dollar of earnings. A high P/E ratio may suggest overvaluation, while a low P/E ratio may indicate undervaluation."),
+    ("Define GDP.", "GDP (Gross Domestic Product) is the total monetary value of all goods and services produced within a country's borders in a specific period. It's used to measure the economic performance and size of an economy. GDP can be calculated using three approaches: production, income, and expenditure."),
+    ("What is a bull market?", "A bull market is a financial market characterized by rising asset prices and investor optimism. It's typically associated with strong economic performance, high employment, and increasing corporate profits. Bull markets are marked by sustained periods of upward price trends."),
+    ("Explain the concept of diversification.", "Diversification is an investment strategy that involves spreading your investments across different assets to reduce risk. By investing in a variety of assets, sectors, or geographic regions, you can minimize the impact of a single investment's performance on your overall portfolio."),
+    ("What is inflation?", "Inflation is the rate at which the general level of prices for goods and services rises, leading to a decrease in purchasing power. It's measured by the Consumer Price Index (CPI) and can erode the value of money over time. Central banks aim to maintain low and stable inflation rates."),
+    ("How do you calculate compound interest?", "Compound interest is calculated by applying the interest rate to the initial principal amount and any accumulated interest. The formula for compound interest is A = P(1 + r/n)^(nt), where A is the future value of the investment, P is the principal amount, r is the annual interest rate, n is the number of times interest is compounded per year, and t is the number of years."),
+    ("What is a stock market index?", "A stock market index is a benchmark that measures the performance of a group of stocks in a particular market. It's used to track the overall performance of the market, compare investment returns, and analyze economic trends. Examples of stock market indices include the S&P 500, Dow Jones Industrial Average, and Nasdaq Composite."),
+    ("Define a recession.", "A recession is a significant decline in economic activity that lasts for an extended period. It's characterized by falling GDP, rising unemployment, reduced consumer spending, and declining business investment. Recessions are typically caused by factors such as reduced consumer confidence, financial crises, or external shocks."),
+    ("What is a dividend?", "A dividend is a distribution of a portion of a company's earnings to its shareholders. It's usually paid in cash or additional shares and is based on the company's profitability and dividend policy. Dividends provide investors with a source of income and can be an indicator of a company's financial health."),
+    ("Explain the concept of supply and demand.", "Supply and demand is an economic model that describes the relationship between the availability of a product or service and the desire for it. When supply exceeds demand, prices tend to fall, and when demand exceeds supply, prices tend to rise. The interaction of supply and demand determines the equilibrium price and quantity in a market."),
+    ("What is a 401(k) retirement plan?", "A 401(k) retirement plan is a tax-advantaged investment account offered by employers to help employees save for retirement. Employees can contribute a portion of their pre-tax income to the account, and employers may match a percentage of the contributions. 401(k) plans offer investment options such as stocks, bonds, and mutual funds."),
+    ("Define a mutual fund.", "A mutual fund is an investment vehicle that pools money from multiple investors to invest in a diversified portfolio of stocks, bonds, or other securities. Mutual funds are managed by professional fund managers and offer investors access to a diversified investment portfolio without the need to select individual securities."),
+    ("What is a credit score?", "A credit score is a numerical representation of an individual's creditworthiness based on their credit history. It's used by lenders to assess the risk of lending money to a borrower and determine the terms of the loan. Credit scores are calculated using factors such as payment history, credit utilization, length of credit history, new credit accounts, and credit mix."),
+    ("Explain the concept of risk management.", "Risk management is the process of identifying, assessing, and prioritizing risks to minimize their impact on an organization's objectives. It involves analyzing potential risks, developing strategies to mitigate or avoid them, and monitoring the effectiveness of risk controls. Effective risk management helps organizations anticipate and respond to threats, opportunities, and uncertainties."),
+    ("What is a budget?", "A budget is a financial plan that outlines an individual's or organization's income and expenses over a specific period. It helps track spending, allocate resources, and achieve financial goals. Budgets can be used for personal finance, business planning, project management, and government operations."),
+    ("Define a stock option.", "A stock option is a contract that gives the holder the right, but not the obligation, to buy or sell a specific number of shares of a stock at a predetermined price within a specified time frame. Stock options are used for investment, speculation, and employee compensation. There are two types of stock options: call options (buy) and put options (sell)."),
+    ("What is a hedge fund?", "A hedge fund is an investment fund that pools capital from accredited investors and institutional investors to invest in a variety of assets and strategies. Hedge funds are managed by professional fund managers and aim to generate high returns while managing risk. They often use leverage, derivatives, and alternative investments to achieve their investment objectives."),
+    ("Explain the concept of liquidity.", "Liquidity refers to the ease with which an asset can be bought or sold in the market without affecting its price. Liquid assets can be quickly converted into cash without significant price changes, while illiquid assets may take longer to sell and may incur a price discount. Liquidity is an important consideration for investors and financial institutions."),
+    ("What is a capital gain?", "A capital gain is the profit realized from the sale of a capital asset, such as stocks, bonds, or real estate. It's calculated by subtracting the purchase price (cost basis) from the selling price. Capital gains can be short-term (held for one year or less) or long-term (held for more than one year) and are subject to capital gains tax."),
+    ("Define a derivative.", "A derivative is a financial contract that derives its value from an underlying asset, index, or reference rate. Derivatives can be used for hedging, speculation, or arbitrage and include options, futures, forwards, and swaps. They allow investors to gain exposure to assets without owning them outright and can be highly leveraged."),
+    ("What is a recession-proof industry?", "A recession-proof industry is a sector of the economy that remains stable or experiences growth during economic downturns. These industries provide essential goods or services that are in demand regardless of economic conditions. Examples of recession-proof industries include healthcare, utilities, consumer staples, and government services."),
+    ("Explain the concept of time value of money.", "The time value of money is the principle that a dollar received today is worth more than a dollar received in the future due to its potential earning capacity. It's based on the premise that money can earn interest or be invested to generate returns over time. The time value of money is a fundamental concept in finance and investment analysis."),
+    ("What is a credit default swap?", "A credit default swap (CDS) is a financial derivative that allows investors to hedge against the risk of default on a debt obligation, such as a bond or loan. The buyer of a CDS pays a premium to the seller in exchange for protection against credit events, such as bankruptcy or default. CDSs are used to manage credit risk and speculate on credit quality."),
+    ("Define a commodity.", "A commodity is a raw material or primary agricultural product that can be bought and sold, such as gold, oil, wheat, or coffee. Commodities are standardized and interchangeable with other goods of the same type, allowing them to be traded on commodity exchanges. They are essential inputs in the production of goods and services and are subject to supply and demand dynamics."),
+    ("What is a yield curve?", "A yield curve is a graphical representation of interest rates on bonds of different maturities. It shows the relationship between bond yields and time to maturity and is used to analyze economic conditions, inflation expectations, and monetary policy. The yield curve can be flat, upward-sloping (normal), or downward-sloping (inverted), each indicating different market expectations."),
+    ("Explain the concept of cost of capital.", "The cost of capital is the rate of return required by investors to provide capital to a company. It represents the cost of financing a company's operations and investments and is used to evaluate the feasibility of projects and investments. The cost of capital is influenced by factors such as interest rates, risk, inflation, and market conditions."),
+    ("What is a leveraged buyout?", "A leveraged buyout (LBO) is a financial transaction in which a company is acquired using a significant amount of borrowed funds or leverage. The acquiring company uses the target company's assets as collateral for the loan and aims to repay the debt with the target company's cash flow or by selling its assets. LBOs are often used to take public companies private."),
     ("What is ROI?", "ROI (Return on Investment) is a performance metric used to evaluate the efficiency of an investment. It's calculated by dividing the net profit by the cost of investment and expressing it as a percentage. For example, if you invest $1000 and earn $1200, your ROI is 20%."),
     ("Explain market capitalization.", "Market capitalization, or market cap, represents the total value of a company's shares in the market. It's calculated by multiplying the current share price by the total number of outstanding shares. Companies are often classified as large-cap (>$10B), mid-cap ($2-10B), or small-cap (<$2B)."),
     ("What is a balance sheet?", "A balance sheet is a financial statement that provides a snapshot of a company's financial position at a specific point in time. It shows the company's assets, liabilities, and shareholders' equity. Assets are what the company owns, liabilities are what it owes, and equity represents the shareholders' ownership."),
@@ -380,7 +479,6 @@ FINANCIAL_QA_SAMPLES = [
     ("What is a down payment?", "A down payment is an initial payment made when purchasing an expensive item, often a percentage of the total cost."),
     ("What is a credit score?", "A credit score is a numerical representation of an individual's creditworthiness."),   
 
-
 ]
 
 
@@ -455,8 +553,48 @@ def generate_variations(question: str, answer: str, max_variations: int = 3) -> 
     return variations
 
 def create_domain_specific_samples() -> List[Dict]:
-    """Create additional domain-specific samples"""
+    """Create additional domain-specific samples with enhanced variation"""
     samples = [
+        {
+            "question": "What is cryptocurrency mining?",
+            "answer": "Cryptocurrency mining is the process of validating and adding new transactions to a blockchain using powerful computers to solve complex mathematical problems. Miners are rewarded with new coins for their work, which helps secure the network and process transactions."
+        },
+        {
+            "question": "How does market sentiment affect stock prices?",
+            "answer": "Market sentiment refers to the overall attitude or feeling that investors have toward a particular security, sector, or market. It can significantly impact stock prices through trading behavior, with positive sentiment driving prices up and negative sentiment pushing them down."
+        },
+        {
+            "question": "What is dollar-cost averaging?",
+            "answer": "Dollar-cost averaging is an investment strategy where an investor consistently buys a fixed dollar amount of a particular asset at regular intervals, regardless of its price. This approach reduces the impact of market volatility and lowers the average cost per share over time."
+        },
+        {
+            "question": "What is an ETF (Exchange-Traded Fund)?",
+            "answer": "An ETF is an investment fund traded on stock exchanges, similar to stocks. It holds assets like stocks, bonds, or commodities and offers investors diversification, liquidity, and cost efficiency."
+        },
+        {
+            "question": "What is the difference between growth stocks and value stocks?",
+            "answer": "Growth stocks are shares of companies expected to grow at a rate faster than the market average, often reinvesting profits. Value stocks are undervalued by the market and typically pay dividends, offering potential returns through stock price appreciation."
+        },
+        {
+            "question": "What are blue-chip stocks?",
+            "answer": "Blue-chip stocks are shares of large, well-established, and financially sound companies with a history of reliable performance, often paying consistent dividends."
+        },
+        {
+            "question": "What is liquidity in finance?",
+            "answer": "Liquidity refers to how quickly and easily an asset can be converted into cash without significantly affecting its price. Cash is the most liquid asset, while real estate is considered less liquid."
+        },
+        {
+            "question": "How do interest rates affect bond prices?",
+            "answer": "Interest rates and bond prices have an inverse relationship. When interest rates rise, existing bond prices fall because new bonds offer higher yields. Conversely, when rates drop, bond prices increase."
+        },
+        {
+            "question": "What is the difference between a bull market and a bear market?",
+            "answer": "A bull market refers to a period of rising stock prices and positive investor sentiment, while a bear market indicates falling stock prices and widespread pessimism among investors."
+        },
+        {
+            "question": "What is compound interest?",
+            "answer": "Compound interest is the interest calculated on both the initial principal and the accumulated interest from previous periods. It allows investments to grow exponentially over time."
+        },
         {
             "question": "What is cryptocurrency mining?",
             "answer": "Cryptocurrency mining is the process of validating and adding new transactions to a blockchain using powerful computers to solve complex mathematical problems. Miners are rewarded with new coins for their work, which helps secure the network and process transactions."
@@ -894,16 +1032,39 @@ def create_domain_specific_samples() -> List[Dict]:
         },
 
     ]
-
-
-    return [
-        {
+   
+    enhanced_samples = []
+    for sample in samples:
+        # Add original sample
+        enhanced_samples.append({
             "personas": ["Financial Expert"],
             "free_messages": [sample["question"]],
             "guided_messages": [sample["answer"]]
-        }
-        for sample in samples
-    ]
+        })
+        
+        # Add variations with different styles
+        variations = enhance_qa_variation(sample["question"], sample["answer"])
+        for var_q, var_a in variations:
+            enhanced_samples.append({
+                "personas": ["Financial Expert"],
+                "free_messages": [var_q],
+                "guided_messages": [var_a]
+            })
+            
+        # Add follow-up questions
+        topic = re.sub(r'^(?:what|how|why|explain|define)\s+(?:is|are|does)\s+', '', 
+                      sample["question"].lower().strip('?'))
+        followup_q = random.choice(FOLLOW_UP_PATTERNS).format(topic=topic)
+        followup_a = f"Regarding {topic}, {sample['answer']}"
+        
+        enhanced_samples.append({
+            "personas": ["Financial Expert"],
+            "previous_utterance": [sample["question"]],
+            "free_messages": [followup_q],
+            "guided_messages": [followup_a]
+        })
+    
+    return enhanced_samples
 
 def create_multi_turn_conversations(base_qa_pairs: List[Tuple[str, str]], max_turns: int = 3) -> List[Dict]:
     """Create multi-turn conversations with limited samples"""
@@ -976,7 +1137,11 @@ def extract_financial_terms(text: str) -> List[str]:
     patterns = [
         r'\b(?:stock|bond|market|investment|portfolio|dividend|equity|asset|liability)\w*\b',
         r'\b(?:ROI|P/E|EPS|EBITDA|GDP|IPO)\b',
-        r'\b(?:bull|bear|volatile|leverage|hedge|risk|return)\w*\b'
+        r'\b(?:bull|bear|volatile|leverage|hedge|risk|return)\w*\b',
+        r'\b(?:crypto|bitcoin|blockchain|cryptocurrency|token)\b',
+        r'\b(?:interest|inflation|yield|diversification|liquidity)\w*\b',
+        r'\b(?:mutual fund|ETF|index fund|401k|IRA|ROTH)\b',
+        r'\b(?:credit score|credit card|credit limit|credit report)\b',
     ]
     
     terms = set()
@@ -991,10 +1156,16 @@ def generate_contextual_answer(question: str, context: str) -> str:
     key_terms = extract_financial_terms(context)
     
     # Create more professional response templates
+    analysis_examples = [
+        "When analyzing {term}, it's important to consider that {context}.",
+        "In financial terms, {term} refers to {context}.",
+        "{term} is a fundamental concept in finance that {context}."
+    ]
+
     templates = {
         "definition": "In financial terms, {term} refers to {context}.",
         "explanation": "{term} is a fundamental concept in finance that {context}.",
-        "analysis": "When analyzing {term}, it's important to consider that {context}."
+        "analysis": f"{random.choice(analysis_examples)}",
     }
     
     # Choose appropriate template based on question type
@@ -1011,27 +1182,63 @@ def generate_contextual_answer(question: str, context: str) -> str:
     return template.format(term=term, context=context)
 
 def augment_dataset_with_variations(data: List[Dict]) -> List[Dict]:
-    """Improved dataset augmentation with better formatting"""
+    """Improved dataset augmentation with enhanced variations"""
     augmented_data = []
     
     for item in data:
-        # Clean any existing responses first
-        item['guided_messages'] = [
-            re.sub(r'(As a financial expert[^.]*\.)\s*\1+', r'\1', msg)
-            for msg in item['guided_messages']
-        ]
+        end_samples = [
+            "This is important considering the current economic environment and market trends.",
+            "This is particularly relevant given current economic conditions.",
+            "This is crucial for making informed investment decisions in today's market environment.",
+            "This is essential for adapting to the changing market dynamics and making informed investment decisions.",
+            "Does this clarify things for you?",
+            "Would you like more information on this topic?",
+            "Does this clear things up for you?",
+            "", "", "", "", "", "", "", "" # Increase likelihood of no context end
+            ]
+        # Add original item
         augmented_data.append(item)
+        
+        # Add style variations
+        if len(item['free_messages'][0]) > 20:
+            for style, templates in RESPONSE_STYLES.items():
+                styled_response = random.choice(templates).format(
+                    response=item['guided_messages'][0].lower()
+                )
+                variation = {
+                    "personas": item["personas"],
+                    "previous_utterance": [],
+                    "free_messages": [item['free_messages'][0]],
+                    "guided_messages": [styled_response]
+                }
+                augmented_data.append(variation)
         
         # Add clarification requests with better formatting
         if len(item['free_messages'][0]) > 20:
             terms = extract_financial_terms(item['free_messages'][0])
             if terms:
+                answer_starter = random.choice([
+                    f"Let me break down {terms[0]} more clearly.",
+                    f"To clarify {terms[0]},",
+                    f"Here's a more detailed explanation of {terms[0]}:",
+                    f"To elaborate on {terms[0]},",
+                    "To clarify further,",
+                    "In simpler terms,",
+                    "In the context of finance,",
+                    "", "", "", "", "", "", "" # Increase likelihood of no starter
+
+                ])
+                answer_end = random.choice(end_samples)
+
                 question = f"Could you explain {terms[0]} in more detail?"
-                answer = clean_text(
-                    f"Let me break down {terms[0]} more clearly. "
-                    f"{item['guided_messages'][0]} "
-                    "This concept is fundamental to understanding financial markets."
-                )
+                if answer_starter and answer_end:
+                    answer = f"{answer_starter} {item['guided_messages'][0]} {answer_end}"
+                elif answer_starter and not answer_end:
+                    answer = f"{answer_starter} {item['guided_messages'][0]}"
+                elif not answer_starter and answer_end:
+                    answer = f"{item['guided_messages'][0]} {answer_end}"
+                else:
+                    answer = f"{item['guided_messages'][0]}"
                 
                 clarification = {
                     "personas": item["personas"],
@@ -1041,20 +1248,34 @@ def augment_dataset_with_variations(data: List[Dict]) -> List[Dict]:
                 }
                 augmented_data.append(clarification)
         
-        # Add market context variations
-        if any(term in item['guided_messages'][0].lower() 
-               for term in ['market', 'investment', 'stock', 'bond']):
+        # Add market context variations with improved responses
+        if any(term in item['guided_messages'][0].lower() for term in ['market', 'investment', 'stock', 'bond', 'portfolio', 'asset', 'liability']):
             context_question = "How does this concept apply in current market conditions?"
             starter = random.choice([
-                "In today's market",
-                "Given the current economic landscape",
-                "Considering recent market trends",
-                "Given the current market volatility"
-            ])
-            context_answer = clean_text(
-                f"{starter}, {item['guided_messages'][0].lower()} "
-                "This is particularly relevant given current economic conditions."
+                "Given the current market", "In today's economic landscape",
+                "In today's market", "In simple terms",
+                "In the context of finance,",
+                "Given current market dynamics",
+                "In light of recent market trends",
+                "Given the current investment climate",
+                "In the context of market volatility",
+                "", "", "", "", "", "" # Increase likelihood of no starter
+                 
+            ]
             )
+            context_end = random.choice(end_samples)
+            if starter and context_end:
+                context_answer = (
+                    f"{starter}, {item['guided_messages'][0].lower()} "
+                    f"{context_end}"
+                )
+            elif starter and not context_end:
+                context_answer = f"{starter}, {item['guided_messages'][0].lower()}"
+            
+            elif not starter and context_end:
+                context_answer = f"{item['guided_messages'][0]} {context_end}"
+            else:
+                context_answer = item['guided_messages'][0]
             
             context_variation = {
                 "personas": item["personas"],
@@ -1079,12 +1300,14 @@ CONVERSATION_FLOWS = {
         possible_responses=[
             "Based on what you've described, your risk tolerance appears to be {risk_level}. This suggests a portfolio with {allocation} might be suitable.",
             "Let's analyze your comfort level with market fluctuations. {explanation}",
-            "Understanding your risk tolerance is crucial for building the right portfolio. {details}"
+            "Understanding your risk tolerance is crucial for building the right portfolio. {details}",
+            "Your risk profile indicates a preference for {allocation} investments. Here's why:"
         ],
         followup_questions=[
             "What's your investment timeline?",
             "How would you react to a 20% market drop?",
-            "What's your primary investment goal?"
+            "What's your primary investment goal?",
+            "Have you considered {alternative} for your portfolio?"
         ]
     ),
     "market_volatility": ConversationTemplate(
@@ -1092,57 +1315,52 @@ CONVERSATION_FLOWS = {
         possible_responses=[
             "Market volatility is normal and can actually present opportunities. Here's why: {explanation}",
             "Let's look at historical patterns to put current market conditions in perspective. {analysis}",
-            "While volatility can be concerning, maintaining a long-term perspective is key because {reason}"
+            "While volatility can be concerning, maintaining a long-term perspective is key because {reason}",
+            "Market corrections can be unsettling, but it's important to remember that {explanation}"
         ],
         followup_questions=[
             "What specific market sectors are you most concerned about?",
             "Have you considered diversifying into {alternative}?",
-            "How has your portfolio performed during previous market corrections?"
+            "How has your portfolio performed during previous market corrections?",
+            "What additional information would help you feel more confident?"
+            "What's your primary investment goal?",
         ]
     )
 }
 
 def generate_dynamic_response(template: str, context: Dict[str, str]) -> str:
     """Generate more natural responses using templates and context"""
-    try:
-        replacements = {
-            "risk_level": random.choice(["conservative", "moderate", "aggressive"]),
-            "allocation": random.choice([
-                "60% bonds and 40% stocks",
-                "70% stocks and 30% bonds",
-                "a balanced mix of growth and value stocks"
-            ]),
-            "explanation": random.choice([
-                "Historical data shows that markets tend to recover over time.",
-                "Diversification can help manage risk while maintaining growth potential.",
-                "A well-balanced portfolio can help weather market volatility."
-            ]),
-            "analysis": random.choice([
-                "Looking at previous market cycles...",
-                "When we examine similar situations in the past...",
-                "Market data indicates that..."
-            ]),
-            "alternative": random.choice([
-                "defensive sectors",
-                "dividend-paying stocks",
-                "fixed-income securities"
-            ]),
-            "details": context.get("additional_info", ""),
-            "reason": context.get("market_context", "")
-        }
-        
-        # Format template once and clean result
-        response = template.format(**replacements).strip()
-        # Remove any duplicate "As a financial expert" phrases
-        response = re.sub(r'(As a financial expert[^.]*\.)\s*\1+', r'\1', response)
-        return response
-        
-    except KeyError as e:
-        logger.warning(f"Missing replacement key: {e}")
-        return template
-    except Exception as e:
-        logger.error(f"Error in response generation: {e}")
-        return template
+    replacements = {
+        "risk_level": random.choice(["conservative", "moderate", "aggressive"]),
+        "allocation": random.choice([
+            "60% bonds and 40% stocks",
+            "70% stocks and 30% bonds",
+            "a balanced mix of growth and value stocks"
+        ]),
+        "explanation": random.choice([
+            "Historical data shows that markets tend to recover over time.",
+            "Diversification can help manage risk while maintaining growth potential.",
+            "A well-balanced portfolio can help weather market volatility."
+            "Long-term investments have historically outperformed short-term strategies."
+            "Staying invested during market downturns can lead to better returns."
+        ]),
+        "analysis": random.choice([
+            "Looking at previous market cycles...",
+            "When we examine similar situations in the past...",
+            "Market data indicates that...",
+            "Historical trends suggest that..."
+            "Based on prior performance..."
+        ]),
+        "alternative": random.choice([
+            "defensive sectors",
+            "dividend-paying stocks",
+            "fixed-income securities"
+        ]),
+        "details": context.get("additional_info", ""),
+        "reason": context.get("market_context", "")
+    }
+    
+    return template.format(**replacements)
 
 def create_natural_conversation(flow_type: str, context: Dict[str, str]) -> List[Dict]:
     """Create more natural conversation flows"""
@@ -1181,16 +1399,14 @@ def create_natural_conversation(flow_type: str, context: Dict[str, str]) -> List
 # Update create_enhanced_dataset function
 def create_enhanced_dataset(
     output_file: str,
-    # include_market_context=True,
-    # max_conversation_turns=3,
     conversation_ratio: float = 0.6,
     qa_ratio: float = 0.4,
-    max_samples: int = 35_000, 
-    max_variations: int = 5,   # Limit variations per QA pair
+    max_samples: int = 35_000,  # Increased for more samples
+    max_variations: int = 7,   # Limit variations per QA pair
     max_followups: int = 3,    # Limit followup questions
     max_words_per_response: int = 40
 ):
-    """Enhanced dataset creation with size controls"""
+    """Enhanced dataset creation with improved diversity"""
     try:
         logger.info("Starting enhanced dataset creation...")
         enhanced_data = []
@@ -1231,7 +1447,7 @@ def create_enhanced_dataset(
                 enhanced_data.extend(samples)
                 logger.info(f"Added {len(samples)} samples from conversation category")
         
-        # Process QA samples with variations
+        # Process QA samples with enhanced variations
         qa_samples = []
         seen_questions = set()
         
@@ -1243,8 +1459,12 @@ def create_enhanced_dataset(
             clean_answer = clean_text(answer)
             truncated_answer = truncate_text(clean_answer, max_words_per_response)
             
-            # Generate limited variations
+            # Generate standard variations
             variations = generate_variations(question, truncated_answer, max_variations)
+            
+            # Generate enhanced variations
+            enhanced_variations = enhance_qa_variation(question, truncated_answer)
+            variations.extend(enhanced_variations)
             
             # Add variations with deduplication
             for var_q, var_a in variations:
@@ -1343,8 +1563,8 @@ def main():
     try:
         # Get the absolute path to the project root
         # project_root = Path(__file__).parent.parent
-        project_root = Path('/home/zahemen/projects/dl-lib/DocAnalyzerAI/')
         
+        project_root = Path('/home/zahemen/projects/dl-lib/DocAnalyzerAI/')
         # Define output paths
         output_dir = project_root / "finetune_data"
         train_file = output_dir / "train.json"

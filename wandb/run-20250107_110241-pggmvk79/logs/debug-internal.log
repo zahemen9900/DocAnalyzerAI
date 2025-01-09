@@ -1,0 +1,18 @@
+{"time":"2025-01-07T11:02:41.325421729Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-07T11:02:41.32543398Z","level":"INFO","msg":"created symlink","path":"/home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/run-20250107_110241-pggmvk79/logs/debug-core.log"}
+{"time":"2025-01-07T11:02:41.482419265Z","level":"INFO","msg":"created new stream","id":"pggmvk79"}
+{"time":"2025-01-07T11:02:41.482467233Z","level":"INFO","msg":"stream: started","id":"pggmvk79"}
+{"time":"2025-01-07T11:02:41.48253006Z","level":"INFO","msg":"writer: Do: started","stream_id":"pggmvk79"}
+{"time":"2025-01-07T11:02:41.482602453Z","level":"INFO","msg":"sender: started","stream_id":"pggmvk79"}
+{"time":"2025-01-07T11:02:41.482632078Z","level":"INFO","msg":"handler: started","stream_id":"pggmvk79"}
+{"time":"2025-01-07T11:02:51.486325264Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai on 10.255.255.254:53: read udp 10.255.255.254:60709->10.255.255.254:53: i/o timeout"}
+{"time":"2025-01-07T11:03:03.79498764Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai on 10.255.255.254:53: read udp 10.255.255.254:59497->10.255.255.254:53: i/o timeout"}
+{"time":"2025-01-07T11:03:18.671234396Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai on 10.255.255.254:53: read udp 10.255.255.254:51415->10.255.255.254:53: i/o timeout"}
+{"time":"2025-01-07T11:03:58.200672798Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-01-07T11:04:11.530373334Z","level":"INFO","msg":"stream: closing","id":"pggmvk79"}
+{"time":"2025-01-07T11:04:11.530493053Z","level":"INFO","msg":"handler: closed","stream_id":"pggmvk79"}
+{"time":"2025-01-07T11:04:11.530526516Z","level":"INFO","msg":"writer: Close: closed","stream_id":"pggmvk79"}
+{"time":"2025-01-07T11:04:11.531193261Z","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: api: failed sending: context canceled"}
+{"time":"2025-01-07T11:04:11.531279974Z","level":"WARN","msg":"runwork: ignoring record after close","work":{"Record":{"RecordType":{"Request":{"RequestType":{"Defer":{}}}},"control":{"always_send":true}}}}
+{"time":"2025-01-07T11:04:11.531410102Z","level":"INFO","msg":"sender: closed","stream_id":"pggmvk79"}
+{"time":"2025-01-07T11:04:11.531783423Z","level":"INFO","msg":"stream: closed","id":"pggmvk79"}
