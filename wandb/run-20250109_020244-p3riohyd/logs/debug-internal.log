@@ -1,0 +1,16 @@
+{"time":"2025-01-09T02:02:44.995517729Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-09T02:02:44.995545571Z","level":"INFO","msg":"created symlink","path":"/home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/run-20250109_020244-p3riohyd/logs/debug-core.log"}
+{"time":"2025-01-09T02:02:45.149801493Z","level":"INFO","msg":"created new stream","id":"p3riohyd"}
+{"time":"2025-01-09T02:02:45.149882259Z","level":"INFO","msg":"stream: started","id":"p3riohyd"}
+{"time":"2025-01-09T02:02:45.149969411Z","level":"INFO","msg":"writer: Do: started","stream_id":"p3riohyd"}
+{"time":"2025-01-09T02:02:45.15003004Z","level":"INFO","msg":"handler: started","stream_id":"p3riohyd"}
+{"time":"2025-01-09T02:02:45.150008729Z","level":"INFO","msg":"sender: started","stream_id":"p3riohyd"}
+{"time":"2025-01-09T02:02:45.590847879Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-09T02:06:16.606583084Z","level":"INFO","msg":"stream: closing","id":"p3riohyd"}
+{"time":"2025-01-09T02:06:16.606699011Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-09T02:06:16.607784696Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-09T02:06:17.836069637Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-09T02:06:18.85136191Z","level":"INFO","msg":"handler: closed","stream_id":"p3riohyd"}
+{"time":"2025-01-09T02:06:18.851411466Z","level":"INFO","msg":"sender: closed","stream_id":"p3riohyd"}
+{"time":"2025-01-09T02:06:18.851386507Z","level":"INFO","msg":"writer: Close: closed","stream_id":"p3riohyd"}
+{"time":"2025-01-09T02:06:18.851446681Z","level":"INFO","msg":"stream: closed","id":"p3riohyd"}

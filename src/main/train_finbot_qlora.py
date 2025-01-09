@@ -2,6 +2,7 @@ import torch
 import os
 import re
 import gc
+from pathlib import Path
 from datasets import Dataset, DatasetDict
 import json
 import logging
@@ -25,6 +26,7 @@ import bitsandbytes as bnb
 from accelerate import Accelerator
 import evaluate
 import random
+import deepspeed
 
 # Configure logging
 logging.basicConfig(
@@ -57,6 +59,54 @@ def setup_lora_config():
         target_modules=["q_proj", "v_proj", "k_proj", "o_proj"],
         inference_mode=False,
     )
+
+def setup_deepspeed_config(training_args: TrainingArguments):
+    """Setup DeepSpeed configuration using values from training arguments"""
+    return {
+        "train_batch_size": "auto",
+        "fp16": {
+            "enabled": training_args.fp16,
+            "loss_scale": 0,
+            "loss_scale_window": 1000,
+            "initial_scale_power": 16,
+            "hysteresis": 2,
+            "min_loss_scale": 1
+        },
+        "zero_optimization": {
+            "stage": 2,  # Stage 2 is generally good balance of memory and speed
+            "offload_optimizer": {
+                "device": "cpu",
+                "pin_memory": True
+            },
+            "allgather_partitions": True,
+            "allgather_bucket_size": 2e8,
+            "overlap_comm": True,
+            "reduce_scatter": True,
+            "reduce_bucket_size": 2e8,
+            "contiguous_gradients": True
+        },
+        "gradient_accumulation_steps": training_args.gradient_accumulation_steps,
+        "gradient_clipping": training_args.max_grad_norm,
+        "steps_per_print": training_args.logging_steps,
+        "optimizer": {
+            "type": "AdamW",
+            "params": {
+                "lr": training_args.learning_rate,
+                "betas": [0.9, 0.999],
+                "eps": 1e-8,
+                "weight_decay": training_args.weight_decay
+            }
+        },
+        "scheduler": {
+            "type": "WarmupDecayLR",
+            "params": {
+                "total_num_steps": training_args.max_steps,
+                "warmup_min_lr": 0,
+                "warmup_max_lr": training_args.learning_rate,
+                "warmup_num_steps": int(training_args.warmup_ratio * training_args.max_steps),
+            }
+        },
+    }
 
 def find_all_linear_layers(model):
     """Find all linear layers for LoRA adaptation"""
@@ -93,6 +143,8 @@ def train(
         
         # Load dataset with error handling
         logger.info("Loading dataset...")
+        parent_dir = Path(__file__).resolve().parent.parent.parent
+        dataset_path = parent_dir / dataset_path
         if not os.path.exists(dataset_path):
             raise FileNotFoundError(f"Dataset not found at {dataset_path}")
             
@@ -249,33 +301,36 @@ def train(
             logger.error("Failed to process datasets", exc_info=True)
             raise
 
-        # Updated training arguments for better stability
+        # Updated training arguments for DeepSpeed
         training_args = TrainingArguments(
             output_dir=output_dir,
-            num_train_epochs=10,  # Increased epochs since we have early stopping
+            num_train_epochs=10,
             per_device_train_batch_size=batch_size,
             per_device_eval_batch_size=batch_size,
-            gradient_accumulation_steps=8,  
-            learning_rate=7e-6,  # Reduced learning rate
+            gradient_accumulation_steps=8,
+            learning_rate=7e-6,
             weight_decay=0.01,
             warmup_ratio=0.1,
             logging_steps=55,
-            eval_strategy="steps",  # Required for early stopping
+            evaluation_strategy="steps",
             save_strategy="steps",
             eval_steps=110,
             save_steps=110,
             save_total_limit=3,
-            load_best_model_at_end=True,  # Required for early stopping
+            load_best_model_at_end=True,
             metric_for_best_model="eval_loss",
             greater_is_better=False,
             fp16=True,
             gradient_checkpointing=True,
-            optim="paged_adamw_32bit",
+            optim="adamw_torch",  # Changed from paged_adamw_32bit for DeepSpeed compatibility
             lr_scheduler_type="cosine_with_restarts",
             group_by_length=True,
-            remove_unused_columns=False,  # Added to prevent column removal errors
-            ddp_find_unused_parameters=False,  # Added for distributed training
+            remove_unused_columns=False,
+            ddp_find_unused_parameters=False,
         )
+        
+        # Then add DeepSpeed config using the training args
+        training_args.deepspeed = setup_deepspeed_config(training_args)
 
         # Create early stopping callback
         early_stopping_callback = EarlyStoppingCallback(
@@ -283,7 +338,7 @@ def train(
             early_stopping_threshold=0.01,    # Minimum change to qualify as an improvement
         )
 
-        # Initialize trainer with early stopping
+        # Initialize trainer with DeepSpeed support
         trainer = Trainer(
             model=model,
             args=training_args,
@@ -296,7 +351,7 @@ def train(
                 padding=True,
                 label_pad_token_id=tokenizer.pad_token_id
             ),
-            callbacks=[early_stopping_callback],  # Add the callback here
+            callbacks=[early_stopping_callback],
         )
 
         # Train with error handling
@@ -331,8 +386,10 @@ def train(
         gc.collect()
 
 if __name__ == "__main__":
-    # Set CUDA device explicitly
-    os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # Use first GPU
+    # Set environment variables for DeepSpeed
+    os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+    os.environ["MASTER_PORT"] = str(29500)  # Default DeepSpeed port
+    
     try:
         train()
     except Exception as e:

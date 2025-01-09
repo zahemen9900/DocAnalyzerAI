@@ -1,0 +1,10 @@
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 70/70 [03:29<00:00,  2.99s/it]
+{'loss': 10.806, 'grad_norm': 4.185260772705078, 'learning_rate': 6.666666666666667e-06, 'epoch': 6.45}
+{'train_runtime': 211.2167, 'train_samples_per_second': 23.199, 'train_steps_per_second': 0.331, 'train_loss': 10.604743303571428, 'epoch': 9.03}
+2025-01-09 02:06:15,075 [INFO] Saving LoRA adapter...
+2025-01-09 02:06:15,839 [INFO] Merging LoRA weights...
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/tuners/lora/bnb.py:355: UserWarning: Merge lora module to 4-bit linear may get different generations due to rounding errors.
+  warnings.warn(
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/modeling_utils.py:2618: UserWarning: Moving the following attributes in the config to the generation config: {'max_length': 60, 'min_length': 20, 'num_beams': 10, 'length_penalty': 0.65, 'no_repeat_ngram_size': 3}. You are seeing this warning because you've set generation parameters in the model config, as opposed to in the generation config.
+  warnings.warn(
+2025-01-09 02:06:16,398 [INFO] Training completed successfully!

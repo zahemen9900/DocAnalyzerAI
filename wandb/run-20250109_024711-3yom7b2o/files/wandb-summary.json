@@ -1,0 +1,1 @@
+{"_wandb":{"runtime":3},"_timestamp":1.7363908321321933e+09,"train_runtime":1.7951,"_runtime":0.919487045,"train/epoch":9.03225806451613,"train_loss":0,"train/global_step":70,"train_steps_per_second":38.995,"_step":0,"train_samples_per_second":2729.624,"total_flos":1.21492897529856e+15}

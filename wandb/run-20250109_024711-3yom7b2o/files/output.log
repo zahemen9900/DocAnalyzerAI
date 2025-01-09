@@ -1,0 +1,714 @@
+  0%|                                                                                                                                     | 0/70 [00:00<?, ?it/s]
+{'train_runtime': 1.7951, 'train_samples_per_second': 2729.624, 'train_steps_per_second': 38.995, 'train_loss': 0.0, 'epoch': 9.03}
+2025-01-09 02:47:12,133 [INFO] Saving LoRA adapter...
+2025-01-09 02:47:12,578 [INFO] Merging LoRA weights...
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/tuners/lora/bnb.py:355: UserWarning: Merge lora module to 4-bit linear may get different generations due to rounding errors.
+  warnings.warn(
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/modeling_utils.py:2618: UserWarning: Moving the following attributes in the config to the generation config: {'max_length': 60, 'min_length': 20, 'num_beams': 10, 'length_penalty': 0.65, 'no_repeat_ngram_size': 3}. You are seeing this warning because you've set generation parameters in the model config, as opposed to in the generation config.
+  warnings.warn(
+2025-01-09 02:47:13,103 [INFO] Exporting to ONNX format...
+2025-01-09 02:47:13,104 [INFO] Exporting model to ONNX format...
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/bitsandbytes/autograd/_functions.py:521: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if A.numel() == A.shape[-1] and A.requires_grad == False:
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/bitsandbytes/autograd/_functions.py:449: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if prod(A.shape) == 0:
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/bitsandbytes/functional.py:1394: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if A.shape[0] == 1:  # is transposed, transpose back
+2025-01-09 02:47:13,184 [ERROR] Failed to export model to ONNX: _Map_base::at
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 175, in export_to_onnx
+    torch.onnx.export(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/__init__.py", line 375, in export
+    export(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 502, in export
+    _export(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 1564, in _export
+    graph, params_dict, torch_out = _model_to_graph(
+                                    ^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 1113, in _model_to_graph
+    graph, params, torch_out, module = _create_jit_graph(model, args)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 997, in _create_jit_graph
+    graph, torch_out = _trace_and_get_graph_from_model(model, args)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 904, in _trace_and_get_graph_from_model
+    trace_graph, torch_out, inputs_states = torch.jit._get_trace_graph(
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/jit/_trace.py", line 1500, in _get_trace_graph
+    outs = ONNXTracedModule(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/jit/_trace.py", line 139, in forward
+    graph, out = torch._C._create_graph_by_tracing(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/jit/_trace.py", line 130, in wrapper
+    outs.append(self.inner(*trace_inputs))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1149, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 775, in forward
+    layer_outputs = encoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 306, in forward
+    hidden_states, attn_weights, _ = self.self_attn(
+                                     ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 160, in forward
+    query_states = self.q_proj(hidden_states) * self.scaling
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/bitsandbytes/nn/modules.py", line 484, in forward
+    return bnb.matmul_4bit(x, self.weight.t(), bias=bias, quant_state=self.weight.quant_state).to(inp_dtype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/bitsandbytes/autograd/_functions.py", line 533, in matmul_4bit
+    return MatMul4Bit.apply(A, B, out, bias, quant_state)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/autograd/function.py", line 575, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: _Map_base::at
+2025-01-09 02:47:13,186 [ERROR] Failed to save model
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 444, in train
+    export_to_onnx(merged_model, tokenizer, output_dir)
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 175, in export_to_onnx
+    torch.onnx.export(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/__init__.py", line 375, in export
+    export(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 502, in export
+    _export(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 1564, in _export
+    graph, params_dict, torch_out = _model_to_graph(
+                                    ^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 1113, in _model_to_graph
+    graph, params, torch_out, module = _create_jit_graph(model, args)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 997, in _create_jit_graph
+    graph, torch_out = _trace_and_get_graph_from_model(model, args)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 904, in _trace_and_get_graph_from_model
+    trace_graph, torch_out, inputs_states = torch.jit._get_trace_graph(
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/jit/_trace.py", line 1500, in _get_trace_graph
+    outs = ONNXTracedModule(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/jit/_trace.py", line 139, in forward
+    graph, out = torch._C._create_graph_by_tracing(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/jit/_trace.py", line 130, in wrapper
+    outs.append(self.inner(*trace_inputs))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1149, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 775, in forward
+    layer_outputs = encoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 306, in forward
+    hidden_states, attn_weights, _ = self.self_attn(
+                                     ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 160, in forward
+    query_states = self.q_proj(hidden_states) * self.scaling
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/bitsandbytes/nn/modules.py", line 484, in forward
+    return bnb.matmul_4bit(x, self.weight.t(), bias=bias, quant_state=self.weight.quant_state).to(inp_dtype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/bitsandbytes/autograd/_functions.py", line 533, in matmul_4bit
+    return MatMul4Bit.apply(A, B, out, bias, quant_state)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/autograd/function.py", line 575, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: _Map_base::at
+2025-01-09 02:47:13,188 [ERROR] Training failed: _Map_base::at
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 444, in train
+    export_to_onnx(merged_model, tokenizer, output_dir)
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 175, in export_to_onnx
+    torch.onnx.export(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/__init__.py", line 375, in export
+    export(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 502, in export
+    _export(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 1564, in _export
+    graph, params_dict, torch_out = _model_to_graph(
+                                    ^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 1113, in _model_to_graph
+    graph, params, torch_out, module = _create_jit_graph(model, args)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 997, in _create_jit_graph
+    graph, torch_out = _trace_and_get_graph_from_model(model, args)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 904, in _trace_and_get_graph_from_model
+    trace_graph, torch_out, inputs_states = torch.jit._get_trace_graph(
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/jit/_trace.py", line 1500, in _get_trace_graph
+    outs = ONNXTracedModule(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/jit/_trace.py", line 139, in forward
+    graph, out = torch._C._create_graph_by_tracing(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/jit/_trace.py", line 130, in wrapper
+    outs.append(self.inner(*trace_inputs))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1149, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 775, in forward
+    layer_outputs = encoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 306, in forward
+    hidden_states, attn_weights, _ = self.self_attn(
+                                     ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 160, in forward
+    query_states = self.q_proj(hidden_states) * self.scaling
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/bitsandbytes/nn/modules.py", line 484, in forward
+    return bnb.matmul_4bit(x, self.weight.t(), bias=bias, quant_state=self.weight.quant_state).to(inp_dtype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/bitsandbytes/autograd/_functions.py", line 533, in matmul_4bit
+    return MatMul4Bit.apply(A, B, out, bias, quant_state)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/autograd/function.py", line 575, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: _Map_base::at
+2025-01-09 02:47:13,339 [ERROR] Script failed: _Map_base::at
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 472, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 444, in train
+    export_to_onnx(merged_model, tokenizer, output_dir)
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 175, in export_to_onnx
+    torch.onnx.export(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/__init__.py", line 375, in export
+    export(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 502, in export
+    _export(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 1564, in _export
+    graph, params_dict, torch_out = _model_to_graph(
+                                    ^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 1113, in _model_to_graph
+    graph, params, torch_out, module = _create_jit_graph(model, args)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 997, in _create_jit_graph
+    graph, torch_out = _trace_and_get_graph_from_model(model, args)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 904, in _trace_and_get_graph_from_model
+    trace_graph, torch_out, inputs_states = torch.jit._get_trace_graph(
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/jit/_trace.py", line 1500, in _get_trace_graph
+    outs = ONNXTracedModule(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/jit/_trace.py", line 139, in forward
+    graph, out = torch._C._create_graph_by_tracing(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/jit/_trace.py", line 130, in wrapper
+    outs.append(self.inner(*trace_inputs))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1149, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 775, in forward
+    layer_outputs = encoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 306, in forward
+    hidden_states, attn_weights, _ = self.self_attn(
+                                     ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 160, in forward
+    query_states = self.q_proj(hidden_states) * self.scaling
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/bitsandbytes/nn/modules.py", line 484, in forward
+    return bnb.matmul_4bit(x, self.weight.t(), bias=bias, quant_state=self.weight.quant_state).to(inp_dtype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/bitsandbytes/autograd/_functions.py", line 533, in matmul_4bit
+    return MatMul4Bit.apply(A, B, out, bias, quant_state)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/autograd/function.py", line 575, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: _Map_base::at
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 472, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 444, in train
+    export_to_onnx(merged_model, tokenizer, output_dir)
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 175, in export_to_onnx
+    torch.onnx.export(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/__init__.py", line 375, in export
+    export(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 502, in export
+    _export(
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 1564, in _export
+    graph, params_dict, torch_out = _model_to_graph(
+                                    ^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 1113, in _model_to_graph
+    graph, params, torch_out, module = _create_jit_graph(model, args)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 997, in _create_jit_graph
+    graph, torch_out = _trace_and_get_graph_from_model(model, args)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 904, in _trace_and_get_graph_from_model
+    trace_graph, torch_out, inputs_states = torch.jit._get_trace_graph(
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/jit/_trace.py", line 1500, in _get_trace_graph
+    outs = ONNXTracedModule(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/jit/_trace.py", line 139, in forward
+    graph, out = torch._C._create_graph_by_tracing(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/jit/_trace.py", line 130, in wrapper
+    outs.append(self.inner(*trace_inputs))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1149, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 775, in forward
+    layer_outputs = encoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 306, in forward
+    hidden_states, attn_weights, _ = self.self_attn(
+                                     ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 160, in forward
+    query_states = self.q_proj(hidden_states) * self.scaling
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/bitsandbytes/nn/modules.py", line 484, in forward
+    return bnb.matmul_4bit(x, self.weight.t(), bias=bias, quant_state=self.weight.quant_state).to(inp_dtype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/bitsandbytes/autograd/_functions.py", line 533, in matmul_4bit
+    return MatMul4Bit.apply(A, B, out, bias, quant_state)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/autograd/function.py", line 575, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: _Map_base::at
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 472, in <module>
+[rank0]:     train()
+[rank0]:   File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 444, in train
+[rank0]:     export_to_onnx(merged_model, tokenizer, output_dir)
+[rank0]:   File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 175, in export_to_onnx
+[rank0]:     torch.onnx.export(
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/__init__.py", line 375, in export
+[rank0]:     export(
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 502, in export
+[rank0]:     _export(
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 1564, in _export
+[rank0]:     graph, params_dict, torch_out = _model_to_graph(
+[rank0]:                                     ^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 1113, in _model_to_graph
+[rank0]:     graph, params, torch_out, module = _create_jit_graph(model, args)
+[rank0]:                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 997, in _create_jit_graph
+[rank0]:     graph, torch_out = _trace_and_get_graph_from_model(model, args)
+[rank0]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/onnx/utils.py", line 904, in _trace_and_get_graph_from_model
+[rank0]:     trace_graph, torch_out, inputs_states = torch.jit._get_trace_graph(
+[rank0]:                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/jit/_trace.py", line 1500, in _get_trace_graph
+[rank0]:     outs = ONNXTracedModule(
+[rank0]:            ^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/jit/_trace.py", line 139, in forward
+[rank0]:     graph, out = torch._C._create_graph_by_tracing(
+[rank0]:                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/jit/_trace.py", line 130, in wrapper
+[rank0]:     outs.append(self.inner(*trace_inputs))
+[rank0]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+[rank0]:     result = self.forward(*input, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+[rank0]:     outputs = self.model(
+[rank0]:               ^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+[rank0]:     result = self.forward(*input, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1149, in forward
+[rank0]:     encoder_outputs = self.encoder(
+[rank0]:                       ^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+[rank0]:     result = self.forward(*input, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 775, in forward
+[rank0]:     layer_outputs = encoder_layer(
+[rank0]:                     ^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+[rank0]:     result = self.forward(*input, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 306, in forward
+[rank0]:     hidden_states, attn_weights, _ = self.self_attn(
+[rank0]:                                      ^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+[rank0]:     result = self.forward(*input, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 160, in forward
+[rank0]:     query_states = self.q_proj(hidden_states) * self.scaling
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1726, in _slow_forward
+[rank0]:     result = self.forward(*input, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/bitsandbytes/nn/modules.py", line 484, in forward
+[rank0]:     return bnb.matmul_4bit(x, self.weight.t(), bias=bias, quant_state=self.weight.quant_state).to(inp_dtype)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/bitsandbytes/autograd/_functions.py", line 533, in matmul_4bit
+[rank0]:     return MatMul4Bit.apply(A, B, out, bias, quant_state)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/autograd/function.py", line 575, in apply
+[rank0]:     return super().apply(*args, **kwargs)  # type: ignore[misc]
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: RuntimeError: _Map_base::at

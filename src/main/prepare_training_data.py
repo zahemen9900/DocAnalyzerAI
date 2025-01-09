@@ -1562,10 +1562,8 @@ def create_enhanced_dataset(
 def main():
     try:
         # Get the absolute path to the project root
-        # project_root = Path(__file__).parent.parent
-        
-        project_root = Path('/home/zahemen/projects/dl-lib/DocAnalyzerAI/')
-        # Define output paths
+        project_root = Path(__file__).parent.parent.parent
+                # Define output paths
         output_dir = project_root / "finetune_data"
         train_file = output_dir / "train.json"
         val_file = output_dir / "val.json"

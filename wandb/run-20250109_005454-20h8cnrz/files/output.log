@@ -1,0 +1,117 @@
+  0%|▎                                                                                                                        | 8/2680 [00:35<3:01:58,  4.09s/it]Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 337, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 305, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2388, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3485, in training_step
+    loss = self.compute_loss(model, inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 3532, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/accelerate/utils/operations.py", line 823, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/accelerate/utils/operations.py", line 811, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/peft_model.py", line 1994, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/tuners/tuners_utils.py", line 197, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1296, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 1167, in forward
+    decoder_outputs = self.decoder(
+                      ^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 996, in forward
+    layer_outputs = self._gradient_checkpointing_func(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/_compile.py", line 32, in inner
+    return disable_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 632, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 489, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/autograd/function.py", line 575, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 264, in forward
+    outputs = run_function(*args)
+              ^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 405, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+                                                          ^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/models/blenderbot/modeling_blenderbot.py", line 160, in forward
+    query_states = self.q_proj(hidden_states) * self.scaling
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/tuners/lora/bnb.py", line 518, in forward
+    output = lora_B(lora_A(dropout(x))) * scaling
+                    ^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
