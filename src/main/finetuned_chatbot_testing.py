@@ -29,6 +29,11 @@ DISCOURAGED_PATTERNS = [
     r"My (?:husband|wife|ex-wife)",
     # r"Do you have .*\?",
     r"What do you .*\?",
+    r"Personal finance (?:is|refers to|means|describes|encompasses).*?[.]",  # Match sentences starting with "Personal finance"
+    r"Financial Experience (?:is|refers to|means|describes|encompasses).*?[.]",  # Match sentences starting with "Personal finance"
+    r"(?:It's|It is) (?:a )?(?:very |really |quite )?interesting (?:topic|subject).*?[.]",  # Match variations of "interesting topic"
+    r"This is (?:a )?(?:very |really |quite )?interesting (?:topic|subject).*?[.]",
+    r"(?:This|That) makes it (?:very |really |quite )?interesting.*?[.]",
 ]
 
 def filter_response(response: str) -> str:
@@ -41,14 +46,13 @@ def filter_response(response: str) -> str:
     response = re.sub(r'\s+', ' ', response)
     response = re.sub(r'\.+', '.', response)
     response = re.sub(r'\s+\.', '.', response)
-    response = response.strip()
     
-    # Remove first-person statements
-    response = re.sub(r"I think |I believe |In my experience |I would say ", "", response)
+    # Remove starting words if they begin with connecting words after filtering
+    response = re.sub(r'^(?:And|But|So|Therefore|Thus|Hence|However|Moreover)\s*,?\s*', '', response.strip())
     
-    return response
+    return response.strip()
 
-def stream_text(text: str, delay: float = 0.07) -> Iterator[str]:
+def stream_text(text: str, delay: float = 0.05) -> Iterator[str]:
     """Stream text word by word with a delay"""
     words = text.split()
     for i, word in enumerate(words):

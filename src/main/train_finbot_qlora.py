@@ -1,3 +1,4 @@
+from numpy import full
 import torch
 import os
 import re
@@ -143,6 +144,7 @@ def train(
         
         # Load dataset with error handling
         logger.info("Loading dataset...")
+
         parent_dir = Path(__file__).resolve().parent.parent.parent
         dataset_path = parent_dir / dataset_path
         if not os.path.exists(dataset_path):
@@ -365,12 +367,15 @@ def train(
         # Save with error handling
         try:
             logger.info("Saving LoRA adapter...")
-            model.save_pretrained(f"{output_dir}/final_adapter")
-            tokenizer.save_pretrained(f"{output_dir}/final_adapter")
+            full_output_dir = Path(__file__).resolve().parent.parent.parent / output_dir
+            model.save_pretrained(full_output_dir / "final_adapter")
+            tokenizer.save_pretrained(full_output_dir / "final_adapter")
+
             
             logger.info("Merging LoRA weights...")
             merged_model = model.merge_and_unload()
-            merged_model.save_pretrained(f"{output_dir}/merged_model")
+            merged_model.save_pretrained(full_output_dir / "final_model")
+            logger.info("Model saved successfully!")
         except Exception as e:
             logger.error("Failed to save model", exc_info=True)
             raise

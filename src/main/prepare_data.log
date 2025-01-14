@@ -18,3 +18,258 @@
 2025-01-09 03:13:15,935 - __main__ - INFO - Saved 24500 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
 2025-01-09 03:13:16,042 - __main__ - INFO - Saved 10500 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
 2025-01-09 03:13:16,042 - __main__ - INFO - Dataset preparation completed successfully!
+2025-01-09 09:51:02,255 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2025-01-09 09:51:02,256 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 09:51:02,256 - __main__ - INFO - Starting enhanced dataset creation...
+2025-01-09 09:51:02,257 - __main__ - INFO - Added 5250 samples from conversation category
+2025-01-09 09:51:02,260 - __main__ - INFO - Added 243 QA samples
+2025-01-09 09:51:02,377 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 09:51:02,378 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2025-01-09 09:51:02,608 - __main__ - INFO - Dataset composition:
+2025-01-09 09:51:02,609 - __main__ - INFO - Financial Planning: 14 samples
+2025-01-09 09:51:02,609 - __main__ - INFO - Market Analysis: 0 samples
+2025-01-09 09:51:02,609 - __main__ - INFO - Investment Advice: 0 samples
+2025-01-09 09:51:02,609 - __main__ - INFO - Risk Management: 0 samples
+2025-01-09 09:51:02,609 - __main__ - INFO - QA Samples: 243 samples
+2025-01-09 09:51:02,609 - __main__ - INFO - Total Samples: 24916 samples
+2025-01-09 09:51:02,783 - __main__ - INFO - Saved 17441 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2025-01-09 09:51:02,851 - __main__ - INFO - Saved 7475 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2025-01-09 09:51:02,852 - __main__ - INFO - Dataset preparation completed successfully!
+2025-01-09 09:51:30,809 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2025-01-09 09:51:30,809 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 09:51:30,809 - __main__ - INFO - Starting enhanced dataset creation...
+2025-01-09 09:51:30,810 - __main__ - INFO - Added 5250 samples from conversation category
+2025-01-09 09:51:30,812 - __main__ - INFO - Added 243 QA samples
+2025-01-09 09:51:30,937 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 09:51:30,937 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2025-01-09 09:51:31,159 - __main__ - INFO - Dataset composition:
+2025-01-09 09:51:31,159 - __main__ - INFO - Financial Planning: 14 samples
+2025-01-09 09:51:31,159 - __main__ - INFO - Market Analysis: 0 samples
+2025-01-09 09:51:31,159 - __main__ - INFO - Investment Advice: 0 samples
+2025-01-09 09:51:31,159 - __main__ - INFO - Risk Management: 0 samples
+2025-01-09 09:51:31,159 - __main__ - INFO - QA Samples: 243 samples
+2025-01-09 09:51:31,159 - __main__ - INFO - Total Samples: 24923 samples
+2025-01-09 09:51:31,320 - __main__ - INFO - Saved 17446 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2025-01-09 09:51:31,388 - __main__ - INFO - Saved 7477 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2025-01-09 09:51:31,388 - __main__ - INFO - Dataset preparation completed successfully!
+2025-01-09 09:52:58,834 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2025-01-09 09:52:58,834 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 09:52:58,834 - __main__ - INFO - Starting enhanced dataset creation...
+2025-01-09 09:52:58,834 - __main__ - INFO - Added 5250 samples from conversation category
+2025-01-09 09:52:58,837 - __main__ - INFO - Added 243 QA samples
+2025-01-09 09:52:58,954 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 09:52:58,955 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2025-01-09 09:52:59,184 - __main__ - INFO - Dataset composition:
+2025-01-09 09:52:59,184 - __main__ - INFO - Financial Planning: 14 samples
+2025-01-09 09:52:59,184 - __main__ - INFO - Market Analysis: 0 samples
+2025-01-09 09:52:59,184 - __main__ - INFO - Investment Advice: 0 samples
+2025-01-09 09:52:59,184 - __main__ - INFO - Risk Management: 0 samples
+2025-01-09 09:52:59,184 - __main__ - INFO - QA Samples: 243 samples
+2025-01-09 09:52:59,184 - __main__ - INFO - Total Samples: 24935 samples
+2025-01-09 09:52:59,348 - __main__ - INFO - Saved 17454 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2025-01-09 09:52:59,413 - __main__ - INFO - Saved 7481 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2025-01-09 09:52:59,413 - __main__ - INFO - Dataset preparation completed successfully!
+2025-01-09 10:11:39,821 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2025-01-09 10:11:39,821 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 10:11:39,821 - __main__ - INFO - Starting enhanced dataset creation...
+2025-01-09 10:11:39,821 - __main__ - INFO - Added 5250 samples from conversation category
+2025-01-09 10:11:39,826 - __main__ - INFO - Added 190 QA samples
+2025-01-09 10:11:39,934 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 10:11:39,934 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2025-01-09 10:11:40,150 - __main__ - INFO - Dataset composition:
+2025-01-09 10:11:40,150 - __main__ - INFO - Financial Planning: 14 samples
+2025-01-09 10:11:40,150 - __main__ - INFO - Market Analysis: 0 samples
+2025-01-09 10:11:40,150 - __main__ - INFO - Investment Advice: 0 samples
+2025-01-09 10:11:40,150 - __main__ - INFO - Risk Management: 0 samples
+2025-01-09 10:11:40,150 - __main__ - INFO - QA Samples: 190 samples
+2025-01-09 10:11:40,150 - __main__ - INFO - Total Samples: 23923 samples
+2025-01-09 10:11:40,314 - __main__ - INFO - Saved 16746 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2025-01-09 10:11:40,378 - __main__ - INFO - Saved 7177 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2025-01-09 10:11:40,378 - __main__ - INFO - Dataset preparation completed successfully!
+2025-01-09 10:22:11,364 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2025-01-09 10:22:11,364 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 10:22:11,364 - __main__ - INFO - Starting enhanced dataset creation...
+2025-01-09 10:22:11,364 - __main__ - INFO - Added 5250 samples from conversation category
+2025-01-09 10:22:11,369 - __main__ - INFO - Added 189 QA samples
+2025-01-09 10:22:11,542 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 10:22:11,542 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2025-01-09 10:22:11,753 - __main__ - INFO - Dataset composition:
+2025-01-09 10:22:11,753 - __main__ - INFO - Financial Planning: 14 samples
+2025-01-09 10:22:11,753 - __main__ - INFO - Market Analysis: 0 samples
+2025-01-09 10:22:11,753 - __main__ - INFO - Investment Advice: 0 samples
+2025-01-09 10:22:11,753 - __main__ - INFO - Risk Management: 0 samples
+2025-01-09 10:22:11,753 - __main__ - INFO - QA Samples: 189 samples
+2025-01-09 10:22:11,753 - __main__ - INFO - Total Samples: 23767 samples
+2025-01-09 10:22:11,913 - __main__ - INFO - Saved 16636 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2025-01-09 10:22:11,976 - __main__ - INFO - Saved 7131 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2025-01-09 10:22:11,976 - __main__ - INFO - Dataset preparation completed successfully!
+2025-01-09 10:24:24,648 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2025-01-09 10:24:24,648 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 10:24:24,648 - __main__ - INFO - Starting enhanced dataset creation...
+2025-01-09 10:24:24,648 - __main__ - INFO - Added 5250 samples from conversation category
+2025-01-09 10:24:24,653 - __main__ - INFO - Added 189 QA samples
+2025-01-09 10:24:24,827 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 10:24:24,827 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2025-01-09 10:24:25,034 - __main__ - INFO - Dataset composition:
+2025-01-09 10:24:25,034 - __main__ - INFO - Financial Planning: 14 samples
+2025-01-09 10:24:25,034 - __main__ - INFO - Market Analysis: 0 samples
+2025-01-09 10:24:25,034 - __main__ - INFO - Investment Advice: 0 samples
+2025-01-09 10:24:25,034 - __main__ - INFO - Risk Management: 0 samples
+2025-01-09 10:24:25,034 - __main__ - INFO - QA Samples: 189 samples
+2025-01-09 10:24:25,035 - __main__ - INFO - Total Samples: 23773 samples
+2025-01-09 10:24:25,194 - __main__ - INFO - Saved 16641 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2025-01-09 10:24:25,257 - __main__ - INFO - Saved 7132 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2025-01-09 10:24:25,257 - __main__ - INFO - Dataset preparation completed successfully!
+2025-01-09 10:24:34,272 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2025-01-09 10:24:34,272 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 10:24:34,273 - __main__ - INFO - Starting enhanced dataset creation...
+2025-01-09 10:24:34,273 - __main__ - INFO - Added 5250 samples from conversation category
+2025-01-09 10:24:34,277 - __main__ - INFO - Added 189 QA samples
+2025-01-09 10:24:34,469 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 10:24:34,469 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2025-01-09 10:24:34,679 - __main__ - INFO - Dataset composition:
+2025-01-09 10:24:34,679 - __main__ - INFO - Financial Planning: 14 samples
+2025-01-09 10:24:34,679 - __main__ - INFO - Market Analysis: 0 samples
+2025-01-09 10:24:34,679 - __main__ - INFO - Investment Advice: 0 samples
+2025-01-09 10:24:34,679 - __main__ - INFO - Risk Management: 0 samples
+2025-01-09 10:24:34,679 - __main__ - INFO - QA Samples: 189 samples
+2025-01-09 10:24:34,679 - __main__ - INFO - Total Samples: 23804 samples
+2025-01-09 10:24:34,844 - __main__ - INFO - Saved 16662 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2025-01-09 10:24:34,907 - __main__ - INFO - Saved 7142 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2025-01-09 10:24:34,907 - __main__ - INFO - Dataset preparation completed successfully!
+2025-01-09 10:25:00,786 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2025-01-09 10:25:00,786 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 10:25:00,786 - __main__ - INFO - Starting enhanced dataset creation...
+2025-01-09 10:25:00,786 - __main__ - INFO - Added 5250 samples from conversation category
+2025-01-09 10:25:00,791 - __main__ - INFO - Added 192 QA samples
+2025-01-09 10:25:00,970 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 10:25:00,970 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2025-01-09 10:25:01,174 - __main__ - INFO - Dataset composition:
+2025-01-09 10:25:01,174 - __main__ - INFO - Financial Planning: 14 samples
+2025-01-09 10:25:01,174 - __main__ - INFO - Market Analysis: 0 samples
+2025-01-09 10:25:01,174 - __main__ - INFO - Investment Advice: 0 samples
+2025-01-09 10:25:01,174 - __main__ - INFO - Risk Management: 0 samples
+2025-01-09 10:25:01,174 - __main__ - INFO - QA Samples: 192 samples
+2025-01-09 10:25:01,174 - __main__ - INFO - Total Samples: 23785 samples
+2025-01-09 10:25:01,329 - __main__ - INFO - Saved 16649 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2025-01-09 10:25:01,394 - __main__ - INFO - Saved 7136 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2025-01-09 10:25:01,394 - __main__ - INFO - Dataset preparation completed successfully!
+2025-01-09 10:34:48,191 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2025-01-09 10:34:48,191 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 10:34:48,191 - __main__ - INFO - Starting enhanced dataset creation...
+2025-01-09 10:34:48,191 - __main__ - INFO - Added 5250 samples from conversation category
+2025-01-09 10:34:48,195 - __main__ - INFO - Added 190 QA samples
+2025-01-09 10:34:48,359 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 10:34:48,359 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2025-01-09 10:34:48,566 - __main__ - INFO - Dataset composition:
+2025-01-09 10:34:48,566 - __main__ - INFO - Financial Planning: 14 samples
+2025-01-09 10:34:48,566 - __main__ - INFO - Market Analysis: 0 samples
+2025-01-09 10:34:48,566 - __main__ - INFO - Investment Advice: 0 samples
+2025-01-09 10:34:48,566 - __main__ - INFO - Risk Management: 0 samples
+2025-01-09 10:34:48,566 - __main__ - INFO - QA Samples: 190 samples
+2025-01-09 10:34:48,566 - __main__ - INFO - Total Samples: 23733 samples
+2025-01-09 10:34:48,717 - __main__ - INFO - Saved 16613 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2025-01-09 10:34:48,780 - __main__ - INFO - Saved 7120 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2025-01-09 10:34:48,780 - __main__ - INFO - Dataset preparation completed successfully!
+2025-01-09 10:38:30,060 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2025-01-09 10:38:30,061 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 10:38:30,061 - __main__ - INFO - Starting enhanced dataset creation...
+2025-01-09 10:38:30,061 - __main__ - INFO - Added 5250 samples from conversation category
+2025-01-09 10:38:30,064 - __main__ - INFO - Added 243 QA samples
+2025-01-09 10:38:30,195 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 10:38:30,195 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2025-01-09 10:38:30,422 - __main__ - INFO - Dataset composition:
+2025-01-09 10:38:30,422 - __main__ - INFO - Financial Planning: 14 samples
+2025-01-09 10:38:30,422 - __main__ - INFO - Market Analysis: 0 samples
+2025-01-09 10:38:30,422 - __main__ - INFO - Investment Advice: 0 samples
+2025-01-09 10:38:30,422 - __main__ - INFO - Risk Management: 0 samples
+2025-01-09 10:38:30,422 - __main__ - INFO - QA Samples: 243 samples
+2025-01-09 10:38:30,422 - __main__ - INFO - Total Samples: 24962 samples
+2025-01-09 10:38:30,592 - __main__ - INFO - Saved 17473 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2025-01-09 10:38:30,667 - __main__ - INFO - Saved 7489 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2025-01-09 10:38:30,667 - __main__ - INFO - Dataset preparation completed successfully!
+2025-01-09 10:54:57,136 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2025-01-09 10:54:57,137 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 10:54:57,137 - __main__ - INFO - Starting enhanced dataset creation...
+2025-01-09 10:54:57,137 - __main__ - INFO - Added 5250 samples from conversation category
+2025-01-09 10:54:57,145 - __main__ - INFO - Added 212 QA samples
+2025-01-09 10:54:57,253 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 10:54:57,253 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2025-01-09 10:54:57,463 - __main__ - INFO - Dataset composition:
+2025-01-09 10:54:57,463 - __main__ - INFO - Financial Planning: 14 samples
+2025-01-09 10:54:57,463 - __main__ - INFO - Market Analysis: 0 samples
+2025-01-09 10:54:57,463 - __main__ - INFO - Investment Advice: 0 samples
+2025-01-09 10:54:57,463 - __main__ - INFO - Risk Management: 0 samples
+2025-01-09 10:54:57,463 - __main__ - INFO - QA Samples: 212 samples
+2025-01-09 10:54:57,463 - __main__ - INFO - Total Samples: 24251 samples
+2025-01-09 10:54:57,618 - __main__ - INFO - Saved 16975 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2025-01-09 10:54:57,690 - __main__ - INFO - Saved 7276 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2025-01-09 10:54:57,691 - __main__ - INFO - Dataset preparation completed successfully!
+2025-01-09 11:32:21,840 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2025-01-09 11:32:21,841 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 11:32:21,841 - __main__ - INFO - Starting enhanced dataset creation...
+2025-01-09 11:32:21,841 - __main__ - INFO - Added 5250 samples from conversation category
+2025-01-09 11:32:21,849 - __main__ - INFO - Added 212 QA samples
+2025-01-09 11:32:21,965 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 11:32:21,965 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2025-01-09 11:32:22,183 - __main__ - INFO - Dataset composition:
+2025-01-09 11:32:22,183 - __main__ - INFO - Financial Planning: 14 samples
+2025-01-09 11:32:22,183 - __main__ - INFO - Market Analysis: 0 samples
+2025-01-09 11:32:22,183 - __main__ - INFO - Investment Advice: 0 samples
+2025-01-09 11:32:22,183 - __main__ - INFO - Risk Management: 0 samples
+2025-01-09 11:32:22,183 - __main__ - INFO - QA Samples: 212 samples
+2025-01-09 11:32:22,183 - __main__ - INFO - Total Samples: 24246 samples
+2025-01-09 11:32:22,341 - __main__ - INFO - Saved 16972 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2025-01-09 11:32:22,409 - __main__ - INFO - Saved 7274 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2025-01-09 11:32:22,410 - __main__ - INFO - Dataset preparation completed successfully!
+2025-01-09 11:34:56,368 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2025-01-09 11:34:56,369 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 11:34:56,370 - __main__ - INFO - Starting enhanced dataset creation...
+2025-01-09 11:34:56,370 - __main__ - INFO - Added 5250 samples from conversation category
+2025-01-09 11:34:56,372 - __main__ - INFO - Added 243 QA samples
+2025-01-09 11:34:56,489 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 11:34:56,489 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2025-01-09 11:34:56,708 - __main__ - INFO - Dataset composition:
+2025-01-09 11:34:56,708 - __main__ - INFO - Financial Planning: 14 samples
+2025-01-09 11:34:56,708 - __main__ - INFO - Market Analysis: 0 samples
+2025-01-09 11:34:56,708 - __main__ - INFO - Investment Advice: 0 samples
+2025-01-09 11:34:56,708 - __main__ - INFO - Risk Management: 0 samples
+2025-01-09 11:34:56,708 - __main__ - INFO - QA Samples: 243 samples
+2025-01-09 11:34:56,708 - __main__ - INFO - Total Samples: 24962 samples
+2025-01-09 11:34:56,872 - __main__ - INFO - Saved 17473 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2025-01-09 11:34:56,941 - __main__ - INFO - Saved 7489 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2025-01-09 11:34:56,942 - __main__ - INFO - Dataset preparation completed successfully!
+2025-01-09 12:38:31,505 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2025-01-09 12:38:31,506 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 12:38:31,506 - __main__ - INFO - Starting enhanced dataset creation...
+2025-01-09 12:38:31,506 - __main__ - INFO - Added 5250 samples from conversation category
+2025-01-09 12:38:31,510 - __main__ - INFO - Added 243 QA samples
+2025-01-09 12:38:31,718 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 12:38:31,718 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2025-01-09 12:38:31,985 - __main__ - INFO - Dataset composition:
+2025-01-09 12:38:31,985 - __main__ - INFO - Financial Planning: 14 samples
+2025-01-09 12:38:31,985 - __main__ - INFO - Market Analysis: 0 samples
+2025-01-09 12:38:31,985 - __main__ - INFO - Investment Advice: 0 samples
+2025-01-09 12:38:31,985 - __main__ - INFO - Risk Management: 0 samples
+2025-01-09 12:38:31,985 - __main__ - INFO - QA Samples: 243 samples
+2025-01-09 12:38:31,986 - __main__ - INFO - Total Samples: 24960 samples
+2025-01-09 12:38:32,179 - __main__ - INFO - Saved 17472 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2025-01-09 12:38:32,296 - __main__ - INFO - Saved 7488 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2025-01-09 12:38:32,296 - __main__ - INFO - Dataset preparation completed successfully!
+2025-01-09 12:45:59,407 - __main__ - INFO - Project root: /home/zahemen/projects/dl-lib/DocAnalyzerAI
+2025-01-09 12:45:59,407 - __main__ - INFO - Output directory: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 12:45:59,407 - __main__ - INFO - Starting enhanced dataset creation...
+2025-01-09 12:45:59,408 - __main__ - INFO - Added 5250 samples from conversation category
+2025-01-09 12:45:59,410 - __main__ - INFO - Added 243 QA samples
+2025-01-09 12:45:59,541 - __main__ - INFO - Ensured directory exists: /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data
+2025-01-09 12:45:59,541 - __main__ - INFO - Saving dataset to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json...
+2025-01-09 12:45:59,784 - __main__ - INFO - Dataset composition:
+2025-01-09 12:45:59,784 - __main__ - INFO - Financial Planning: 14 samples
+2025-01-09 12:45:59,784 - __main__ - INFO - Market Analysis: 0 samples
+2025-01-09 12:45:59,784 - __main__ - INFO - Investment Advice: 0 samples
+2025-01-09 12:45:59,784 - __main__ - INFO - Risk Management: 0 samples
+2025-01-09 12:45:59,784 - __main__ - INFO - QA Samples: 243 samples
+2025-01-09 12:45:59,784 - __main__ - INFO - Total Samples: 24978 samples
+2025-01-09 12:45:59,962 - __main__ - INFO - Saved 17484 training examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/train.json
+2025-01-09 12:46:00,041 - __main__ - INFO - Saved 7494 validation examples to /home/zahemen/projects/dl-lib/DocAnalyzerAI/finetune_data/val.json
+2025-01-09 12:46:00,041 - __main__ - INFO - Dataset preparation completed successfully!
