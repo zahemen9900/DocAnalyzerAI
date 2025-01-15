@@ -1,0 +1,358 @@
+Account:  balancing set of general ledger codes in which cash and other financial resources, together with all related liabilities and residual equities or balances, and changes therein, are recorded and segregated for the purpose of carrying on specific activities or attaining certain objectives in accordance with special regulations, restrictions, or limitations. For reporting purposes, the state identifies major accounts, and administratively combines all remaining accounts into roll-up funds. Most accounts are set up in state law to isolate specific activities.
+
+Account code or number:  character alpha/numeric code assigned by OFM to identify each account. (See the Fund Reference Manual.)
+
+Accrual basis: The basis of accounting whereby revenues are recognized when they are earned and measurable regardless of when collected, and expenses are recorded on a matching basis when incurred. All proprietary and fiduciary funds use the accrual basis of accounting.
+
+Accrued expenditures: Expenditures that meet the appropriate recognition criteria of the account type involved but have not been paid. Accrued expenditures are expected to be paid in a subsequent accounting period.
+
+Accrued liabilities: Liabilities reflecting the obligation to pay for goods or services that have been incurred or received but not paid for by the end of the accounting period. Accrued liabilities related to refunds of revenue are offset to the revenue originally recorded.
+
+Accrued revenues: Revenues that meet the appropriate recognition criteria of the fund type involved, but are not realized until a subsequent accounting period. Also refers to Accrual Basis and Modified Accrual Basis.
+
+Acquisition: This type of project includes the acquisition of land, structures, and buildings. These are fixed assets that have no relationship to the addition or improvement to, or the repair or replacement of, existing fixed assets. Examples of an acquisition are purchase of a tract of land or purchase of a building.
+
+Activity: An activity is something an organization does to accomplish its goals and objectives. An activity consumes resources and produces a product, service or result. One way to define activities is to consider how agency employees describe their jobs. What do you do? For whom? Why is it valuable? For the Activity Inventory, an agency’s work should be broken down into its discrete functions or services. 1
+
+Addendum: A written or graphic instrument issued by the architect before execution of the construction contract that modifies or interprets the bidding documents by additions, deletions, clarifications, or corrections.
+
+Additional services: Professional services that may, if authorized or confirmed in writing by the agency/institution, be rendered by the architect or other consultants in addition to the basic services identified in the owner-architect agreement.
+
+See Form C: 100 (2014) Sections B3 and B4.
+
+Additive alternate bid: An amount stated in the bid to be added to the amount of the base bid if the corresponding change in work, as described in the bidding documents, is accepted.
+
+Allocation:  sum appropriation that is designated for expenditure by specific governmental units and/or for specific purposes, activities, or objects. For example, the sum appropriation to needed basis, or according to specified criteria.
+
+Allotment: An agency’s plan of estimated expenditures, revenues, cash disbursements, and cash receipts for each month of the biennium.
+
+Alternate financing: Proposals that cover a wide range of financial contracts that call for the development or use of space by state agencies through a contractual arrangement with a developer or financing entity. The sale of debt obligations, Certificates of Participation (COPs) through the State Treasurer may be involved, or financing may be offered by a private developer. Title to the property involved may transfer to the state either upon exercise of an option or at the termination of the contract.
+
+Alternative analysis: Involves identifying different ways of meeting the functional requirements of the program including various construction solutions to a problem or whether to lease, buy, build, or use some other financing techniques. benefit or life- cycle costing analysis to determine comparable costs of alternatives.
+
+Alternative public works: Refers to public works processes authorized under RCW 39.10 and includes General Contractor/Construction Manager (GC/
+
+Appropriation: A legal authorization to make expenditures and incur obligations for specific purposes from a specific account over a specific time period. Appropriations typically limit expenditures to a specific amount and purpose within a fiscal year or biennial timeframe. Only the Legislature can make appropriations in Washington State. 2
+
+Architect/engineer (A/E): A party to a contract to provide professional architectural and/or engineering design services to an agency or institution.
+
+Artwork allowance: The cost of artwork for original construction of any building excluding storage sheds, warehouses, or buildings of a temporary nature, as provided in RCW 43.17.200. Universities and colleges must compute artwork allowances on the cost of original construction and on the cost of major renovation or remodeling work exceeding $200,000, as provided in RCW 28B.10.027.
+
+Base bid: An offer to do construction work for payment, the acceptance of which constitutes a contract between the contractor who made the bid (the bidder) and the agency or institution who accepted it exclusive of adjustments for additive alternates. Also know as a proposal or a tender; often called a prime bid when made by a construction company that hopes to become the prime contractor, or a sub-bid when made by a company that hopes to become a subcontractor.
+
+Basic design services: Architectural/Engineering (A/E) Basic Design Services consist of those services described in the Guidelines for Determining Architect/Engineer Fees for Public Works Building Projects in Washington State. These design services include normal architectural, structural, mechanical, electrical, and civil engineering services for the project.
+
+Biennialization: Converting expenditures that occurred for only part of a biennium into the amount needed for a full biennium of implementation.
+
+Biennium:  year fiscal period. The Washington state biennium runs from July 1 of an odd- numbered year to June 30 of the next odd-numbered year.
+
+Bond: A debt instrument issued through a formal legal procedure and secured either by the pledge of specific properties or revenues or by the general credit of the state. Examples include bid bond, performance and payment bond.
+
+Bow wave:  time.
+
+Budget: A plan of financial operation embodying an estimate of proposed expenditures for a given period of time or purpose and the proposed means of financing them.
+
+Budget Development System (BDS): An enterprise application developed as a tool to assist agencies in building all components of the decision package and submitting operating and transportation budget requests on line. The new Agency Budget System (ABS) replaced BDS in June of 2018.
+
+Budget drivers: Caseload, economic, or demographic factors that have a significant effect on the state budget. Examples include inflation rate changes and state population changes in certain age groups. 3
+
+Budget Evaluation Study Team (BEST) Study: Review of a project’s predesign study by an independent qualified multi-disciplined team using the value engineering methodology.
+
+Budget notes: A legislative fiscal staff publication that summarizes the budget passed by the state Legislature. This publication is usually distributed a few months after the end of the legislative session. Budget notes provide guidance but are not legally binding.
+
+Budgeted accounts: Accounts that are subject to the appropriation and/or allotment process.
+
+Capital addition: An addition expands or extends an existing fixed asset. An example of an addition would be the construction of a new wing for a correctional institution. New construction attached to an existing structure as an extension is an addition. Generally, additions involve alterations within existing buildings to make connections.
+
+Capital assets: Tangible or intangible assets held and used in state operations which have a service life of more than one year and meet the state’s capitalization policy. Capital assets of the state include land, infrastructure, improvements to land, buildings, leasehold improvements, vehicles, furnishings, equipment, collections, and all other tangible and intangible assets that are used in state operations.
+
+Capital Budgeting System (CBS): An enterprise application that allows development and submittal of agency capital budget requests on line. term financing and expenditure plan for acquisition, construction, or improvement of capital assets such as land and buildings, and for programs that accomplish facility improvements. The capital budget is included in an appropriation bill for a specific biennium; the
+
+Capital outlays: Expenditures for the acquisition of, addition to, or major repair of fixed assets intended to benefit future periods. In the operating budget, this label typically refers to equipment.
+
+Cash disbursements: Cash disbursements are any moneys (e.g., checks, cash, warrants, credit or debit card amounts, or Electronic Fund Transfers (EFTs)) paid by the state during a period regardless of when the related obligations are incurred.
+
+Cash receipts: Cash receipts are any moneys (e.g., checks, cash, warrants, credit or debit card amounts, or EFTs) received by the state during a period regardless of when the moneys are earned.
+
+Certificate of Participation (COP): Alternative financing method authorized by the Legislature and administered by the State Treasurer. (COPs for equipment do not require legislative authorization.) A COP typically has a revenue stream to pay the debt service for the capital project. 4
+
+Change order: A written authorization provided to a contractor approving a change from the original plans, specifications, or other contract documents, as well as a change in the cost. With the proper signatures, a change order is considered a legal document.
+
+Collective bargaining: A mutual obligation of the state and of employees' exclusive bargaining representatives to meet at reasonable times and bargain in good faith in an effort to reach agreement on wages, hours, and other terms and conditions of employment as defined in RCW 41.80.
+
+Commissioning and training: The process for achieving, verifying, and documenting that the performance of a building and its various systems meet design intent together with the owner and occupants operational needs. The process extends through all phases of a project, from initial concept to occupancy and operation, and includes the training of maintenance personnel.
+
+Compensation impact model (CIM): A financial projection model used by the Office of Financial Management (OFM) to estimate the effect on state agency budgets of changes in salaries and benefit costs.
+
+Construction document phase: The phase of the A/E's services in which the architect prepares the construction documents from the approved design development documents and assists the agency/institution in preparation of the bidding documents.
+
+Construction management (CM):  consultant called a construction manager to coordinate and manage all of the construction trades. This additional management expertise is usually used on larger, more complex construction projects. However, an owner on a smaller project may retain a construction manager for that person’s construction expertise to act as the representative for the owner on the project.
+
+Constructability review: The cost for an independent consultant or contractor to determine if a unique or unusual project can physically be built as designed. This is to reduce construction change orders and claims. This review should be conducted at 75 percent completion of the construction documents.
+
+Consultant: An independent individual or entity contracting with an agency to perform a professional service or render an opinion or recommendation according to the consultant’s methods and without being subject to the control of the agency except as to the result of the work. The agency monitors progress under the contract and authorizes payment.
+
+Contingency: The need for cost contingency is generated by a lack of information, at a particular point in time, for the task being estimated. Appropriate contingency amounts are dependent on the degree of risk present and the extent of the technical challenge surrounding the task. The design contingency legitimately covers uncertainties in a project and should be reduced through each phase of the design. Construction contingencies should be limited to 5 percent on new construction and 10 percent on remodeling work. Contingencies should not be considered as opportunities for extra work or to change original budget decisions. 5
+
+Contract documents: The drawings, specifications, conditions, agreement, and other documents prepared by the designer that illustrate and describe the work of the construction contract and the terms and conditions under which it shall be done and paid.
+
+Contractor: A person, firm or corporation who or which, in the pursuit of an independent business undertakes to, or offers to undertake, or submits a bid to, construct, alter, repair, add to, subtract from, improve, move, or demolish, for another, any building, excavation or other structure, project, development, or improvement attached to real estate or to do any part thereof.
+
+Cost/benefit analysis: An analysis in which consequences of the investment are measured in or converted to economic terms and qualitative benefits.
+
+Cost estimate: The sum established by the agency/institution as available for the entire project, including the construction budget, acquisition costs, furnishings and equipment, compensation for professional services and all contingencies. The cost estimate is used to develop capital project budgets.
+
+Cost estimating: An element of basic services in an architect/engineer (A/E) agreement that includes an estimate of construction cost from quantity surveys and unit costs of building elements for the project. Cost estimates shall include the elements of work to complete the project, all costs and fees and taxes necessary to complete the work, plus appropriate construction estimating contingencies to cover unidentified costs necessary to complete the project. Interactive cost estimating is additional work beyond basic services in which additional design alternatives are estimated. Independent cost estimating, if needed, covers cost estimates by an independent third party contracted with the owner and used to validate cost estimates prepared by the A/E.
+
+Debt limit: Washington State’s legal restriction (RCW 39.42.132) on the amount that can be paid for debt service on bonds, notes, or other borrowed money. The Washington State Constitution (Article 8, Section 1(b)) mandates that payments of principal and interest in any fiscal year cannot exceed 9 percent of the arithmetic mean of general state revenues for the three preceding fiscal years. This debt limit of 9 percent of revenues is to be reduced in downward steps to 8 percent by July 1, 2034.
+
+Debt service fund: A fund type established to account for the accumulation of resources for, and the payment of, general long-term obligation principal and interest.
+
+Dedicated accounts: Accounts set up by law to receive revenue from a specific source and to be spent for a specific purpose.
+
+Deferred maintenance: A backlog of activities that agencies deem necessary to bring facilities into good repair. Deferred maintenance is generally work that is left undone due to the lack of resources or perceived lower priority than projects funded. Failure to perform deferred work may 6
+
+Design build: An alternative contracting method of project delivery subject to provisions in RCW 39.10 in which the agency/institution contracts directly with a single entity that is responsible for both design and construction services for a construction project. Design/code plan check (
+
+ICBO): The cost for design document plan check that is performed by the International Conference of Building Officials (ICBO) only when required by local code officials. This requirement should be identified in the permit review process.
+
+Design development phase: The phase of the A/E's services in which the consultant prepares the design development documents, from the approved schematic design studies, for submission to the agency/institution for approval.
+
+Design service contingency: Includes an allowance for uncertainty in scoping and pricing additional services, covers variability in estimating reimbursables, includes design fees for owner directed changes and includes design fees for changes during construction that are beyond the scope of basic services and are not a result of errors or omissions by the A/E. The total amount for design services contingency ranges from 5 to 10 percent of total consultant services cost depending on the complexity of the project.
+
+Designer: A party to a contract to provide professional design services to an owner, often an architect or a professional engineer. Also, one (individual or corporate) who performs the design function in construction, as a package deal, a turnkey project, or a development management project.
+
+Economic life: Economic life in the context of cost/benefit analysis refers to the span of years necessary to compare similar costs of operating and maintaining alternative solutions. It may not equate to the time required to fully depreciate the structure. The economic life span should be the same for each alternative for a project. The period of time, extending from the date of installation to the date of retirement for the intended service, over which a prudent owner expects to retain the property in order to obtain a minimum cost.
+
+Efficiency measure: A measure that shows the relationship between inputs (dollars or FTEs) to output or outcome.
+
+Energy life cycle cost analysis (LCCA) review: As required by RCW 39.35, the Department of Enterprise Services will review the Energy Conservation Report (ELCCA) for a project. The fee for this review shall not exceed $2,000 unless mutually agreed to.
+
+Entitlement: A service or grant that, under state or federal law, must be provided to all eligible applicants.
+
+Equipment: Tangible property other than land, buildings, improvements other than buildings, or infrastructure which is used in operations and with a useful life of more than one year. Examples are 7
+
+ESCO: An ESCO is an energy service company that contracts with a facility owner or a utility to acquire, design, install, maintain and/or finance energy conservation, cogeneration or renewable energy projects. ESCO’s primarily develop, own and operate energy projects with no technical or financial risk to the facility owner or utility. The ESCO can guarantee the energy savings, utility payments, and overall cost of the project.
+
+Expenditure authority: Permission for agencies to disburse moneys or accrue liabilities during specific fiscal periods, up to specified amounts, from specific accounts. Authority is provided by the Legislature, through appropriations or inclusion of nonappropriated account moneys in the legislative budget, and by the executive through allocations, approval of unanticipated receipts, or across-the-board spending reductions.
+
+Expenditure authority code:  character code assigned by OFM to identify each legislative or executive authorization to incur expenditures. Agencies are to use only those expenditure authority codes that have been authorized in writing by OFM. The assigned codes are valid only for the biennium for which they are established.
+
+Expenditure authority schedule: A listing prepared by OFM of all dollar appropriations (by agency and account) contained in legislation, along with an assigned code for use in allotment preparation and other accounting requirements.
+
+Expenditure authority type: The designator that identifies the nature of the spending authority, such as state, federal, private/local. See SAAM 75.50.10.
+
+Expenditures: Decreases in net current financial resources. Expenditures include disbursements and accruals for the current period. Encumbrances are not included.
+
+Facility improvements: These include initial construction, punch-list items, retrofits, alterations, remodeling, renewals, tenant improvements, renovations, adaptations and code improvements for a facility.
+
+Facility: A building or other structure with at least one wall and a roof.
+
+Facility preservation: This is work that improves or restores the operational and service capacity to extend the useful life of a facility but does not significantly affect the programs and services housed within the facility. This work generally differs from ordinary maintenance in the extent and cost of the work undertaken. The distinction between ordinary maintenance and preservation is made for the purpose of segregating these types of projects by funding source, either operating or capital budget.
+
+Fast track: A process in which certain portions of the A/E's design services overlap with construction activities in order to expedite the owner's early occupancy of all or a portion of the project. 8
+
+Fee: A fee is a charge, fixed by law, for the benefit of a service or to cover the cost of a regulatory program or the costs of administering a program for which the fee payer benefits. For example, professional license fees which cover the cost of administering and regulating that category of professions are fees. Other charges that are categorized as fees include tolls and tuition. Fees must be authorized in statute. The Legislature may set the rates in statute or authorize a state agency to set rates using administrative procedures.
+
+Fiscal note: A statement of the estimated fiscal impact of proposed legislation. This cost estimate is usually developed by the state agencies affected by the bill, and then approved and communicated to the Legislature by the Office of Financial Management.
+
+Fiscal year: A 12-month fiscal period used for budget and accounting purposes. The Washington State fiscal year extends from July 1 through the next June 30 and is named for the calendar year in which it ends (e.g., July 1, 2014 - June 30, 2015 is state Fiscal Year 2015). The federal fiscal year runs October 1 through September 30. The city/county fiscal year runs January 1 through December 31.
+
+Fixed assets: A fixed, physically attached, and permanent improvement or real property. Fixed assets are normally those that are capitalized. time equivalent (
+
+As a unit of measure of state employees: refers to the equivalent of one person working full-time for one year (approximately 2,088 hours of paid staff time)
+
+12 or higher education facilities: refers to the equivalent of one student attending class full-time for one school year (based on fixed hours of attendance, depending on grade level).
+
+Fund: For state purposes, a fund is referred to as an account. Refer to Account.
+
+Fund balance: The excess of the assets of an account over its liabilities and reserves. For governmental funds, fund balance represents the difference between fund assets (beginning balance and estimated revenues for the period) and fund liabilities (including reserves and appropriations for the period). purpose trust funds, and agency funds.
+
+General contractor: The general contractor is a contractor whose business operations require the use of more than two unrelated building trades or crafts whose work the contractor shall superintend or do in whole or in part. A general contractor does not include an individual who does all work personally without employees or other specialty contractors as defined in this glossary. The terms general contractor and builder are synonymous. 9
+
+General contractor/construction manager (GC/CM): A GC/CM is a firm with which an agency or institution has selected and negotiated a guaranteed maximum allowable construction cost for a project. cycle cost design considerations, value engineering, scheduling, cost estimating, constructability, alternative construction options for cost savings, and sequencing of work. The GC/CM acts as the construction manager and general contractor during the construction phase. The GC/CM process is considered an alternative contracting method and is subject to provisions in RCW 39.10.
+
+General fund: A fund established to account for all financial resources and transactions except those required by law to be accounted for in specific dedicated accounts.
+
+S): Refers to the basic account that receives revenue from Washington’s sales, property, business and occupation, and other general taxes and is spent for operations such as public schools, social services, and corrections.
+
+General fund accounts: A group of accounts within the state's fund structure. These accounts within the General Fund are a grouping of accounts normally classified as Special Revenue Funds or Capital Projects Funds but which are considered a part of the total General Fund.
+
+General obligation bonds: Statewide bond issues whose repayment is guaranteed by the full faith, credit, and taxing power of the state and that are subject to the state’s debt limit. General obligations bonds are the traditional form of government debt financing for major construction projects.
+
+Generally Accepted Accounting Principles (GAAP): Uniform minimum standards for financial accounting and reporting. They govern the form and content of the financial statements of an entity. GAAP encompass the conventions, rules, and procedures necessary to define accepted accounting practice at a particular time. They include not only broad guidelines of general application but also detailed practices and procedures.
+
+Geotechnical investigation: The cost to do soils boring, sampling, testing, and prepare recommendations. The soil boring and sampling process, together with associated laboratory tests are necessary to establish subsurface profiles and the relative strengths, compressibility and other characteristics of the various strata encountered within depths likely to have an influence on the design of the project.
+
+GMAP: Government Management, Accountability, and Performance was a management initiative focused on improving the results of state government. Agency directors reported in regular meetings with the Governor on the most important management and policy challenges. Reports focused on performance in measurable terms. GMAP was closed out April 24, 2013 to transition to Results Washington.
+
+Goals: Broad, high-level, issue-oriented statements of an organization's desired future direction or desired state. 10
+
+There are five types of governmental funds: General Fund, Special Revenue funds, Capital Projects funds, Debt Service funds, and Permanent funds.
+
+Grant: Awards of financial assistance, including cooperative agreements, in the form of money or property in lieu of money to an eligible grantee. Capital grants are restricted for the acquisition, constructions, or renovation of capital assets associated with a specific program. Operating grants support all or a portion of current operating expenses within a certain program.
+
+HVAC balancing: The cost to test and balance designed heating, ventilation, and air conditioning systems, including water flows, at the completion of construction.
+
+Improvement: A legal term referring to anything erected on and affixed to land (e.g., buildings, roads, fences, and services), which legally becomes part of the land, according to common law and statutory definition.
+
+Incremental budgeting: Any budget development approach that focuses on incremental changes to a previous spending level or other defined expenditure base.
+
+Information technology: Equipment, software, services, and products used in processing information, office automation, and telecommunications (voice, data, and/or video).
+
+Information technology portfolio: The planning and management process for information technology resources and investments overseen by the Office of the Chief Information Officer.
+
+Its primary requirements are: an expenditure limit based on inflation and population growth (applicable to state General Fund expenditures only); an emergency reserve account for any
+
+Inspection (on site): The examination of work completed or in progress to determine its conformance with the requirements of the contract documents.
+
+Internal service fund: A fund type used to report activities that provide goods or services to other funds, departments, or agencies of the state on a cost reimbursement basis. Internal service funds are used where the state is the predominate participant in the activity.
+
+Lean: Lean is a systematic approach to improving value to customers by eliminating waste. The focus is on the customer and the work steps (or “value stream”) that create products or services for customers. Lean thinking, tools, and techniques offer an opportunity to streamline business processes to save time, effort and money that can be better used on what customers value most.
+
+Lease purchase and lease development: Lease purchase and lease development agreements are forms of financing contracts that enable a building to be built or substantially remodeled to state specifications by a private developer. In both cases, the developer finances the project and recovers the cost through least payments. By the end of the lease period, the state may exercise the option to purchase at a predetermined price. There is no tax exemption for the developer, and market interest rates prevail. development proposals should be requested through the operating budget. For reference, see RCW 39.94, Financing Contracts.
+
+Lease: Leases are contracts entered into by the state which provide for the use and purchase of real or personal property, and provide for payment by the state through the operating budget. All financing contracts must be approved by the state Finance Committee. A lease must have the approval of OFM if it is for space under development or has an obligation of over $1 million annually, regardless of the length of the lease obligation.
+
+LEEDTM (Leadership in Energy and Environmental Design):  in-class building strategies and practices. RCW 39.35 owned buildings over 5,000 square feet and renovations to state-owned buildings when the cost is greater than 50 percent of the assessed value of the building shall be designed and built to a minimum LEEDTM Silver Standard.
+
+Life cycle cost analysis:  cycle cost of a facility project. cycle cost analysis is defined as the programmatic and technical considerations of all cost elements associated with capital facility alternatives under consideration. These cost elements may include any or all of the following: Capital Investment Costs, Lease Costs, Financial Costs, Operations Costs, Maintenance Costs, Alternations Costs, Replacement Costs, Denial of Use Costs, Lost Revenue, and Associated Costs.
+
+Local accounts: Accounts under the control of an agency with cash on deposit in a local bank account and requiring the signature of agency officials on a check for disbursement. Some local funds are on deposit with the State Treasurer as a matter of convenience or statutory requirement. 12 term lease of more than ten years can be negotiated by DES and must be approved by OFM. Any lease over 20 years in duration must have legislative authorization. Contact OFM Facilities Oversight for more information on this subject.
+
+Capital projects that cost $5 million or more, or projects that meet the following criteria: have particularly costly elements, are undertaken on a tight design budget or short design schedule, have significant policy implications to a program, or involve state of the art technology.
+
+Major lease project: A lease project for any facility over 20,000 square feet.
+
+Maintenance level: A projected expenditure level representing the estimated cost of providing currently authorized services in the ensuing biennium. It is calculated using current appropriations, the bow wave of legislative intentions assumed in existing appropriations (costs or savings), and adjustments for trends in entitlement caseload/enrollment and other mandatory expenses. This number establishes a theoretical base from which changes are made to create a new budget.
+
+Maximum allowable construction cost (MACC): A cost that the owner stipulates to the design consultant before design begins. The cost is the owner’s budget for the construction cost of the project and serves as the parameter in which the design consultant agrees that the construction cost of the design will not exceed.
+
+Modified accrual basis: The basis of accounting under which expenditures, whether paid or unpaid, are formally recognized when the liability is incurred against the account, but revenues are recognized only when they become both measurable and available to finance expenditures of the current accounting period. All governmental funds use the modified accrual basis of accounting.
+
+State: Accounts related to the state General Fund as defined in RCW 43.88.055; includes the Washington Opportunity Pathways Account and Education Legacy Trust Account.
+
+Nonappropriated funds: Moneys that can be expended without legislative appropriation. Only funds in accounts specifically established in state law as being exempt from appropriation fall into this category. Nonappropriated accounts can be either budgeted (and subject to OFM allotment approval) or nonbudgeted.
+
+Nonbudgeted accounts: Accounts that are not subject to either the appropriation or the allotment process.
+
+As used in the context of use of bond/COP proceeds to pay the costs of facilities expected to be owned or used by, or to make any loan or grant to: (a) the federal governmental purposes (including any federal department or agency), (b) any private nonprofit 13
+
+Planned maintenance includes: scheduled repetitive work, such as housekeeping activities, grounds keeping, site maintenance, and certain types of service contracts; and periodic scheduled work (preventive maintenance) that has been planned to provide adjustment, cleaning, minor repair, and routine inspection of equipment to reduce service interruptions
+
+Object of expenditure: A common grouping of expenditures made on the basis of homogenous activity, goods or services purchased, or type of resource to be used. Applies to the character of the article purchased or service obtained (rather than the purpose).
+
+Objectives: Measurable targets that describe specific results a service or program is expected to accomplish within a given time period.
+
+Official allotment: The statement of proposed expenditures defined in RCW 43.88.020 and referenced in RCW 43.88.110. This is the original allotment plus a limited number of revisions. The initial allotment can only be modified by legislative changes to the appropriation level, reductions ordered by the Governor due to a cash deficit, or approved quarterly adjustments. or part-time employee who represents the owner during construction and serves as a liaison between the architect and contractor on major projects.
+
+Operating budget: A biennial plan for the revenues and expenditures necessary to support the administrative and service functions of state government.
+
+Operations and service costs: The costs of the regular custodial care, utilities, refuse and recycling services, parking management, boiler operations, law enforcement and security, property management, visitor information, tour services, fire protection and life-safety services, including salaries of facility staff performing these tasks. Operations and maintenance (O&
+
+M) costs: The costs of the regular custodial care and repair, annual maintenance contracts, utilities, maintenance contracts, and salaries of facility staff performing O&M tasks. The ordinary costs required for the upkeep of property and the restoration required when assets are damaged but not replaced. Items under O&M include the costs of inspecting and locating trouble areas, cleaning and preventive work, replacement of minor parts, power, labor, and materials. O&M work is required to preserve or restore buildings, grounds, utilities, and equipment to its intended running condition so that it can be effectively used for its intended purpose.
+
+Operations and maintenance manuals: The assembly, tabulation, and indexing of all shop drawings and submittals on all equipment, controls, and systems so that required maintenance and troubleshooting can easily be shown and understood. 14
+
+Outcome measure: A measure of the result of a service provided. This type of measure indicates the impact on the problem or issue the service or program was designed to achieve. Also known as results.
+
+Outline specifications: An abbreviated set of specification requirements normally included early in the design process.
+
+Output measure: An indicator of how much work has been completed. The number of units of a product of service produced or delivered.
+
+Owner: The first party to the construction contract, who pays the contractor (the second party) for the construction work; also, the party who owns the rights to the land upon which the work is done and who, therefore, owns the work; also, the client of a designer, a construction manager, a project manager, or a development manager.
+
+Performance bond: A bond issued by a surety company on behalf of a contractor to guarantee an owner proper performance of the construction contract.
+
+Performance budgeting: The act of considering and making funding choices based on desired outcomes. Performance budgeting focuses on the results to be gained through investment decisions.
+
+Performance measure: A quantitative indicator that can be used to determine whether an agency’s programs or services are directly contributing to the achievement or progress toward some objective. Activity performance measures reported in the budget should tell the story of whether the activity is achieving its purpose and contributes to statewide goals. These measures are most likely to be intermediate or immediate outcomes or output measures.
+
+Phased construction: Construction in which design and production more or less overlap, thus shortening project time; usually practiced in construction management projects. See Fast Track.
+
+Policy level: Incremental expenditures that may represent revised strategies or substantial differences in program direction and can include proposed program reductions. Examples can include discretionary workload expenditures necessary to address workload not defined as mandatory, new programs or changes in the level or scope of existing programs, or program reductions and other changes.
+
+Predesign study: A report and process completed at the beginning of a project that clearly and accurately defines the need/problem to be addressed. The predesign study provides an analysis of alternatives and describes the selected alternative in detail with cost estimates. alone capital projects.
+
+Predictive maintenance: A refinement to preventive maintenance that integrates scheduled maintenance with system monitoring and analysis (e.g., vibration analysis, thermal/energy analysis) to identify inefficient operation or imminent breakdown. Predictive maintenance ideally reduces the cost of maintaining components that are working adequately. 15
+
+Preservation project: Projects that maintain and preserve existing state facilities and assets, and do not significantly change the program use of a facility. Examples would include roof replacement and exterior renovation, utility system upgrade, and repairing streets and parking lots.
+
+Preventive maintenance: A maintenance strategy where inspections are made or actions are taken on a scheduled basis to reduce service interruptions, reduce the premature failure of facilities, systems, and equipment, and continue efficient operations. specified schedules established by manufacturer or facility manager.
+
+Primary purpose: As used in defining a project type, the identification of the dominant driver behind the project; the area where the impact of not correcting the deficiency is most acute.
+
+Priorities of government (POG): Washington’s adaptation of the "Price of Government" budget approach first developed by Peter Hutchinson and David Osborne. This form of budgeting focuses on statewide results and strategies as the criteria for purchasing decisions.
+
+Program: Any of the major activities of an agency expressed as a primary function or organizational unit. Agencies may not alter their program structure without the explicit approval of the Legislature and OFM.
+
+Program projects: Projects that are intended to accomplish a program goal such as changing or improving the use of existing space, or creating a new facility or asset through construction or purchase. These projects may have a major impact on future operating budgets − such as the construction of a new prison or university branch campus.
+
+Programming: The work necessary to define the scope of a project, conduct master planning for future work, or delineate the existing conditions. This work may require field measurements or building systems testing and surveys.
+
+Project delivery system: Method of how an owner plans to contract a project, i.e., design/bid/build, design/build, GC/CM, etc.
+
+There are two types of proprietary funds: enterprise funds and internal service funds.
+
+Example: “Up to $500,000 of the
+
+Real property: Property that is fixed, immovable, and permanent. Real property includes land, structures affixed to the land, property affixed to the structures, and in some cases, trees etc., growing on the land. 16
+
+Reappropriation: Capital budget appropriation that reauthorizes the unexpended portion of previously appropriated funds. Because capital projects often overlap fiscal periods, it is necessary to reauthorize some expenditure authority to ensure project completion.
+
+Receipts: Unless otherwise qualified, cash received during a fiscal year irrespective of when the monies are earned.
+
+Record drawings: The revised drawings that truly reflect what was constructed including field verification.
+
+Reimbursable expenses: Amounts expended for or on account of the project that, in accordance with the terms of the appropriate agreement, are to be reimbursed by the agency/institution such as telephone charges and travel expenses in accordance with state guidelines.
+
+Reserve or fund balance: In budget terminology, the difference between budgeted resources and expenditures.
+
+Reserved allotment status: The portion of expenditure authority not expected to be used because of circumstances such as the Governor’s across-the-board allotment reductions, technical corrections, or proviso compliance.
+
+Results Washington: Results Washington combines the best aspects of previous performance management and performance budgeting efforts such as Government Management Accountability and Performance (GMAP) and Priorities of Government (POG) with a significantly expanded Lean initiative that will involve all state agencies.
+
+Retainage: Those portions of cash amounts due to be paid to a contractor for work completed that are held back (retained) by the agency/institution and not paid until some later date; often at substantial completion or at final completion of the work, according to the terms and conditions of the contract and any relevant legal statue; as a security for proper performance of work and fulfillment of contractor’s requirements.
+
+Revenues: Cash receipts and receivables of a governmental unit derived from taxes and other sources.
+
+Reversion: Unused appropriation authority. If an agency does not spend all of its appropriation in the timeframe specified by the budget, the authorization to spend that dollar amount expires.
+
+Revolving fund/account: An internal service fund established to carry out a cycle of operations. The amounts expended from the account are restored to the account from earnings from operations or by transfers from other accounts, so that the account is always intact. 17
+
+Schedule of values:  to-month basis by the contractor to show the intended percentage of completed work by the construction trades. The schedule of values is the basis for the amount of the request for payment by the contractor.
+
+Schematic design phase: The phase of the A/E's services in which the architect consults with the agency/institution to ascertain the requirements of the project and prepares schematic design studies consisting of drawings and other documents illustrating the scale and relationships of the project components for approval by the agency/institution. The A/E also submits a preliminary estimate of construction cost based on current area, volume, or other unit costs.
+
+Site survey: The process of mapping the boundary, topographic, or utility features of a site, measuring an existing building, or analyzing a building for use of space.
+
+Specifications: The major part of a project manual, but excluding the bidding documented, contract agreement, and the conditions of the contract; the written descriptions of items of work that complement the construction drawings.
+
+Strategic plan:  term comprehensive plan that represents an integrated set of decisions and actions designed to ensure that the intended goals and objectives of an agency are met. The plan should answer: Where are we today? Where do we want to be? How do we intend to close the gap between where we are and where we want to be?
+
+Strategies: Statements of the methods for achieving goals and objectives. term work and activities that an agency undertakes to achieve specific goals and objectives.
+
+Subcontractor: A party to a subcontract who does trade work for a contractor (the other party), which work included under the prime contract between the same contractor and an owner; one who is defined as a subcontractor by the prime contract.
+
+Subobject: A refined breakdown of object of expenditures relating to particular items or item categories.
+
+Subprogram: A general term describing specific activities within an agency program.
+
+Supplemental budget: Any legislative change to the original budget appropriations.
+
+Testing: This is a technician's services in acquiring and testing samples of materials used in the project as required in the State Building Code, such as welds, concrete strength, or bearing capacity. This system enables agencies to develop allotment packets on line. It supports allotment development, management, review, reporting, and monitoring needs for state agencies, OFM, and the Legislature.
+
+Treasury accounts: Accounts that have cash on deposit in and under the control of the State Treasurer and are disbursed by means of a warrant of electronic means. Treasury accounts are subject to appropriation unless specifically exempted. 18
+
+Unallotted allotment status: Expenditure authority not specifically scheduled for expenditure, but expected to be allotted at a later time.
+
+Unanticipated receipts: Revenue received which has not been appropriated by the Legislature. The Governor has the authority to approve the allotment of such money within the guidelines of the intent in which they were received and the statutory guidelines of RCW 43.79.270.
+
+Uniformat: A system for classifying building products and systems by functional subsystem, e.g., substructure, superstructure, exterior closure, etc.
+
+Useful life: An estimate of the total time that an asset is usable and in service.
+
+Value engineering (VE): VE is a systematic, orderly approach to defining a facility's required function, verifying the need for the function, and creating alternatives for providing the function at minimum life-cycle cost. cycle cost to achieve the required function. solving system that emphasizes the reduction of cost while maintaining the required quality and performance of the facility. It is a technique that is applied in addition to the regular design process. It is required on all major projects.
+
+VE participation and implementation: The extra fee to be paid to the A/E for participation in the required value engineering study and includes incremental costs to implement those changes identified by the study and requested by the owner. 19
+

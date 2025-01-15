@@ -1,0 +1,782 @@
+amortize: to repay a loan by making interest and partial principal payments each repayment period, typically a month.
+
+amortization: the process of amortizing a loan.
+
+annually: once a year. See also semiannually, quarterly
+
+annuitant: the owner or recipient of an annuity.
+
+annuity: a type of insurance policy that pays the annuitant a sum of money (previously annually but often today monthly) over a pre‐specified period or during the annuitant’s lifetime or that of his or her spouse.
+
+ask price: the price at which a dealer will sell a security from its inventory. See also bid price
+
+asset: any good owned by any entity and held on its balance sheet.
+
+asset bubble: the condition when the price of an asset or asset class exceeds its fundamental value for an extended period.
+
+asset class: a group of similar assets like bonds, equities, or real estate.
+
+association: 1) any one of a number of types of business entity; 2) a type of organization. See also Building and Loan associations, Savings and Loan associations
+
+asymmetric information: when one party to a contract (buyer or seller) knows more than the counterparty, such as adverse selection, moral hazard, and the principal‐agent problem.
+
+bad: 1) anything that no entity values at greater than zero; 2) anything that entities are willing to pay to reduce or eliminate. See also good
+
+Bagehot’s Rule: See Hamilton’s Rule.
+
+balance sheet: a type of financial statement that lists an entity’s assets, liabilities, and capital. So called because assets must equal (or in other words be in balance with) liabilities plus capital (which can be negative).
+
+balance sheet consolidation: the act of combining the balance sheets of two or more entities, as in a merger.
+
+bank: one of a variety of financial intermediaries that accepts deposits and makes loans and/or that engages in brokerage, merger and acquisition consulting, or securities issuance. See also bank of discount and deposit, bank of issue, banker, Building and Loan association, central bank, commercial bank, credit union, depository institution, investment bank, mutual savings bank, private banker, Savings and Loan association, savings bank, thrift, unit bank, universal bank 2 | P a g e
+
+bank of discount and deposit: an archaic term for a commercial bank.
+
+bank of issue: an archaic term for a bank that issued its own bank notes.
+
+banker: an individual engaged in banking as a private banker or as an employee of a bank. See also financier
+
+bank notes: a form of paper money issued by banks (banks of issue) and generally convertible into specie at their respective face values at current coin ratings at the bank of issue. See also suspension of specie payments
+
+bank holding company: a bank that holds one or more other banks as assets on its balance sheet.
+
+bank run: 1) historically, when holders of a bank’s demand liabilities, specifically its bank notes or deposits, request payment or conversion en masse; 2) today, when creditors refuse to renew short‐term loans to a bank, also known as a silent run. See also liability run
+
+banking: the activities of a bank or banker such as making loans, taking deposits, and/or engaging in investment banking.
+
+bankrupt: an entity in a state of bankruptcy in sense 1 or 2 of that word.
+
+bankruptcy: 1) generally, the condition of an entity that has negative net worth, to wit the monetary value of its liabilities exceeds the monetary value of its assets. 2) the state of an entity that has filed for protection from its creditors under a bankruptcy law. See also insolvency
+
+bankruptcy law: a statute that determines how a bankrupt entity’s assets shall be used to pay its liabilities.
+
+base money: any type of money that banks can count as reserves. See also cash, specie
+
+benefits: 1) the non‐monetary compensation of an employee, such as health insurance; 2) more generally, the utility or resources derived by an entity from some good or activity. See also costs
+
+bill: a short‐dated bond, especially one issued by the U.S. Treasury. See also commercial paper
+
+bill of credit: a type of medium of exchange or paper money issued by the colonial governments of mainland British North America and often, though not always, made a full legal tender.
+
+bill of exchange: a short‐dated international financial instrument drawn on foreign entity in a foreign currency. See also inland bill
+
+bid price: the price at which a dealer will buy a security for its inventory. See also ask price 3 | P a g e
+
+bond: 1) generically, any loan; 2) in finance, a negotiable, long‐dated, interest‐bearing financial instrument. See also bill, coupon bond
+
+bondholder: 1) the owner of a bond; 2) any lender or creditor whose loan is secured by a bond.
+
+boom: See expansion
+
+borrower: any entity that receives principal from a lender in exchange for a promise to repay the principal plus interest in the future.
+
+branch: an office of an intermediary, typically a bank, where financial services are provided to customers remotely from the financial institution’s headquarters.
+
+broker: any entity that brokers (v.).
+
+brokerage: an intermediary that brokers and deals. See also broker‐dealer
+
+broker‐dealer: a brokerage.
+
+budget deficit: the difference between an entity’s (typically a government’s) income and its expenditures that must be financed through the sale of assets or the issuance of securities, usually bonds or money.
+
+business: 1) an entity whose primary goal is to earn profits; 2) a for‐profit firm; 3) of or pertaining to the activities carried out by businesses.
+
+business activity: any actions undertaken by any business entity such as buying, selling, brokering, dealing, lending, borrowing, collateralizing, exchanging, or trading.
+
+business entity: an association, corporation, partnership, sole proprietor, or other entity that buys and/or sells goods in an attempt to earn profits. See also business, organization
+
+bust: See recession
+
+buyer: the entity in a trade that gives up money and receives a non‐monetary good in exchange.
+
+Building and Loan association: a type of mutual corporation that specialized in financing the construction of homes that were replaced following the Great Depression by the Savings and Loan association.
+
+bullion: gold or silver in the form of bars or ingots. See also specie
+
+call: a demand made for the payment of a liability owed to a creditor. See also call (v.), call loan, call option 4 | P a g e
+
+callable: lawfully capable of being called (v.); 2) subject to a call (n.).
+
+call loan: a loan, typically an overnight one collateralized by stock, that the lender can call (v.) at any time.
+
+call option: a type of option derivative that gives the option holder the right but not the obligation to purchase some predetermined asset at a predetermined strike price. See also option, put option
+
+capital: 1) an entity’s net worth; 2) the contributions of stockholders to a joint‐stock corporation; 3) productive physical assets such as factories. See also human capital
+
+capitalism: an economic and political system characterized by Lockean government, a modern financial system, open access entrepreneurship, and modern management but also by some level of corruption, rent seeking, and the exploitation of taxpayers and workers.
+
+capital requirements: capital (1) mandated by some regulator or law, typically expressed as a percentage of a bank’s assets.
+
+cash: 1) any physical medium of exchange that circulates or passes easily hand to hand to make exchanges; 2) slang for short‐dated commercial paper.
+
+cash flow: the movement of cash into and out of an entity during some finite period such as a month or a quarter.
+
+cash value: the sum of money that can be obtained for the relinquishing a whole life insurance policy.
+
+central bank: a bank established by a government to develop and implement monetary policy and/or act as a lender of last resort during crises and/or regulate financial firms and markets.
+
+certificate of deposit (CD): a type of time deposit whereby the depositor agrees to pay a penalty if s/he/it withdraws the principal before maturity, a pre‐specified date some months or years after making the deposit. See also negotiable certificate of deposit
+
+charter: a statute or special act of incorporation authorizing the creation of a corporation. See also general incorporation act
+
+check: a type of draft or written request for payment, typically to a third party, by a depositor in a bank.
+
+circulation: 1) in the economy, passing from hand to hand as cash; 2) an archaic term that referred to bank notes circulating outside the bank of issue. 5 | P a g e
+
+coins: pieces of metal, typically formed into the shape of thin round discs, and embossed with information about its origin (issuer, date of issue, denomination, and so forth). See also full‐bodied coins, token coins
+
+coin rating: the monetary value assigned by governments or other entities to specific specie coins, typically full‐bodied.
+
+collateral: any asset pledged for the repayment of a loan.
+
+collateralize: to pledge collateral for the repayment of a loan.
+
+collateralized: backed by collateral.
+
+commercial bank: a type of bank that primarily makes loans, traditionally discounts, to businesses and that issues mainly checking or other transaction deposits.
+
+commercial paper: a generic term for any type of short‐dated financial instrument, such as a bill of exchange, issued by a business entity. See also bill
+
+commission: a percentage of the sale price of an asset paid to a broker for its brokering services.
+
+commodity money: cash or media of exchange that derive their liquidity from the monetary value of the commodities, such as copper, silver, or gold, that comprise them.
+
+commonweal: for the benefit of the community writ large.
+
+community bank: any relatively small bank that provides financial services to a relatively small geographical area. See also Building and Loan association, country bank, credit union, Savings and Loan association, savings bank, thrift
+
+consumption: 1) the use, using, or using up of a good; 2) one of the major components of aggregate output (Y).
+
+contract: an agreement, written or oral but typically legally binding, between two or more parties specifying precise terms for the sale or exchange of one or more goods.
+
+conversion: the act of changing (converting) one type of asset into another.
+
+convertible: subject to being changed (converted) from one type of asset to another. See also bank notes, convertible bonds
+
+convertible bonds: a type of bond that can be changed (converted) into another security, typically an equity.
+
+convertible money: any type of money that can be changed (converted) into another type of money, such as bank notes into specie. See also credit money 6 | P a g e
+
+copper: a metallic element, symbol Cu and atomic number 29, used to make small denomination full‐bodied and token coins.
+
+corporation: a legal device granting an entity special rights, including, in the case of business entities, perpetual succession, limited liability, and entity shielding. See also charter
+
+corruption: 1) manipulation of the political system by special interests for special interests; 2) the abuse of power by government officials, typically through rent seeking activities such as taking bribes.
+
+costs: the expenditure of resources, including cash. See also opportunity costs, sunk costs
+
+counterparty: the other party to a contract like a derivative or loan.
+
+country bank: an archaic term for a community bank located in a rural or non‐money center (sub)urban area.
+
+coupon: 1) the physical piece of a coupon bond that bondholders clipped off and presented for payment to the bond’s issuer or its redemption agent; 2) an interest payment on a coupon bond.
+
+coupon bond: 1) specifically, a type of bond upon which interest was paid when the bondholder clipped off a section of the bond called a coupon and presented it to the issuer or its redemption agent; 2) generically, any bond that pays interest periodically, such as quarterly or semiannually.
+
+credit money: any type of money, such as bank notes and deposits, the value of which is dependent on the creditworthiness of the issuer. See also convertible money
+
+creditor: an entity to which something, typically money, is owed by its debtor.
+
+credits: 1) generically, an accounting term for things received by an entity, typically stated in terms of its monetary value; 2) in banking, a deposit or other payment by a customer to the bank.
+
+creditworthy: an entity that is thought willing and able to meet all of its current financial obligations. See also creditworthiness
+
+creditworthiness: the condition of being creditworthy.
+
+crisis: See financial crisis
+
+currency: 1) cash; 2) the prevailing unit of account or coin rating.
+
+current money: an archaic term for cash.
+
+credit crunch: a period characterized by a general dearth of liquidity and a decline in the volume of bonds and loans.
+
+credit union: a type of community bank, depository institution, or thrift owned by its depositors and chartered as a credit union. See also mutual corporation 7 | P a g e
+
+day book: a type of single entry account book that records exchanges on a chronological basis without categorization, much like a cash register roll.
+
+deal: to offer to buy securities at a bid price and simultaneously offer to sell the same securities at an offer price and profiting from the difference or spread between the two prices.
+
+dealer: an entity that deals or engages in dealing.
+
+dealing: the act of buying and selling securities at stated bid and ask prices, respectively.
+
+debits: 1) generically, an accounting term for things given up by an entity, typically stated in terms of its monetary value; 2) in banking, a loan or other payment by a bank to a customer.
+
+debt: anything owed to another entity, typically money.
+
+debt instrument: any of a variety of financial instruments representing a debt suggest as an IOU. See also bill, bond
+
+debtor: an entity which owes something, typically money, to its creditor.
+
+default: the failure of an issuer or other lender to make one or more contractual payments of principal or interest due on a bond or other debt instrument.
+
+default risk: the probability of default (n.).
+
+demand: 1) the quantity of a good that buyers desire to purchase at any given price; 2) a request for immediate payment or conversion. See also demand (v.)
+
+demand liabilities: liabilities that lenders can call (demand the payment of) on demand (n., 2, no or short notice). See also bank notes, checking deposits
+
+denomination: the face value of a bank note, bill of credit, or coin.
+
+depositor: an entity that owns a bank deposit.
+
+depository institution: any type of bank that issues deposits, including Building and Loan associations, commercial banks, credit unions, mutual savings banks, Savings and Loan associations, savings banks, and universal banks but not investment banks.
+
+deposit: a sum owed by a bank to a depositor. See also checking deposits, savings deposits
+
+derivative: a financial instrument the monetary value of which is linked to the price of some underlying asset. See also forwards, futures, options, swaps
+
+direct public offering (DPO): an offering of shares in itself by a business entity to members of the public directly, to wit without the services of an investment bank or other intermediary.
+
+discount: a type of loan whereby a bank or other lender pays the borrower the discounted present value of a promissory note or bill of exchange in exchange for the right to collect the face value of the discounted instrument at its maturity.
+
+discounted present value: is the price (present value) of an asset determined by the formula PV (price) equals FV (future value or face value) divided by one plus the interest rate. Note that for any interest rate greater than zero the equation will yield a price less than the face value. The difference between the face value and current price is the time value of money.
+
+dishonor: an archaic term meaning to default (v.). See also honor
+
+disintermediation: the process or condition of reducing exchanges between borrowers and lenders. See also intermediation
+
+double entry: a method of keeping accounts that is more sophisticated than single entry because it involves describing both the credit and debit aspect of each exchange.
+
+draft: a written request for payment, typically to a third party, drawn by a creditor of the payer. See also check, sight draft, time draft
+
+drawee: the entity being drawn upon by a drawer or putative creditor; 2) the acceptor; 3) the payer.
+
+drawer: the entity drawing on its money in the possession of its putative debtor or drawee.
+
+draw on: to formally request a putative debtor to make payment per the terms specified in a check, draft, or bill of exchange.
+
+economic contraction: See recession
+
+economic history: the study of past states of the economy using the analytical tools of economists and the source material of historians. See also history of economic thought
+
+economics: the social science devoted to the study of the economy, especially the production and consumption of goods. See also economists
+
+economists: individuals who study economics.
+
+economy: the sum total of all the interactions of entities in markets at any given time. See also aggregate output, gross domestic product 9 | P a g e
+
+entity: 1) a firm, government, individual, organization, or business entity; 2) an economic unit of production and/or consumption.
+
+entity shielding: a privilege that protects the assets of corporations from seizure by the creditors of bankrupt owners, typically stockholders.
+
+entrepreneur: 1) generally, any entity that attempts to increase its utility by innovating; 2) an individual who establishes a new business entity; 3) a business entity that attempts to invent a new good, develop a new market, introduce a new method of production or distribution, discover a new source of supply, reorganize an existing industry, or engage in rent‐seeking.
+
+entrepreneurship: the state or condition of being an entrepreneur.
+
+equity: 1) a share in a corporation; 2) net worth.
+
+equity market (n): a market where equities or shares are exchanged. See also stock exchange
+
+exchange: 1) the process of engaging in exchange (v.); 2) a physical location for trading securities; 3) an entity than maintains an exchange (2).
+
+expansion: a state of the economy during which aggregate output, typically as measured by Gross Domestic Product, increases past all previous levels.
+
+expenditures: money that flows out of one entity and, typically, into another. See also income, revenue
+
+exploitation: the stealing of resources from another, typically weaker, entity.
+
+exports: goods produced domestically but consumed abroad or consumed by foreign entities domestically (e.g. tourism).
+
+externalities: a type of market failure created when prices do not reflect the full costs or benefits of a good to society. See also negative externalities, positive externalities
+
+face value: the monetary value expressed on (the face of) a financial instrument, bank note, or coin.
+
+Federal Reserve System (Fed): the U.S. central bank established in 1913 and still in operation today.
+
+Federal Reserve Notes (FRN): fiat paper money issued by the Federal Reserve System.
+
+fiat money: 1) a type of non‐commodity money, typically made of paper or token coins, that derives its value from legal tender provisions; 2) fiduciary money. See also paper money, token coins 10 | P a g e
+
+fiduciary money: 1) a type of non‐commodity money composed of substances with a monetary value far below the face value of the fiduciary note or coin that derives its value from the public’s belief that they will be able to exchange the money at its face value due to its current widespread acceptance; 2) fiat money. See also paper money, token coins
+
+final goods: goods that are consumed or invested and not used in the production of other goods.
+
+finance: the science of managing assets, including money.
+
+financial condition: the overall status of an entity’s assets, liabilities, equity (capital), income, and cash flow at any given time.
+
+financial crisis: a period characterized by rapid reductions in the monetary value of financial assets and the market capitalization of financial institutions and, typically, non‐financial entities as well. See also bank run, credit crunch, financial panic, stock market crash
+
+financial guarantee: a type of financial obligation whereby the guarantor or surety promises to pay some third party if a guaranteed entity defaults on its debt or otherwise fails to perform according to contract.
+
+financial industry: the sum of all business entities serving any financial market.
+
+financial institution: 1) narrowly, a business entity that provides financial service(s); 2) broadly, any business or government entity involved in any way in any financial market.
+
+financial instrument: any variety of financial contract, including cash, bond, equity, or derivative.
+
+financial market: any market for any financial instrument or financial service.
+
+financial obligations: anything owed, owing, or potential owing, such as liabilities, endorsements, and financial guarantees.
+
+financial panic: a period characterized by the panicked selling of assets to increase the reserves of banks or the cash balances of other types of entities. See Panic of 1792 …
+
+financial service: any of a range of services related to financial instruments, derivatives, insurance, money, intermediation, or any other financial good.
+
+financial statement: a generic term for any type of account of any entity’s financial condition, including balance sheets and income and cash flow statements.
+
+financial system: all financial institutions and markets and their multifarious interconnections.
+
+financier: a banker or other individual who provides one or more financial services on behalf of himself/herself or a bank, broker, or other intermediary. 11 | P a g e
+
+firm: 1) any business entity; 2) a small or private business entity such as a sole proprietorship or partnership, as in a law firm.
+
+for profit: an organization, typically a business entity, with the common goal of earning a profit. See also non‐profit, not‐for‐profit
+
+forward contract: singular version of forwards
+
+forwards: a type of derivative whereby a buyer and seller agree to exchange a specific quantity of some asset or other good at a future date for predetermined price. See also futures
+
+free ride: to enjoy the benefits of a good without paying for it.
+
+free rider: any entity that free rides.
+
+full‐bodied coins: 1) specie; 2) coins that derive their monetary value from the intrinsic value of the gold, silver, copper (or occasionally other metal) they contain rather than from a legal tender provision; non‐token coins.
+
+fundamental value: the rational value of an asset based on its intrinsic characteristics and interest rates.
+
+future value: the principal, par value, or face value of a bond or other debt instrument, so called because that is the monetary sum promised to be paid in the future.
+
+futures: a type of derivative, specifically a forward contract that has been standardized and trades on an exchange.
+
+gold: a metallic element with symbol Au and atomic number 79 used, among other things, to create full‐bodied and token coins. See also specie
+
+good: a product or service that someone values greater than zero, that people are willing to pay in order to obtain. See also bad
+
+government bond: a bond issued by a national or municipal (sub‐national) government. See also municipal bond; sovereign bond
+
+government expenditure (G): 1) money spent by the government on final goods (i.e., not simply redistributed to citizens via Social Security or other social programs); 2) one of the major components of aggregate output (Y).
+
+government failure: the inability of a government to meet one or more of its goals due to its own inadequacy. See also regulatory capture
+
+gross domestic product (GDP): one of the most widely used estimates of aggregate output (Y). 12 | P a g e
+
+Hamilton’s Rule: a rule developed by Treasury Secretary Alexander Hamilton (1755‐1804) during the Panic of 1792 that instructs central banks or other lenders of last resort to lend freely at a penalty rate of interest to any entity that can post sufficient collateral.
+
+health insurance: an insurance policy that indemnifies policyholders if a covered event, such as an illness or hospitalization, occurs while the policy is in effect.
+
+history of economic thought: the study of past beliefs of economists. See also economic history
+
+honor: archaic term meaning to make payment.
+
+human capital: the ability of individuals to create goods.
+
+hybrid corporation: a corporation that is partly owned by stockholders and partly by customers; 2) a corporation that is part joint‐stock and part mutual.
+
+hybrid failures: intricate combinations of market failures and government failures.
+
+illiquid: the condition of an asset that cannot be sold in timely manner at or close to its fundamental value. See also illiquidity, liquid, liquidity
+
+illiquidity: the state of being illiquid. See also liquid, liquidity
+
+imports: goods produced abroad but consumed domestically or purchased abroad by citizens of the importing nation (e.g. tourism).
+
+income: money that is incoming, that flows into an entity. See also expenditure
+
+indemnify: to compensate for a damage or loss actually incurred.
+
+inflation: sustained increases in the price level.
+
+initial public offering (IPO): an offering of shares in itself by a business entity to members of the public with the aid of an investment bank or other intermediary.
+
+in‐kind loan: the lending of a specific good rather than of money.
+
+inland bill: a short‐dated financial instrument drawn on a domestic entity. See also bill of exchange
+
+insolvency: the inability of an entity to pay legitimate demands on it, either from bankruptcy or illiquidity.
+
+insurance: a mechanism for spreading risks, typically in an actuarially or scientifically sound manner, through the issuance of insurance policies.
+
+insurance agent: an agent hired by an insurance company or other insurer to sell its insurance policies and to provide basic customer service.
+
+insurance company: a business entity, typically in the form of a corporation, that acts as an insurer. 13 | P a g e
+
+insurance policy: a contract specifying the terms upon which an insurer promises to indemnify the policyholder or insured for some loss.
+
+insured: the entity reimbursed when/if some contingency specified in an insurance policy occurs. See also policyholder
+
+insurer: the issuer of an insurance policy.
+
+instrument: 1) a financial instrument; 2) a monetary policy tool.
+
+interest: 1) the opportunity cost of money; 2) a rental charge for the use of money.
+
+interest‐only loan: a loan in which the borrower repays no principal, only interest, forever (perpetuity) or for some pre‐specified period.
+
+interest rate: 1) the interest (promised or received) over some period, typically a year, divided by the principal of a bond or other loan, generally expressed as a percentage; 2) yield. See also rate of return
+
+intermediary: any entity, but typically a business entity, that brokers exchanges between lenders and borrowers. See also banks, insurers
+
+intermediation: 1) the function of an intermediary; 2) the process of brokering exchanges between borrowers and lenders. See also disintermediation
+
+investment: 1) an asset purchased by an investor with the aim of earning a profit; 2) a major component of aggregate output (Y) that measures purchases of machines, factories, and inventory by businesses (I).
+
+investment bank: a type of bank owned and/or run by investment bankers that engages in brokerage, issuance of securities, and merger and acquisition consulting.
+
+investment banker: a banker primarily engaged in brokerage, issuance of securities, and merger and acquisition consulting.
+
+investment banking: the activities of an investment banker.
+
+investor: an entity that intends to earn a profit by buying, holding, or selling a financial instrument such as a bond or equity.
+
+IOU: a short‐dated debt instrument, like a promissory note, so called because “I owe you.”
+
+issuance: the act of issuing.
+
+issue: a thing, typically a bank note, coin, deposit, insurance policy, or security, issued.
+
+issuer: any entity that issues (v.) any type of issue (n.).
+
+joint‐stock company: an unincorporated or unchartered business entity owned by stockholders. See also joint‐stock corporation
+
+joint‐stock corporation: a type of corporation owned by stockholders. See also hybrid corporation, joint‐stock company, mutual corporation
+
+journal: a type of double‐entry account book that tracks transactions chronologically first, then by category.
+
+ledger: a type of double‐entry account book that tracks transactions by category first, then chronologically within each category.
+
+legal tender: 1) an obligation created and enforced by governments on entities to accept a specific medium of exchange at its face value in either a) all debts public and private (full tender) or b) all public debts (public tender); 2) any medium of exchange that enjoys full legal tender status. See also fiat money
+
+lemons problem: a famous example of adverse selection and asymmetric information wherein buyers of used vehicles pay too much for unreliable automobiles, trucks, and so forth.
+
+lender: any entity that provides principal to a borrower in exchange for repayment of the principal plus interest in the future.
+
+lender of last resort: a central bank or other monetary authority charged with lending to entities in the wake of a financial crisis or panic when other sources of loans are less or completely unavailable due to high degrees of risk and/or uncertainty.
+
+liability run: when depositors, lenders, or other creditors call or refuse to renew loans to an entity, such as a bank. See also bank run
+
+liabilities: anything owed by one entity to another. See also demand liabilities
+
+life insurance: an insurance policy that indemnifies a policyholder or beneficiary if a covered event, such as the death of the insured, occurs when the policy is in effect. See term life, whole life
+
+limited liability (n): a common feature in charters that protects stockholders’ personal wealth in the event of the corporation’s bankruptcy.
+
+liquid: the condition of an asset that can be easily or quickly sold for cash at close to its monetary value. See also illiquid, liquidity
+
+liquidity: 1) the state of being liquid; 2) cash issued by a central bank or other monetary authority to render assets more liquid. See also illiquid 15 | P a g e
+
+loan: a type of contract whereby a borrower promises to repay to a lender the principal sum borrowed plus interest.
+
+Lockean government: a government ostensibly dedicated to the protection of the lives, liberty, and property of its citizenry.
+
+long‐dated: having more than a year to maturity but not a perpetuity.
+
+loss: 1) the sale of an asset at less than its purchase price; 2) diminution of the monetary value of an asset for which indemnification from an insurer on an insurance policy is sought; 3) the negative difference between a business entity’s total revenues and its total costs. See also profit
+
+Madisonian constitution: a frame of government that limits tyranny through the use of checks and balances or the diffusion of power over multiple branches or levels of government.
+
+management: 1) all of the managers of an entity; 2) the art and science of efficiently operating large, complex organizations, especially joint‐stock corporations.
+
+manager: an individual charged with administering, running, or operating a business entity or organization.
+
+market capitalization: the monetary value of a corporation calculated by multiplying the price of one of its shares by the total number of shares outstanding.
+
+market failure: the inability of a market to achieve one or more of its goals due to its own inadequacy. See also asset bubbles, asymmetric information, externalities, market power, public goods
+
+markets: wherever or how ever entities exchange goods at prices determined primarily by supply and demand.
+
+maturity: the date when a debt instrument’s principal falls due and needs to be paid lest a default be declared.
+
+media of exchange: anything that circulates hand to hand as cash money. See also bank notes, bills of credit, checking deposits, Federal Reserve notes
+
+merger: the balance sheet consolidation of two business entities, typically of similar size, the result of which is a new, larger entity.
+
+monetary authority: the central bank, currency board, or other government agency charged with developing and implementing a nation’s monetary policy, including the money supply and interest rates.
+
+monetary policy: the actions of monetary authorities, such as central banks, designed to influence the money supply and interest rates.
+
+monetary value: the price or worth of something in terms of money, as opposed to use value. 16 | P a g e
+
+money: 1) physical media of exchange; 2) abstract unit of account; 3) long‐term store of value. See also base money, bills of credit, cash, circulation, coins, commodity money, currency, deposits, Federal Reserve Notes, fiat money, specie
+
+money of account: monetary values represented in account books.
+
+money supply: the total monetary value of all the money in actual circulation or use in an economy.
+
+mortgage: a type of loan wherein the borrower pledges real estate as collateral.
+
+municipal bond: a type of government bond issued by a sub‐national government such as a state, county, or city.
+
+mutual corporation: a type of for profit business corporation owned by its customers, typically its depositors or policyholders. See also credit union, mutual savings bank
+
+mutual savings bank: a type of savings bank or thrift owned by its depositors but not chartered as a credit union. See also mutual corporation
+
+negative equity: when the net worth of an entity is less than zero. Indicative of bankruptcy or insolvency.
+
+negative externalities: a market failure that occurs when the full costs of a good are not incorporated in its price, as in the case, for example, of pollution. See also positive externalities
+
+negotiable: transferable from one entity to another by sale, gift, inheritance, or other means.
+
+negotiable certificate of deposit (NCD): a large denomination certificate of deposit that can be bought and sold like a bond.
+
+net exports: the monetary value of exports minus the monetary value of imports.
+
+net worth: the sum of the monetary value of an entity’s assets and liabilities. See also negative equity
+
+nominal price: the price of a good in current dollars; 2) prices of goods not adjusted for changes in the price level.
+
+non‐profit: an organization that is designed not to earn any profits. See also for profit, not‐for‐profit
+
+not‐for‐profit: an organization that may earn profits but that is not primarily oriented toward doing so. See also for profit, non‐profit
+
+opportunity cost: the inevitable cost incurred by entities when they choose an activity, thereby precluding the completion of another activity at the same time. 17 | P a g e
+
+option holder: the owner of one or more options.
+
+option contract: See options
+
+options: a class of derivatives including call options and put options.
+
+organization: a group of individuals working closely together towards a common goal. See also non‐ profit, not‐for‐profit
+
+over‐the‐counter: any market for trading securities outside of a formal exchange, typically coordinated by brokers and/or dealers.
+
+owe: to be obliged to repay, usually a sum of money; 2) to possess but not have legal title of ownership of.
+
+own: 1) to possess; 2) to have legal title to or the legal right to sell, lease, or enjoy.
+
+owner: an entity that owns a business entity or asset. See also principal, stockholder
+
+ownership: the state or condition of owning (v).
+
+panic: See financial panic
+
+Panic of 1792: a financial panic that originated in the government bond market that was successfully thwarted by the application of Hamilton’s Rule.
+
+Panic of 1819: a financial panic that led to a deep recession and a re‐alignment of U.S. political parties.
+
+Panic of 1837: a financial panic that led to a long, deep recession.
+
+paper money: a generic term for any type of money composed of paper, including fiat monies and convertible monies such as bank notes.
+
+partners: the individuals who own a partnership.
+
+partnership: a type of business entity owned by two or more individuals called partners.
+
+payer: the entity upon which a draft is drawn, typically the drawer’s debtor.
+
+perpetual succession: a privilege of corporations to change their owners/stockholders without having to reconstitute, as partnerships traditionally had to do whenever a partner joined or left the business entity.
+
+perpetuity: 1) a financial instrument with no maturity date; 2) an interest‐only loan.
+
+personal estate: any asset owned by an individual that is not real estate.
+
+policyholder: the owner of an insurance contract. See also insured 18 | P a g e
+
+positive externalities: a market failure that occurs when the full societal benefits of a good are not incorporated in its price, as in the case, for example, of education. See also negative externalities
+
+premiums: the price a policyholder must pay to effect an insurance contract.
+
+present value: the price of an asset or other good today (at the present).
+
+price: the monetary value of a good determined by the interaction of supply and demand in a market.
+
+price level: the average of all nominal prices in an economy. See also real prices, relative prices
+
+principal: 1) a sum lent or invested upon which interest or rate of return are calculated; 2) the, or one of the, owners of an entity.
+
+principal‐agent problem: a specific type of moral hazard that occurs when an agent acts in its own best interest rather than in the interest of the owner(s). See also agency costs
+
+private bank: 1) a bank operating without a charter; 2) a bank that manages the assets of wealthy entities, typically individuals.
+
+private banker: 1) an individual or a member of a partnership in an unchartered bank, i.e., private bank (1); 2) a banker in a private bank.
+
+product: a physical thing or contract that a business entity creates, produces, makes, manufactures, or grows
+
+profit: the positive difference between a business entity’s total revenues and its total costs. See also loss
+
+promissory note: a short‐dated negotiable debt instrument such as an IOU.
+
+primary reserves: See reserves
+
+project: 1) any specific task aimed at achieving a goal; 2) in business, any specific actions taken in an attempt to earn a profit.
+
+public: 1) government owned; 2) privately owned by stockholders who are members of the public, as in initial public offering or public company.
+
+public company: 1) a business entity that is owned by private individuals (members of the public), typically stockholders who can trade their equity stakes in the company publically; 2) a joint‐stock company or corporation. 19 | P a g e
+
+public goods: a market failure that arises when it is not in the interest of any business entity to supply a specific good, like national defense, because the entity cannot easily profit from its provision because such goods are non‐excludable (there is no way to force free riders to pay) and non‐rivalrous (consumption by one does not prevent consumption by others).
+
+put option: a type of option derivative that gives the option holder the right but not the obligation to sell some predetermined asset at a predetermined strike price. See also option, call option
+
+quarter: a quarter of a year or three months, typically January, February, March; April, May, June; July, August, September; October, November, December.
+
+quarterly: once every quarter. See also annually, semiannually.
+
+rate of interest: See interest rate
+
+rate of return (ROR): 1) the ratio of the money lost or gained on an investment relative to the principal invested over some period, typically a quarter or year; 2) return on investment (ROI).
+
+recovery: a state of the economy following a recession during which aggregate output, typically as measured by Gross Domestic Product, increases toward a previous peak.
+
+real estate: a type of asset consisting of land and any improvements thereto, such as buildings, drainage or sewage systems, roads, wells, and so forth. See also personal estate
+
+real price: the price of a good adjusted for changes in the price level.
+
+recession: a state of the economy during which aggregate output, typically as measured by Gross Domestic Product, declines.
+
+regulated firm: a business entity that is subject to the regulations of one or more regulators.
+
+regulations: a set of rules prescribed by a regulator describing the business activities that can and/or cannot lawfully be undertaken by a business entity.
+
+regulator: an entity, usually a government, that makes and/or enforces regulations.
+
+regulatory capture: the condition of a regulated firm taking control of its regulator in whole or part.
+
+relative prices: the ratio of the nominal price of one good to the nominal price of another.
+
+rent seeking: attempts to gain something for nothing by manipulating the government to subsidize or otherwise support special interests at the expense of the commonweal.
+
+required reserves: See reserve requirements
+
+reserves: 1) cash held by banks to meet calls on their demand liabilities, such as checking deposits and bank notes; 2) any asset that banks own to help manage their liquidity. See also required reserves, secondary reserves. 20 | P a g e
+
+reserve requirements: reserves mandated by some regulator or law, typically expressed as a percentage of a bank’s demand liabilities.
+
+resources: 1) goods, such as copper, gold, silver, oil, diamonds, created by nature rather than by entities; 2) in a loose sense, any asset or good, including more intangible ones like time.
+
+returns: money that returns to an investor on an investment. See also rate of return
+
+revenues: income from any source, including the sale of goods or returns on investments
+
+risk: known volatility in the rate of return. See also uncertainty
+
+risk appetite: the amount of risk an investor can tolerate. See also risk aversion
+
+risk averse: avoidance of risk even at a high cost.
+
+risk aversion: the practice of being risk averse.
+
+risks: 1) the risk represented by an entity seeking a loan or insurance; 2) the entity itself.
+
+risky: characterized by excessive risk, either for the expected rate of return or for the investor’s risk appetite.
+
+Savings and Loan association: a type of savings bank with a Savings and Loan charter designed to modernize the older Building and Loan association form.
+
+savings bank: a generic term for any bank that focuses on making mortgage loans and issuing savings deposits, including but not limited to credit unions, mutual savings banks, and Savings and Loan associations.
+
+savings deposit: 1) a type of time deposit in a bank that earns interest in exchange for a decrease in its liquidity.
+
+secondary reserves: a sort of back up form of reserves held by banks that earns income but is liquid (readily convertible into cash).
+
+securities: any negotiable financial instrument, including debt, equity, and hybrid instruments.
+
+securities exchange: See exchange
+
+seller: the entity in a trade that gives up a non‐monetary good and receives money in exchange.
+
+semiannually: twice a year or every six months. See annually, quarterly
+
+service: a good consumed at the point of contact with the service provider including but not limited to consulting, education, healthcare, and retail. See also financial services
+
+share: 1) a financial instrument representing an ownership or equity stake in a joint‐stock corporation; 2) an equity. 21 | P a g e
+
+shareholder: See stockholder
+
+short: 1) to sell an asset under the expectation of buying it back later at a lower price; 2) borrowing assets, typically equities, selling them in the expectation of a price decrease, then buying them back later to repay the in‐kind loan.
+
+short‐dated: having less than a year to maturity.
+
+short sale: 1) traditionally, a transaction whereby an entity shorts an asset; 2) more recently, the sale of a home for less than the outstanding mortgage balance.
+
+shorting: the process of making a short sale.
+
+sight draft: a draft due upon its acceptance for payment by the payer. See also time draft
+
+silent run: a type of bank run or liability run characterized by the refusal of creditors to renew short‐ term loans to a bank or other entity.
+
+silver: a metallic element with the symbol Ag and the atomic number 47 used to create full‐bodied and token coins. See also specie
+
+single entry: a simple method of keeping accounts that entails listing the major attributes (e.g., date, price, counterparty) of exchanges.
+
+sole proprietor: the owner of a sole proprietorship.
+
+sole proprietorship: a type of business entity owned and operated by a single individual.
+
+sovereign bond: a government bond issued by a sovereign national government. See also Treasury bond
+
+special interests: entities that engage in rent seeking or other activities designed to subsidize them at the expense of others, or the common weal.
+
+specialty: a type of contract where the parties agree that payment will be made in a specific medium of exchange, such as gold or silver.
+
+specie: full‐bodied (i.e., non‐token) gold or silver coins. See also bullion
+
+speculate: to engage in speculation.
+
+speculation: an attempt to earn quick profits by buying assets, typically securities, low and selling them high or vice versa, as in shorting. 22 | P a g e
+
+spread: 1) the difference between a dealer’s bid price and its ask price for a security; 2) the difference between what a bank receives for its assets and pays for its liabilities.
+
+stock: 1) synonymous with equity (1) and share (1); 2) archaic for government bond.
+
+stock exchange: See exchange (n.)
+
+stock market: 1) exchange (n.); 2) any market in which stocks are traded, including exchanges but also over‐the‐counter or broker‐dealer markets.
+
+stock market crash: a type of financial crisis characterized by rapid decreases in the prices of a broad swath of equities.
+
+stockholder: an owner of one or more shares (stocks, equities) in a joint‐stock corporation.
+
+stockjobbing: buying and selling securities in order to speculate.
+
+stockjobber: an archaic term for any entity that engages in stockjobbing.
+
+store of value: any asset that maintains most or all of its monetary value over long periods of time, e.g. years.
+
+strike price: the predetermined price at which an option derivative can be contractually exercised by the option holder.
+
+swap: a type of derivative whereby two parties exchange one asset for another on an on‐going basis according to the value of some underlying asset, for example dollars for yen.
+
+subsidize: to grant a subsidy to an entity.
+
+subsidy: resources, typically but not always money, given to an entity, usually by a government.
+
+sunk costs: costs that have already been incurred and cannot be recouped.
+
+supply: the quantity of a good that sellers make available at any given price. See also demand
+
+suspension of specie payments: when banks of issue ceased converting their bank notes and deposits into specie due to their bankruptcy, insolvency, or a general suspension of payments in times of war or financial panic.
+
+term life: an insurance policy that indemnifies a policyholder or beneficiary if the insured dies during the duration (term) of the contract. See also whole life
+
+thrift: a depository institution with a community bank focus such as credit unions and savings banks.
+
+time deposit: a type of deposit, like a savings deposit or a certificate of deposit, that cannot be withdrawn by the depositor until a specified period has elapsed or a penalty had been paid. 23 | P a g e
+
+time draft: a draft due some days, weeks, or months after its acceptance for payment by the payer. See also sight draft
+
+token coinage: a type of fiat money that takes the form of coins that contain metals worth considerably less than the coin’s face value
+
+trade: an exchange of goods, typically between two entities.
+
+transaction deposits: See checking deposits
+
+Treasury bill: a short‐dated sovereign bond issued by the U.S. Treasury to help manage the U.S. government’s cash flow needs.
+
+Treasury bond: a sovereign bond issued by the U.S. Treasury to fund U.S. government budget deficits.
+
+unbanked: entities, typically individuals, who do not bank (v.).
+
+uncertainty: unknown/unknowable volatility in the rate of return. See also risk
+
+underlying asset: an asset that contractually determines the price of another asset.
+
+unit bank: a bank that does not, probably because it lawfully cannot, operate any branches.
+
+unit of account: 1) the abstract measuring rod against which monetary values are determined; 2) money of account.
+
+universal bank: a type of bank that combines the functions of a depository institution with those of an investment bank.
+
+usance: the period between the issuance or acceptance of a financial instrument, such as a bill of exchange, and its maturity or due date.
+
+use value: the worth or utility of a good stemming from its actual utilization or consumption.
+
+utility: an economic concept measuring an entity’s relative satisfaction with a good.
+
+whole life: a life insurance policy that indemnifies a policyholder or beneficiary when the insured dies, if the policy is current or has been paid up, and that can be cashed or borrowed against using the cash value of the policy as collateral. See also term life
+
+yield: 1) the current yield, or the income (typically the annual dividends or coupons) from some investment divided by the investment’s current price; 2) the yield to maturity or discounted cash flow rate of return. 24 | P a g e
+

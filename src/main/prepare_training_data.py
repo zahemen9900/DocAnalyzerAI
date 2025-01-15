@@ -660,7 +660,7 @@ def create_enhanced_dataset(
     output_file: str,
     conversation_ratio: float = 0.6,
     qa_ratio: float = 0.4,
-    max_samples: int = 35_000,  # Increased for more samples
+    max_samples: int = 5_000,  # Increased for more samples
     max_variations: int = 7,   # Limit variations per QA pair
     max_followups: int = 3,    # Limit followup questions
     max_words_per_response: int = 40

@@ -131,9 +131,18 @@ def check_gpu():
     logger.info(f"Available GPU memory: {torch.cuda.get_device_properties(0).total_memory / 1e9:.2f} GB")
     return device
 
+# def train(
+#     model_name: str = "facebook/blenderbot-400M-distill",
+#     dataset_path: str = "finetune_data/train.json",
+#     output_dir: str = "results/financial-bot-qlora",
+#     max_length: int = 128,
+#     batch_size: int = 8, 
+# ):
+
+#test with new dataset
 def train(
     model_name: str = "facebook/blenderbot-400M-distill",
-    dataset_path: str = "finetune_data/train.json",
+    dataset_path: str = "finetune_data/finance_training_data.json",
     output_dir: str = "results/financial-bot-qlora",
     max_length: int = 128,
     batch_size: int = 8, 
