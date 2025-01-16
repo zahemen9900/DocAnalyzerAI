@@ -1,0 +1,77 @@
+ 40%|████████████████████████████████████████████████████████████                                                                                          | 620/1550 [45:54<1:07:01,  4.32s/it]/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/utils/other.py:716: UserWarning: Unable to fetch remote file due to the following error (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/blenderbot-400M-distill/resolve/main/config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"), '(Request ID: 9d950caf-b8d5-4862-8b0f-7800fc3c4d48)') - silently ignoring the lookup for the file config.json in facebook/blenderbot-400M-distill.
+{'loss': 12.0188, 'grad_norm': 3.8060970306396484, 'learning_rate': 4.997244758244698e-06, 'epoch': 3.17}
+  warnings.warn(                                                                                                                                                                                
+{'eval_loss': 10.688817977905273, 'eval_runtime': 18.2585, 'eval_samples_per_second': 47.321, 'eval_steps_per_second': 5.915, 'epoch': 4.92}
+{'loss': 10.9631, 'grad_norm': 7.123854160308838, 'learning_rate': 4.9157327551775344e-06, 'epoch': 6.35}
+{'loss': 8.6945, 'grad_norm': 11.067618370056152, 'learning_rate': 4.724602242290769e-06, 'epoch': 9.52}
+{'eval_loss': 6.043710231781006, 'eval_runtime': 18.8725, 'eval_samples_per_second': 45.781, 'eval_steps_per_second': 5.723, 'epoch': 9.84}
+{'loss': 6.1142, 'grad_norm': 3.126052141189575, 'learning_rate': 4.432526133406843e-06, 'epoch': 12.7}
+{'eval_loss': 4.640482425689697, 'eval_runtime': 18.8477, 'eval_samples_per_second': 45.841, 'eval_steps_per_second': 5.73, 'epoch': 14.76}
+{'loss': 5.1603, 'grad_norm': 1.8250967264175415, 'learning_rate': 4.052757942492126e-06, 'epoch': 15.87}
+{'loss': 4.6965, 'grad_norm': 1.5041440725326538, 'learning_rate': 3.602530380025761e-06, 'epoch': 19.05}
+{'eval_loss': 4.1243815422058105, 'eval_runtime': 18.5402, 'eval_samples_per_second': 46.602, 'eval_steps_per_second': 5.825, 'epoch': 19.68}
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/utils/save_and_load.py:246: UserWarning: Could not find a config file in facebook/blenderbot-400M-distill - will assume that the vocabulary was not modified.
+  warnings.warn(
+ 50%|████████████████████████████████████████████████████████████████████████████                                                                            | 775/1550 [57:23<55:52,  4.33s/it]/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/utils/other.py:716: UserWarning: Unable to fetch remote file due to the following error (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/blenderbot-400M-distill/resolve/main/config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"), '(Request ID: e17007e3-9523-48be-b5e5-2ec22eb8413f)') - silently ignoring the lookup for the file config.json in facebook/blenderbot-400M-distill.
+{'loss': 4.3952, 'grad_norm': 1.2507703304290771, 'learning_rate': 3.1022733856902313e-06, 'epoch': 22.22}
+  warnings.warn(                                                                                                                                                                                
+{'eval_loss': 3.8171398639678955, 'eval_runtime': 18.5689, 'eval_samples_per_second': 46.529, 'eval_steps_per_second': 5.816, 'epoch': 24.6}
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/utils/save_and_load.py:246: UserWarning: Could not find a config file in facebook/blenderbot-400M-distill - will assume that the vocabulary was not modified.
+  warnings.warn(
+ 60%|██████████████████████████████████████████████████████████████████████████████████████████                                                            | 930/1550 [1:08:52<44:39,  4.32s/it]/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/utils/other.py:716: UserWarning: Unable to fetch remote file due to the following error (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/blenderbot-400M-distill/resolve/main/config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"), '(Request ID: cdc150d1-5c05-44fc-8553-436140de559f)') - silently ignoring the lookup for the file config.json in facebook/blenderbot-400M-distill.
+{'loss': 4.1764, 'grad_norm': 1.1967905759811401, 'learning_rate': 2.5746870806509955e-06, 'epoch': 25.4}
+{'loss': 4.0137, 'grad_norm': 1.2064014673233032, 'learning_rate': 2.043711705994603e-06, 'epoch': 28.57}
+  warnings.warn(                                                                                                                                                                                
+{'eval_loss': 3.6137969493865967, 'eval_runtime': 18.5386, 'eval_samples_per_second': 46.605, 'eval_steps_per_second': 5.826, 'epoch': 29.52}
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/utils/save_and_load.py:246: UserWarning: Could not find a config file in facebook/blenderbot-400M-distill - will assume that the vocabulary was not modified.
+  warnings.warn(
+ 70%|████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                            | 1085/1550 [1:20:20<33:29,  4.32s/it]/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/utils/other.py:716: UserWarning: Unable to fetch remote file due to the following error (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/blenderbot-400M-distill/resolve/main/config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"), '(Request ID: 92ef4d49-bcca-449e-a8e5-e33151b91744)') - silently ignoring the lookup for the file config.json in facebook/blenderbot-400M-distill.
+{'loss': 3.8976, 'grad_norm': 1.1496808528900146, 'learning_rate': 1.5334412883454796e-06, 'epoch': 31.75}
+  warnings.warn(                                                                                                                                                                                
+{'eval_loss': 3.4859964847564697, 'eval_runtime': 18.5284, 'eval_samples_per_second': 46.631, 'eval_steps_per_second': 5.829, 'epoch': 34.44}
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/utils/save_and_load.py:246: UserWarning: Could not find a config file in facebook/blenderbot-400M-distill - will assume that the vocabulary was not modified.
+  warnings.warn(
+ 80%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                             | 1240/1550 [1:31:48<22:19,  4.32s/it]/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/utils/other.py:716: UserWarning: Unable to fetch remote file due to the following error (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/blenderbot-400M-distill/resolve/main/config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"), '(Request ID: ea7067e8-976b-4365-83f8-db10047c661c)') - silently ignoring the lookup for the file config.json in facebook/blenderbot-400M-distill.
+{'loss': 3.8085, 'grad_norm': 1.1623294353485107, 'learning_rate': 1.067030327168783e-06, 'epoch': 34.92}
+{'loss': 3.7546, 'grad_norm': 1.0587927103042603, 'learning_rate': 6.656431149211747e-07, 'epoch': 38.1}
+  warnings.warn(                                                                                                                                                                                
+{'eval_loss': 3.4233336448669434, 'eval_runtime': 18.5296, 'eval_samples_per_second': 46.628, 'eval_steps_per_second': 5.829, 'epoch': 39.37}
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/utils/save_and_load.py:246: UserWarning: Could not find a config file in facebook/blenderbot-400M-distill - will assume that the vocabulary was not modified.
+  warnings.warn(
+ 90%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████               | 1395/1550 [1:43:15<11:09,  4.32s/it]/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/utils/other.py:716: UserWarning: Unable to fetch remote file due to the following error (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/blenderbot-400M-distill/resolve/main/config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"), '(Request ID: b79c9d50-5741-4c20-960d-8b79d6698751)') - silently ignoring the lookup for the file config.json in facebook/blenderbot-400M-distill.
+{'loss': 3.7228, 'grad_norm': 1.1293373107910156, 'learning_rate': 3.4749336666402844e-07, 'epoch': 41.27}
+  warnings.warn(                                                                                                                                                                                
+{'eval_loss': 3.4009082317352295, 'eval_runtime': 18.529, 'eval_samples_per_second': 46.63, 'eval_steps_per_second': 5.829, 'epoch': 44.29}
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/utils/save_and_load.py:246: UserWarning: Could not find a config file in facebook/blenderbot-400M-distill - will assume that the vocabulary was not modified.
+  warnings.warn(
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1550/1550 [1:54:44<00:00,  4.33s/it]/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/utils/other.py:716: UserWarning: Unable to fetch remote file due to the following error (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/blenderbot-400M-distill/resolve/main/config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"), '(Request ID: d9135cc9-725c-4f1a-81d9-f9ddd8e65e2b)') - silently ignoring the lookup for the file config.json in facebook/blenderbot-400M-distill.
+{'loss': 3.7058, 'grad_norm': 0.9475488066673279, 'learning_rate': 1.2701773778841825e-07, 'epoch': 44.44}
+{'loss': 3.6958, 'grad_norm': 0.9943804144859314, 'learning_rate': 1.4220733071243498e-08, 'epoch': 47.62}
+  warnings.warn(                                                                                                                                                                                
+{'eval_loss': 3.397998332977295, 'eval_runtime': 18.6872, 'eval_samples_per_second': 46.235, 'eval_steps_per_second': 5.779, 'epoch': 49.21}
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/utils/save_and_load.py:246: UserWarning: Could not find a config file in facebook/blenderbot-400M-distill - will assume that the vocabulary was not modified.
+  warnings.warn(
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1550/1550 [1:54:44<00:00,  4.44s/it]
+{'train_runtime': 6887.1872, 'train_samples_per_second': 14.614, 'train_steps_per_second': 0.225, 'train_loss': 5.46238765593498, 'epoch': 49.21}
+2025-01-16 03:24:59,362 [INFO] Training completed. Running evaluation metrics...
+2025-01-16 03:24:59,362 [INFO] Running model evaluation...
+2025-01-16 03:32:07,844 [INFO] Using default tokenizer.
+2025-01-16 03:32:08,328 [INFO]
+Evaluation Results:
+2025-01-16 03:32:08,328 [INFO] BLEU Score: 0.0196
+2025-01-16 03:32:08,328 [INFO] ROUGE-1 Score: 0.2785
+2025-01-16 03:32:08,328 [INFO] ROUGE-2 Score: 0.1003
+2025-01-16 03:32:08,329 [INFO] ROUGE-L Score: 0.2360
+2025-01-16 03:32:08,329 [INFO] Evaluation metrics saved to results/financial-bot-qlora/evaluation_metrics.json
+2025-01-16 03:32:08,330 [INFO] Saving LoRA adapter...
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/utils/other.py:716: UserWarning: Unable to fetch remote file due to the following error (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/blenderbot-400M-distill/resolve/main/config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"), '(Request ID: efde62f0-c618-4d1d-a202-e4afcce3ff2a)') - silently ignoring the lookup for the file config.json in facebook/blenderbot-400M-distill.
+  warnings.warn(
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/utils/save_and_load.py:246: UserWarning: Could not find a config file in facebook/blenderbot-400M-distill - will assume that the vocabulary was not modified.
+  warnings.warn(
+2025-01-16 03:32:08,547 [INFO] Merging LoRA weights...
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/tuners/lora/bnb.py:355: UserWarning: Merge lora module to 4-bit linear may get different generations due to rounding errors.
+  warnings.warn(
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/modeling_utils.py:2618: UserWarning: Moving the following attributes in the config to the generation config: {'max_length': 60, 'min_length': 20, 'num_beams': 10, 'length_penalty': 0.65, 'no_repeat_ngram_size': 3}. You are seeing this warning because you've set generation parameters in the model config, as opposed to in the generation config.
+  warnings.warn(
+2025-01-16 03:32:09,088 [INFO] Model saved successfully!
+2025-01-16 03:32:09,088 [INFO] Training completed successfully!

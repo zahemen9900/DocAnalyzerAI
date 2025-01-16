@@ -1,3 +1,4 @@
+from altair import Padding
 from numpy import full
 import torch
 import os
@@ -25,9 +26,15 @@ from peft import (
 )
 import bitsandbytes as bnb
 from accelerate import Accelerator
-import evaluate
 import random
+import evaluate
 import deepspeed
+from nltk.translate.bleu_score import corpus_bleu, SmoothingFunction
+from rouge_score import rouge_scorer
+import numpy as np
+import nltk
+from wandb import setup
+nltk.download('punkt')
 
 # Configure logging
 logging.basicConfig(
@@ -131,17 +138,100 @@ def check_gpu():
     logger.info(f"Available GPU memory: {torch.cuda.get_device_properties(0).total_memory / 1e9:.2f} GB")
     return device
 
-# def train(
-#     model_name: str = "facebook/blenderbot-400M-distill",
-#     dataset_path: str = "finetune_data/train.json",
-#     output_dir: str = "results/financial-bot-qlora",
-#     max_length: int = 128,
-#     batch_size: int = 8, 
-# ):
+def compute_metrics(eval_preds, tokenizer):
+    """Compute ROUGE and BLEU scores"""
+    predictions, labels = eval_preds
+    
+    # Decode predictions and labels
+    decoded_preds = tokenizer.batch_decode(predictions, skip_special_tokens=True)
+    decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
+    
+    # Clean up predictions and labels
+    decoded_preds = [pred.strip() for pred in decoded_preds]
+    decoded_labels = [label.strip() for label in decoded_labels]
+    
+    # Initialize metrics
+    rouge = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
+    smoother = SmoothingFunction().method1
+    
+    # Compute ROUGE scores
+    rouge_scores = {
+        'rouge1': [],
+        'rouge2': [],
+        'rougeL': []
+    }
+    
+    for pred, label in zip(decoded_preds, decoded_labels):
+        scores = rouge.score(label, pred)
+        rouge_scores['rouge1'].append(scores['rouge1'].fmeasure)
+        rouge_scores['rouge2'].append(scores['rouge2'].fmeasure)
+        rouge_scores['rougeL'].append(scores['rougeL'].fmeasure)
+    
+    # Compute BLEU score
+    references = [[label.split()] for label in decoded_labels]
+    predictions = [pred.split() for pred in decoded_preds]
+    bleu_score = corpus_bleu(references, predictions, smoothing_function=smoother)
+    
+    # Average ROUGE scores
+    results = {
+        'rouge1': np.mean(rouge_scores['rouge1']),
+        'rouge2': np.mean(rouge_scores['rouge2']),
+        'rougeL': np.mean(rouge_scores['rougeL']),
+        'bleu': bleu_score
+    }
+    
+    return results
 
-#test with new dataset
+def evaluate_model(model, tokenizer, eval_dataset, device, batch_size=8):
+    """Run evaluation on test set"""
+    logger.info("Running model evaluation...")
+    
+    model.eval()
+    all_predictions = []
+    all_labels = []
+    
+    # Process dataset in batches
+    for i in range(0, len(eval_dataset), batch_size):
+        batch_data = eval_dataset[i:i + batch_size]
+        
+        # Convert batch data to tensors
+        input_ids = torch.stack([torch.tensor(x) for x in batch_data['input_ids']]).to(device)
+        attention_mask = torch.stack([torch.tensor(x) for x in batch_data['attention_mask']]).to(device)
+        labels = torch.stack([torch.tensor(x) for x in batch_data['labels']]).to(device)
+        
+        # Create inputs dictionary
+        inputs = {
+            'input_ids': input_ids,
+            'attention_mask': attention_mask
+        }
+        
+        # Generate predictions
+        with torch.no_grad():
+            outputs = model.generate(
+                **inputs,
+                max_length=128,
+                num_beams=4,
+                early_stopping=True
+            )
+        
+        # Store predictions and labels
+        all_predictions.extend(outputs.cpu().numpy())
+        all_labels.extend(labels.cpu().numpy())
+    
+    # Compute metrics
+    metrics = compute_metrics((all_predictions, all_labels), tokenizer)
+    
+    # Log results
+    logger.info("\nEvaluation Results:")
+    logger.info(f"BLEU Score: {metrics['bleu']:.4f}")
+    logger.info(f"ROUGE-1 Score: {metrics['rouge1']:.4f}")
+    logger.info(f"ROUGE-2 Score: {metrics['rouge2']:.4f}")
+    logger.info(f"ROUGE-L Score: {metrics['rougeL']:.4f}")
+    
+    return metrics
+
 def train(
-    model_name: str = "facebook/blenderbot-400M-distill",
+    model_name: str = "facebook/blenderbot-1B-distill",
     dataset_path: str = "finetune_data/finance_training_data.json",
     output_dir: str = "results/financial-bot-qlora",
     max_length: int = 128,
@@ -151,40 +241,49 @@ def train(
         # Check GPU and clear memory
         device = check_gpu()
         
-        # Load dataset with error handling
+        # Load and process data
         logger.info("Loading dataset...")
-
         parent_dir = Path(__file__).resolve().parent.parent.parent
         dataset_path = parent_dir / dataset_path
-        if not os.path.exists(dataset_path):
-            raise FileNotFoundError(f"Dataset not found at {dataset_path}")
-            
+        
         with open(dataset_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         
-        # Process data maintaining all fields
+        # Properly format data for Dataset creation
         processed_data = []
         for item in data:
-            # Verify required fields exist
-            required_fields = {'personas', 'additional_context', 'context', 'previous_utterance', 
-                            'free_messages', 'guided_messages', 'suggestions', 'guided_chosen_suggestions'}
-            if not all(field in item for field in required_fields):
-                logger.warning(f"Skipping item due to missing required fields")
-                continue
+            # Handle list or string inputs
+            free_messages = item['free_messages']
+            guided_messages = item['guided_messages']
             
-            # Keep the original structure
+            # Convert to string if list
+            if isinstance(free_messages, list):
+                free_messages = free_messages[0] if free_messages else ""
+            if isinstance(guided_messages, list):
+                guided_messages = guided_messages[0] if guided_messages else ""
+                
+            # Convert personas list to string
+            personas = ' | '.join(item['personas']) if isinstance(item['personas'], list) else str(item['personas'])
+            
+            # Convert previous utterances to string
+            prev_utterances = item.get('previous_utterance', [])
+            if isinstance(prev_utterances, list):
+                prev_utterances = ' | '.join(prev_utterances)
+            
+            # Create processed item with all fields as strings
             processed_item = {
-                'personas': item['personas'],
-                'additional_context': item['additional_context'],
-                'context': item['context'],
-                'previous_utterance': item['previous_utterance'],
-                'free_messages': item['free_messages'],
-                'guided_messages': item['guided_messages'],
-                'suggestions': item['suggestions'],
-                'guided_chosen_suggestions': item['guided_chosen_suggestions'],
-                'label_candidates': item.get('label_candidates', [])  # Optional field
+                'input_text': str(free_messages),
+                'target_text': str(guided_messages),
+                'personas': personas,
+                'context': str(item.get('context', '')),
+                'additional_context': str(item.get('additional_context', '')),
+                'previous_utterance': str(prev_utterances),
+                'guided_chosen_suggestions': str(item.get('guided_chosen_suggestions', [''])[0])
             }
-            processed_data.append(processed_item)
+            
+            # Only add if we have valid input and target text
+            if processed_item['input_text'] and processed_item['target_text']:
+                processed_data.append(processed_item)
 
         if not processed_data:
             raise ValueError("No valid data processed from the dataset")
@@ -238,20 +337,18 @@ def train(
             logger.error("Failed to prepare model for training", exc_info=True)
             raise
 
-        # Update preprocessing function
+        # Update preprocessing function to include context
         def preprocess_function(examples):
-            """Preprocess examples for training"""
-            # Process each example
-            model_inputs = []
-            target_outputs = []
+            """Enhanced preprocessing function with context"""
             
-            for idx in range(len(examples['free_messages'])):
-                # Build structured context
+            # Prepare inputs with context
+            inputs = []
+            for idx in range(len(examples['input_text'])):
                 context_parts = []
                 
-                # Add personas with role prefix
+                # Add personas if present
                 if examples['personas'][idx]:
-                    context_parts.append("Personas: " + " | ".join(examples['personas'][idx]))
+                    context_parts.append(f"Personas: {examples['personas'][idx]}")
                 
                 # Add domain context
                 if examples['context'][idx]:
@@ -263,49 +360,42 @@ def train(
                 
                 # Add previous conversation if any
                 if examples['previous_utterance'][idx]:
-                    prev_utterances = examples['previous_utterance'][idx]
-                    if isinstance(prev_utterances, list) and prev_utterances:
-                        context_parts.append("Previous conversation: " + " | ".join(prev_utterances))
-                    elif isinstance(prev_utterances, str) and prev_utterances.strip():
-                        context_parts.append(f"Previous conversation: {prev_utterances}")
-                
-                # Add suggested responses based on chosen suggestion type
-                chosen_sugg_type = examples['guided_chosen_suggestions'][idx][0] if examples['guided_chosen_suggestions'][idx] else None
-                if chosen_sugg_type and chosen_sugg_type in examples['suggestions'][idx]:
-                    context_parts.append(f"Suggested responses: " + " | ".join(examples['suggestions'][idx][chosen_sugg_type]))
+                    context_parts.append(f"Previous: {examples['previous_utterance'][idx]}")
                 
                 # Combine context with user message
                 context = " [SEP] ".join(context_parts) if context_parts else ""
-                input_text = f"{context} [SEP] User: {examples['free_messages'][idx]}" if context else f"User: {examples['free_messages'][idx]}"
-                
-                # Prepare target response
-                target_text = f"Assistant: {examples['guided_messages'][idx]}"
-                
-                model_inputs.append(input_text)
-                target_outputs.append(target_text)
+                input_text = f"{context} [SEP] User: {examples['input_text'][idx]}" if context else f"User: {examples['input_text'][idx]}"
+                inputs.append(input_text)
+            
+            # Prepare targets with assistant prefix
+            targets = [
+                f"Assistant: {text}" if not text.startswith("Assistant:") else text 
+                for text in examples['target_text']
+            ]
             
             # Tokenize inputs
-            tokenized_inputs = tokenizer(
-                model_inputs,
+            model_inputs = tokenizer(
+                inputs,
                 max_length=max_length,
                 padding='max_length',
                 truncation=True,
-                padding_side="right",
+                padding_side='right',
                 return_tensors='pt'
             )
             
             # Tokenize targets
             with tokenizer.as_target_tokenizer():
-                tokenized_targets = tokenizer(
-                    target_outputs,
+                labels = tokenizer(
+                    targets,
                     max_length=max_length,
                     padding='max_length',
                     truncation=True,
+                    padding_side='right',
                     return_tensors='pt'
                 )
             
-            tokenized_inputs["labels"] = tokenized_targets["input_ids"]
-            return tokenized_inputs
+            model_inputs['labels'] = labels['input_ids']
+            return model_inputs
 
         # Process datasets with error handling
         logger.info("Processing datasets...")
@@ -332,18 +422,18 @@ def train(
         # Updated training arguments for DeepSpeed
         training_args = TrainingArguments(
             output_dir=output_dir,
-            num_train_epochs=20,
+            num_train_epochs = 50,
             per_device_train_batch_size=batch_size,
             per_device_eval_batch_size=batch_size,
             gradient_accumulation_steps=8,
             learning_rate=5e-6,
             weight_decay=0.01,
             warmup_ratio=0.05,
-            logging_steps=10,
+            logging_steps=100,
             evaluation_strategy="steps",
             save_strategy="steps",
-            eval_steps=20,
-            save_steps=40,
+            eval_steps=155,
+            save_steps=155,
             save_total_limit=3,
             load_best_model_at_end=True,
             metric_for_best_model="eval_loss",
@@ -362,7 +452,7 @@ def train(
 
         # Create early stopping callback
         early_stopping_callback = EarlyStoppingCallback(
-            early_stopping_patience=5,        # Number of evaluations to wait for improvement
+            early_stopping_patience=3,        # Number of evaluations to wait for improvement
             early_stopping_threshold=0.01,    # Minimum change to qualify as an improvement
         )
 
@@ -386,8 +476,26 @@ def train(
         logger.info("Starting QLoRA training...")
         try:
             trainer.train()
+            
+            # Run evaluation after training
+            logger.info("Training completed. Running evaluation metrics...")
+            eval_metrics = evaluate_model(
+                model=model,
+                tokenizer=tokenizer,
+                eval_dataset=val_dataset,
+                device=device,
+                batch_size=batch_size
+            )
+            
+            # Save metrics
+            metrics_path = Path(output_dir) / "evaluation_metrics.json"
+            with open(metrics_path, 'w') as f:
+                json.dump(eval_metrics, f, indent=2)
+            
+            logger.info(f"Evaluation metrics saved to {metrics_path}")
+            
         except Exception as e:
-            logger.error("Training failed", exc_info=True)
+            logger.error("Training or evaluation failed", exc_info=True)
             raise
 
         # Save with error handling

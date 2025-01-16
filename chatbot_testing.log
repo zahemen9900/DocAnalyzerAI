@@ -2107,3 +2107,23 @@ Trying to resume download...
 2025-01-15 14:16:54,688 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
 2025-01-15 14:16:55,519 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
 2025-01-15 14:16:55,835 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-16 06:45:15,790 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-16 06:45:16,109 [ERROR] Error loading model: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/blenderbot-400M-distill/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"), '(Request ID: 9e77426a-aa38-43c8-b9b5-b9e1b6aa0bba)')
+2025-01-16 06:45:16,109 [ERROR] Error loading model: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/blenderbot-400M-distill/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"), '(Request ID: 9e77426a-aa38-43c8-b9b5-b9e1b6aa0bba)')
+2025-01-16 06:45:16,109 [ERROR] Error creating demo: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/blenderbot-400M-distill/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"), '(Request ID: 9e77426a-aa38-43c8-b9b5-b9e1b6aa0bba)')
+2025-01-16 06:45:16,110 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-16 06:45:16,312 [ERROR] Error loading model: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/blenderbot-400M-distill/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"), '(Request ID: eda7ed9b-d4bf-4736-a59b-731722586ac9)')
+2025-01-16 06:45:16,313 [ERROR] Error loading model: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/blenderbot-400M-distill/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"), '(Request ID: eda7ed9b-d4bf-4736-a59b-731722586ac9)')
+2025-01-16 06:45:16,313 [ERROR] Error creating demo: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/blenderbot-400M-distill/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"), '(Request ID: eda7ed9b-d4bf-4736-a59b-731722586ac9)')
+2025-01-16 06:46:34,375 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-16 06:46:40,291 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-16 06:46:40,444 [INFO] Model loaded successfully on: cuda:0
+2025-01-16 06:46:40,444 [INFO] Model loaded successfully!
+2025-01-16 06:46:40,734 [INFO] HTTP Request: GET http://localhost:7867/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-01-16 06:46:40,756 [INFO] HTTP Request: HEAD http://localhost:7867/ "HTTP/1.1 200 OK"
+2025-01-16 06:46:41,802 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-01-16 06:46:42,058 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-01-16 06:49:15,023 [INFO] Loading base model facebook/blenderbot-400M-distill...
+2025-01-16 06:49:18,258 [INFO] Loading LoRA adapter from results/financial-bot-qlora/final_adapter...
+2025-01-16 06:49:18,374 [INFO] Model loaded successfully on: cuda:0
+2025-01-16 06:49:18,374 [INFO] Chatbot initialized successfully!

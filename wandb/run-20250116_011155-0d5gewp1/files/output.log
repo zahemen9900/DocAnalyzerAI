@@ -1,0 +1,47 @@
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [02:32<00:00,  4.92s/it]
+{'loss': 12.2897, 'grad_norm': 3.2053489685058594, 'learning_rate': 4.11846571195457e-06, 'epoch': 0.32}
+{'loss': 12.0577, 'grad_norm': 3.55890154838562, 'learning_rate': 1.574654611650214e-06, 'epoch': 0.63}
+{'loss': 12.0504, 'grad_norm': 3.4823832511901855, 'learning_rate': 1.4655107114101008e-08, 'epoch': 0.95}
+2025-01-16 01:14:29,140 [INFO] Training completed. Running evaluation metrics...                                                                                                                
+{'eval_loss': 12.048155784606934, 'eval_runtime': 18.7435, 'eval_samples_per_second': 46.096, 'eval_steps_per_second': 5.762, 'epoch': 0.95}
+{'train_runtime': 154.1861, 'train_samples_per_second': 13.056, 'train_steps_per_second': 0.201, 'train_loss': 12.12496526779667, 'epoch': 0.98}
+2025-01-16 01:14:29,141 [INFO] Running model evaluation...
+2025-01-16 01:14:29,144 [ERROR] Training or evaluation failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 477, in train
+    eval_metrics = evaluate_model(
+                   ^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 198, in evaluate_model
+    'input_ids': batch['input_ids'].to(device),
+                 ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'to'
+2025-01-16 01:14:29,144 [ERROR] Training failed: 'list' object has no attribute 'to'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 477, in train
+    eval_metrics = evaluate_model(
+                   ^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 198, in evaluate_model
+    'input_ids': batch['input_ids'].to(device),
+                 ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'to'
+2025-01-16 01:14:29,321 [ERROR] Script failed: 'list' object has no attribute 'to'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 528, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 477, in train
+    eval_metrics = evaluate_model(
+                   ^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 198, in evaluate_model
+    'input_ids': batch['input_ids'].to(device),
+                 ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'to'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 528, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 477, in train
+    eval_metrics = evaluate_model(
+                   ^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 198, in evaluate_model
+    'input_ids': batch['input_ids'].to(device),
+                 ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'to'

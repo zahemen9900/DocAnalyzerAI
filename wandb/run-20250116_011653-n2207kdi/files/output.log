@@ -1,0 +1,24 @@
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [02:32<00:00,  4.91s/it]
+{'loss': 12.2897, 'grad_norm': 3.1816227436065674, 'learning_rate': 4.11846571195457e-06, 'epoch': 0.32}
+{'loss': 12.057, 'grad_norm': 3.5383810997009277, 'learning_rate': 1.574654611650214e-06, 'epoch': 0.63}
+{'loss': 12.05, 'grad_norm': 3.462481737136841, 'learning_rate': 1.4655107114101008e-08, 'epoch': 0.95}
+2025-01-16 01:19:26,766 [INFO] Training completed. Running evaluation metrics...                                                                                                                
+{'eval_loss': 12.047598838806152, 'eval_runtime': 18.1692, 'eval_samples_per_second': 47.553, 'eval_steps_per_second': 5.944, 'epoch': 0.95}
+{'train_runtime': 154.0325, 'train_samples_per_second': 13.069, 'train_steps_per_second': 0.201, 'train_loss': 12.124599118386545, 'epoch': 0.98}
+2025-01-16 01:19:26,766 [INFO] Running model evaluation...
+2025-01-16 01:22:44,108 [INFO] Using default tokenizer.
+2025-01-16 01:22:44,549 [INFO]
+Evaluation Results:
+2025-01-16 01:22:44,550 [INFO] BLEU Score: 0.0004
+2025-01-16 01:22:44,550 [INFO] ROUGE-1 Score: 0.1578
+2025-01-16 01:22:44,550 [INFO] ROUGE-2 Score: 0.0151
+2025-01-16 01:22:44,550 [INFO] ROUGE-L Score: 0.1285
+2025-01-16 01:22:44,551 [INFO] Evaluation metrics saved to results/financial-bot-qlora/evaluation_metrics.json
+2025-01-16 01:22:44,551 [INFO] Saving LoRA adapter...
+2025-01-16 01:22:45,077 [INFO] Merging LoRA weights...
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/peft/tuners/lora/bnb.py:355: UserWarning: Merge lora module to 4-bit linear may get different generations due to rounding errors.
+  warnings.warn(
+/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/modeling_utils.py:2618: UserWarning: Moving the following attributes in the config to the generation config: {'max_length': 60, 'min_length': 20, 'num_beams': 10, 'length_penalty': 0.65, 'no_repeat_ngram_size': 3}. You are seeing this warning because you've set generation parameters in the model config, as opposed to in the generation config.
+  warnings.warn(
+2025-01-16 01:22:45,578 [INFO] Model saved successfully!
+2025-01-16 01:22:45,579 [INFO] Training completed successfully!

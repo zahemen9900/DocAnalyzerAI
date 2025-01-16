@@ -7226,3 +7226,308 @@ TypeError: compute_metrics() got an unexpected keyword argument 'tokenizer'
 2025-01-15 12:43:53,563 [INFO] Merging LoRA weights...
 2025-01-15 12:43:54,218 [INFO] Model saved successfully!
 2025-01-15 12:43:54,219 [INFO] Training completed successfully!
+2025-01-16 00:37:59,725 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-16 00:37:59,726 [INFO] Available GPU memory: 4.29 GB
+2025-01-16 00:37:59,726 [INFO] Loading dataset...
+2025-01-16 00:37:59,753 [ERROR] Training failed: cannot mix list and non-list, non-null values
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 192, in train
+    dataset = Dataset.from_list(processed_data)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 989, in from_list
+    return cls.from_dict(mapping, features, info, split)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 943, in from_dict
+    pa_table = InMemoryTable.from_pydict(mapping=mapping)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/datasets/table.py", line 757, in from_pydict
+    return cls(pa.Table.from_pydict(*args, **kwargs))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/table.pxi", line 1920, in pyarrow.lib._Tabular.from_pydict
+  File "pyarrow/table.pxi", line 5992, in pyarrow.lib._from_pydict
+  File "pyarrow/array.pxi", line 385, in pyarrow.lib.asarray
+  File "pyarrow/array.pxi", line 247, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 112, in pyarrow.lib._handle_arrow_array_protocol
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/datasets/arrow_writer.py", line 228, in __arrow_array__
+    out = pa.array(cast_to_python_objects(data, only_1d_for_numpy=True))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/array.pxi", line 355, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 42, in pyarrow.lib._sequence_to_array
+  File "pyarrow/error.pxi", line 154, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: cannot mix list and non-list, non-null values
+2025-01-16 00:37:59,901 [ERROR] Script failed: cannot mix list and non-list, non-null values
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 425, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 192, in train
+    dataset = Dataset.from_list(processed_data)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 989, in from_list
+    return cls.from_dict(mapping, features, info, split)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 943, in from_dict
+    pa_table = InMemoryTable.from_pydict(mapping=mapping)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/datasets/table.py", line 757, in from_pydict
+    return cls(pa.Table.from_pydict(*args, **kwargs))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/table.pxi", line 1920, in pyarrow.lib._Tabular.from_pydict
+  File "pyarrow/table.pxi", line 5992, in pyarrow.lib._from_pydict
+  File "pyarrow/array.pxi", line 385, in pyarrow.lib.asarray
+  File "pyarrow/array.pxi", line 247, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 112, in pyarrow.lib._handle_arrow_array_protocol
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/datasets/arrow_writer.py", line 228, in __arrow_array__
+    out = pa.array(cast_to_python_objects(data, only_1d_for_numpy=True))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/array.pxi", line 355, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 42, in pyarrow.lib._sequence_to_array
+  File "pyarrow/error.pxi", line 154, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: cannot mix list and non-list, non-null values
+2025-01-16 00:42:24,878 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-16 00:42:24,878 [INFO] Available GPU memory: 4.29 GB
+2025-01-16 00:42:24,878 [INFO] Loading dataset...
+2025-01-16 00:42:24,894 [ERROR] Training failed: Expected bytes, got a 'list' object
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 173, in train
+    dataset = Dataset.from_list(processed_data)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 989, in from_list
+    return cls.from_dict(mapping, features, info, split)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 943, in from_dict
+    pa_table = InMemoryTable.from_pydict(mapping=mapping)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/datasets/table.py", line 757, in from_pydict
+    return cls(pa.Table.from_pydict(*args, **kwargs))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/table.pxi", line 1920, in pyarrow.lib._Tabular.from_pydict
+  File "pyarrow/table.pxi", line 5992, in pyarrow.lib._from_pydict
+  File "pyarrow/array.pxi", line 385, in pyarrow.lib.asarray
+  File "pyarrow/array.pxi", line 247, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 112, in pyarrow.lib._handle_arrow_array_protocol
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/datasets/arrow_writer.py", line 228, in __arrow_array__
+    out = pa.array(cast_to_python_objects(data, only_1d_for_numpy=True))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/array.pxi", line 355, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 42, in pyarrow.lib._sequence_to_array
+  File "pyarrow/error.pxi", line 154, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowTypeError: Expected bytes, got a 'list' object
+2025-01-16 00:42:25,020 [ERROR] Script failed: Expected bytes, got a 'list' object
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 377, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 173, in train
+    dataset = Dataset.from_list(processed_data)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 989, in from_list
+    return cls.from_dict(mapping, features, info, split)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 943, in from_dict
+    pa_table = InMemoryTable.from_pydict(mapping=mapping)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/datasets/table.py", line 757, in from_pydict
+    return cls(pa.Table.from_pydict(*args, **kwargs))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/table.pxi", line 1920, in pyarrow.lib._Tabular.from_pydict
+  File "pyarrow/table.pxi", line 5992, in pyarrow.lib._from_pydict
+  File "pyarrow/array.pxi", line 385, in pyarrow.lib.asarray
+  File "pyarrow/array.pxi", line 247, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 112, in pyarrow.lib._handle_arrow_array_protocol
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/datasets/arrow_writer.py", line 228, in __arrow_array__
+    out = pa.array(cast_to_python_objects(data, only_1d_for_numpy=True))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/array.pxi", line 355, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 42, in pyarrow.lib._sequence_to_array
+  File "pyarrow/error.pxi", line 154, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowTypeError: Expected bytes, got a 'list' object
+2025-01-16 00:45:35,121 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-16 00:45:35,121 [INFO] Available GPU memory: 4.29 GB
+2025-01-16 00:45:35,121 [INFO] Loading dataset...
+2025-01-16 00:45:35,162 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-16 00:45:38,725 [INFO] Model device: cuda:0
+2025-01-16 00:45:38,807 [INFO] Processing datasets...
+2025-01-16 00:45:41,799 [INFO] Starting QLoRA training...
+2025-01-16 00:47:52,333 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-16 00:47:52,333 [INFO] Available GPU memory: 4.29 GB
+2025-01-16 00:47:52,333 [INFO] Loading dataset...
+2025-01-16 00:47:52,369 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-16 00:47:54,519 [INFO] Model device: cuda:0
+2025-01-16 00:47:54,609 [INFO] Processing datasets...
+2025-01-16 00:47:56,944 [INFO] Starting QLoRA training...
+2025-01-16 00:54:28,464 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-16 00:54:28,464 [INFO] Available GPU memory: 4.29 GB
+2025-01-16 00:54:28,464 [INFO] Loading dataset...
+2025-01-16 00:54:28,503 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-16 00:54:31,315 [INFO] Model device: cuda:0
+2025-01-16 00:54:31,414 [INFO] Processing datasets...
+2025-01-16 00:54:34,469 [INFO] Starting QLoRA training...
+2025-01-16 00:55:47,739 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-16 00:55:47,739 [INFO] Available GPU memory: 4.29 GB
+2025-01-16 00:55:47,739 [INFO] Loading dataset...
+2025-01-16 00:55:47,773 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-16 00:55:50,364 [INFO] Model device: cuda:0
+2025-01-16 00:55:50,440 [INFO] Processing datasets...
+2025-01-16 00:55:53,372 [INFO] Starting QLoRA training...
+2025-01-16 01:03:12,039 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-16 01:03:12,039 [INFO] Available GPU memory: 4.29 GB
+2025-01-16 01:03:12,039 [INFO] Loading dataset...
+2025-01-16 01:03:12,073 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-16 01:03:14,696 [INFO] Model device: cuda:0
+2025-01-16 01:03:14,781 [INFO] Processing datasets...
+2025-01-16 01:03:17,601 [ERROR] Training failed: cannot access local variable 'training_args' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 441, in train
+    deepspeed=setup_deepspeed_config(training_args),
+                                     ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'training_args' where it is not associated with a value
+2025-01-16 01:03:17,763 [ERROR] Script failed: cannot access local variable 'training_args' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 532, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 441, in train
+    deepspeed=setup_deepspeed_config(training_args),
+                                     ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'training_args' where it is not associated with a value
+2025-01-16 01:03:59,358 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-16 01:03:59,359 [INFO] Available GPU memory: 4.29 GB
+2025-01-16 01:03:59,359 [INFO] Loading dataset...
+2025-01-16 01:03:59,394 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-16 01:04:02,194 [INFO] Model device: cuda:0
+2025-01-16 01:04:02,277 [INFO] Processing datasets...
+2025-01-16 01:04:05,001 [INFO] Starting QLoRA training...
+2025-01-16 01:07:16,907 [INFO] Training completed. Running evaluation metrics...
+2025-01-16 01:07:16,907 [INFO] Running model evaluation...
+2025-01-16 01:07:16,910 [ERROR] Training or evaluation failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 480, in train
+    eval_metrics = evaluate_model(
+                   ^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 198, in evaluate_model
+    batch['input_text'],
+    ~~~~~^^^^^^^^^^^^^^
+KeyError: 'input_text'
+2025-01-16 01:07:16,910 [ERROR] Training failed: 'input_text'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 480, in train
+    eval_metrics = evaluate_model(
+                   ^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 198, in evaluate_model
+    batch['input_text'],
+    ~~~~~^^^^^^^^^^^^^^
+KeyError: 'input_text'
+2025-01-16 01:07:17,097 [ERROR] Script failed: 'input_text'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 531, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 480, in train
+    eval_metrics = evaluate_model(
+                   ^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 198, in evaluate_model
+    batch['input_text'],
+    ~~~~~^^^^^^^^^^^^^^
+KeyError: 'input_text'
+2025-01-16 01:10:55,295 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-16 01:10:55,296 [INFO] Available GPU memory: 4.29 GB
+2025-01-16 01:10:55,296 [INFO] Loading dataset...
+2025-01-16 01:10:55,331 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-16 01:10:58,163 [INFO] Model device: cuda:0
+2025-01-16 01:10:58,244 [INFO] Processing datasets...
+2025-01-16 01:11:00,953 [INFO] Starting QLoRA training...
+2025-01-16 01:11:49,688 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-16 01:11:49,689 [INFO] Available GPU memory: 4.29 GB
+2025-01-16 01:11:49,689 [INFO] Loading dataset...
+2025-01-16 01:11:49,723 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-16 01:11:51,681 [INFO] Model device: cuda:0
+2025-01-16 01:11:51,766 [INFO] Processing datasets...
+2025-01-16 01:11:54,515 [INFO] Starting QLoRA training...
+2025-01-16 01:14:29,140 [INFO] Training completed. Running evaluation metrics...
+2025-01-16 01:14:29,141 [INFO] Running model evaluation...
+2025-01-16 01:14:29,144 [ERROR] Training or evaluation failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 477, in train
+    eval_metrics = evaluate_model(
+                   ^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 198, in evaluate_model
+    'input_ids': batch['input_ids'].to(device),
+                 ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'to'
+2025-01-16 01:14:29,144 [ERROR] Training failed: 'list' object has no attribute 'to'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 477, in train
+    eval_metrics = evaluate_model(
+                   ^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 198, in evaluate_model
+    'input_ids': batch['input_ids'].to(device),
+                 ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'to'
+2025-01-16 01:14:29,321 [ERROR] Script failed: 'list' object has no attribute 'to'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 528, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 477, in train
+    eval_metrics = evaluate_model(
+                   ^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 198, in evaluate_model
+    'input_ids': batch['input_ids'].to(device),
+                 ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'to'
+2025-01-16 01:16:46,742 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-16 01:16:46,742 [INFO] Available GPU memory: 4.29 GB
+2025-01-16 01:16:46,742 [INFO] Loading dataset...
+2025-01-16 01:16:46,777 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-16 01:16:49,357 [INFO] Model device: cuda:0
+2025-01-16 01:16:49,435 [INFO] Processing datasets...
+2025-01-16 01:16:52,353 [INFO] Starting QLoRA training...
+2025-01-16 01:19:26,766 [INFO] Training completed. Running evaluation metrics...
+2025-01-16 01:19:26,766 [INFO] Running model evaluation...
+2025-01-16 01:22:44,108 [INFO] Using default tokenizer.
+2025-01-16 01:22:44,549 [INFO] 
+Evaluation Results:
+2025-01-16 01:22:44,550 [INFO] BLEU Score: 0.0004
+2025-01-16 01:22:44,550 [INFO] ROUGE-1 Score: 0.1578
+2025-01-16 01:22:44,550 [INFO] ROUGE-2 Score: 0.0151
+2025-01-16 01:22:44,550 [INFO] ROUGE-L Score: 0.1285
+2025-01-16 01:22:44,551 [INFO] Evaluation metrics saved to results/financial-bot-qlora/evaluation_metrics.json
+2025-01-16 01:22:44,551 [INFO] Saving LoRA adapter...
+2025-01-16 01:22:45,077 [INFO] Merging LoRA weights...
+2025-01-16 01:22:45,578 [INFO] Model saved successfully!
+2025-01-16 01:22:45,579 [INFO] Training completed successfully!
+2025-01-16 01:28:35,937 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-16 01:28:35,937 [INFO] Available GPU memory: 4.29 GB
+2025-01-16 01:28:35,937 [INFO] Loading dataset...
+2025-01-16 01:28:35,972 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-16 01:28:38,488 [INFO] Model device: cuda:0
+2025-01-16 01:28:38,567 [INFO] Processing datasets...
+2025-01-16 01:28:41,225 [INFO] Starting QLoRA training...
+2025-01-16 01:30:06,315 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-16 01:30:06,315 [INFO] Available GPU memory: 4.29 GB
+2025-01-16 01:30:06,315 [INFO] Loading dataset...
+2025-01-16 01:30:06,350 [INFO] Loading facebook/blenderbot-400M-distill with quantization...
+2025-01-16 01:30:08,995 [INFO] Model device: cuda:0
+2025-01-16 01:30:09,078 [INFO] Processing datasets...
+2025-01-16 01:30:11,791 [INFO] Starting QLoRA training...
+2025-01-16 03:24:59,362 [INFO] Training completed. Running evaluation metrics...
+2025-01-16 03:24:59,362 [INFO] Running model evaluation...
+2025-01-16 03:32:07,844 [INFO] Using default tokenizer.
+2025-01-16 03:32:08,328 [INFO] 
+Evaluation Results:
+2025-01-16 03:32:08,328 [INFO] BLEU Score: 0.0196
+2025-01-16 03:32:08,328 [INFO] ROUGE-1 Score: 0.2785
+2025-01-16 03:32:08,328 [INFO] ROUGE-2 Score: 0.1003
+2025-01-16 03:32:08,329 [INFO] ROUGE-L Score: 0.2360
+2025-01-16 03:32:08,329 [INFO] Evaluation metrics saved to results/financial-bot-qlora/evaluation_metrics.json
+2025-01-16 03:32:08,330 [INFO] Saving LoRA adapter...
+2025-01-16 03:32:08,547 [INFO] Merging LoRA weights...
+2025-01-16 03:32:09,088 [INFO] Model saved successfully!
+2025-01-16 03:32:09,088 [INFO] Training completed successfully!
+2025-01-16 12:40:49,525 [INFO] Using GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-01-16 12:40:49,526 [INFO] Available GPU memory: 4.29 GB
+2025-01-16 12:40:49,527 [INFO] Loading dataset...
+2025-01-16 12:40:49,577 [INFO] Loading facebook/blenderbot-1B-distill with quantization...
+2025-01-16 12:40:52,541 [INFO] Model device: cuda:0
+2025-01-16 12:40:52,701 [INFO] Processing datasets...
+2025-01-16 12:40:55,723 [INFO] Starting QLoRA training...

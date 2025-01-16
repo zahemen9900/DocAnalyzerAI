@@ -1,0 +1,591 @@
+{"time":"2025-01-16T01:30:13.079932679Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-16T01:30:13.07994271Z","level":"INFO","msg":"created symlink","path":"/home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/run-20250116_013013-mz8dxnck/logs/debug-core.log"}
+{"time":"2025-01-16T01:30:13.225162405Z","level":"INFO","msg":"created new stream","id":"mz8dxnck"}
+{"time":"2025-01-16T01:30:13.225199459Z","level":"INFO","msg":"stream: started","id":"mz8dxnck"}
+{"time":"2025-01-16T01:30:13.225224598Z","level":"INFO","msg":"writer: Do: started","stream_id":"mz8dxnck"}
+{"time":"2025-01-16T01:30:13.225257502Z","level":"INFO","msg":"sender: started","stream_id":"mz8dxnck"}
+{"time":"2025-01-16T01:30:13.225287277Z","level":"INFO","msg":"handler: started","stream_id":"mz8dxnck"}
+{"time":"2025-01-16T01:30:14.737079391Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-16T02:10:05.813727616Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:10:08.26436658Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:10:13.002232914Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.23.131.84:50422->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-01-16T02:10:13.18068015Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:10:15.072484554Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:10:19.609809737Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:10:22.070635626Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:10:28.916331469Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:10:40.792520237Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:10:45.77107835Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:11:19.061582508Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:11:20.134576584Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:12:19.369704867Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:12:20.223522995Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:13:19.426862322Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:13:20.2903477Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:14:19.566332969Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:14:20.346700182Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:15:19.699760598Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:15:20.478569746Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:16:19.833561683Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:16:20.606521872Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:17:20.13427432Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:17:20.664403858Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:18:20.262754619Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:18:20.723968407Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:19:20.311651991Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:19:21.192883422Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:20:12.991976269Z","level":"WARN","msg":"sender: taking a long time","seconds":600.000463295,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"nrvntkm0crrw\"  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T02:20:20.46646384Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:20:21.259456686Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:21:20.591234848Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:21:21.719735746Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:22:14.972871936Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000425148,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:22:15.216266027Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000635014,"work":"WorkRecord(*service_go_proto.Request_Keepalive); Control(local:true  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T02:22:20.898074631Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:22:21.773876561Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:22:24.966704995Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000303845,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:22:24.966728011Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000246572,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:22:24.96670069Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000090367,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:22:24.966736001Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000432751,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:23:21.021718962Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:23:21.908963935Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:24:21.07783684Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:24:21.96935374Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:25:21.206060051Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:25:22.094199964Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:26:21.324222026Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:26:21.324271987Z","level":"ERROR","msg":"sender: sendStopStatus: failed to get run stopped status: api: failed sending: POST https://api.wandb.ai/graphql giving up after 21 attempt(s): Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:26:21.324685837Z","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":968.333253401,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"nrvntkm0crrw\"  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T02:26:21.324872794Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":846.352451317,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:26:21.324887726Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":846.10932194,"work":"WorkRecord(*service_go_proto.Request_Keepalive); Control(local:true  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T02:26:21.324897886Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":836.358403473,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:26:21.324924276Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":836.358594637,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:26:21.324925596Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":836.358518453,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:26:21.324897873Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":836.358329743,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:26:22.217996999Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:26:28.311867549Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:26:30.623062411Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:26:34.698911689Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:26:43.882409733Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:27:01.749087922Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:27:22.534235745Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:27:38.240433847Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:28:22.586011964Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:28:38.295063017Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:29:22.712844664Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:29:38.353135407Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:30:23.208475127Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:30:38.408857655Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:31:23.369730459Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:31:38.459802352Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:32:23.854303394Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:32:38.5848557Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:33:23.91499441Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:33:38.775784154Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:34:23.968508409Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:34:38.927361885Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:35:24.029498285Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:35:38.980800119Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:36:24.128093623Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:36:28.184269323Z","level":"WARN","msg":"sender: taking a long time","seconds":600.000887903,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"f545n7153ufc\"  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T02:36:39.119222918Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:37:23.886106073Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.001017537,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T02:37:24.726372271Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:37:24.967130002Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000618487,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:37:24.967192495Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000568353,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:37:24.967219607Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000913721,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:37:24.967219785Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000870953,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:37:24.971538475Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.001005726,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:37:39.24078387Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:38:24.857976082Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:38:39.293154616Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:39:24.991412857Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:39:39.345013882Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:40:25.052669948Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:40:39.427957384Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:41:25.109299364Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:41:39.486758128Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:42:25.488372877Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:42:39.617734483Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:42:39.617802036Z","level":"ERROR","msg":"sender: sendStopStatus: failed to get run stopped status: api: failed sending: POST https://api.wandb.ai/graphql giving up after 21 attempt(s): Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:42:39.618295461Z","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":971.434906556,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"f545n7153ufc\"  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T02:42:39.618348089Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":914.647803955,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:42:39.618372325Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":914.651727575,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:42:39.618422335Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":915.733347348,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T02:42:39.618428333Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":914.65214539,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:42:39.618430177Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":914.652078466,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:42:39.618463614Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":914.651983364,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:42:43.464503851Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:42:45.527251121Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:42:50.441395893Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:42:59.32779616Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:43:17.777227858Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:43:25.618023536Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:43:56.811775228Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:44:25.838373946Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:44:56.875067075Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:45:25.907379068Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:45:56.923317752Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:46:25.953651468Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:46:57.555623715Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:47:26.093306172Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:47:58.085136327Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:48:26.173520002Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:48:58.150218161Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:49:26.232717484Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:49:58.212638237Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:50:26.311144801Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:50:58.272919082Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:51:26.442844825Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:51:58.831953146Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:52:26.499399719Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:52:43.342383285Z","level":"WARN","msg":"sender: taking a long time","seconds":600.00002884,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"aec0l0cntkfn\"  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T02:52:59.338322641Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:53:26.624139042Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:53:59.39293228Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:54:27.20899865Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:54:34.970430442Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000082981,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:54:35.548814442Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000803272,"work":"WorkRecord(*service_go_proto.Request_Keepalive); Control(local:true  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T02:54:44.966227261Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000612969,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:54:44.966293791Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000549541,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:54:44.966326928Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000775188,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:54:44.96632816Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000372178,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:54:59.547623118Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:55:27.301134517Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:55:59.61312093Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:56:27.374061537Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:56:59.737782829Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:57:27.919695872Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:58:00.035324667Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:58:28.08597606Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:59:00.105686681Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:59:00.105732439Z","level":"ERROR","msg":"sender: sendStopStatus: failed to get run stopped status: api: failed sending: POST https://api.wandb.ai/graphql giving up after 21 attempt(s): Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:59:00.106145359Z","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":976.763809003,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"aec0l0cntkfn\"  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T02:59:00.106280636Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":855.140691407,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:59:00.106292402Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":855.140537591,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:59:00.106300234Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":865.135992539,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:59:00.106303178Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":855.14036803,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:59:00.106313446Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":864.558354478,"work":"WorkRecord(*service_go_proto.Request_Keepalive); Control(local:true  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T02:59:00.10630056Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":855.140730573,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T02:59:13.559711393Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:59:15.911598728Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:59:20.150463131Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:59:28.153361083Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T02:59:30.171204129Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T02:59:46.742966589Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:00:19.407430035Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:00:28.318394053Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:01:19.46110179Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:01:28.372616956Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:02:19.59858501Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:02:28.902294842Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:03:19.990986375Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:03:28.974254313Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:04:20.047649462Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:04:29.024922349Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:05:20.126558506Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:05:29.164911323Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:06:20.271333085Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:06:29.220627033Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:07:20.328006744Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:07:29.27726239Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:08:20.460958308Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:08:29.352554526Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:09:13.505019667Z","level":"WARN","msg":"sender: taking a long time","seconds":600.000901618,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"h9fcm741csb2\"  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T03:09:20.761832012Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:09:29.421221333Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:10:20.848906852Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:10:29.557419862Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:11:14.967120103Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000528084,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:11:14.967219822Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000500792,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:11:14.975966252Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000251583,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:11:15.713342854Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000498513,"work":"WorkRecord(*service_go_proto.Request_Keepalive); Control(local:true  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T03:11:20.939309792Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:11:24.966226833Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000250521,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:11:24.966238184Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000260231,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:11:29.628033384Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:12:21.078242761Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:12:29.764473761Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:13:21.219272406Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:13:29.82855627Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:14:21.349024367Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:14:29.901073774Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:15:21.483063299Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:15:21.483108466Z","level":"ERROR","msg":"sender: sendStopStatus: failed to get run stopped status: api: failed sending: POST https://api.wandb.ai/graphql giving up after 21 attempt(s): Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:15:21.483612677Z","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":967.979478569,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"h9fcm741csb2\"  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T03:15:21.483649688Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":846.507948948,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:15:21.48366925Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":845.770861941,"work":"WorkRecord(*service_go_proto.Request_Keepalive); Control(local:true  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T03:15:21.483678388Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":846.516955216,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:15:21.483729918Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":836.517785682,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:15:21.483765014Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":836.517785861,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:15:21.483800231Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":846.517245024,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:15:28.798869343Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:15:29.954086722Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:15:30.914348529Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:15:35.770816934Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:15:44.115957733Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:16:03.632722255Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:16:30.092116213Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:16:38.562476333Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:17:30.263683413Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:17:38.632527326Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:18:30.320493831Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:18:38.765989305Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:19:30.458924788Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:19:38.823314724Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:20:30.515230693Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:20:38.952835862Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:21:30.714991159Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:21:39.011941397Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:22:30.850887441Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:22:39.147624794Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:23:30.92766449Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:23:39.207816138Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:24:31.421295641Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:24:39.342613696Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:25:28.660503489Z","level":"WARN","msg":"sender: taking a long time","seconds":600.000600252,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"rocj9hf59433\"  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T03:25:31.481704331Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:25:39.401146096Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:26:31.616303505Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:26:39.460638512Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:27:31.756591792Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:27:34.966976812Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000292819,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:27:34.966993657Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000596663,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:27:34.97569567Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000692314,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:27:35.886703299Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.001103409,"work":"WorkRecord(*service_go_proto.Request_Keepalive); Control(local:true  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T03:27:39.519856096Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:27:44.966223828Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000578201,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:27:44.966231235Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000622877,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:28:31.823476499Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:28:39.585540384Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:29:32.311031843Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:29:39.656692746Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:30:32.364362039Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:30:40.05877335Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:31:32.501781607Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:31:40.193335982Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:31:40.193383612Z","level":"ERROR","msg":"sender: sendStopStatus: failed to get run stopped status: api: failed sending: POST https://api.wandb.ai/graphql giving up after 21 attempt(s): Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:31:40.193812764Z","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":971.53392474,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"rocj9hf59433\"  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T03:31:40.19385486Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":845.227203758,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:31:40.193856943Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":845.227463625,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:31:40.193864794Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":845.218885835,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:31:40.19387549Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":835.228253641,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:31:40.19388486Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":844.308336992,"work":"WorkRecord(*service_go_proto.Request_Keepalive); Control(local:true  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T03:31:40.193905323Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":835.228294836,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-01-16T03:31:40.256387639Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:31:42.782024515Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:31:47.675644529Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:31:57.425400971Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:32:09.398130345Z","level":"INFO","msg":"stream: closing","id":"mz8dxnck"}
+{"time":"2025-01-16T03:32:09.398152095Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-16T03:32:09.398699398Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-16T03:32:16.628903789Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:32:32.570634566Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:32:51.069981488Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:33:32.621622719Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:33:51.125742171Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:34:33.084300741Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:34:51.193963386Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:35:33.147951916Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:35:51.253216791Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:36:33.205819771Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:36:51.315579539Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:37:33.332197846Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:37:51.445645441Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:38:33.466200517Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:38:51.497074125Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:39:33.873979772Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:39:51.62659706Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:40:33.958319288Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:40:51.679040949Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:41:34.012837185Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:41:40.197916575Z","level":"WARN","msg":"sender: taking a long time","seconds":600.000310085,"work":"WorkRecord(*service_go_proto.Record_Telemetry); Control(connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T03:41:51.814614256Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:42:34.147325299Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:42:51.874295813Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:43:34.200545282Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:43:51.931520386Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:44:34.63266888Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:44:52.060132635Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:45:34.757272364Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:45:52.202231798Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:46:34.810826772Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:46:52.262718748Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:47:34.874410625Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:47:52.399938282Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:47:52.399989686Z","level":"ERROR","msg":"sender: sendConfig:","error":"api: failed sending: POST https://api.wandb.ai/graphql giving up after 21 attempt(s): Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:47:52.400197362Z","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":972.20257216,"work":"WorkRecord(*service_go_proto.Record_Telemetry); Control(connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T03:47:52.460981866Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:47:54.911202742Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:47:59.500764688Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:48:08.117541378Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:48:26.886479477Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:48:34.965553266Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:49:05.381616766Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:49:35.093593906Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:50:05.436791439Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:50:35.161486952Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:51:05.566377248Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:51:35.216825453Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:52:05.632578849Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:52:35.305157305Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:53:06.108080507Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:53:35.359008746Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:54:06.751609164Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:54:35.418299227Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:55:06.887210103Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:55:35.484812677Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:56:07.018503859Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:56:35.555964621Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:57:07.075934965Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:57:35.609153703Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:57:52.401134227Z","level":"WARN","msg":"sender: taking a long time","seconds":600.000532213,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"ltcteqhw8zmc\"  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T03:58:07.200318933Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:58:35.742212281Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T03:59:07.599289794Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T03:59:35.822563691Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:00:07.749963265Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:00:35.873023169Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:01:07.871883057Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:01:36.01897619Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:02:07.996615248Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:02:36.076237444Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:03:08.051405038Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:03:36.176343892Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:04:08.168575562Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:04:08.168640715Z","level":"ERROR","msg":"sender: sendStopStatus: failed to get run stopped status: api: failed sending: POST https://api.wandb.ai/graphql giving up after 21 attempt(s): Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:04:08.169074024Z","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":975.768485695,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"ltcteqhw8zmc\"  connection_id:\"127.0.0.1:47908\")"}
+{"time":"2025-01-16T04:04:08.296371667Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:04:08.29641726Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:04:10.643915323Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:04:10.792110483Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:04:14.986292931Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:04:16.014046222Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:04:23.626621361Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:04:24.818345811Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:04:36.226946655Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:04:43.60342521Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:04:43.620752861Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:05:21.150225033Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:05:21.48499639Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:05:36.284193455Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:06:21.283168125Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:06:21.610006133Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:06:36.342177926Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:07:21.332491598Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:07:21.660886553Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:07:36.402645301Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:08:21.392180933Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:08:21.716692063Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:08:36.463868846Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:09:21.517934202Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:09:21.841388453Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:09:36.588279698Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:10:21.573805584Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:10:21.893183316Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:10:36.719085289Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:11:22.128381581Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:11:22.13439156Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:11:36.780766084Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:12:22.182216928Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:12:22.182230877Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:12:36.837015048Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:13:22.240550558Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:13:22.24346358Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:13:36.959140318Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:14:08.170942191Z","level":"WARN","msg":"sender: taking a long time","seconds":600.000863683,"work":"WorkRecord(*service_go_proto.Request_Defer); Control(local:true  always_send:true)"}
+{"time":"2025-01-16T04:14:22.661605613Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:14:22.661676986Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:14:37.003308463Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:15:22.717046393Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:15:22.717046637Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:15:37.074796337Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:16:23.289528435Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:16:23.292627786Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:16:37.134813301Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:17:23.423118522Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:17:23.423118508Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:17:37.256538688Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:18:23.486561455Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:18:23.487688264Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:18:37.313782604Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:19:23.616217712Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:19:23.620712157Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:19:37.372265613Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:20:23.680188432Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:20:23.68023661Z","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: api: failed sending: POST https://api.wandb.ai/graphql giving up after 21 attempt(s): Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:20:23.680227184Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:20:23.680299102Z","level":"ERROR","msg":"sender: sendConfig:","error":"api: failed sending: POST https://api.wandb.ai/graphql giving up after 21 attempt(s): Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:20:23.682224488Z","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":975.5121625,"work":"WorkRecord(*service_go_proto.Request_Defer); Control(local:true  always_send:true)"}
+{"time":"2025-01-16T04:20:23.796624235Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:20:26.812052192Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:20:31.187298805Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:20:37.422292129Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:20:39.969705428Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:20:59.04848539Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:21:31.708933119Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:21:37.492615815Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:22:31.854064014Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:22:37.572863739Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:23:31.915705874Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:23:38.669553223Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:24:32.373134549Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:24:38.768506209Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:25:32.430249862Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:25:38.838479119Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:26:32.594866255Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:26:38.985328627Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:27:32.724298183Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:27:39.120725456Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:28:32.778423619Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:28:39.671243783Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:29:33.076309184Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:29:40.184681319Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:30:33.133946338Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:30:40.237239888Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:31:33.288465201Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:31:40.304037547Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:32:33.338249274Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:32:40.365629869Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:33:33.462158092Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:33:40.418652031Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:34:33.875784486Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:34:40.545739777Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:35:33.931437563Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:35:40.602477053Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:36:34.083159376Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:36:34.08320602Z","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: api: failed sending: POST https://api.wandb.ai/graphql giving up after 21 attempt(s): Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-01-16T04:36:34.083463089Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-16T04:36:40.738158921Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:37:40.864581931Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:38:40.91364373Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:39:41.484865192Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:40:41.622191174Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:41:41.749933002Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:42:41.893472429Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:43:41.960686285Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:44:42.102511708Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:45:42.449842839Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:46:42.501944949Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:47:42.551504326Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:48:42.687524304Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:49:42.817699427Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:50:43.222915033Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:51:43.349415844Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:52:43.407277398Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:53:43.557960045Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:54:43.625946064Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:55:43.959224775Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:56:44.012934482Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:57:44.154168416Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:58:44.21447786Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T04:59:44.269799889Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:00:44.748419656Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:01:45.333258458Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:02:45.39457149Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:03:45.544493132Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:04:45.60057028Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:05:45.732771779Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:06:46.198718351Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:07:46.356006599Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:08:46.7121005Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:09:46.772384726Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:10:47.302765143Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:11:47.454680804Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:12:47.626585753Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:13:47.935414046Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:14:48.071688723Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:15:48.224419442Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:16:48.283324298Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:17:48.439604594Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:18:48.59537494Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:19:48.732478161Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:20:48.803686198Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:21:49.375017483Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:22:49.442516425Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:23:49.569373488Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:24:49.70919546Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:25:49.837927517Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:26:49.975347371Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:27:50.038153272Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:28:50.485708999Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:29:51.041489821Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:30:51.197611327Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:31:51.259748748Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:32:51.328505691Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:33:51.518775071Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:34:51.691813587Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:35:51.764275238Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:36:51.892452761Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:37:52.047579367Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:38:52.117386862Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:39:52.460682853Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:40:52.597239525Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:41:52.763053627Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:42:52.922473589Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:43:53.04487132Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:44:53.626619316Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:45:53.769475156Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:46:53.844177373Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:47:53.999357154Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:48:54.065264617Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:49:54.395868401Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:50:54.530125274Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:51:54.651593197Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:52:54.871473658Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:53:54.922577872Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:54:55.089110158Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:55:55.213624985Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:56:55.340422495Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:57:55.765207778Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:58:59.042358279Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T05:59:59.174684258Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:00:59.335748079Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:01:59.472402561Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:02:59.64380228Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:03:59.796533469Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:04:59.846022913Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:06:00.437467789Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:07:00.487072743Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:08:00.669794818Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:09:01.001110643Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:10:01.183708044Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:11:01.3364866Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:12:01.487169127Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:13:01.649289049Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:14:02.139282357Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:15:02.299872855Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:16:02.859247474Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:17:03.009551859Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:18:03.154677878Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:19:03.495314636Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:20:03.685608533Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:21:04.160298759Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:22:05.386883884Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:23:05.443752613Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:24:05.57493602Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:25:05.753920139Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:26:06.101337132Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:27:06.268926096Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:28:06.401224584Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:29:06.476706465Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:30:06.639365044Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:31:06.776893131Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:32:06.949031038Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:33:07.020849334Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:34:07.614644848Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:35:07.682774174Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:36:07.820488847Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:37:07.990115691Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:38:08.126735351Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:39:08.651383599Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:40:08.715859386Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:41:08.891491561Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:42:09.082373862Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:43:09.179214121Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:44:09.648278453Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:45:09.792791767Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/zahemen9900-ai/huggingface/mz8dxnck/file_stream\": EOF"}
+{"time":"2025-01-16T06:46:29.113095776Z","level":"INFO","msg":"handler: closed","stream_id":"mz8dxnck"}
+{"time":"2025-01-16T06:46:29.11311907Z","level":"INFO","msg":"writer: Close: closed","stream_id":"mz8dxnck"}
+{"time":"2025-01-16T06:46:29.113143393Z","level":"INFO","msg":"sender: closed","stream_id":"mz8dxnck"}
+{"time":"2025-01-16T06:46:29.113912369Z","level":"INFO","msg":"stream: closed","id":"mz8dxnck"}

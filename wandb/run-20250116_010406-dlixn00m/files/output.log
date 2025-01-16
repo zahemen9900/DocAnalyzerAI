@@ -1,0 +1,49 @@
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [03:09<00:00,  6.12s/it]
+{'loss': 12.2901, 'grad_norm': 3.061110258102417, 'learning_rate': 4.11846571195457e-06, 'epoch': 0.32}
+2025-01-16 01:07:16,907 [INFO] Training completed. Running evaluation metrics...                                                                                                                
+{'eval_loss': 12.114219665527344, 'eval_runtime': 17.9353, 'eval_samples_per_second': 48.173, 'eval_steps_per_second': 6.022, 'epoch': 0.32}
+{'loss': 12.0587, 'grad_norm': 3.4045727252960205, 'learning_rate': 1.574654611650214e-06, 'epoch': 0.63}
+{'eval_loss': 12.062664985656738, 'eval_runtime': 18.088, 'eval_samples_per_second': 47.767, 'eval_steps_per_second': 5.971, 'epoch': 0.63}
+{'loss': 12.0524, 'grad_norm': 3.3347344398498535, 'learning_rate': 1.4655107114101008e-08, 'epoch': 0.95}
+{'eval_loss': 12.050244331359863, 'eval_runtime': 18.1515, 'eval_samples_per_second': 47.599, 'eval_steps_per_second': 5.95, 'epoch': 0.95}
+{'train_runtime': 191.5243, 'train_samples_per_second': 10.51, 'train_steps_per_second': 0.162, 'train_loss': 12.12613711818572, 'epoch': 0.98}
+2025-01-16 01:07:16,907 [INFO] Running model evaluation...
+2025-01-16 01:07:16,910 [ERROR] Training or evaluation failed
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 480, in train
+    eval_metrics = evaluate_model(
+                   ^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 198, in evaluate_model
+    batch['input_text'],
+    ~~~~~^^^^^^^^^^^^^^
+KeyError: 'input_text'
+2025-01-16 01:07:16,910 [ERROR] Training failed: 'input_text'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 480, in train
+    eval_metrics = evaluate_model(
+                   ^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 198, in evaluate_model
+    batch['input_text'],
+    ~~~~~^^^^^^^^^^^^^^
+KeyError: 'input_text'
+2025-01-16 01:07:17,097 [ERROR] Script failed: 'input_text'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 531, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 480, in train
+    eval_metrics = evaluate_model(
+                   ^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 198, in evaluate_model
+    batch['input_text'],
+    ~~~~~^^^^^^^^^^^^^^
+KeyError: 'input_text'
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 531, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 480, in train
+    eval_metrics = evaluate_model(
+                   ^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 198, in evaluate_model
+    batch['input_text'],
+    ~~~~~^^^^^^^^^^^^^^
+KeyError: 'input_text'
