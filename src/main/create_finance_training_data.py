@@ -69,10 +69,10 @@ class FinanceTrainingDataCreator:
 
         # Add greeting starters
         self.greeting_starters = [
-            "Hi! I'd like to learn about finance.",
-            "Hello! Could you help me understand some financial terms?",
+            "Hi, I'd like to learn about finance.",
+            "Hello, Could you help me understand some financial terms?",
             "Good morning! I need help understanding financial concepts.",
-            "Hey there! I'm trying to learn about money and banking.",
+            "Hey there. I'm trying to learn about money and banking.",
             "Hi, I'm new to finance and need some guidance.",
             "Hello! I'm looking to improve my financial literacy.",
             "Good afternoon! Can you teach me about financial terms?",
@@ -213,16 +213,77 @@ class FinanceTrainingDataCreator:
         
         return [first] + remaining
 
+    def create_comparison_pair(self, term1: tuple, term2: tuple) -> Dict[str, Any]:
+        """Create a comparison-based conversation pair"""
+        term1_name, term1_def = term1
+        term2_name, term2_def = term2
+        
+        # Format comparison response
+        response = [
+            (
+                f"Let me explain the difference between {term1_name} and {term2_name}. "
+                f"{term1_name} is {term1_def}, whereas {term2_name} is {term2_def}. "
+                f"Would you like to know more about either of these concepts?"
+            ),  
+            (
+                    f"I'll explain the difference between {term1_name} and {term2_name}. ",
+                    f"{term1_name} is {term1_def}, while {term2_name} is {term2_def}. ",
+                    f"Understanding these differences is crucial for making financial decisions. "
+            ),
+            (
+                    f"Let me clarify the difference between {term1_name} and {term2_name}. ",
+                    f"{term1_name} is {term1_def}, but {term2_name} is {term2_def}. ",
+                    f"Would you like to explore other related financial concepts?"
+            )
+        ]
+        
+        return {
+            'personas': random.choice(self.personas),
+            'additional_context': f"{term1_name} vs {term2_name}",
+            'context': random.choice(self.contexts),
+            'previous_utterance': [],  # Comparison questions are starters
+            'free_messages': [
+                random.choice([
+                    f"What's the difference between {term1_name} and {term2_name}?",
+                    f"Can you explain how {term1_name} differs from {term2_name}?",
+                    f"I'm confused about {term1_name} and {term2_name}, can you help?",
+                    f"Could you compare {term1_name} and {term2_name}?",
+                    f"How are {term1_name} and {term2_name} different?",
+                ])
+            ],
+            'guided_messages': [random.choice(response)],
+            'suggestions': {
+                'financial_advice': [
+                    f"Would you like to learn more about {term1_name}?",
+                    f"I can explain more about {term2_name} if you'd like.",
+                    "Let me know if you need clarification on either term.",
+                ],
+                'banking_basics': [
+                    "I can explain other related terms.",
+                    "There are several other important concepts to understand.",
+                    "Would you like to explore similar financial terms?",
+                ],
+                'investment_knowledge': [
+                    "Understanding these differences is crucial for financial decisions.",
+                    "There are other related concepts we could explore.",
+                    "Would you like to learn about other financial comparisons?",
+                ]
+            },
+            'guided_chosen_suggestions': self.get_random_suggestions(),
+            'label_candidates': []
+        }
+
     def create_training_data(self) -> None:
         """Create and save training data from glossary terms"""
         try:
             terms_and_defs = self.load_glossary_terms()
             
-            # Sample if size specified, otherwise use all
             if self.sample_size:
                 terms_and_defs = random.sample(terms_and_defs, min(self.sample_size, len(terms_and_defs)))
             
             training_data = []
+            
+            # Add existing conversation types (greetings, starters, follow-ups)
             # Add greeting conversations (about 10% of total)
             greeting_count = max(len(terms_and_defs) // 10, 5)
             for _ in range(greeting_count):
@@ -302,7 +363,40 @@ class FinanceTrainingDataCreator:
                 }
                 training_data.append(followup_pair)
             
-            # Save to JSON file
+            # Add comparison-based conversations (about 20% of terms)
+            comparison_count = len(terms_and_defs) // 5
+            available_terms = terms_and_defs.copy()
+            
+            for _ in range(comparison_count):
+                if len(available_terms) < 2:
+                    break
+                    
+                # Select two random terms that might be related (based on some common words)
+                term1 = random.choice(available_terms)
+                related_terms = [
+                    t for t in available_terms 
+                    if t != term1 and (
+                        any(word in t[0].lower() for word in term1[0].lower().split())
+                        or any(word in t[1].lower() for word in term1[1].lower().split())
+                    )
+                ]
+                
+                if related_terms:
+                    term2 = random.choice(related_terms)
+                else:
+                    # If no related terms found, just pick random
+                    term2 = random.choice([t for t in available_terms if t != term1])
+                
+                # Create and add comparison pair
+                comparison_pair = self.create_comparison_pair(term1, term2)
+                training_data.append(comparison_pair)
+                
+                # Remove used terms from available pool to avoid repetition
+                available_terms.remove(term1)
+                if term2 in available_terms:
+                    available_terms.remove(term2)
+            
+            # Continue with existing saving code...
             with open(self.output_path, 'w', encoding='utf-8') as f:
                 json.dump(training_data, f, indent=2)
             

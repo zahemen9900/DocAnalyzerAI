@@ -162,57 +162,29 @@ def train(
         with open(dataset_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         
-        # Modified data processing section
+        # Process data maintaining all fields
         processed_data = []
         for item in data:
-            if not all(key in item for key in ['personas', 'free_messages', 'guided_messages']):
+            # Verify required fields exist
+            required_fields = {'personas', 'additional_context', 'context', 'previous_utterance', 
+                            'free_messages', 'guided_messages', 'suggestions', 'guided_chosen_suggestions'}
+            if not all(field in item for field in required_fields):
+                logger.warning(f"Skipping item due to missing required fields")
                 continue
-                
-            # Initialize context with system prompt
-
-            system_prompt = random.choice([
-                "You are a financial expert. Provide professional advice on finance and investments. \
-                    Always maintain a professional tone and back answers with financial expertise.",
-                "You are a financial advisor. Provide professional advice on finance and investments. \
-                    Always keep a professional tone and back answers with financial expertise.",
-                "You are a finance expert. Provide professional advice on finance and investments. \
-                    Always maintain a professional tone and back answers with financial expertise.",
-                "You are a finance advisor. Provide professional advice on finance and investments. \
-                    Always maintain a professional tone and back answers with financial expertise.",
-                "You are a financial consultant. Provide professional advice on finance and investments. \
-                    Always maintain a professional tone and back answers with financial expertise.",
-                "You are a finance consultant. Provide professional advice on finance and investments. \
-                    Always keep a professional tone and back answers with financial expertise.",
-            ])
-
             
-            context = [f"System: {system_prompt}"]
-            
-            # Add roles/personas
-            if item['personas']:
-                context.append(f"Roles: {' | '.join(item['personas'])}")
-            
-            # Handle previous utterances properly
-            if item.get('previous_utterance'):
-                if isinstance(item['previous_utterance'], list) and len(item['previous_utterance']) < 1:
-                    continue # Skip empty list
-
-                elif isinstance(item['previous_utterance'], str) and item['previous_utterance'].strip():
-                    context.append("Previous conversation:")
-                    context.append(item['previous_utterance'])
-            
-            # Join context with newlines
-            context = "\n".join(context)
-            
-            # Process messages
-            for user_msg, bot_msg in zip(item['free_messages'], item['guided_messages']):
-                if not user_msg.strip() or not bot_msg.strip():
-                    continue
-                    
-                processed_data.append({
-                    "input_text": f"{context}\nUser: {user_msg.strip()}",
-                    "target_text": f"Assistant: {bot_msg.strip()}"
-                })
+            # Keep the original structure
+            processed_item = {
+                'personas': item['personas'],
+                'additional_context': item['additional_context'],
+                'context': item['context'],
+                'previous_utterance': item['previous_utterance'],
+                'free_messages': item['free_messages'],
+                'guided_messages': item['guided_messages'],
+                'suggestions': item['suggestions'],
+                'guided_chosen_suggestions': item['guided_chosen_suggestions'],
+                'label_candidates': item.get('label_candidates', [])  # Optional field
+            }
+            processed_data.append(processed_item)
 
         if not processed_data:
             raise ValueError("No valid data processed from the dataset")
@@ -231,6 +203,8 @@ def train(
         logger.info(f"Loading {model_name} with quantization...")
         try:
             tokenizer = AutoTokenizer.from_pretrained(model_name)
+            tokenizer.padding_side = "right" #fix weird padding issue with fp16
+
             model = AutoModelForSeq2SeqLM.from_pretrained(
                 model_name,
                 quantization_config=quant_config,
@@ -266,29 +240,72 @@ def train(
 
         # Update preprocessing function
         def preprocess_function(examples):
-            # Clean inputs
-            inputs = [re.sub(r'\s+', ' ', text.strip()) for text in examples["input_text"]]
-            targets = [re.sub(r'\s+', ' ', text.strip()) for text in examples["target_text"]]
+            """Preprocess examples for training"""
+            # Process each example
+            model_inputs = []
+            target_outputs = []
             
-            model_inputs = tokenizer(
-                inputs,
+            for idx in range(len(examples['free_messages'])):
+                # Build structured context
+                context_parts = []
+                
+                # Add personas with role prefix
+                if examples['personas'][idx]:
+                    context_parts.append("Personas: " + " | ".join(examples['personas'][idx]))
+                
+                # Add domain context
+                if examples['context'][idx]:
+                    context_parts.append(f"Domain: {examples['context'][idx]}")
+                
+                # Add specific context
+                if examples['additional_context'][idx]:
+                    context_parts.append(f"Topic: {examples['additional_context'][idx]}")
+                
+                # Add previous conversation if any
+                if examples['previous_utterance'][idx]:
+                    prev_utterances = examples['previous_utterance'][idx]
+                    if isinstance(prev_utterances, list) and prev_utterances:
+                        context_parts.append("Previous conversation: " + " | ".join(prev_utterances))
+                    elif isinstance(prev_utterances, str) and prev_utterances.strip():
+                        context_parts.append(f"Previous conversation: {prev_utterances}")
+                
+                # Add suggested responses based on chosen suggestion type
+                chosen_sugg_type = examples['guided_chosen_suggestions'][idx][0] if examples['guided_chosen_suggestions'][idx] else None
+                if chosen_sugg_type and chosen_sugg_type in examples['suggestions'][idx]:
+                    context_parts.append(f"Suggested responses: " + " | ".join(examples['suggestions'][idx][chosen_sugg_type]))
+                
+                # Combine context with user message
+                context = " [SEP] ".join(context_parts) if context_parts else ""
+                input_text = f"{context} [SEP] User: {examples['free_messages'][idx]}" if context else f"User: {examples['free_messages'][idx]}"
+                
+                # Prepare target response
+                target_text = f"Assistant: {examples['guided_messages'][idx]}"
+                
+                model_inputs.append(input_text)
+                target_outputs.append(target_text)
+            
+            # Tokenize inputs
+            tokenized_inputs = tokenizer(
+                model_inputs,
                 max_length=max_length,
                 padding='max_length',
                 truncation=True,
+                padding_side="right",
                 return_tensors='pt'
             )
             
+            # Tokenize targets
             with tokenizer.as_target_tokenizer():
-                labels = tokenizer(
-                    targets,
+                tokenized_targets = tokenizer(
+                    target_outputs,
                     max_length=max_length,
                     padding='max_length',
                     truncation=True,
                     return_tensors='pt'
                 )
             
-            model_inputs["labels"] = labels["input_ids"]
-            return model_inputs
+            tokenized_inputs["labels"] = tokenized_targets["input_ids"]
+            return tokenized_inputs
 
         # Process datasets with error handling
         logger.info("Processing datasets...")
@@ -315,18 +332,18 @@ def train(
         # Updated training arguments for DeepSpeed
         training_args = TrainingArguments(
             output_dir=output_dir,
-            num_train_epochs=10,
+            num_train_epochs=20,
             per_device_train_batch_size=batch_size,
             per_device_eval_batch_size=batch_size,
             gradient_accumulation_steps=8,
-            learning_rate=7e-6,
+            learning_rate=5e-6,
             weight_decay=0.01,
-            warmup_ratio=0.1,
-            logging_steps=55,
+            warmup_ratio=0.05,
+            logging_steps=10,
             evaluation_strategy="steps",
             save_strategy="steps",
-            eval_steps=110,
-            save_steps=110,
+            eval_steps=20,
+            save_steps=40,
             save_total_limit=3,
             load_best_model_at_end=True,
             metric_for_best_model="eval_loss",

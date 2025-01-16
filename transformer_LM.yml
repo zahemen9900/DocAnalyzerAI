@@ -14,12 +14,14 @@ dependencies:
   - aiohappyeyeballs=2.4.4=py311h06a4308_0
   - aiohttp=3.11.10=py311h5eee18b_0
   - aiosignal=1.2.0=pyhd3eb1b0_0
+  - annotated-types=0.7.0=pyhd8ed1ab_1
   - anyio=4.6.2=py311h06a4308_0
   - argon2-cffi=21.3.0=pyhd3eb1b0_0
   - argon2-cffi-bindings=21.2.0=py311h5eee18b_0
   - arrow=1.3.0=py311h06a4308_0
   - asttokens=2.0.5=pyhd3eb1b0_0
   - async-lru=2.0.4=py311h06a4308_0
+  - attr=2.5.1=h166bdaf_1
   - attrs=24.3.0=py311h06a4308_0
   - aws-c-auth=0.7.22=h96bc93b_2
   - aws-c-cal=0.6.14=h88a6e22_1
@@ -46,7 +48,7 @@ dependencies:
   - brotli-python=1.0.9=py311h6a678d5_8
   - bzip2=1.0.8=h5eee18b_6
   - c-ares=1.34.4=hb9d3cd8_0
-  - ca-certificates=2024.12.14=hbcca054_0
+  - ca-certificates=2024.12.31=h06a4308_0
   - certifi=2024.12.14=pyhd8ed1ab_0
   - cffi=1.17.1=py311h1fdaa30_0
   - chardet=4.0.0=py311h06a4308_1003
@@ -69,8 +71,10 @@ dependencies:
   - dbus=1.13.18=hb2f20db_0
   - debugpy=1.6.7=py311h6a678d5_0
   - decorator=5.1.1=pyhd3eb1b0_0
+  - deepspeed=0.16.2=cpu_py311hd0a74d0_0
   - defusedxml=0.7.1=pyhd3eb1b0_0
   - dill=0.3.8=py311h06a4308_0
+  - einops=0.8.0=pyhd8ed1ab_1
   - evaluate=0.4.0=py311h06a4308_0
   - executing=0.8.3=pyhd3eb1b0_0
   - expat=2.6.4=h6a678d5_0
@@ -92,6 +96,7 @@ dependencies:
   - gst-plugins-base=1.14.1=h6a678d5_1
   - gstreamer=1.14.1=h5eee18b_1
   - h11=0.14.0=py311h06a4308_0
+  - hjson-py=3.1.0=pyhd8ed1ab_1
   - httpcore=1.0.2=py311h06a4308_0
   - httpx=0.27.0=py311h06a4308_0
   - huggingface_hub=0.27.0=py_0
@@ -123,6 +128,7 @@ dependencies:
   - ld_impl_linux-64=2.40=h12ee557_0
   - lerc=4.0.0=h6a678d5_0
   - libabseil=20240116.2=cxx17_h6a678d5_0
+  - libaio=0.3.113=h166bdaf_0
   - libarrow=16.1.0=hcb6531f_6_cpu
   - libarrow-acero=16.1.0=hac33072_6_cpu
   - libarrow-dataset=16.1.0=hac33072_6_cpu
@@ -130,6 +136,7 @@ dependencies:
   - libbrotlicommon=1.1.0=hb9d3cd8_2
   - libbrotlidec=1.1.0=hb9d3cd8_2
   - libbrotlienc=1.1.0=hb9d3cd8_2
+  - libcap=2.71=h39aace5_0
   - libclang=14.0.6=default_hc6dbbc7_2
   - libclang13=14.0.6=default_he11475f_2
   - libcrc32c=1.1.2=h6a678d5_0
@@ -145,9 +152,12 @@ dependencies:
   - libedit=3.1.20230828=h5eee18b_0
   - libev=4.33=h7f8727e_1
   - libevent=2.1.12=hdbd6064_1
+  - libfabric=1.22.0=ha770c72_3
+  - libfabric1=1.22.0=ha594dbc_3
   - libffi=3.4.4=h6a678d5_1
   - libgcc=14.2.0=h77fa898_1
   - libgcc-ng=14.2.0=h69a702a_1
+  - libgcrypt-lib=1.11.0=hb9d3cd8_2
   - libgfortran=14.2.0=h69a702a_1
   - libgfortran-ng=14.2.0=h69a702a_1
   - libgfortran5=14.2.0=hd5240d6_1
@@ -155,12 +165,15 @@ dependencies:
   - libgomp=14.2.0=h77fa898_1
   - libgoogle-cloud=2.24.0=h2736e30_0
   - libgoogle-cloud-storage=2.24.0=h3d9a0c8_0
+  - libgpg-error=1.51=hbd13f7d_1
   - libgrpc=1.62.2=h15f2491_0
+  - libhwloc=2.11.2=default_h0d58e46_1001
   - libiconv=1.16=h5eee18b_3
   - libidn2=2.3.4=h5eee18b_0
   - libjpeg-turbo=2.0.0=h9bf148f_0
   - libllvm14=14.0.6=hecde1de_4
   - libnghttp2=1.57.0=h2d74bed_0
+  - libnl=3.11.0=hb9d3cd8_0
   - libnpp=12.2.5.30=0
   - libnvfatbin=12.6.77=0
   - libnvjitlink=12.4.127=0
@@ -175,9 +188,11 @@ dependencies:
   - libssh2=1.11.1=h251f7ec_0
   - libstdcxx=14.2.0=hc0a3c3a_1
   - libstdcxx-ng=14.2.0=h4852527_1
+  - libsystemd0=256.9=h2774228_0
   - libtasn1=4.19.0=h5eee18b_0
   - libthrift=0.19.0=hb90f79a_1
   - libtiff=4.5.1=hffd6297_1
+  - libudev1=257.2=h9a4d06a_0
   - libunistring=0.9.10=h27cfd23_0
   - libutf8proc=2.8.0=hf23e847_1
   - libuuid=1.41.5=h5eee18b_0
@@ -200,7 +215,11 @@ dependencies:
   - mkl_random=1.2.8=py311ha02d727_0
   - mpc=1.1.0=h10f8cd9_1
   - mpfr=4.0.2=hb69a4c5_1
+  - mpi=1.0.1=mpich
+  - mpi4py=4.0.1=py311h0799f86_1
+  - mpich=4.2.3=h239ebd3_102
   - mpmath=1.3.0=py311h06a4308_0
+  - msgpack-python=1.1.0=py311hd18a35c_0
   - multidict=6.1.0=py311h5eee18b_0
   - multiprocess=0.70.15=py311h06a4308_0
   - mysql=8.4.0=h29a9f33_1
@@ -218,7 +237,7 @@ dependencies:
   - openh264=2.1.1=h4ff587b_0
   - openjpeg=2.5.2=he7f1fd0_0
   - openldap=2.6.4=h42fbc30_0
-  - openssl=3.4.0=hb9d3cd8_0
+  - openssl=3.4.0=h7b32b05_1
   - orc=2.0.1=h2d29ad5_0
   - overrides=7.4.0=py311h06a4308_0
   - packaging=24.2=py311h06a4308_0
@@ -240,9 +259,12 @@ dependencies:
   - psutil=5.9.0=py311h5eee18b_0
   - ptyprocess=0.7.0=pyhd3eb1b0_2
   - pure_eval=0.2.2=pyhd3eb1b0_0
+  - py-cpuinfo=9.0.0=pyhd8ed1ab_1
   - pyarrow=16.1.0=py311h781c19f_1
   - pyarrow-core=16.1.0=py311h8e2c35d_1_cpu
   - pycparser=2.21=pyhd3eb1b0_0
+  - pydantic=2.10.4=pyh3cfb1c2_0
+  - pydantic-core=2.27.2=py311h9e33e62_0
   - pygments=2.15.1=py311h06a4308_1
   - pyparsing=3.2.0=py311h06a4308_0
   - pyqt=5.15.10=py311h6a678d5_0
@@ -263,6 +285,7 @@ dependencies:
   - pyyaml=6.0.2=py311h5eee18b_0
   - pyzmq=26.2.0=py311h6a678d5_0
   - qt-main=5.15.2=hb6262e9_11
+  - rdma-core=55.0=h5888daf_0
   - re2=2023.09.01=h7f4b329_2
   - readline=8.2=h5eee18b_0
   - referencing=0.30.2=py311h06a4308_0
@@ -305,6 +328,7 @@ dependencies:
   - typing-extensions=4.12.2=py311h06a4308_0
   - typing_extensions=4.12.2=py311h06a4308_0
   - tzdata=2024b=h04d1e81_0
+  - ucx=1.17.0=h1b0e7dc_4
   - unicodedata2=15.1.0=py311h5eee18b_0
   - unidecode=1.3.8=py311h06a4308_0
   - urllib3=2.2.3=py311h06a4308_0
@@ -323,7 +347,6 @@ dependencies:
       - absl-py==2.1.0
       - aiofiles==23.2.1
       - altair==5.5.0
-      - annotated-types==0.7.0
       - bert-score==0.3.13
       - blinker==1.9.0
       - blis==1.1.0
@@ -332,17 +355,21 @@ dependencies:
       - click==8.1.8
       - cloudpathlib==0.20.0
       - colorama==0.4.6
+      - coloredlogs==15.0.1
       - confection==0.1.5
+      - cryptography==44.0.0
       - cymem==2.0.10
       - docker-pycreds==0.4.0
       - en-core-web-sm==3.8.0
       - fastapi==0.115.6
       - ffmpy==0.5.0
+      - flatbuffers==24.12.23
       - gitdb==4.0.11
       - gitpython==3.1.43
       - gradio==5.9.1
       - gradio-client==1.5.2
       - huggingface-hub==0.27.0
+      - humanfriendly==10.0
       - langcodes==3.5.0
       - language-data==1.3.0
       - linkify-it-py==2.0.3
@@ -353,15 +380,19 @@ dependencies:
       - mdurl==0.1.2
       - murmurhash==1.0.11
       - narwhals==1.20.1
+      - ninja==1.11.1.3
       - nltk==3.9.1
+      - onnxruntime-gpu==1.20.1
       - orjson==3.10.13
+      - pdfminer-six==20231228
+      - pdfplumber==0.11.5
       - portalocker==3.1.1
       - preshed==3.0.9
       - protobuf==5.29.2
-      - pydantic==2.10.4
-      - pydantic-core==2.27.2
       - pydeck==0.9.1
       - pydub==0.25.1
+      - pypdf2==3.0.1
+      - pypdfium2==4.30.1
       - python-multipart==0.0.20
       - rouge-score==0.1.2
       - ruff==0.8.4
