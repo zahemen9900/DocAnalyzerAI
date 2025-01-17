@@ -1,0 +1,24 @@
+ 50%|███████████████████████████████████████████████████████████████▌                                                               | 31/62 [07:11<06:18, 12.20s/it]2025-01-17 00:07:10,237 [INFO]
+{'loss': 12.349, 'grad_norm': 3.4986510276794434, 'learning_rate': 4.869132927957007e-06, 'epoch': 0.38}
+{'loss': 12.1505, 'grad_norm': 5.521780490875244, 'learning_rate': 4.012935537984414e-06, 'epoch': 0.76}
+                                                                                                                                                                    
+{'eval_loss': 12.319661140441895, 'eval_runtime': 55.0763, 'eval_samples_per_second': 15.687, 'eval_steps_per_second': 1.961, 'epoch': 0.98}
+Pausing training for 20 minutes at step 31
+2025-01-17 00:07:10,237 [INFO] Current time: 2025-01-17 00:07:10
+2025-01-17 00:07:10,237 [INFO] At epoch: 0.98
+2025-01-17 00:07:10,237 [INFO] Training will resume automatically...
+
+Traceback (most recent call last):
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 567, in <module>
+    train()
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 512, in train
+    trainer.train()
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/miniconda3/envs/transformer_LM/lib/python3.11/site-packages/transformers/trainer.py", line 2388, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zahemen/projects/dl-lib/DocAnalyzerAI/src/main/train_finbot_qlora.py", line 259, in training_step
+    time.sleep(pause_time)
+KeyboardInterrupt

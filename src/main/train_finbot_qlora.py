@@ -34,6 +34,9 @@ from rouge_score import rouge_scorer
 import numpy as np
 import nltk
 from wandb import setup
+import time
+from transformers.trainer_utils import TrainOutput
+from datetime import datetime
 nltk.download('punkt')
 
 # Configure logging
@@ -229,6 +232,45 @@ def evaluate_model(model, tokenizer, eval_dataset, device, batch_size=8):
     logger.info(f"ROUGE-L Score: {metrics['rougeL']:.4f}")
     
     return metrics
+
+class PausableTrainer(Trainer):
+    """Custom trainer that pauses halfway through training"""
+    
+    def train(
+        self,
+        resume_from_checkpoint = None,
+        trial = None,
+        ignore_keys_for_eval = None,
+        **kwargs,
+    ):
+        """Override train to add pause"""
+        # Calculate total steps
+        total_steps = int(self.args.num_train_epochs * len(self.train_dataset) / (self.args.train_batch_size * self.args.gradient_accumulation_steps))
+        halfway_point = total_steps // 2
+        
+        logger.info(f"Training will pause for 20 minutes at step {halfway_point} (halfway point)")
+        
+        # Start training
+        train_result = super().train(
+            resume_from_checkpoint=resume_from_checkpoint,
+            trial=trial,
+            ignore_keys_for_eval=ignore_keys_for_eval,
+            **kwargs,
+        )
+        
+        # Check if we're at halfway point
+        if self.state.global_step >= halfway_point:
+            pause_time = 20 * 60  # 20 minutes in seconds
+            logger.info(f"\n\nPausing training for {pause_time//60} minutes at step {self.state.global_step}")
+            logger.info(f"Current time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+            logger.info("Training will resume automatically...\n")
+            
+            # Pause
+            time.sleep(pause_time)
+            
+            logger.info(f"\nResuming training at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        
+        return train_result
 
 def train(
     model_name: str = "facebook/blenderbot-1B-distill",
@@ -456,8 +498,8 @@ def train(
             early_stopping_threshold=0.01,    # Minimum change to qualify as an improvement
         )
 
-        # Initialize trainer with DeepSpeed support
-        trainer = Trainer(
+        # Initialize trainer with our custom PausableTrainer
+        trainer = PausableTrainer(
             model=model,
             args=training_args,
             train_dataset=train_dataset,

@@ -1,0 +1,17 @@
+{"time":"2025-01-16T12:42:34.326511811Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-16T12:42:34.326521586Z","level":"INFO","msg":"created symlink","path":"/home/zahemen/projects/dl-lib/DocAnalyzerAI/wandb/run-20250116_124234-3qxo9y8y/logs/debug-core.log"}
+{"time":"2025-01-16T12:42:34.496852128Z","level":"INFO","msg":"created new stream","id":"3qxo9y8y"}
+{"time":"2025-01-16T12:42:34.496898484Z","level":"INFO","msg":"stream: started","id":"3qxo9y8y"}
+{"time":"2025-01-16T12:42:34.496945132Z","level":"INFO","msg":"writer: Do: started","stream_id":"3qxo9y8y"}
+{"time":"2025-01-16T12:42:34.496963283Z","level":"INFO","msg":"sender: started","stream_id":"3qxo9y8y"}
+{"time":"2025-01-16T12:42:34.496992623Z","level":"INFO","msg":"handler: started","stream_id":"3qxo9y8y"}
+{"time":"2025-01-16T12:42:34.971166387Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-16T13:04:27.943995593Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/zahemen9900-ai/huggingface/3qxo9y8y/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-01-16T13:07:21.262713694Z","level":"INFO","msg":"stream: closing","id":"3qxo9y8y"}
+{"time":"2025-01-16T13:07:21.262732987Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-16T13:07:21.263226827Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-16T13:07:28.92440178Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-16T13:07:29.89379034Z","level":"INFO","msg":"handler: closed","stream_id":"3qxo9y8y"}
+{"time":"2025-01-16T13:07:29.893829224Z","level":"INFO","msg":"writer: Close: closed","stream_id":"3qxo9y8y"}
+{"time":"2025-01-16T13:07:29.893866926Z","level":"INFO","msg":"sender: closed","stream_id":"3qxo9y8y"}
+{"time":"2025-01-16T13:07:29.893944067Z","level":"INFO","msg":"stream: closed","id":"3qxo9y8y"}
